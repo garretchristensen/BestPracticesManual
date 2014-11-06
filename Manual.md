@@ -115,7 +115,7 @@ that authors should report to help make their work reproducible.
 <span id="_Ref272576084" class="anchor"><span id="_Toc275620928" class="anchor"><span id="Ethical" class="anchor"></span></span></span>Ethical Research
 =======================================================================================================================================================
 
-We believe that making one‚Äôs research transparent and reproducible is a
+We believe that making one's research transparent and reproducible is a
 key component of ethical research.
 
 Fraud
@@ -123,7 +123,7 @@ Fraud
 
 While most of us are likely to presume that we ourselves would not
 conduct outright fraud, fraud does indeed occur. From making up fake
-data to creating bogus e-mail addresses so one could do one‚Äôs own peer
+data to creating bogus e-mail addresses so one could do one's own peer
 review, the Retraction Watch blog (<http://www.retractionwatch.com>)
 documents a distressingly large amount of deliberate fraud in research.
 Although the blog tends to specialize in the life sciences, there is no
@@ -196,7 +196,7 @@ related to research.
 #### Nuremberg
 
 Nazi German doctors conducted horrible experiments on subjects during
-WWII. The ‚ÄúDoctor‚Äôs Trial‚Äù (USA v. Karl Brandt, et al.) tried 23
+WWII. The "Doctor's Trial" (USA v. Karl Brandt, et al.) tried 23
 defendants, and the verdict included the following ten principles, which
 although never entered as formal regulations in either Germany or the
 USA, became widely accepted.
@@ -281,40 +281,40 @@ three basic ethical principles, and three applications:
 
 -   Ethical Principles
 
-    -   Respect for Persons: ‚ÄúRespect for persons incorporates at least
+    -   Respect for Persons: "Respect for persons incorporates at least
         two ethical convictions: first, that individuals should be
         treated as autonomous agents, and second, that persons with
-        diminished autonomy are entitled to protection.‚Äù
+        diminished autonomy are entitled to protection."
 
-    -   Beneficence: ‚ÄúTwo general rules have been formulated as
+    -   Beneficence: "Two general rules have been formulated as
         complementary expressions of beneficent actions in this sense:
         **(1)** do not harm and **(2)** maximize possible benefits and
-        minimize possible harms.‚Äù
+        minimize possible harms."
 
-    -   Justice: ‚ÄúAn injustice occurs when some benefit to which a
+    -   Justice: "An injustice occurs when some benefit to which a
         person is entitled is denied without good reason or when some
         burden is imposed unduly. Another way of conceiving the
         principle of justice is that equals ought to be treated
-        equally.‚Äù
+        equally."
 
 -   Applications
 
-    -   Informed Consent: ‚ÄúRespect for persons requires that subjects,
+    -   Informed Consent: "Respect for persons requires that subjects,
         to the degree that they are capable, be given the opportunity to
         choose what shall or shall not happen to them. This opportunity
         is provided when adequate standards for informed consent are
-        satisfied.‚Äù
+        satisfied."
 
-    -   Assessment of Risks and Benefits: ‚ÄúIt is commonly said that
+    -   Assessment of Risks and Benefits: "It is commonly said that
         benefits and risks must be "balanced" and shown to be "in a
         favorable ratio." The metaphorical character of these terms
         draws attention to the difficulty of making precise judgments.
         Only on rare occasions will quantitative techniques be available
         for the scrutiny of research protocols. However, the idea of
         systematic, nonarbitrary analysis of risks and benefits should
-        be emulated insofar as possible.‚Äù
+        be emulated insofar as possible."
 
-    -   Selection of Subjects: ‚ÄúIndividual justice in the selection of
+    -   Selection of Subjects: "Individual justice in the selection of
         subjects would require that researchers exhibit fairness: thus,
         they should not offer potentially beneficial research only to
         some patients who are in their favor or select only
@@ -323,12 +323,12 @@ three basic ethical principles, and three applications:
         that ought, and ought not, to participate in any particular kind
         of research, based on the ability of members of that class to
         bear burdens and on the appropriateness of placing further
-        burdens on already burdened persons.‚Äù
+        burdens on already burdened persons."
 
 In 1981 the Department of Health and Human Services and the Food and
 Drug Administration adopted regulations in line with the Belmont report,
 and 15 federal agencies adopted these regulations (45 CFR part 46) as
-the ‚ÄúCommon Rule‚Äù in 1991. See <http://www.hhs.gov/ohrp/index.html> for
+the "Common Rule" in 1991. See <http://www.hhs.gov/ohrp/index.html> for
 more information.
 
 In practice, this means that researchers who receive funding from the US
@@ -345,7 +345,7 @@ institution to institution, but one example can be seen at
 When conducting research internationally, researchers should give their
 human subjects the same protections as those inside the US. Laws in
 developing countries may not be as well-defined or enforced, but
-researchers should still register with their US institution‚Äôs IRB, and
+researchers should still register with their US institution's IRB, and
 obtain approval from the host country government. A list of laws and
 regulations that cover research in 107 foreign countries is available
 from the Office for Human Research Protections at
@@ -459,7 +459,7 @@ Registries in the social sciences are newer but are growing ever more
 popular. The Abdul Latif Jameel Poverty Action Lab began hosting a
 hypothesis registry
 (<http://www.povertyactionlab.org/hypothesis-registry>) in 2009, which
-was superseded by the American Economic Association‚Äôs launch of its own
+was superseded by the American Economic Association's launch of its own
 registry for randomized trials
 ([www.socialscienceregistry.org](http://www.socialscienceregistry.org))
 in May 2013, which had accumulated 260 studies in 59 countries by
@@ -470,11 +470,11 @@ Registry for International Development Impact Evaluations (RIDIE,
 30 evaluations registered in its first year.
 
 In political science, EGAP: Experiments in Governance and Politics has
-created a registry as ‚Äúan unsupervised stopgap function to store designs
+created a registry as "an unsupervised stopgap function to store designs
 until the creation of a general registry for social science research.
 The EGAP registry focuses on designs for experiments and observational
-studies in governance and politics.‚Äù
-(<http://e-gap.org/design-registration>) EGAP‚Äôs registry had 93 designs
+studies in governance and politics."
+(<http://e-gap.org/design-registration>) EGAP's registry had 93 designs
 registered as of October 2014.[^1]
 
 In psychology, some registration of studies is housed at the Center for
@@ -489,21 +489,21 @@ P-Hacking
 Though registration helps solve the problem of publication bias, it does
 not solve the problem of fishing for statistical significance within a
 given study. Simmons, Nelson, and Simonsohn (2011) refer to this as
-‚Äúresearcher degrees of freedom.‚Äù Using flexibility around when to stop
+"researcher degrees of freedom." Using flexibility around when to stop
 collecting data, excluding certain observations, combining and comparing
 certain conditions, including certain control variables, and combining
-or transforming certain measures, they ‚Äúprove‚Äù that listening to the
-Beatles‚Äô song ‚ÄúWhen I‚Äôm Sixty-Four‚Äù made listeners a year and a half
-younger. The extent and ease of this ‚Äúfishing‚Äù is also described in
+or transforming certain measures, they "prove" that listening to the
+Beatles' song "When I'm Sixty-Four" made listeners a year and a half
+younger. The extent and ease of this "fishing" is also described in
 (Humphreys, Sierra, and Windt 2013). Gelman and Loken (2013) agree that
-‚Äú[a] dataset can be analyzed in so many different ways (with the choices
+"[a] dataset can be analyzed in so many different ways (with the choices
 being not just what statistical test to perform but also decisions on
 what data to exclude or exclude, [sic] what measures to study, what
 interactions to consider, etc.), that very little information is
-provided by the statement that a study came up with a *p*\<.05 result.‚Äù
+provided by the statement that a study came up with a *p*\<.05 result."
 However, they also conclude that:
 
-> ‚Äúthe term ‚Äúfishing‚Äù was unfortunate, in that it invokes an image of a
+> "the term "fishing" was unfortunate, in that it invokes an image of a
 > researcher trying out comparison after comparison, throwing the line
 > into the lake repeatedly until a fish is snagged. We have no reason to
 > think that researchers regularly do that. We think the real story is
@@ -512,14 +512,14 @@ However, they also conclude that:
 > they could have done other analyses that were just as reasonable in
 > those circumstances.
 >
-> We regret the spread of the terms fishing" and ‚Äúp-hacking" (and even
-> ‚Äúresearcher degrees of freedom") for two reasons: first, because when
+> We regret the spread of the terms fishing" and "p-hacking" (and even
+> "researcher degrees of freedom") for two reasons: first, because when
 > such terms are used to describe a study, there is the misleading
 > implication that researchers were consciously trying out many
 > different analyses on a single data set; and, second, because it can
 > lead researchers who know they did not tryout many different analyses
 > to mistakenly think they are not so strongly subject to problems of
-> researcher degrees of freedom.‚Äù
+> researcher degrees of freedom."
 
 In other words, the problem is even worse than you think. What can be
 done to solve it? We believe part of the answer lies in detailed
@@ -553,9 +553,9 @@ community is still constructing norms for incorporating these documents
 into final analyses and papers.
 
 Glennerster and Takavarasha (2013) have a worthwhile discussion of PAPs
-in their recent book, in which they highlight the ‚Äútension between the
+in their recent book, in which they highlight the "tension between the
 benefits of the credibility that comes from tying ones hands versus the
-benefits of flexibility to respond to unforeseen events and results.‚Äù
+benefits of flexibility to respond to unforeseen events and results."
 First, let us clearly distinguish between PAPs and registrations.
 Registration is the act, simple in relative terms, of publicly declaring
 that one is running an experiment (almost, but not always, a randomized
@@ -639,7 +639,7 @@ but may be less familiar to those used to working with administrative or
 observational data. A protocol is a detailed recipe or instruction
 manual for others to use to reproduce an experiment. While the
 advantages of publishing a protocol related to the development of a new
-procedure (e.g. ‚Äúwe have developed a new method of isolating mRNA‚Äù)
+procedure (e.g. "we have developed a new method of isolating mRNA")
 should be obvious, the advantages of publishing protocols for randomized
 trials under way are perhaps less obvious, but still exist. *BioMed
 Central* and *BMJ Open,* among others, now publish protocols of trials
@@ -679,11 +679,11 @@ obviously not the optimal outcome (Bruhn and McKenzie 2009).
 
 WHEN TO WRITE THEM
 
-Before you‚Äôre done.
+Before you're done.
 
 PROS AND CONS
 
-Glennerster says there‚Äôs zero downside to registration, some potential
+Glennerster says there's zero downside to registration, some potential
 downside for PAPs from reduced flexibility.
 
 ### Examples
@@ -761,7 +761,7 @@ Adjust for multiple hypothesis testing (FWER‚Äîcite Michael L Anderson and
 the Van der Laan SuperLearner papers)
 
 One aspect of PAPs that seems to have taken hold widely in the medical
-literature is the aversion to sub-group analysis (‚Äúinteractions‚Äù to most
+literature is the aversion to sub-group analysis ("interactions" to most
 economists). An oft-repeated story revolves around the publication of a
 study on aspirin after heart attacks. When the editors suggested
 including 40 subgroup analyses, the authors relented on the condition
@@ -797,12 +797,12 @@ http://e-gap.org/resources/guides/randomization/
 <span id="_Replication_1" class="anchor"><span id="_Ref272134889" class="anchor"><span id="_Toc275620941" class="anchor"><span id="Replication" class="anchor"></span></span></span></span>Replication
 ======================================================================================================================================================================================================
 
-‚ÄúEconomists treat replication the way teenagers treat chastity ‚Äì as an
-ideal to be professed but not to be practised.‚Äù‚ÄîDaniel Hamermesh,
+"Economists treat replication the way teenagers treat chastity - as an
+ideal to be professed but not to be practised."‚ÄîDaniel Hamermesh,
 University of Texas at Austin Economics
 
-‚ÄúReproducibility is just collaboration with people you don‚Äôt know,
-including yourself next week‚Äù‚ÄîPhilip Stark, UC Berkeley Statistics
+"Reproducibility is just collaboration with people you don't know,
+including yourself next week"‚ÄîPhilip Stark, UC Berkeley Statistics
 
 Replication, in both practice and principle, is a key part of social
 science research. We first define what exactly replication using the
@@ -816,7 +816,7 @@ comes in a few different shapes, pure, statistical, and scientific.
     and similar, but perhaps not identical model .
 
 -   Statistical: Using the same model and underlying population but a
-    different sample. In Hamermesh‚Äôs view, less relevant to economists,
+    different sample. In Hamermesh's view, less relevant to economists,
     who are likely to already use as large a sample as is available.
 
 Others have described this in terms of a spectrum from full replication
@@ -841,24 +841,24 @@ code pays off with large dividends.
 
 Once analysis is complete (or even before this stage) researchers should
 share their data and code with the public. GitHub
-(<http://www.github.com>), The Center for Open Science‚Äôs Open Science
-Framework (<http://osf.io>), and Harvard University‚Äôs Dataverse
+(<http://www.github.com>), The Center for Open Science's Open Science
+Framework (<http://osf.io>), and Harvard University's Dataverse
 (<http://thedata.org>) are all free repositories for data and code that
 include easy to use version control.[^2] Version control is simply
 archiving previous versions of files so that old versions are not lost
-and can be returned to if needed. Instead of simply calling one‚Äôs
-analysis code ‚ÄúMyAnalysis.do‚Äù and repeatedly saving over and losing old
+and can be returned to if needed. Instead of simply calling one's
+analysis code "MyAnalysis.do" and repeatedly saving over and losing old
 versions, and instead of repeatedly changing the file name from
-‚ÄúMyAnalysis.2014.8.13.do‚Äù to ‚ÄúMyAnalysis.2014.8.14.do‚Äù according to the
+"MyAnalysis.2014.8.13.do" to "MyAnalysis.2014.8.14.do" according to the
 date, version control creates different versions of files and can
 compare and highlight the differences in version of text files, and
 restore the used file to previous conditions if desired. Web services
-such as GitHub have the advantage of being ‚Äúdistributed‚Äù (DVCS) in that
+such as GitHub have the advantage of being "distributed" (DVCS) in that
 several users can have access simultaneously.
 
 ### Managing Workflow
 
-Code is just one aspect of a larger structure we refer to as ‚Äúworkflow‚Äù
+Code is just one aspect of a larger structure we refer to as "workflow"
 after Long (2008) and Kirchkamp (?), by which we mean the combination of
 data, code, organization, and documentation: everything from file and
 variable names to folder organization as well as efficient and readable
@@ -870,14 +870,14 @@ Although there is a movement by some towards open source software such
 as R and Python, we appreciate that many disciplines have long
 traditions of using proprietary software such as SAS and STATA, and
 learning a new programming language may be an undesirable additional
-task in researchers‚Äô busy lives. That said, there are several general
+task in researchers' busy lives. That said, there are several general
 coding rules that all researchers should use when organizing and
 implementing their analysis.
 
-Write code, don‚Äôt work by hand. By that we mean:
+Write code, don't work by hand. By that we mean:
 
 -   Do not modify data by hand, such as with a spreadsheet. Which is to
-    say, don‚Äôt use Excel.
+    say, don't use Excel.
 
 -   Use neither the command line nor drop-down menus nor point-and-click
     options in statistical software.
@@ -888,8 +888,8 @@ The simple reason for this is reproducibility. Modifying data in Excel
 or any similar spreadsheet program leaves no record of the changes made
 to the data, nor any explanation of the reasoning or timing behind any
 changes. Although it may seem easy or quick to do a one-time-only
-cleaning of data in Excel, or make ‚Äúminor‚Äù changes to get the data into
-a format readable by a researcher‚Äôs preferred statistical software,
+cleaning of data in Excel, or make "minor" changes to get the data into
+a format readable by a researcher's preferred statistical software,
 unless these changes are written down in excruciating detail, this is
 not reproducible by other researchers. It is better to write a code
 script that imports the raw data, does all necessary changes, with
@@ -918,18 +918,18 @@ versions of software and platforms, but this is not the case.
 
 Organize Your Work:
 
-Don‚Äôt save output. Just save code and data that generates it.
+Don't save output. Just save code and data that generates it.
 
-Think about the entire pipeline. Terry White ‚ÄúHit by a bus test‚Äù
+Think about the entire pipeline. Terry White "Hit by a bus test"
 
 Suggestions:
 
--   Use Stata‚Äôs different missing values (‚Äú.a‚Äù-‚Äú.z‚Äù, not exclusively
-    ‚Äú.‚Äù)
+-   Use Stata's different missing values (".a"-".z", not exclusively
+    ".")
 
 -   Do not use spaces in directory names
 
--   Use ‚Äúnaming directories‚Äù, .i.e. a directory beginning with ‚Äú-‚Äú (so
+-   Use "naming directories", .i.e. a directory beginning with "-" (so
     that it will appear first alphabetically) inside each directory to
     explain the contents of the above directory.
 
@@ -950,27 +950,27 @@ Suggestions:
 
 -   Indent
 
--   Don‚Äôt use abbreviations for variables (may become unstable after
+-   Don't use abbreviations for variables (may become unstable after
     adding variables) or commands
 
 -   Avoid using global macros
 
 -   Use locals for varlists
 
--   Use \`return‚Äô command instead of typing in numbers
+-   Use \`return' command instead of typing in numbers
 
 -   Once you post/distribute code or data, any changes at all require a
     new file name.
 
--   Separate your cleaning and analysis files; don‚Äôt make any new vars
+-   Separate your cleaning and analysis files; don't make any new vars
     that need saving (or will be used by a different analysis
-    file)‚Äîbetter to only create once so you know they‚Äôre the same.
+    file)‚Äîbetter to only create once so you know they're the same.
 
 -   If you have a master .do file that calls other .do files, you can
     run multiple log files at the same time (so you have a master .log
     file)
 
--   Never name a file ‚Äúfinal‚Äù because it won‚Äôt be.
+-   Never name a file "final" because it won't be.
 
 -   Use a prefix such as x\_ or temp\_ so you know which files can
     easily be deleted.
@@ -990,19 +990,19 @@ Suggestions:
 -   Use value labels for all categorical variables, but include the
     numerical value in the label.
 
--   Don‚Äôt use capital in variable names since not all software packages
+-   Don't use capital in variable names since not all software packages
     are case sensitive.
 
 -   
 
 In addition to making code available to the public, the code itself
-should be written in a reader-friendly format, referred to as ‚ÄúLiterate
-Programming‚Äù introduced in Knuth (1984) and Knuth (1992). The basic idea
-is that ‚Äúthe time is ripe for significantly better documentation of
+should be written in a reader-friendly format, referred to as "Literate
+Programming" introduced in Knuth (1984) and Knuth (1992). The basic idea
+is that "the time is ripe for significantly better documentation of
 programs, and that we can best achieve this by considering programs to
 be *works of literature*‚Ä¶Instead of imagining that our main task is to
 instruct a *computer* what to do, let us concentrate rather on
-explaining to *human beings* what we want a computer to do.‚Äù [emphasis
+explaining to *human beings* what we want a computer to do." [emphasis
 original] Simply put, code should be written in as simple and easily
 understood a way as possible, and should be very well commented, so that
 researchers other than the original author can more easily understand
@@ -1031,7 +1031,7 @@ that do is increasing.
 ### The JMCB Project and Economics
 
 In the field of economics, few, if any journals required sharing of data
-before ‚ÄúThe Journal of Money, Credit, and Banking Project,‚Äù published in
+before "The Journal of Money, Credit, and Banking Project," published in
 *The American Economic Review* in 1986 (Dewald, Thursby, and Anderson
 1986). *The Journal of Money, Credit, and Banking* started the *JMCB
 Data Storage and Evaluation Project* with NSF funding in 1982, which
@@ -1088,7 +1088,7 @@ The previous section on the JMCB describes only a few journals in one
 field of the social sciences. Even if the journal to which you submit
 your research does not require you to supply them with your code and
 data, researchers should still share these things. Though some
-repositories, particularly Harvard‚Äôs Dataverse, seem equipped to handle
+repositories, particularly Harvard's Dataverse, seem equipped to handle
 data from practically any researcher (a free 1 TB of storage is
 standard, with more possible), many repositories specialize. The
 Registry of Research Data Repositories (<http://www.re3data.org>) has
@@ -1130,9 +1130,9 @@ Health Economics: CHEERS (Husereau et al. 2013)
 Differential Privacy
 --------------------
 
-**Wikipedia ‚ÄúDifferential privacy** aims to provide means to maximize
+**Wikipedia "Differential privacy** aims to provide means to maximize
 the accuracy of queries from statistical databases while minimizing the
-chances of identifying its records.‚Äù
+chances of identifying its records."
 
 One important caveat to making data widely available, is that despite
 anonymization, in the age of big data, sometimes individual subjects can
@@ -1140,8 +1140,8 @@ easily be identified. Heffetz and Ligett (2014) recount deliberate data
 releases by Yahoo! Inc., the Massachusetts state government, and
 Netflix, that could easily be used to identify individuals in the data,
 despite the absence of direct identifiers such as names or social
-security numbers. The problem is that ‚Äúde-identification does not
-guarantee anonymization.‚Äù
+security numbers. The problem is that "de-identification does not
+guarantee anonymization."
 
 <span id="_Toc275620950" class="anchor"><span id="Conclusion" class="anchor"></span></span>Conclusion
 =====================================================================================================
@@ -1150,93 +1150,93 @@ guarantee anonymization.‚Äù
 =====================================================================================================
 
 Alatas, Vivi, Abhijit Banerjee, Rema Hanna, Benjamin A Olken, and Julia
-Tobias. 2012. ‚ÄúTargeting the Poor: Evidence from a Field Experiment in
-Indonesia.‚Äù *American Economic Review* 102 (4): 1206‚Äì40.
+Tobias. 2012. "Targeting the Poor: Evidence from a Field Experiment in
+Indonesia." *American Economic Review* 102 (4): 1206-40.
 doi:10.1257/aer.102.4.1206.
 
 Almeida, Rita, Sarojini Hirshleifer, David McKenzie, Cristobal
-Ridao-Cano, and Ahmed Levent Yener. 2012. ‚ÄúThe Impact of Vocational
-Training for the Unemployed in Turkey: Pre-Analysis Plan.‚Äù *Poverty
+Ridao-Cano, and Ahmed Levent Yener. 2012. "The Impact of Vocational
+Training for the Unemployed in Turkey: Pre-Analysis Plan." *Poverty
 Action Lab Hypothesis Registry*, February.
 http://www.povertyactionlab.org/sites/default/files/documents/ISKURIE\_AnalysisPlan\_v4.pdf.
 
-Anderson, Richard G., and William G. Dewald. 1994. ‚ÄúReplication and
+Anderson, Richard G., and William G. Dewald. 1994. "Replication and
 Scientific Standards in Applied Economics a Decade after the Journal of
-Money, Credit and Banking Project.‚Äù *Federal Reserve Bank of St. Louis
-Review*, no. Nov: 79‚Äì83.
+Money, Credit and Banking Project." *Federal Reserve Bank of St. Louis
+Review*, no. Nov: 79-83.
 
-Baicker, Katherine, Finkelstein, Amy, and Taubman, Sarah. 2014. ‚ÄúThe
+Baicker, Katherine, Finkelstein, Amy, and Taubman, Sarah. 2014. "The
 Oregon Health Insurance Experiment: Evidence from Criminal Charges Data,
-Analysis Plan,‚Äù NBER Working Paper, , April.
+Analysis Plan," NBER Working Paper, , April.
 http://www.nber.org/oregon/files/oregon\_hie\_crime\_analysis\_plan.pdf.
 
-Begg C, Cho M, Eastwood S, and et al. 1996. ‚ÄúImproving the Quality of
-Reporting of Randomized Controlled Trials: The Consort Statement.‚Äù
-*JAMA* 276 (8): 637‚Äì39. doi:10.1001/jama.1996.03540080059030.
+Begg C, Cho M, Eastwood S, and et al. 1996. "Improving the Quality of
+Reporting of Randomized Controlled Trials: The Consort Statement."
+*JAMA* 276 (8): 637-39. doi:10.1001/jama.1996.03540080059030.
 
-Bhattacharjee, Yudhijit. 2013. ‚ÄúDiederik Stapel‚Äôs Audacious Academic
-Fraud.‚Äù *The New York Times*, April 26, sec. Magazine.
+Bhattacharjee, Yudhijit. 2013. "Diederik Stapel's Audacious Academic
+Fraud." *The New York Times*, April 26, sec. Magazine.
 http://www.nytimes.com/2013/04/28/magazine/diederik-stapels-audacious-academic-fraud.html.
 
-Bruhn, Miriam, and David McKenzie. 2009. ‚ÄúIn Pursuit of Balance:
-Randomization in Practice in Development Field Experiments.‚Äù *American
-Economic Journal: Applied Economics* 1 (4): 200‚Äì232.
+Bruhn, Miriam, and David McKenzie. 2009. "In Pursuit of Balance:
+Randomization in Practice in Development Field Experiments." *American
+Economic Journal: Applied Economics* 1 (4): 200-232.
 doi:10.1257/app.1.4.200.
 
-Carey, Benedict. 2011. ‚ÄúNoted Dutch Psychologist, Stapel, Accused of
-Research Fraud.‚Äù *The New York Times*, November 2, sec. Health /
+Carey, Benedict. 2011. "Noted Dutch Psychologist, Stapel, Accused of
+Research Fraud." *The New York Times*, November 2, sec. Health /
 Research.
 http://www.nytimes.com/2011/11/03/health/research/noted-dutch-psychologist-stapel-accused-of-research-fraud.html.
 
 Casey, Katherine, Rachel Glennerster, and Edward Miguel. 2012.
-‚ÄúReshaping Institutions: Evidence on Aid Impacts Using a Preanalysis
-Plan\*.‚Äù *The Quarterly Journal of Economics* 127 (4): 1755‚Äì1812.
+"Reshaping Institutions: Evidence on Aid Impacts Using a Preanalysis
+Plan\*." *The Quarterly Journal of Economics* 127 (4): 1755-1812.
 doi:10.1093/qje/qje027.
 
 Chan A, Hr√≥bjartsson A, Haahr MT, G√∏tzsche PC, and Altman DG. 2004.
-‚ÄúEmpirical Evidence for Selective Reporting of Outcomes in Randomized
-Trials: Comparison of Protocols to Published Articles.‚Äù *JAMA* 291 (20):
-2457‚Äì65. doi:10.1001/jama.291.20.2457.
+"Empirical Evidence for Selective Reporting of Outcomes in Randomized
+Trials: Comparison of Protocols to Published Articles." *JAMA* 291 (20):
+2457-65. doi:10.1001/jama.291.20.2457.
 
 Chan, A.-W., J. M. Tetzlaff, P. C. Gotzsche, D. G. Altman, H. Mann, J.
-A. Berlin, K. Dickersin, et al. 2013. ‚ÄúSPIRIT 2013 Explanation and
-Elaboration: Guidance for Protocols of Clinical Trials.‚Äù *BMJ* 346
-(jan08 15): e7586‚Äìe7586. doi:10.1136/bmj.e7586.
+A. Berlin, K. Dickersin, et al. 2013. "SPIRIT 2013 Explanation and
+Elaboration: Guidance for Protocols of Clinical Trials." *BMJ* 346
+(jan08 15): e7586-e7586. doi:10.1136/bmj.e7586.
 
-Cyranoski, David. 2014. ‚ÄúCloning Comeback.‚Äù *Nature* 505 (7484): 468‚Äì71.
+Cyranoski, David. 2014. "Cloning Comeback." *Nature* 505 (7484): 468-71.
 doi:10.1038/505468a.
 
 De Angelis, Catherine, Jeffrey M. Drazen, Frank A. Frizelle, Charlotte
-Haug, John Hoey, Richard Horton, Sheldon Kotzin, et al. 2004. ‚ÄúClinical
+Haug, John Hoey, Richard Horton, Sheldon Kotzin, et al. 2004. "Clinical
 Trial Registration: A Statement from the International Committee of
-Medical Journal Editors.‚Äù *New England Journal of Medicine* 351 (12):
-1250‚Äì51. doi:10.1056/NEJMe048225.
+Medical Journal Editors." *New England Journal of Medicine* 351 (12):
+1250-51. doi:10.1056/NEJMe048225.
 
-DeLong, J. Bradford, and Kevin Lang. 1992. ‚ÄúAre All Economic Hypotheses
-False?‚Äù *Journal of Political Economy* 100 (6): 1257‚Äì72.
+DeLong, J. Bradford, and Kevin Lang. 1992. "Are All Economic Hypotheses
+False?" *Journal of Political Economy* 100 (6): 1257-72.
 
 Dewald, William G., Jerry G. Thursby, and Richard G. Anderson. 1986.
-‚ÄúReplication in Empirical Economics: The Journal of Money, Credit and
-Banking Project.‚Äù *The American Economic Review* 76 (4): 587‚Äì603.
+"Replication in Empirical Economics: The Journal of Money, Credit and
+Banking Project." *The American Economic Review* 76 (4): 587-603.
 
-Fanelli, Daniele. 2012. ‚ÄúNegative Results Are Disappearing from Most
-Disciplines and Countries.‚Äù *Scientometrics* 90 (3): 891‚Äì904.
+Fanelli, Daniele. 2012. "Negative Results Are Disappearing from Most
+Disciplines and Countries." *Scientometrics* 90 (3): 891-904.
 doi:10.1007/s11192-011-0494-7.
 
 Finkelstein, Amy, Sarah Taubman, Bill Wright, Mira Bernstein, Jonathan
 Gruber, Joseph P. Newhouse, Heidi Allen, and Katherine Baicker. 2012.
-‚ÄúThe Oregon Health Insurance Experiment: Evidence from the First
-Year\*.‚Äù *The Quarterly Journal of Economics* 127 (3): 1057‚Äì1106.
+"The Oregon Health Insurance Experiment: Evidence from the First
+Year\*." *The Quarterly Journal of Economics* 127 (3): 1057-1106.
 doi:10.1093/qje/qjs020.
 
-Franco, Annie, Neil Malhotra, and Gabor Simonovits. 2014. ‚ÄúPublication
-Bias in the Social Sciences: Unlocking the File Drawer.‚Äù *Science*
+Franco, Annie, Neil Malhotra, and Gabor Simonovits. 2014. "Publication
+Bias in the Social Sciences: Unlocking the File Drawer." *Science*
 Forthcoming.
 
-Gelman, Andrew, and Eric Loken. 2013. ‚ÄúThe Garden of Forking Paths: Why
+Gelman, Andrew, and Eric Loken. 2013. "The Garden of Forking Paths: Why
 Multiple Comparisons Can Be a Problem, Even When There Is No ‚Äòfishing
-Expedition‚Äôor ‚Äòp-Hacking‚Äô and the Research Hypothesis Was Posited ahead
-of Time.,‚Äù November.
+Expedition'or ‚Äòp-Hacking' and the Research Hypothesis Was Posited ahead
+of Time.," November.
 http://www.stat.columbia.edu/\~gelman/research/unpublished/p\_hacking.pdf.
 
 Gerber, Alan, Kevin Arceneaux, Cheryl Boudreau, Conor Dowling, Sunshine
@@ -1245,9 +1245,9 @@ Hillygus, Thomas Palfrey, Daniel R. Biggers, and David J. Hendry.
 Experimental Research Section Standards Committee*.
 http://www.davidhendry.net/research-supplemental/gerberetal2014-reportingstandards/gerberetal2014-reportingstandards&appendix1.pdf.
 
-Gerber, Alan S., Donald P. Green, and David Nickerson. 2001. ‚ÄúTesting
-for Publication Bias in Political Science.‚Äù *Political Analysis* 9 (4):
-385‚Äì92.
+Gerber, Alan S., Donald P. Green, and David Nickerson. 2001. "Testing
+for Publication Bias in Political Science." *Political Analysis* 9 (4):
+385-92.
 
 Glandon, Philip. 2010. *Report on the American Economic Review Data
 Availability Compliance Project*. Vanderbilt University.
@@ -1256,19 +1256,19 @@ https://aeaweb.org/aer/2011\_Data\_Compliance\_Report.pdf.
 Glennerster, Rachel, and Kudzai Takavarasha. 2013. *Running Randomized
 Evaluations: A Practical Guide*. Princeton University Press.
 
-Hamermesh, Daniel S. 2007. ‚ÄúViewpoint: Replication in Economics.‚Äù
-*Canadian Journal of Economics/Revue Canadienne D‚Äô√©conomique* 40 (3):
-715‚Äì33. doi:10.1111/j.1365-2966.2007.00428.x.
+Hamermesh, Daniel S. 2007. "Viewpoint: Replication in Economics."
+*Canadian Journal of Economics/Revue Canadienne D'√©conomique* 40 (3):
+715-33. doi:10.1111/j.1365-2966.2007.00428.x.
 
 Hartung, Daniel M., Deborah A. Zarin, Jeanne-Marie Guise, Marian
-McDonagh, Robin Paynter, and Mark Helfand. 2014. ‚ÄúReporting
+McDonagh, Robin Paynter, and Mark Helfand. 2014. "Reporting
 Discrepancies Between the ClinicalTrials.gov Results Database and
 Peer-Reviewed PublicationsDiscrepancies Between ClinicalTrials.gov and
-Peer-Reviewed Publications.‚Äù *Annals of Internal Medicine* 160 (7):
-477‚Äì83. doi:10.7326/M13-0480.
+Peer-Reviewed Publications." *Annals of Internal Medicine* 160 (7):
+477-83. doi:10.7326/M13-0480.
 
-Heffetz, Ori, and Katrina Ligett. 2014. ‚ÄúPrivacy and Data-Based
-Research.‚Äù *Journal of Economic Perspectives* 28 (2): 75‚Äì98.
+Heffetz, Ori, and Katrina Ligett. 2014. "Privacy and Data-Based
+Research." *Journal of Economic Perspectives* 28 (2): 75-98.
 doi:10.1257/jep.28.2.75.
 
 Hirshleifer, Sarojini, David McKenzie, Rita Almeida, and Cristobal
@@ -1278,37 +1278,37 @@ Rochester, NY: Social Science Research Network.
 http://papers.ssrn.com/abstract=2420704.
 
 Humphreys, Macartan, Raul Sanchez de la Sierra, and Peter van der Windt.
-2013. ‚ÄúFishing, Commitment, and Communication: A Proposal for
-Comprehensive Nonbinding Research Registration.‚Äù *Political Analysis* 21
-(1): 1‚Äì20. doi:10.1093/pan/mps021.
+2013. "Fishing, Commitment, and Communication: A Proposal for
+Comprehensive Nonbinding Research Registration." *Political Analysis* 21
+(1): 1-20. doi:10.1093/pan/mps021.
 
-Hunter, John¬†E. 2001. ‚ÄúThe Desperate Need for Replications.‚Äù *Journal of
-Consumer Research* 28 (1): 149‚Äì58. doi:10.1086/jcr.2001.28.issue-1.
+Hunter, John¬†E. 2001. "The Desperate Need for Replications." *Journal of
+Consumer Research* 28 (1): 149-58. doi:10.1086/jcr.2001.28.issue-1.
 
 Husereau, Don, Michael Drummond, Stavros Petrou, Chris Carswell, David
-Moher, Dan Greenberg, Federico Augustovski, et al. 2013. ‚ÄúConsolidated
-Health Economic Evaluation Reporting Standards (CHEERS) Statement.‚Äù
+Moher, Dan Greenberg, Federico Augustovski, et al. 2013. "Consolidated
+Health Economic Evaluation Reporting Standards (CHEERS) Statement."
 *Value in Health: The Journal of the International Society for
-Pharmacoeconomics and Outcomes Research* 16 (2): e1‚Äì5.
+Pharmacoeconomics and Outcomes Research* 16 (2): e1-5.
 doi:10.1016/j.jval.2013.02.010.
 
-Ioannidis, John P. A. 2005. ‚ÄúWhy Most Published Research Findings Are
-False.‚Äù *PLoS Med* 2 (8): e124. doi:10.1371/journal.pmed.0020124.
+Ioannidis, John P. A. 2005. "Why Most Published Research Findings Are
+False." *PLoS Med* 2 (8): e124. doi:10.1371/journal.pmed.0020124.
 
-Ioannidis, John PA. 2008. ‚ÄúEffectiveness of Antidepressants: An Evidence
-Myth Constructed from a Thousand Randomized Trials?‚Äù *Philosophy,
+Ioannidis, John PA. 2008. "Effectiveness of Antidepressants: An Evidence
+Myth Constructed from a Thousand Randomized Trials?" *Philosophy,
 Ethics, and Humanities in Medicine* 3 (1): 14.
 doi:10.1186/1747-5341-3-14.
 
 ISIS-2 (SECOND INTERNATIONAL STUDY OF INFARCT SURVIVAL) COLLABORATIVE
-GROUP. 1988. ‚ÄúRANDOMISED TRIAL OF INTRAVENOUS STREPTOKINASE, ORAL
+GROUP. 1988. "RANDOMISED TRIAL OF INTRAVENOUS STREPTOKINASE, ORAL
 ASPIRIN, BOTH, OR NEITHER AMONG 17 187 CASES OF SUSPECTED ACUTE
-MYOCARDIAL INFARCTION: ISIS-2.‚Äù *The Lancet*, Originally published as
-Volume 2, Issue 8607, 332 (8607): 349‚Äì60.
+MYOCARDIAL INFARCTION: ISIS-2." *The Lancet*, Originally published as
+Volume 2, Issue 8607, 332 (8607): 349-60.
 doi:10.1016/S0140-6736(88)92833-4.
 
-Johnson, Carolyn Y. 2012. ‚ÄúHarvard Professor Who Resigned Fabricated,
-Manipulated Data, US Says - The Boston Globe.‚Äù *BostonGlobe.com*,
+Johnson, Carolyn Y. 2012. "Harvard Professor Who Resigned Fabricated,
+Manipulated Data, US Says - The Boston Globe." *BostonGlobe.com*,
 September 5.
 https://www.bostonglobe.com/news/science/2012/09/05/harvard-professor-who-resigned-fabricated-manipulated-data-says/6gDVkzPNxv1ZDkh4wVnKhO/story.html.
 
@@ -1319,44 +1319,44 @@ http://www.povertyactionlab.org/sites/default/files/documents/Pre-Analysis%20Pla
 Kirchkamp, Oliver. *Workflow of Statistical Data Analysis*.
 http://www.kirchkamp.de/oekonometrie/pdf/wf-screen2.pdf.
 
-Knuth, D. E. 1984. ‚ÄúLiterate Programming.‚Äù *The Computer Journal* 27
-(2): 97‚Äì111. doi:10.1093/comjnl/27.2.97.
+Knuth, D. E. 1984. "Literate Programming." *The Computer Journal* 27
+(2): 97-111. doi:10.1093/comjnl/27.2.97.
 
 Knuth, Donald Ervin. 1992. *Literate Programming*. Center for the Study
 of Language and Information.
 
 Laine, Christine, Richard Horton, Catherine D. DeAngelis, Jeffrey M.
 Drazen, Frank A. Frizelle, Fiona Godlee, Charlotte Haug, et al. 2007.
-‚ÄúClinical Trial Registration ‚Äî Looking Back and Moving Ahead.‚Äù *New
-England Journal of Medicine* 356 (26): 2734‚Äì36. doi:10.1056/NEJMe078110.
+"Clinical Trial Registration ‚Äî Looking Back and Moving Ahead." *New
+England Journal of Medicine* 356 (26): 2734-36. doi:10.1056/NEJMe078110.
 
 Long, J. Scott. 2008. *The Workflow of Data Analysis Using Stata*. Stata
 Press.
 
 Mathieu S, Boutron I, Moher D, Altman DG, and Ravaud P. 2009.
-‚ÄúCOmparison of Registered and Published Primary Outcomes in Randomized
-Controlled Trials.‚Äù *JAMA* 302 (9): 977‚Äì84. doi:10.1001/jama.2009.1242.
+"COmparison of Registered and Published Primary Outcomes in Randomized
+Controlled Trials." *JAMA* 302 (9): 977-84. doi:10.1001/jama.2009.1242.
 
-McCullough, B. D. 2007. ‚ÄúGot Replicability? The Journal of Money, Credit
-and Banking Archive.‚Äù *Econ Journal Watch* 4 (3): 326‚Äì37.
+McCullough, B. D. 2007. "Got Replicability? The Journal of Money, Credit
+and Banking Archive." *Econ Journal Watch* 4 (3): 326-37.
 
-McCullough, B. D., and H. D. Vinod. 2003. ‚ÄúVerifying the Solution from a
-Nonlinear Solver: A Case Study.‚Äù *The American Economic Review* 93 (3):
-873‚Äì92.
+McCullough, B. D., and H. D. Vinod. 2003. "Verifying the Solution from a
+Nonlinear Solver: A Case Study." *The American Economic Review* 93 (3):
+873-92.
 
-Moher, David, Kenneth F. Schulz, and Douglas G. Altman. 2001. ‚ÄúThe
+Moher, David, Kenneth F. Schulz, and Douglas G. Altman. 2001. "The
 CONSORT Statement: Revised Recommendations for Improving the Quality of
-Reports of Parallel Group Randomized Trials.‚Äù *BMC Medical Research
+Reports of Parallel Group Randomized Trials." *BMC Medical Research
 Methodology* 1 (1): 2. doi:10.1186/1471-2288-1-2.
 
-Moher D, Jones A, Lepage L, and for the CONSORT Group. 2001. ‚ÄúUse of the
+Moher D, Jones A, Lepage L, and for the CONSORT Group. 2001. "Use of the
 Consort Statement and Quality of Reports of Randomized Trials: A
-Comparative before-and-after Evaluation.‚Äù *JAMA* 285 (15): 1992‚Äì95.
+Comparative before-and-after Evaluation." *JAMA* 285 (15): 1992-95.
 doi:10.1001/jama.285.15.1992.
 
-Nosek, Brian A., Jeffrey R. Spies, and Matt Motyl. 2012. ‚ÄúScientific
+Nosek, Brian A., Jeffrey R. Spies, and Matt Motyl. 2012. "Scientific
 Utopia II. Restructuring Incentives and Practices to Promote Truth Over
-Publishability.‚Äù *Perspectives on Psychological Science* 7 (6): 615‚Äì31.
+Publishability." *Perspectives on Psychological Science* 7 (6): 615-31.
 doi:10.1177/1745691612459058.
 
 Olken, Benjamin A. 2009. *Targeting Analysis Protocol*.
@@ -1366,63 +1366,63 @@ Olken, Benjamin A., Junko Onishi, and Susan Wong. 2009. *Generasi
 Analysis Plan*. Poverty Action Lab Hypothesis Registry.
 http://www.povertyactionlab.org/sites/default/files/documents/090408\_Generasi\_Analysis\_Plan\_CLEAN.pdf.
 
-‚Äî‚Äî‚Äî. 2010a. *Indonesia‚Äôs PNPM Generasi Program‚ÄØ: Interim Impact
+------. 2010a. *Indonesia's PNPM Generasi Program: Interim Impact
 Evaluation Report*. 59567. The World Bank.
 http://documents.worldbank.org/curated/en/2010/01/13763479/indonesias-pnpm-generasi-program-interim-impact-evaluation-report.
 
-‚Äî‚Äî‚Äî. 2010b. *Generasi Analysis Plan: Wave III*. Poverty Action Lab
+------. 2010b. *Generasi Analysis Plan: Wave III*. Poverty Action Lab
 Hypothesis Registry.
 http://www.povertyactionlab.org/sites/default/files/documents/100122\_Generasi\_AnalysisPlan\_Wave\_III\_CLEAN.pdf.
 
-‚Äî‚Äî‚Äî. 2012. *Should Aid Reward Performance? Evidence from a Field
+------. 2012. *Should Aid Reward Performance? Evidence from a Field
 Experiment on Health and Education in Indonesia*. Working Paper 17892.
 National Bureau of Economic Research. http://www.nber.org/papers/w17892.
 
-Peng, Roger D. 2011. ‚ÄúReproducible Research in Computational.‚Äù *Science*
-334 (6060): 1226‚Äì27. doi:10.1126/science.1213847.
+Peng, Roger D. 2011. "Reproducible Research in Computational." *Science*
+334 (6060): 1226-27. doi:10.1126/science.1213847.
 
-Saquib, N., J. Saquib, and J. P. A. Ioannidis. 2013. ‚ÄúPractices and
+Saquib, N., J. Saquib, and J. P. A. Ioannidis. 2013. "Practices and
 Impact of Primary Outcome Adjustment in Randomized Controlled Trials:
-Meta-Epidemiologic Study.‚Äù *BMJ* 347 (jul12 2): f4313‚Äìf4313.
+Meta-Epidemiologic Study." *BMJ* 347 (jul12 2): f4313-f4313.
 doi:10.1136/bmj.f4313.
 
 Schulz, Kenneth F., Douglas G. Altman, David Moher, and \$author
-firstName \$author.lastName. 2010. ‚ÄúCONSORT 2010 Statement: Updated
-Guidelines for Reporting Parallel Group Randomised Trials.‚Äù *BMC
+firstName \$author.lastName. 2010. "CONSORT 2010 Statement: Updated
+Guidelines for Reporting Parallel Group Randomised Trials." *BMC
 Medicine* 8 (1): 18. doi:10.1186/1741-7015-8-18.
 
-Schulz, Kenneth F, and David A Grimes. 2002. ‚ÄúAllocation Concealment in
-Randomised Trials: Defending against Deciphering.‚Äù *The Lancet* 359
-(9306): 614‚Äì18. doi:10.1016/S0140-6736(02)07750-4.
+Schulz, Kenneth F, and David A Grimes. 2002. "Allocation Concealment in
+Randomised Trials: Defending against Deciphering." *The Lancet* 359
+(9306): 614-18. doi:10.1016/S0140-6736(02)07750-4.
 
-‚Äî‚Äî‚Äî. 2005. ‚ÄúMultiplicity in Randomised Trials II: Subgroup and Interim
-Analyses.‚Äù *The Lancet* 365 (9471): 1657‚Äì61.
+------. 2005. "Multiplicity in Randomised Trials II: Subgroup and Interim
+Analyses." *The Lancet* 365 (9471): 1657-61.
 doi:10.1016/S0140-6736(05)66516-6.
 
 Simmons, Joseph P., Leif D. Nelson, and Uri Simonsohn. 2011.
-‚ÄúFalse-Positive Psychology Undisclosed Flexibility in Data Collection
-and Analysis Allows Presenting Anything as Significant.‚Äù *Psychological
-Science* 22 (11): 1359‚Äì66. doi:10.1177/0956797611417632.
+"False-Positive Psychology Undisclosed Flexibility in Data Collection
+and Analysis Allows Presenting Anything as Significant." *Psychological
+Science* 22 (11): 1359-66. doi:10.1177/0956797611417632.
 
 Taubman, Sarah, Heidi Allen, Katherine Baicker, Bill Wright, and Amy
-Finkelstein. 2013. ‚ÄúTHE OREGON HEALTH INSURANCE EXPERIMENT: EVIDENCE
-FROM EMERGENCY DEPARTMENT DATA Analysis Plan,‚Äù NBER Working Paper, ,
+Finkelstein. 2013. "THE OREGON HEALTH INSURANCE EXPERIMENT: EVIDENCE
+FROM EMERGENCY DEPARTMENT DATA Analysis Plan," NBER Working Paper, ,
 March. http://www.nber.org/oregon/files/ED%20Analysis%20Plan.pdf.
 
 Turner, Erick H., Annette M. Matthews, Eftihia Linardatos, Robert A.
-Tell, and Robert Rosenthal. 2008. ‚ÄúSelective Publication of
-Antidepressant Trials and Its Influence on Apparent Efficacy.‚Äù *New
-England Journal of Medicine* 358 (3): 252‚Äì60. doi:10.1056/NEJMsa065779.
+Tell, and Robert Rosenthal. 2008. "Selective Publication of
+Antidepressant Trials and Its Influence on Apparent Efficacy." *New
+England Journal of Medicine* 358 (3): 252-60. doi:10.1056/NEJMsa065779.
 
-Wydick, Bruce, Elizabeth Katz, and Brendan Janet. 2014. ‚ÄúDo in-Kind
+Wydick, Bruce, Elizabeth Katz, and Brendan Janet. 2014. "Do in-Kind
 Transfers Damage Local Markets? The Case of TOMS Shoe Donations in El
-Salvador.‚Äù *Journal of Development Effectiveness* 6 (3): 249‚Äì67.
+Salvador." *Journal of Development Effectiveness* 6 (3): 249-67.
 doi:10.1080/19439342.2014.919012.
 
 Xie, Yihui. 2013. *Dynamic Documents with R and Knitr*. CRC Press.
 
-‚Äî‚Äî‚Äî. 2014. ‚ÄúKnitr: A Comprehensive Tool for Reproducible Research in R.‚Äù
-In *Implementing Reproducible Research*, 3‚Äì32. CRC Press.
+------. 2014. "Knitr: A Comprehensive Tool for Reproducible Research in R."
+In *Implementing Reproducible Research*, 3-32. CRC Press.
 
 [^1]: Other less-widely adopted attempts to create registries in
     political science are the Political Science Registered Studies
@@ -1439,10 +1439,10 @@ In *Implementing Reproducible Research*, 3‚Äì32. CRC Press.
 [^3]: R Studio is a popular free integrated implementation of R,
     available at [http://www.rstudio.com](stylesWithEffects.xml).
 
-[^4]: ‚ÄúInvestigators are expected to share with other researchers, at no
+[^4]: "Investigators are expected to share with other researchers, at no
     more than incremental cost and within a reasonable time, the primary
     data, samples, physical collections and other supporting materials
     created or gathered in the course of work under NSF grants. Grantees
-    are expected to encourage and facilitate such sharing.‚Äù See
+    are expected to encourage and facilitate such sharing." See
     http://www.nsf.gov/bfa/dias/policy/dmp.jsp
 
