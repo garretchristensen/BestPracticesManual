@@ -4,65 +4,73 @@ Garret Christensen
 
 TABLE OF CONTENTS
 
-1 Introduction 3
+1 Introduction 
 
-2 Ethical Research 4
+2 Ethical Research 
 
-2.1 Fraud 4
+>2.1 Fraud 
 
-2.2 Unintentional Bias 4
+>2.2 Unintentional Bias 
 
-2.3 Institutional Review Boards 5
+>2.3 Institutional Review Boards 
 
-2.3.1 History 5
+>2.3.1 History 
 
-2.3.2 Training 8
+>2.3.2 Training 
 
-3 Registration and Pre-Analysis Plans 8
+X Power and Study Design 
 
-3.1 Publication Bias 8
+3 Registration 
 
-3.2 Trial Registration 9
+>3.1 Publication Bias 
 
-3.3 P-Hacking 11
+>3.2 Trial Registration 
 
-3.4 Pre-Analysis Plans (PAP) 12
+X Research Degrees of Freedom and Pre-Analysis Plans
 
-3.4.1 Project Protocols 14
+>X.1 Researcher Degrees of Freedom
 
-3.4.2 Examples 15
+>X.2 Pre-Analysis Plans (PAP) 
 
-4 Replication 17
+>X.2.1 Project Protocols 
 
-4.1 Code 17
+>X.2.2 Examples 
 
-4.2 Data repositories. 20
+X Registered Reports/Results-Blind Reviewing
 
-4.2.1 The JMCB Project and Economics 20
+4 Replicability
 
-4.2.2 General Repositories 21
+>4.X Workflow
 
-4.3 Reporting Standards 21
+>4.1 Code 
 
-4.3.1 Randomized Trials 21
+>4.2 Data repositories
 
-4.3.2 Observational Reporting Standards 21
+>4.2.1 The JMCB Project and Economics 
 
-4.4 Differential Privacy 22
+>4.2.2 General Repositories 
 
-5 Conclusion 22
+>4.3 Reporting Standards 
 
-6 References 23
+>4.3.1 Randomized Trials 
+
+>4.3.2 Observational Reporting Standards 
+
+>4.4 Differential Privacy 
+
+5 Conclusion 
+
+6 References 
 
 <span id="_Toc275620927" class="anchor"><span id="Intro" class="anchor"></span></span>Introduction
 ==================================================================================================
 
 Scientific claims should be subject to scrutiny by other researchers and
 the public at large. An essential requirement for such scrutiny is that
-researchers make their claims transparent in a way that unrelated
+researchers make their claims transparent in a way that other
 researchers are able to use easily available resources to form a
 complete understanding of the methods that were used by the original. In
-the social sciences, with the personal computing and Internet
+the social sciences, especially given the personal computing and Internet
 revolutions and the wide availability of data and processing power, it
 is essential that data, code, and analyses be transparent.
 
@@ -70,7 +78,7 @@ This manual is intended to be a source mainly for empirical social
 science researchers who desire to make their own research transparent
 to, and reproducible by, others. The entire process of research, from
 hypothesis generation to publication, is covered. Although norms differ
-across fields, we attempt a general view of the empirical social
+across disciplines, we attempt to bring a broad view of the empirical social
 sciences to these recommendations, and hope that students and
 researchers in any social science field may tailor these recommendations
 to best fit their field.
@@ -83,9 +91,10 @@ mandated by federal law and overseen by Institutional Review Boards
 treating subjects fairly is ethical, we believe that transparent,
 reproducible research is also a major part of ethical research.
 
-In section 3 we discuss some of the problems that are solved by using
-transparent research methods, and concerns that are raised when research
-is opaque: publication bias and p-hacking. Published results are
+In section X we discuss study design, including how to power studies appropriately.
+
+In section 3 we discuss one of the major problems in non-transparent research, specifically publication bias.
+We also discuss how this problem can be resolved through the practice of registration
 overwhelmingly statistically significant. But without knowing how many
 tests were run, it is impossible to know whether these significant
 results are meaningful, or whether they are the 5% of tests that we
@@ -167,7 +176,7 @@ motivated reasoning:
 > Wetzels, Borsboom, & van der Maas, 2011). Once we obtain an unexpected
 > result, we are likely to reconstruct our histories and perceive the
 > outcome as something that we could have, even did, anticipate all
-> along‚Äîconverting a discovery into a confirmatory result (Fischoff,
+> along—converting a discovery into a confirmatory result (Fischoff,
 > 1977; Fischoff & Beyth, 1975). And even if we resist those reasoning
 > biases in the moment, after a few months, we might simply forget the
 > details, whether we had hypothesized the moderator, had good
@@ -178,7 +187,7 @@ motivated reasoning:
 > Forgetting the details provides an opportunity for reimagining the
 > study purpose and results to recall and understand them in their best
 > (i.e., most publishable) light. The reader may, as we do, recall
-> personal examples of such motivated decisions‚Äîthey are entirely
+> personal examples of such motivated decisions—they are entirely
 > ordinary products of human cognition.
 
 Institutional Review Boards
@@ -757,7 +766,7 @@ Pre Analysis Plan (Olken 2009)
 
 AER Paper (Alatas et al. 2012)
 
-Adjust for multiple hypothesis testing (FWER‚Äîcite Michael L Anderson and
+Adjust for multiple hypothesis testing (FWER—cite Michael L Anderson and
 the Van der Laan SuperLearner papers)
 
 One aspect of PAPs that seems to have taken hold widely in the medical
@@ -774,7 +783,7 @@ not, we feel that economists could benefit from reporting the number of
 interactions tested, possibly adjusting for multiple hypotheses, and
 ideally specifying beforehand the interactions to be tested.
 
-Somewhere in either registration or PAP‚Äîdiscuss exact details of
+Somewhere in either registration or PAP—discuss exact details of
 randomization.(Bruhn and McKenzie 2009)
 
 and http://e-gap.org/resources/guides/randomization/
@@ -798,11 +807,11 @@ http://e-gap.org/resources/guides/randomization/
 ======================================================================================================================================================================================================
 
 "Economists treat replication the way teenagers treat chastity - as an
-ideal to be professed but not to be practised."‚ÄîDaniel Hamermesh,
+ideal to be professed but not to be practised."—Daniel Hamermesh,
 University of Texas at Austin Economics
 
 "Reproducibility is just collaboration with people you don't know,
-including yourself next week"‚ÄîPhilip Stark, UC Berkeley Statistics
+including yourself next week"—Philip Stark, UC Berkeley Statistics
 
 Replication, in both practice and principle, is a key part of social
 science research. We first define what exactly replication using the
@@ -941,7 +950,7 @@ Suggestions:
 -   Make sure that all .do files are self-contained, do not require data
     in memory, or ideally, certain directory.
 
--   Make sure code always produces same result‚Äîset seed and sort/merge
+-   Make sure code always produces same result—set seed and sort/merge
     stable
 
 -   Use the version command
@@ -964,7 +973,7 @@ Suggestions:
 
 -   Separate your cleaning and analysis files; don't make any new vars
     that need saving (or will be used by a different analysis
-    file)‚Äîbetter to only create once so you know they're the same.
+    file)—better to only create once so you know they're the same.
 
 -   If you have a master .do file that calls other .do files, you can
     run multiple log files at the same time (so you have a master .log
@@ -1000,7 +1009,7 @@ should be written in a reader-friendly format, referred to as "Literate
 Programming" introduced in Knuth (1984) and Knuth (1992). The basic idea
 is that "the time is ripe for significantly better documentation of
 programs, and that we can best achieve this by considering programs to
-be *works of literature*‚Ä¶Instead of imagining that our main task is to
+be *works of literature*…Instead of imagining that our main task is to
 instruct a *computer* what to do, let us concentrate rather on
 explaining to *human beings* what we want a computer to do." [emphasis
 original] Simply put, code should be written in as simple and easily
@@ -1041,8 +1050,8 @@ have long had an explicit policy of expecting researchers to share their
 primary data[^4]. Despite this, and despite the explicit policy of the
 *Journal* during the project, at most only 78% of authors provided data
 to the authors within six months after multiple requests. (This is
-admittedly an improvement over the 34% from the control group‚Äîthose who
-published before the *Journal* policy went into effect‚Äîwho provided
+admittedly an improvement over the 34% from the control group—those who
+published before the *Journal* policy went into effect—who provided
 data.) Of the papers that were still under review by the *Journal* at
 the time of the requests for data, one quarter did not even respond to
 the request, despite the request coming from the same journal
@@ -1193,7 +1202,7 @@ Casey, Katherine, Rachel Glennerster, and Edward Miguel. 2012.
 Plan\*." *The Quarterly Journal of Economics* 127 (4): 1755-1812.
 doi:10.1093/qje/qje027.
 
-Chan A, Hr√≥bjartsson A, Haahr MT, G√∏tzsche PC, and Altman DG. 2004.
+Chan A, Hróbjartsson A, Haahr MT, Gøtzsche PC, and Altman DG. 2004.
 "Empirical Evidence for Selective Reporting of Outcomes in Randomized
 Trials: Comparison of Protocols to Published Articles." *JAMA* 291 (20):
 2457-65. doi:10.1001/jama.291.20.2457.
@@ -1234,8 +1243,8 @@ Bias in the Social Sciences: Unlocking the File Drawer." *Science*
 Forthcoming.
 
 Gelman, Andrew, and Eric Loken. 2013. "The Garden of Forking Paths: Why
-Multiple Comparisons Can Be a Problem, Even When There Is No ‚Äòfishing
-Expedition'or ‚Äòp-Hacking' and the Research Hypothesis Was Posited ahead
+Multiple Comparisons Can Be a Problem, Even When There Is No ‘fishing
+Expedition'or ‘p-Hacking' and the Research Hypothesis Was Posited ahead
 of Time.," November.
 http://www.stat.columbia.edu/\~gelman/research/unpublished/p\_hacking.pdf.
 
@@ -1257,7 +1266,7 @@ Glennerster, Rachel, and Kudzai Takavarasha. 2013. *Running Randomized
 Evaluations: A Practical Guide*. Princeton University Press.
 
 Hamermesh, Daniel S. 2007. "Viewpoint: Replication in Economics."
-*Canadian Journal of Economics/Revue Canadienne D'√©conomique* 40 (3):
+*Canadian Journal of Economics/Revue Canadienne D'économique* 40 (3):
 715-33. doi:10.1111/j.1365-2966.2007.00428.x.
 
 Hartung, Daniel M., Deborah A. Zarin, Jeanne-Marie Guise, Marian
@@ -1282,7 +1291,7 @@ Humphreys, Macartan, Raul Sanchez de la Sierra, and Peter van der Windt.
 Comprehensive Nonbinding Research Registration." *Political Analysis* 21
 (1): 1-20. doi:10.1093/pan/mps021.
 
-Hunter, John¬†E. 2001. "The Desperate Need for Replications." *Journal of
+Hunter, John E. 2001. "The Desperate Need for Replications." *Journal of
 Consumer Research* 28 (1): 149-58. doi:10.1086/jcr.2001.28.issue-1.
 
 Husereau, Don, Michael Drummond, Stavros Petrou, Chris Carswell, David
@@ -1327,7 +1336,7 @@ of Language and Information.
 
 Laine, Christine, Richard Horton, Catherine D. DeAngelis, Jeffrey M.
 Drazen, Frank A. Frizelle, Fiona Godlee, Charlotte Haug, et al. 2007.
-"Clinical Trial Registration ‚Äî Looking Back and Moving Ahead." *New
+"Clinical Trial Registration — Looking Back and Moving Ahead." *New
 England Journal of Medicine* 356 (26): 2734-36. doi:10.1056/NEJMe078110.
 
 Long, J. Scott. 2008. *The Workflow of Data Analysis Using Stata*. Stata
