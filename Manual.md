@@ -547,7 +547,7 @@ In other words, the problem is even worse than you think. What can be
 done to solve it? We believe part of the answer lies in detailed
 pre-analysis plans, described in detail below.
 
-<a name="pap">Researcher Degrees of Freedom and Pre-Analysis Plans (pap)</a>
+<a name="pap">Researcher Degrees of Freedom and Pre-Analysis Plans</a>
 ========================
 
 Registration of trials and Pre-analysis plans are closely related, but
@@ -786,7 +786,7 @@ not, we feel that economists could benefit from reporting the number of
 interactions tested, possibly adjusting for multiple hypotheses, and
 ideally specifying beforehand the interactions to be tested.
 
-Somewhere in either registration or PAP—discuss exact details of
+Somewhere in either registration or PAP or protocol—discuss exact details of
 randomization.(Bruhn and McKenzie 2009)
 
 and <http://e-gap.org/resources/guides/randomization/>
@@ -875,15 +875,15 @@ programming, and data storage and documentation.
 
 Software:
 
-Although there is a movement by some towards open source software such
+Although there is a movement by many towards open source software such
 as R and Python, we appreciate that many disciplines have long
 traditions of using proprietary software such as SAS and STATA, and
 learning a new programming language may be an undesirable additional
 task in researchers' busy lives. That said, there are several general
 coding rules that all researchers should use when organizing and
-implementing their analysis.
+implementing their analysis, and researchers should strive to make their work usable by as many others as possible.
 
-Write code, don't work by hand. By that we mean:
+Perhaps the most important rule is to write code, don't work by hand. By that we mean:
 
 -   Do not modify data by hand, such as with a spreadsheet. Which is to
     say, don't use Excel.
@@ -905,7 +905,9 @@ script that imports the raw data, does all necessary changes, with
 comments in the code that explain changes, and saves any intermediate
 data sets used in analysis. Then, researchers can share their initial
 raw data and their code, and other researchers can reproduce their work
-exactly.
+exactly. 
+
+Though we understand that a fair amount of research has been done using pull down menus in SPSS or Stata, we advise against this. A bare minimum if one insists on going this route is to use the built-in command-logging features of the software. In Stata, this involves the 'cmdlog' command, in SPSS, this involves the paste button to add to a syntax.
 
 The ideal is to make everything, including changes like rounding and
 formatting, done with scripts. Even downloading of data from websites
@@ -931,33 +933,48 @@ Don't save output. Just save code and data that generates it.
 
 Think about the entire pipeline. Terry White "Hit by a bus test"
 
-Suggestions:
-
--   Use Stata's different missing values (".a"-".z", not exclusively
-    ".")
-
+General Worflow Suggestions:
+-----------------------------
 -   Do not use spaces in directory names
 
--   Use "naming directories", .i.e. a directory beginning with "-" (so
-    that it will appear first alphabetically) inside each directory to
-    explain the contents of the above directory.
+-   Use "naming directories", .i.e. a directory beginning with "-" (so that it will appear first alphabetically) inside each directory to explain the contents of the above directory.
 
--   Add name, date, and describe contents, as well as updates, to all
-    .do files.
-
+-   Add name, date, and describe contents, as well as updates, to all scripting files.
 -   Keep a research log
-
--   Make sure that all .do files are self-contained, do not require data
+-   -   Make sure that all .do files are self-contained, do not require data
     in memory, or ideally, certain directory.
+-   You can never comment too much.
+
+-   Indent your code
+-   -   Once you post/distribute code or data, any changes at all require a
+    new file name.
+
+
+-   Separate your cleaning and analysis files; don't make any new vars
+    that need saving (or will be used by a different analysis
+    file)—better to only create once so you know they're the same.
+
+-   Never name a file "final" because it won't be.
+
+-   Name variables "male" instead of "gender."
+
+-   Use a prefix such as x\_ or temp\_ so you know which files can
+    easily be deleted.
+- Never change the contents of a variable unless you give it a new
+    name.
+
+-   Every variable should have a label.
+
+Stata-specific Suggestions
+--------------------------
+-   Use the different missing values (".a"-".z", not exclusively
+    ".")
+
 
 -   Make sure code always produces same result—set seed and sort/merge
     stable
 
 -   Use the version command
-
--   You can never comment too much.
-
--   Indent your code
 
 -   Don't use abbreviations for variables (may become unstable after
     adding variables) or commands
@@ -966,25 +983,11 @@ Suggestions:
 
 -   Use locals for varlists
 
--   Use \`return' command instead of typing in numbers
-
--   Once you post/distribute code or data, any changes at all require a
-    new file name.
-
--   Separate your cleaning and analysis files; don't make any new vars
-    that need saving (or will be used by a different analysis
-    file)—better to only create once so you know they're the same.
+-   Use 'return' command instead of typing in numbers
 
 -   If you have a master .do file that calls other .do files, you can
     run multiple log files at the same time (so you have a master .log
     file)
-
--   Never name a file "final" because it won't be.
-
--   Name variables "male" instead of "gender."
-
--   Use a prefix such as x\_ or temp\_ so you know which files can
-    easily be deleted.
 
 -   Use the label data and notes commands.
 
@@ -993,10 +996,6 @@ Suggestions:
 -   Use the datasignature command to run a hash and ensure that data is
     the same as before.
 
--   Never change the contents of a variable unless you give it a new
-    name.
-
--   Every variable should have a label.
 
 -   Use value labels for all categorical variables, but include the
     numerical value in the label.
@@ -1004,7 +1003,7 @@ Suggestions:
 -   Don't use capital in variable names since not all software packages
     are case sensitive.
 
--   Make your files as non-proprietary as possible (use saveold in Stata. This is why trusted repositories are so good--they'll do this for you.)
+-   Make your files as non-proprietary as possible (use the 'saveold' command to enable those with earlier versions to use your data. This is why trusted repositories are so good--they'll do this for you.)
 
 
 In addition to making code available to the public, the code itself
