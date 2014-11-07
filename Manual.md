@@ -4,7 +4,7 @@ Garret Christensen
 
 TABLE OF CONTENTS
 
-1 Introduction 
+1 [Introduction] (#intro) 
 
 2 Ethical Research 
 
@@ -62,7 +62,7 @@ X Registered Reports/Results-Blind Reviewing
 
 6 References 
 
-<span id="_Toc275620927" class="anchor"><span id="Intro" class="anchor"></span></span>Introduction
+<a name="intro">Introduction</a>
 ==================================================================================================
 
 Scientific claims should be subject to scrutiny by other researchers and
