@@ -93,25 +93,26 @@ reproducible research is also a major part of ethical research.
 
 In section X we discuss study design, including how to power studies appropriately.
 
-In section 3 we discuss one of the major problems in non-transparent research, specifically publication bias.
-We also discuss how this problem can be resolved through the practice of registration
+In section X we discuss one of the major problems in non-transparent research, specifically publication bias.
+We also discuss how this problem can be resolved through the practice of registration. Publication bias stems from the fact 
+that published results are
 overwhelmingly statistically significant. But without knowing how many
 tests were run, it is impossible to know whether these significant
 results are meaningful, or whether they are the 5% of tests that we
-would expect to appear significant even with no true effect due to
-random sampling.
+would expect to appear significant due to random sampling, even with no true effect. By publicly registering all studies, we can have a better idea of just how many tests have been run.
 
-In section 4 we discuss registrations and pre-analysis plans; the idea
-that where appropriate, researchers should register their research
-(especially randomized trials) beforehand in a publicly searchable
-database. Researchers should also specify their outcomes of interest and
+In section X we discuss researcher degrees of freedom and pre-analysis plans; In addition to registering a trials, researchers
+ should also specify their outcomes of interest and
 their exact methods of analysis to bind their hands during the analysis
 phase by writing a Pre-Analysis Plan (PAP). This is a relatively new
 idea in the social sciences, so there is not yet a consensus on when a
 PAP should be required, what the ideal level of detail is, and how much
-it should constrain the researchers hand in the actual analysis.
+it should constrain the researchers hand in the actual analysis, but by pre-specifying analyses, researchers can distinguish between
+confirmatory and exploratory analysis. We do not necessarily place higher intrinsic value on one or the other, but making the distinction
+clear is key for appropriate interpretation.
 
-In section 5 we discuss replication and data availability. Researchers
+In section X we discuss workflow and materials sharing, with an eye on making research replicable by others.
+ Researchers
 should make their code and data publicly available so that others may
 repeat and verify their analysis. Making data available incentivizes
 researchers to make their work accurate in the first place, and makes
@@ -136,7 +137,7 @@ data to creating bogus e-mail addresses so one could do one's own peer
 review, the Retraction Watch blog (<http://www.retractionwatch.com>)
 documents a distressingly large amount of deliberate fraud in research.
 Although the blog tends to specialize in the life sciences, there is no
-good reason to believe that social science research are inherently more
+good reason to believe that social science researchers are inherently more
 benevolent. Part of the US Department of Health and Human Services , the
 Office of Research Integrity (ORI), works to promote research integrity
 and document misconduct, especially when it involves federally funded
@@ -205,7 +206,7 @@ related to research.
 #### Nuremberg
 
 Nazi German doctors conducted horrible experiments on subjects during
-WWII. The "Doctor's Trial" (USA v. Karl Brandt, et al.) tried 23
+World War II. The "Doctor's Trial" (USA v. Karl Brandt, et al.) tried 23
 defendants, and the verdict included the following ten principles, which
 although never entered as formal regulations in either Germany or the
 USA, became widely accepted.
@@ -368,6 +369,10 @@ Originally adopted by the WMA in 1964, the document has significantly
 influenced the laws and regulations adopted to govern research
 worldwide.
 
+Lest one think that ethical concerns are limited to monsters of bygone eras, we refer readers to a dilemma
+caused by an election experiment by researchers from Stanford and Dartmouth in 2014:
+ <http://www.washingtonpost.com/blogs/monkey-cage/wp/2014/11/03/ethics-and-research-in-comparative-politics/>.
+
 ### Training
 
 A large number of universities participate in the Collaborative
@@ -379,14 +384,9 @@ proposal.
 <span id="_Publication_Bias_and_1" class="anchor"><span id="_Ref272134147" class="anchor"><span id="_Toc275620934" class="anchor"><span id="Registration" class="anchor"></span></span></span></span>Registration and Pre-Analysis Plans
 ========================================================================================================================================================================================================================================
 
-Two problems brought into focus recently are publication bias and
-p-hacking. Publication bias is the selective publication of only
-significant results, while p-hacking, also called specification
-searching, is the manipulation of statistical or regression models,
-deliberately or unknowingly, until significance is obtained. Thankfully,
-there are tools available for researchers to combat these problems. We
-will in turn discuss trial registration and pre-analysis plans, which
-can help to reduce publication bias and p-hacking, respectively.
+One of the problems brought into focus recently is publication bias. Publication bias is the selective publication of only
+significant results. Thankfully,
+there are tools available for researchers to combat these problems.
 
 Publication Bias 
 -----------------
@@ -417,9 +417,13 @@ significant effect, we give the outlier study less credence.
 
 Trial Registration
 ------------------
+A basic definition of registration is to publicly declare _all_ research that one plans on conducting.
+Ideally this is done in a public registry designed to accept registries in the given research discipline, and
+ideally the registration takes place before data collection begins.
 
 Almost all registration efforts have thus far been limited to randomized
-control trials, as opposed to observational data. Registration of
+control trials, as opposed to observational data. (However, we believe that registering all types of analysis would be ideal.)
+ Registration of
 randomized trials has achieved wide adoption in medicine, but is still
 relatively new to the social sciences. After congress passed a law in
 1997 requiring the creation of a registry for FDA-regulated trials, and
@@ -464,6 +468,9 @@ specified. Even among those adequately registered, 31% showed some
 discrepancies between registered and published outcomes, with bias in
 favor of statistically significant definitions.
 
+Social Science Registries
+---------------------------------------------------
+
 Registries in the social sciences are newer but are growing ever more
 popular. The Abdul Latif Jameel Poverty Action Lab began hosting a
 hypothesis registry
@@ -492,13 +499,15 @@ Open Science, and their Open Science Framework
 which also serves as a data repository and collaboration tool, which
 will be discussed more below, also see Nosek, Spies, and Motyl (2012).
 
-P-Hacking
+Researcher Degrees of Freedom
 ---------
-
+In addition to publication bias, a problem with research is specification
+searching: the manipulation of statistical or regression models unknowingly (or deliberately) until significance is obtained.
 Though registration helps solve the problem of publication bias, it does
 not solve the problem of fishing for statistical significance within a
 given study. Simmons, Nelson, and Simonsohn (2011) refer to this as
-"researcher degrees of freedom." Using flexibility around when to stop
+"researcher degrees of freedom," and it has also been referred to as "fishing" or "p-hacking." 
+Using flexibility around when to stop
 collecting data, excluding certain observations, combining and comparing
 certain conditions, including certain control variables, and combining
 or transforming certain measures, they "prove" that listening to the
@@ -555,27 +564,13 @@ and in the social sciences.
 Part of registration is a pre-analysis plan (PAP), which contains a
 specification of the outcomes of the study, as well as a specification
 of the methods that will be used to analyze the outcomes (sometimes
-referred to as endpoints in the medical literature). Though one example
-of this exists in economics from 2001 , the idea is still quite new to
+referred to as endpoints in the medical literature).  By describing the
+method(s) of analysis ahead of time, and to some degree tying the hands
+of the researcher, we reduce the ability to data mine. Though one example
+of this exists in economics from 2001 (Neumark 2001), the idea is still quite new to
 the social sciences. The level of detail varies widely, and the research
 community is still constructing norms for incorporating these documents
 into final analyses and papers.
-
-Glennerster and Takavarasha (2013) have a worthwhile discussion of PAPs
-in their recent book, in which they highlight the "tension between the
-benefits of the credibility that comes from tying ones hands versus the
-benefits of flexibility to respond to unforeseen events and results."
-First, let us clearly distinguish between PAPs and registrations.
-Registration is the act, simple in relative terms, of publicly declaring
-that one is running an experiment (almost, but not always, a randomized
-trial). By helping the public to know how many trials were run (and
-ideally, but not yet in practice, the outcome of all of these trials),
-registration can help reduce publication bias. A PAP can be part of a
-registration, and can often be housed in the same location, but it is a
-much more detailed document describing how the data will be analyzed
-when the experiment is over and the data obtained. By describing the
-method(s) of analysis ahead of time, and to some degree tying the hands
-of the researcher, we reduce the ability to data mine.
 
 Suggestions have been made for the detailed contents of these documents.
 Glennerster and Takavarasha (2013) suggest including the following:
@@ -593,6 +588,10 @@ Glennerster and Takavarasha (2013) suggest including the following:
     and
 
 6.  the primary specification to be used for the analysis.
+
+Glennerster and Takavarasha (2013) also highlight the "tension between the
+benefits of the credibility that comes from tying ones hands versus the
+benefits of flexibility to respond to unforeseen events and results."
 
 David McKenzie of the World Bank Research Group proposed a list of ten
 items that should be included in a PAP, reproduced below. (For more
@@ -786,7 +785,7 @@ ideally specifying beforehand the interactions to be tested.
 Somewhere in either registration or PAP—discuss exact details of
 randomization.(Bruhn and McKenzie 2009)
 
-and http://e-gap.org/resources/guides/randomization/
+and <http://e-gap.org/resources/guides/randomization/>
 
 Conceal your randomized assignment so nobody subverts it. (Schulz and
 Grimes 2002)
@@ -797,26 +796,23 @@ Grimes 2005)
 The original heart attack for libras and Gemini paper: (ISIS-2 (SECOND
 INTERNATIONAL STUDY OF INFARCT SURVIVAL) COLLABORATIVE GROUP 1988)
 
-Conceal your randomized assignment so nobody subverts it. (Schulz and
-Grimes 2002)
 
-Details on how exactly to randomize: (Bruhn and McKenzie 2009) and
-http://e-gap.org/resources/guides/randomization/
 
-<span id="_Replication_1" class="anchor"><span id="_Ref272134889" class="anchor"><span id="_Toc275620941" class="anchor"><span id="Replication" class="anchor"></span></span></span></span>Replication
+
+<span id="_Replication_1" class="anchor"><span id="_Ref272134889" class="anchor"><span id="_Toc275620941" class="anchor"><span id="Replicability" class="anchor"></span></span></span></span>Replication and Reproducibility
 ======================================================================================================================================================================================================
 
-"Economists treat replication the way teenagers treat chastity - as an
+>"Economists treat replication the way teenagers treat chastity - as an
 ideal to be professed but not to be practised."—Daniel Hamermesh,
 University of Texas at Austin Economics
 
-"Reproducibility is just collaboration with people you don't know,
+>"Reproducibility is just collaboration with people you don't know,
 including yourself next week"—Philip Stark, UC Berkeley Statistics
 
 Replication, in both practice and principle, is a key part of social
-science research. We first define what exactly replication using the
+science research. We first define what exactly we mean by replication using the
 taxonomy developed in Hamermesh (2007) and Hunter (2001). Replication
-comes in a few different shapes, pure, statistical, and scientific.
+comes in a few different shapes: pure, statistical, and scientific.
 
 -   Pure: Using the exact same data and the exact same model to see if
     the published results are reproduced exactly.
@@ -957,7 +953,7 @@ Suggestions:
 
 -   You can never comment too much.
 
--   Indent
+-   Indent your code
 
 -   Don't use abbreviations for variables (may become unstable after
     adding variables) or commands
@@ -981,6 +977,8 @@ Suggestions:
 
 -   Never name a file "final" because it won't be.
 
+-   Name variables "male" instead of "gender."
+
 -   Use a prefix such as x\_ or temp\_ so you know which files can
     easily be deleted.
 
@@ -1002,7 +1000,8 @@ Suggestions:
 -   Don't use capital in variable names since not all software packages
     are case sensitive.
 
--   
+-   Make your files as non-proprietary as possible (use saveold in Stata. This is why trusted repositories are so good--they'll do this for you.)
+
 
 In addition to making code available to the public, the code itself
 should be written in a reader-friendly format, referred to as "Literate
@@ -1030,7 +1029,7 @@ ADD EXAMPLE
 
 R MarkdownMarkdownHTML (edit only the first)
 
-Data repositories.
+Sharing Data
 ------------------
 
 In addition to code, researchers should share their data if at all
@@ -1093,7 +1092,7 @@ but incomplete, compliance (Glandon 2010).
 
 ### General Repositories
 
-The previous section on the JMCB describes only a few journals in one
+The previous section on the _JMCB_ describes only a few journals in one
 field of the social sciences. Even if the journal to which you submit
 your research does not require you to supply them with your code and
 data, researchers should still share these things. Though some
@@ -1101,10 +1100,17 @@ repositories, particularly Harvard's Dataverse, seem equipped to handle
 data from practically any researcher (a free 1 TB of storage is
 standard, with more possible), many repositories specialize. The
 Registry of Research Data Repositories (<http://www.re3data.org>) has
-described over 900 data repositories
+described over 900 data repositories to help you find the right data repository for your data. 
+A key advantage to using a trusted repository such as one listed here, in lieu of simply throwing the data up on your own website
+or making your Dropbox folder public, is that many of these repositories will take your data in its proprietary (Stata, SAS, SPSS, etc.) form, and make it accessible in other formats. 
 
 <span id="_Ref272135809" class="anchor"><span id="_Ref272135811" class="anchor"><span id="_Toc275620946" class="anchor"></span></span></span>Reporting Standards
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+MAYBE PUT PROTOCOLS SECTION HERE?
+Seems like appropriate place for that sort of detail
+
+Use the EQUATOR Network to find the right reporting standard for you.
+<http://www.equator-network.org/>
 
 ### Randomized Trials
 
@@ -1362,6 +1368,8 @@ Moher D, Jones A, Lepage L, and for the CONSORT Group. 2001. "Use of the
 Consort Statement and Quality of Reports of Randomized Trials: A
 Comparative before-and-after Evaluation." *JAMA* 285 (15): 1992-95.
 doi:10.1001/jama.285.15.1992.
+
+Neumark, David. "The employment effects of minimum wages: Evidence from a prespecified research design the employment effects of minimumwages." _Industrial Relations: A Journal of Economy and Society_ 40.1 (2001): 121-144.
 
 Nosek, Brian A., Jeffrey R. Spies, and Matt Motyl. 2012. "Scientific
 Utopia II. Restructuring Incentives and Practices to Promote Truth Over
