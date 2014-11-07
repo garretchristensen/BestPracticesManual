@@ -6,7 +6,7 @@ TABLE OF CONTENTS
 
 1 [Introduction] (#intro) 
 
-2 Ethical Research 
+2 [Ethical Research] (#ethics) 
 
 >2.1 Fraud 
 
@@ -18,15 +18,15 @@ TABLE OF CONTENTS
 
 >2.3.2 Training 
 
-X Power and Study Design 
+X [Power and Study Design] (#power) 
 
-3 Registration 
+3 [Registration] (#registration) 
 
 >3.1 Publication Bias 
 
 >3.2 Trial Registration 
 
-X Research Degrees of Freedom and Pre-Analysis Plans
+X [Research Degrees of Freedom and Pre-Analysis Plans] (#pap)
 
 >X.1 Researcher Degrees of Freedom
 
@@ -36,9 +36,9 @@ X Research Degrees of Freedom and Pre-Analysis Plans
 
 >X.2.2 Examples 
 
-X Registered Reports/Results-Blind Reviewing
+X [Registered Reports/Results-Blind Reviewing] (#regreports)
 
-4 Replicability
+4 [Replication and Reproducibility] (#reproducible)
 
 >4.X Workflow
 
@@ -58,9 +58,12 @@ X Registered Reports/Results-Blind Reviewing
 
 >4.4 Differential Privacy 
 
-5 Conclusion 
 
-6 References 
+5 [Conclusion] (#conclusion) 
+
+6 [References]  (#references)
+
+7 [Index] (#index)
 
 <a name="intro">Introduction</a>
 ==================================================================================================
@@ -122,7 +125,7 @@ taken to prevent identification of individuals in the data. We also
 discuss the issue of reporting standards: a standardized list of things
 that authors should report to help make their work reproducible.
 
-<span id="_Ref272576084" class="anchor"><span id="_Toc275620928" class="anchor"><span id="Ethical" class="anchor"></span></span></span>Ethical Research
+<a name="ethics">Ethical Research</a>
 =======================================================================================================================================================
 
 We believe that making one's research transparent and reproducible is a
@@ -381,7 +384,7 @@ Institutional Training Initiative at the University of Miami (CITI,
 Subjects Research is often a requirement of being included on a research
 proposal.
 
-<span id="_Publication_Bias_and_1" class="anchor"><span id="_Ref272134147" class="anchor"><span id="_Toc275620934" class="anchor"><span id="Registration" class="anchor"></span></span></span></span>Registration and Pre-Analysis Plans
+<a name="registration">Registration</a>
 ========================================================================================================================================================================================================================================
 
 One of the problems brought into focus recently is publication bias. Publication bias is the selective publication of only
@@ -445,6 +448,7 @@ study was completed. The figure below shows the drastically different
 rates of publication, and a large amount of publication bias.
 
 ![](media/image2.png)
+INSERT THE PICTURE OF THE GRAPH HERE!
 
 Panel A of Figure 2 from (Turner et al. 2008)
 
@@ -543,8 +547,8 @@ In other words, the problem is even worse than you think. What can be
 done to solve it? We believe part of the answer lies in detailed
 pre-analysis plans, described in detail below.
 
-Pre-Analysis Plans (PAP)
-------------------------
+<a name="PAP">Pre-Analysis Plans (pap)</a>
+========================
 
 Registration of trials and Pre-analysis plans are closely related, but
 not the same. While registration is now the norm in medicine,
@@ -799,7 +803,7 @@ INTERNATIONAL STUDY OF INFARCT SURVIVAL) COLLABORATIVE GROUP 1988)
 
 
 
-<span id="_Replication_1" class="anchor"><span id="_Ref272134889" class="anchor"><span id="_Toc275620941" class="anchor"><span id="Replicability" class="anchor"></span></span></span></span>Replication and Reproducibility
+<a name="reproducibility">Replication and Reproducibility</a>
 ======================================================================================================================================================================================================
 
 >"Economists treat replication the way teenagers treat chastity - as an
@@ -1158,10 +1162,11 @@ despite the absence of direct identifiers such as names or social
 security numbers. The problem is that "de-identification does not
 guarantee anonymization."
 
-<span id="_Toc275620950" class="anchor"><span id="Conclusion" class="anchor"></span></span>Conclusion
+<a name="conclusion">Conclusion</a>
 =====================================================================================================
+As you may have noticed, many of the activities described in this manual require extra work. Before you run an experiment, we're telling you to write down the hypothesis, carefully explain how you are going to test the hypothesis, write down the very regression analysis you're going to run, write a detailed protocol of the exact experimental setting, and then you have to post all of this publicly on the Internet with some sort of Big Brother organization. Or at least that's one way to look at it. But we strongly belive these steps are (1) not that difficult once you get used to them and (2) well worth the reward. You'll get p-values you can believe in. The next time someone asks you for your data, you just point them to the website, where they'll download the data and code, and the code will produce the exact results in the published paper. The next time you open up a coding file you haven't looked at in months to make a change suggested by a reviewer, your code will be so thoroughly commented, you'll know exactly where to go to make the changes. And the next time you want to extend the analysis of a published paper, you click the link in the paper and have the data on your own computer in seconds.  Science moves forward.
 
-<span id="_Toc275620951" class="anchor"><span id="References" class="anchor"></span></span>References
+<a name="references">References</a>
 =====================================================================================================
 
 Alatas, Vivi, Abhijit Banerjee, Rema Hanna, Benjamin A Olken, and Julia
@@ -1463,3 +1468,6 @@ In *Implementing Reproducible Research*, 3-32. CRC Press.
     are expected to encourage and facilitate such sharing." See
     http://www.nsf.gov/bfa/dias/policy/dmp.jsp
 
+<a name="index">Index</a>
+================================================
+I'm guessing it's super annoying to make, but we should have an index.
