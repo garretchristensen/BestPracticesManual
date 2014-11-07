@@ -26,7 +26,7 @@ X [Power and Study Design] (#power)
 
 >3.2 Trial Registration 
 
-X [Research Degrees of Freedom and Pre-Analysis Plans] (#pap)
+X [Researcher Degrees of Freedom and Pre-Analysis Plans] (#pap)
 
 >X.1 Researcher Degrees of Freedom
 
@@ -547,7 +547,7 @@ In other words, the problem is even worse than you think. What can be
 done to solve it? We believe part of the answer lies in detailed
 pre-analysis plans, described in detail below.
 
-<a name="PAP">Pre-Analysis Plans (pap)</a>
+<a name="pap">Researcher Degrees of Freedom and Pre-Analysis Plans (pap)</a>
 ========================
 
 Registration of trials and Pre-analysis plans are closely related, but
@@ -803,7 +803,7 @@ INTERNATIONAL STUDY OF INFARCT SURVIVAL) COLLABORATIVE GROUP 1988)
 
 
 
-<a name="reproducibility">Replication and Reproducibility</a>
+<a name="reproducibile">Replication and Reproducibility</a>
 ======================================================================================================================================================================================================
 
 >"Economists treat replication the way teenagers treat chastity - as an
