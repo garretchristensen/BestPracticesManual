@@ -104,7 +104,7 @@ tests were run, it is impossible to know whether these significant
 results are meaningful, or whether they are the 5% of tests that we
 would expect to appear significant due to random sampling, even with no true effect. By publicly registering all studies, we can have a better idea of just how many tests have been run.
 
-In section X we discuss researcher degrees of freedom and pre-analysis plans; In addition to registering a trials, researchers
+In section X we discuss researcher degrees of freedom and pre-analysis plans; In addition to registering trials, researchers
  should also specify their outcomes of interest and
 their exact methods of analysis to bind their hands during the analysis
 phase by writing a Pre-Analysis Plan (PAP). This is a relatively new
