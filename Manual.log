@@ -1,0 +1,662 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.12)  18 NOV 2014 11:50
+entering extended mode
+**C:/Users/garret/Documents/Research/BITSS/BestPractices/BestPracticesManual/Ma
+nual.tex
+
+(C:/Users/garret/Documents/Research/BITSS/BestPractices/BestPracticesManual/Man
+ual.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+("C:\Program Files\MikTek\tex\latex\base\article.cls"
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files\MikTek\tex\latex\base\size12.clo"
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files\MikTek\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MikTek\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files\MikTek\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MikTek\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files\MikTek\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files\MikTek\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files\MikTek\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MikTek\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(C:\Users\garret\AppData\Roaming\MiKTeX\2.9\tex\latex\natbib\natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip43
+\bibsep=\skip44
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count88
+)
+(C:\Users\garret\AppData\Roaming\MiKTeX\2.9\tex\latex\preprint\fullpage.sty
+Package: fullpage 1999/02/23 1.1 (PWD)
+\FP@margin=\skip45
+)
+("C:\Program Files\MikTek\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip46
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MikTek\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+
+("C:\Program Files\MikTek\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks15
+\ex@=\dimen105
+))
+("C:\Program Files\MikTek\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen106
+)
+("C:\Program Files\MikTek\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count89
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count90
+\leftroot@=\count91
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count92
+\DOTSCASE@=\count93
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen107
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count94
+\c@MaxMatrixCols=\count95
+\dotsspace@=\muskip10
+\c@parentequation=\count96
+\dspbrk@lvl=\count97
+\tag@help=\toks16
+\row@=\count98
+\column@=\count99
+\maxfields@=\count100
+\andhelp@=\toks17
+\eqnshift@=\dimen108
+\alignsep@=\dimen109
+\tagshift@=\dimen110
+\tagwidth@=\dimen111
+\totwidth@=\dimen112
+\lineht@=\dimen113
+\@envbody=\toks18
+\multlinegap=\skip47
+\multlinetaggap=\skip48
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+("C:\Program Files\MikTek\tex\latex\hyperref\hyperref.sty"
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+
+("C:\Program Files\MikTek\tex\generic\oberdiek\hobsub-hyperref.sty"
+Package: hobsub-hyperref 2012/04/25 v1.12 Bundle oberdiek, subset hyperref (HO)
+
+
+("C:\Program Files\MikTek\tex\generic\oberdiek\hobsub-generic.sty"
+Package: hobsub-generic 2012/04/25 v1.12 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/04/25 v1.12 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2011/06/24 v1.1 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+("C:\Program Files\MikTek\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+("C:\Program Files\MikTek\tex\latex\oberdiek\auxhook.sty"
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+("C:\Program Files\MikTek\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen114
+\Hy@linkcounter=\count101
+\Hy@pagecounter=\count102
+
+("C:\Program Files\MikTek\tex\latex\hyperref\pd1enc.def"
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count103
+
+("C:\Program Files\MikTek\tex\latex\00miktex\hyperref.cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count104
+
+(C:\Users\garret\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen115
+\Fld@menulength=\count105
+\Field@Width=\dimen116
+\Fld@charsize=\dimen117
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count106
+\c@Item=\count107
+\c@Hfootnote=\count108
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+("C:\Program Files\MikTek\tex\latex\hyperref\hpdftex.def"
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+\Fld@listcount=\count109
+\c@bookmark@seq@number=\count110
+
+("C:\Program Files\MikTek\tex\latex\oberdiek\rerunfilecheck.sty"
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip49
+)
+("C:\Program Files\MikTek\tex\latex\pslatex\pslatex.sty"
+Package: pslatex 1996/07/24 v1.2 pslatex emulation (DPC)
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 65.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ptmcm/m/n on input line 65.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptmcm/m/n on input line 65.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 66.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ptmcm/m/it on input line 66.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ptmcm/m/it on input line 66.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 67.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/pzccm/m/n on input line 67.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/pzccm/m/n on input line 67.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 68.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/psycm/m/n on input line 68.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/psycm/m/n on input line 68.
+\symbold=\mathgroup4
+\symitalic=\mathgroup5
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 74.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 74.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 74.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 75.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 75.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 75.
+)
+(C:\Users\garret\Documents\Research\BITSS\BestPractices\BestPracticesManual\Man
+ual.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 11.
+LaTeX Font Info:    Try loading font information for OMS+pzccm on input line 11
+.
+ ("C:\Program Files\MikTek\tex\latex\psnfss\omspzccm.fd"
+File: omspzccm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/pzccm.
+)
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+
+(C:\Users\garret\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count111
+\scratchdimen=\dimen118
+\scratchbox=\box28
+\nofMPsegments=\count112
+\nofMParguments=\count113
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count114
+\MPscratchDim=\dimen119
+\MPnumerator=\count115
+\makeMPintoPDFobject=\count116
+\everyMPtoPDFconversion=\toks21
+)
+\AtBeginShipoutBox=\box29
+Package hyperref Info: Link coloring OFF on input line 11.
+ ("C:\Program Files\MikTek\tex\latex\hyperref\nameref.sty"
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+("C:\Program Files\MikTek\tex\generic\oberdiek\gettitlestring.sty"
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count117
+)
+LaTeX Info: Redefining \ref on input line 11.
+LaTeX Info: Redefining \pageref on input line 11.
+LaTeX Info: Redefining \nameref on input line 11.
+
+(C:\Users\garret\Documents\Research\BITSS\BestPractices\BestPracticesManual\Man
+ual.out)
+(C:\Users\garret\Documents\Research\BITSS\BestPractices\BestPracticesManual\Man
+ual.out)
+\@outlinefile=\write3
+LaTeX Font Info:    Try loading font information for OT1+ptmcm on input line 17
+.
+ ("C:\Program Files\MikTek\tex\latex\psnfss\ot1ptmcm.fd"
+File: ot1ptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ptmcm.
+)
+LaTeX Font Info:    Try loading font information for OML+ptmcm on input line 17
+.
+
+("C:\Program Files\MikTek\tex\latex\psnfss\omlptmcm.fd"
+File: omlptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ptmcm.
+)
+LaTeX Font Info:    Try loading font information for OMX+psycm on input line 17
+.
+
+("C:\Program Files\MikTek\tex\latex\psnfss\omxpsycm.fd"
+File: omxpsycm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/psycm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 17.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 17.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 17.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 17.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 17.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 17.
+LaTeX Font Info:    Calculating math sizes for size <7.4> on input line 17.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.17996> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 17.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <3.7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 17.
+ [1
+
+{C:/Users/garret/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 18.
+
+(C:\Users\garret\Documents\Research\BITSS\BestPractices\BestPracticesManual\Man
+ual.toc
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+ [2])
+\tf@toc=\write4
+ [3] [4] [5] [6] [7] [8] [9] [10]
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
+(Font)              Font shape `OMS/pzccm/m/n' tried instead on input line 259.
+
+ [11] [12]
+Overfull \hbox (184.96284pt too wide) in paragraph at lines 343--347
+[]$\OT1/pcr/m/n/12 http : / / www . washingtonpost . com / blogs / monkey-[]cag
+e / wp / 2014 / 11 / 03 / ethics-[]and-[]research-[]in-[]comparative-[]politics
+/$[]\OT1/ptm/m/n/12 . 
+ []
+
+[13] [14] [15]
+Overfull \hbox (4.5782pt too wide) in paragraph at lines 449--462
+\OT1/ptm/m/n/12 Jameel Poverty Ac-tion Lab be-gan host-ing a hy-poth-e-sis reg-
+istry ([]$\OT1/pcr/m/n/12 http : / / www . povertyactionlab .$
+ []
+
+[16]
+
+LaTeX Warning: Hyper reference `newPublicRegistrations' on page 17 undefined on
+ input line 479.
+
+
+Overfull \hbox (9.97543pt too wide) in paragraph at lines 477--482
+\OT1/ptm/m/n/12 Open Sci-ence Frame-work (https://osf.io/explore/activity/#newP
+ublicRegistrations) which also serves
+ []
+
+LaTeX Font Info:    Try loading font information for OML+ptm on input line 506.
+
+("C:\Program Files\MikTek\tex\latex\psnfss\omlptm.fd"
+File: omlptm.fd 
+)
+LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <12> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 506.
+ [17] [18] [19] [20]
+[21]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 641.
+
+
+LaTeX Warning: Hyper reference `studyprotocols' on page 22 undefined on input l
+ine 659.
+
+[22] [23]
+Overfull \hbox (14.99458pt too wide) in paragraph at lines 699--703
+\OT1/ptm/m/n/12 (2012). The on-line ap-pendix, avail-able at []$\OT1/pcr/m/n/12
+ http : / / emiguel . econ . berkeley . edu / assets / miguel _$
+ []
+
+
+Overfull \hbox (26.46335pt too wide) in paragraph at lines 699--703
+$\OT1/pcr/m/n/12 research / 8 / _Appendix _ _Reshaping _ Institutions _ -[] _ E
+vidence _ _on _ _Aid _ _Impacts _ _Using _$
+ []
+
+[24]
+Overfull \hbox (32.83559pt too wide) in paragraph at lines 737--739
+[]\OT1/ptm/m/n/12 (Available at []$\OT1/pcr/m/n/12 http : / / blogs . worldbank
+ . org / impactevaluations / files / impactevaluations /$
+ []
+
+
+Overfull \hbox (188.58282pt too wide) in paragraph at lines 750--754
+$\OT1/pcr/m/n/12 worldbank . org / curated / en / 2010 / 01 / 13763479 / indone
+sias-[]pnpm-[]generasi-[]program-[]interim-[]impact-[]evaluation-[]report$[] 
+ []
+
+[25] [26] [27] [28] [29] [30] [31] [32] [33] [34] [35] [36]
+Overfull \hbox (57.51437pt too wide) in paragraph at lines 1160--1162
+[]\OT1/ptm/m/n/12 Use the EQUA-TOR Net-work to find the right re-port-ing stan-
+dard for you. []$\OT1/pcr/m/n/12 http : / / www . equator-[]network .$
+ []
+
+[37] [38]
+Overfull \hbox (257.19765pt too wide) in paragraph at lines 1238--1243
+\OT1/ptm/m/n/12 Plan.'' \OT1/ptm/m/it/12 Poverty Ac-tion Lab Hy-poth-e-sis Reg-
+istry\OT1/ptm/m/n/12 , Febru-ary. http://www.povertyactionlab.org/sites/default
+/files/documents/ISKURIE[]AnalysisPlan[]v4.pdf. 
+ []
+
+
+Overfull \hbox (75.16057pt too wide) in paragraph at lines 1254--1257
+\OT1/ptm/m/n/12 ized Con-trolled Tri-als: The Con-sort State-ment.'' \OT1/ptm/m
+/it/12 JAMA \OT1/ptm/m/n/12 276 (8): 637-39. doi:10.1001/jama.1996.035400800590
+30. 
+ []
+
+[39]
+Overfull \hbox (72.25581pt too wide) in paragraph at lines 1267--1271
+\OT1/ptm/m/it/12 New York Times\OT1/ptm/m/n/12 , Novem-ber 2, sec. Health / Re-
+search. http://www.nytimes.com/2011/11/03/health/research/noted-
+ []
+
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ³ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¸ in font ptmr7t!
+
+Overfull \hbox (17.19919pt too wide) in paragraph at lines 1287--1289
+[]\OT1/ptm/m/n/12 Cyranoski, David. 2014. ``Cloning Come-back.'' \OT1/ptm/m/it/
+12 Na-ture \OT1/ptm/m/n/12 505 (7484): 468-71. doi:10.1038/505468a. 
+ []
+
+[40]
+Overfull \hbox (192.68677pt too wide) in paragraph at lines 1317--1322
+\OT1/ptm/m/n/12 Re-search Hy-poth-e-sis Was Posited ahead of Time.,'' Novem-ber
+. http://www.stat.columbia.edu/~gelman/research/unpublished/p[]hacking.pdf. 
+ []
+
+
+Overfull \hbox (1.41867pt too wide) in paragraph at lines 1323--1328
+[]\OT1/ptm/m/n/12 Gerber, Alan, Kevin Arce-neaux, Cheryl Boudreau, Conor Dowl-i
+ng, Sun-shine Hilly-gus, Thomas
+ []
+
+
+Overfull \hbox (56.81143pt too wide) in paragraph at lines 1323--1328
+\OT1/ptm/m/it/12 A Re-port from the Ex-per-i-men-tal Re-search Sec-tion Stan-da
+rds Com-mit-tee\OT1/ptm/m/n/12 . http://www.davidhendry.net/research-
+ []
+
+
+Overfull \hbox (12.80818pt too wide) in paragraph at lines 1323--1328
+\OT1/ptm/m/n/12 supplemental/gerberetal2014-reportingstandards/gerberetal2014-r
+eportingstandards&appendix1.pdf. 
+ []
+
+[41]
+Missing character: There is no Ã in font ptmri7t!
+Missing character: There is no © in font ptmri7t!
+
+Overfull \hbox (12.30681pt too wide) in paragraph at lines 1340--1343
+\OT1/ptm/m/it/12 Eco-nomics/Revue Cana-di-enne D'conomique \OT1/ptm/m/n/12 40 (
+3): 715-33. doi:10.1111/j.1365-2966.2007.00428.x. 
+ []
+
+
+Overfull \hbox (24.80759pt too wide) in paragraph at lines 1344--1350
+\OT1/ptm/m/n/12 Database and Peer-Reviewed Pub-li-ca-tions-Dis-crep-an-cies Be-
+tween Clin-i-cal-Tri-als.gov and Peer-Reviewed
+ []
+
+
+Overfull \hbox (111.03894pt too wide) in paragraph at lines 1355--1360
+\OT1/ptm/m/n/12 Schol-arly Pa-per ID 2420704. Rochester, NY: So-cial Sci-ence R
+e-search Net-work. http://papers.ssrn.com/abstract=2420704. 
+ []
+
+
+Overfull \hbox (2.1022pt too wide) in paragraph at lines 1370--1376
+[]\OT1/ptm/m/n/12 Husereau, Don, Michael Drum-mond, Stavros Petrou, Chris Car-s
+well, David Mo-her, Dan Green-
+ []
+
+[42]
+Overfull \hbox (145.51498pt too wide) in paragraph at lines 1392--1396
+\OT1/ptm/m/n/12 US Says - The Boston Globe.'' \OT1/ptm/m/it/12 Boston-Globe.com
+\OT1/ptm/m/n/12 , Septem-ber 5. https://www.bostonglobe.com/news/science/2012/0
+9/05/harvard-
+ []
+
+
+Overfull \hbox (19.85272pt too wide) in paragraph at lines 1392--1396
+\OT1/ptm/m/n/12 professor-who-resigned-fabricated-manipulated-data-says/6gDVkzP
+Nxv1ZDkh4wVnKhO/story.html. 
+ []
+
+
+Overfull \hbox (11.3795pt too wide) in paragraph at lines 1397--1400
+\OT1/ptm/m/it/12 Plan: TOMS Shoes Im-pact Study\OT1/ptm/m/n/12 . http://www.pov
+ertyactionlab.org/sites/default/files/documents/Pre-
+ []
+
+
+Overfull \hbox (56.85684pt too wide) in paragraph at lines 1401--1403
+[]\OT1/ptm/m/n/12 Kirchkamp, Oliver. \OT1/ptm/m/it/12 Work-flow of Sta-tis-ti-c
+al Data Anal-y-sis\OT1/ptm/m/n/12 . http://www.kirchkamp.de/oekonometrie/pdf/wf
+-
+ []
+
+[43]
+Overfull \hbox (84.2301pt too wide) in paragraph at lines 1404--1406
+[]\OT1/ptm/m/n/12 Knuth, D. E. 1984. ``Lit-er-ate Pro-gram-ming.'' \OT1/ptm/m/i
+t/12 The Com-puter Jour-nal \OT1/ptm/m/n/12 27 (2): 97-111. doi:10.1093/comjnl/
+27.2.97. 
+ []
+
+
+Overfull \hbox (4.36958pt too wide) in paragraph at lines 1410--1415
+[]\OT1/ptm/m/n/12 Laine, Chris-tine, Richard Hor-ton, Cather-ine D. DeAn-ge-lis
+, Jef-frey M. Drazen, Frank A. Frizelle,
+ []
+
+[44]
+Overfull \hbox (375.53827pt too wide) in paragraph at lines 1451--1453
+[]\OT1/ptm/m/n/12 Olken, Ben-jamin A. 2009. \OT1/ptm/m/it/12 Tar-get-ing Anal-y
+-sis Pro-to-col\OT1/ptm/m/n/12 . https://www.povertyactionlab.org/sites/default
+/files/documents/090318a%20Targeting%20Analysis%20Protocol.pdf. 
+ []
+
+
+Overfull \hbox (208.55034pt too wide) in paragraph at lines 1454--1457
+\OT1/ptm/m/n/12 Ac-tion Lab Hy-poth-e-sis Reg-istry. http://www.povertyactionla
+b.org/sites/default/files/documents/090408[]Generasi[]Analysis[]Plan[]CLEAN.pdf
+. 
+ []
+
+
+Overfull \hbox (10.43332pt too wide) in paragraph at lines 1458--1461
+\OT1/ptm/m/n/12 59567. The World Bank. http://documents.worldbank.org/curated/e
+n/2010/01/13763479/indonesias-
+ []
+
+
+Overfull \hbox (93.11159pt too wide) in paragraph at lines 1462--1465
+\OT1/ptm/m/n/12 http://www.povertyactionlab.org/sites/default/files/documents/1
+00122[]Generasi[]AnalysisPlan[]Wave[]III[]CLEAN.pdf. 
+ []
+
+[45]
+Overfull \hbox (4.15431pt too wide) in paragraph at lines 1478--1482
+[]\OT1/ptm/m/n/12 Schulz, Ken-neth F., Dou-glas G. Alt-man, David Mo-her, and $
+au-thor first-Name $au-thor.lastName.
+ []
+
+
+Overfull \hbox (177.95052pt too wide) in paragraph at lines 1497--1501
+\OT1/ptm/m/n/12 DE-PART-MENT DATA Anal-y-sis Plan,'' NBER Work-ing Pa-per, , Ma
+rch. http://www.nber.org/oregon/files/ED%20Analysis%20Plan.pdf. 
+ []
+
+[46]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1523.
+ [47]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1523.
+
+(C:\Users\garret\Documents\Research\BITSS\BestPractices\BestPracticesManual\Man
+ual.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1523.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1523.
+
+Package rerunfilecheck Info: File `Manual.out' has not changed.
+(rerunfilecheck)             Checksum: 3E3A07A1535030BCA45C8C5C3E524497;2182.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1523.
+ ) 
+Here is how much of TeX's memory you used:
+ 6378 strings out of 493921
+ 91493 string characters out of 3148882
+ 172074 words of memory out of 3000000
+ 9482 multiletter control sequences out of 15000+200000
+ 55140 words of font info for 113 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 34i,13n,28p,312b,446s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MikTek/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/Mi
+kTek/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MikTek/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MikTek/fonts/type1/urw/cou
+rier/ucrr8a.pfb><C:/Program Files/MikTek/fonts/type1/urw/times/utmb8a.pfb><C:/P
+rogram Files/MikTek/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MikTek/f
+onts/type1/urw/times/utmri8a.pfb>
+Output written on Manual.pdf (47 pages, 211118 bytes).
+PDF statistics:
+ 503 PDF objects out of 1000 (max. 8388607)
+ 119 named destinations out of 1000 (max. 500000)
+ 257 words of extra memory for PDF output out of 10000 (max. 10000000)
+

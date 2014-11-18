@@ -1,6 +1,9 @@
-![](media/image1.jpg)
-
-Garret Christensen
+Manual of Best Practices in Research Transparency
+=================================================
+by Garret Christensen
+---------------------
+BITSS/Center for Open Science
+-----------------------------
 
 TABLE OF CONTENTS
 
@@ -124,6 +127,8 @@ also raises the concern of differential privacy, since steps should be
 taken to prevent identification of individuals in the data. We also
 discuss the issue of reporting standards: a standardized list of things
 that authors should report to help make their work reproducible.
+
+Section X concludes.
 
 <a name="ethics">Ethical Research</a>
 =======================================================================================================================================================
