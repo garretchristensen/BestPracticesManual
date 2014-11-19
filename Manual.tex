@@ -3,7 +3,7 @@
 \usepackage{natbib}
 \usepackage{fullpage}
 \usepackage{amsmath}
-\usepackage{hyperref}
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
 \usepackage{pslatex}
 \renewcommand{\baselinestretch}{2}
 
@@ -49,7 +49,7 @@ reproducible research is also a major part of ethical research.
 In section~\ref{study-design} we discuss study design, including how to power studies
 appropriately.
 
-In section X we discuss one of the major problems in non-transparent
+In section~\ref{registration} we discuss one of the major problems in non-transparent
 research, specifically publication bias. We also discuss how this
 problem can be resolved through the practice of registration.
 Publication bias stems from the fact that published results are
@@ -60,7 +60,7 @@ would expect to appear significant due to random sampling, even with no
 true effect. By publicly registering all studies, we can have a better
 idea of just how many tests have been run.
 
-In section X we discuss researcher degrees of freedom and pre-analysis
+In section~\ref{rdof} we discuss researcher degrees of freedom and pre-analysis
 plans; In addition to registering trials, researchers should also
 specify their outcomes of interest and their exact methods of analysis
 to bind their hands during the analysis phase by writing a Pre-Analysis
@@ -73,7 +73,7 @@ analysis. We do not necessarily place higher intrinsic value on one or
 the other, but making the distinction clear is key for appropriate
 interpretation.
 
-In section X we discuss workflow and materials sharing, with an eye on
+In section~\ref{replication-and-reproducibility} we discuss workflow and materials sharing, with an eye on
 making research replicable by others. Researchers should make their code
 and data publicly available so that others may repeat and verify their
 analysis. Making data available incentivizes researchers to make their
@@ -83,6 +83,8 @@ differential privacy, since steps should be taken to prevent
 identification of individuals in the data. We also discuss the issue of
 reporting standards: a standardized list of things that authors should
 report to help make their work reproducible.
+
+Section~\ref{conclusion} concludes.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Ethical Research}\label{ethical-research}
@@ -419,11 +421,11 @@ essentially all the trials with positive outcomes were published, a
 negative studies were unpublished a minimum of four years after the
 study was completed. The figure below shows the drastically different
 rates of publication, and a large amount of publication bias.
+\begin{center}
+\includegraphics{TurnerFigure1.PNG}
 
-%\includegraphics{media/image2.png} INSERT THE PICTURE OF THE GRAPH HERE!
-
-Panel A of Figure 2 from (Turner et al. 2008)
-
+Panel A of Figure 1 from (Turner et al. 2008)
+\end{center}
 Of course for this sort of exercise to be possible, unless a reader
 merely assumes that a registered trial without an associated published
 paper produced a null result, it requires that the registration site
@@ -474,15 +476,11 @@ designs registered as of October 2014.\footnote{Other less-widely
   American Political Science Association
   (\href{numbering.xml}{http://ps-experiments.ucr.edu/browser}).}
 
-In psychology, some registration of studies is housed at the Center for
-Open Science, and their Open Science Framework
-(\hyperref[newPublicRegistrations]{https://osf.io/explore/activity/\#newPublicRegistrations})
-which also serves as a data repository and collaboration tool, which
-will be discussed more below, also see Nosek, Spies, and Motyl (2012).
+Another location for registrations is the \href{http://osf.io}{Open Science Framework} (OSF), created by the \href{http://centerforopenscience.org/}{Center for Open Science}. The OSF serves as a broad research management tool that encourages and facilitates transparency (see Nosek, Spies, and Motyl (2012).) Registrations are simply unalterable snapshots of research frozen in time, with a persistent URL and timestamp. Researchers can upload their data, code, hypotheses, etc. to the OSF, register it, and then share the resulting URL as proof of registration. OSF registrations can be relatively free-form, but templates exist to conform to standards in different disciplines. Psychology registrations are presently the most numerous on the OSF (\hyperref[newPublicRegistrations]{https://osf.io/explore/activity/\#newPublicRegistrations}).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Researcher Degrees of
-Freedom}\label{researcher-degrees-of-freedom}
+Freedom}\label{rdof}
 
 In addition to publication bias, a problem with research is
 specification searching: the manipulation of statistical or regression
@@ -506,7 +504,7 @@ information is provided by the statement that a study came up with a
 \emph{p}\textless{}.05 result.'' However, they also conclude that:
 
 \begin{quote}
-``the term''fishing" was unfortunate, in that it invokes an image of a
+the term ``fishing" was unfortunate, in that it invokes an image of a
 researcher trying out comparison after comparison, throwing the line
 into the lake repeatedly until a fish is snagged. We have no reason to
 think that researchers regularly do that. We think the real story is
@@ -529,7 +527,7 @@ In other words, the problem is even worse than you think. What can be
 done to solve it? We believe part of the answer lies in detailed
 pre-analysis plans, described in detail below.
 
-\section{Researcher Degrees of Freedom and Pre-Analysis
+\subsection{Researcher Degrees of Freedom and Pre-Analysis
 Plans}\label{researcher-degrees-of-freedom-and-pre-analysis-plans}
 
 Registration of trials and Pre-analysis plans are closely related, but
@@ -590,7 +588,6 @@ detail see
 \url{http://blogs.worldbank.org/impactevaluations/a-pre-analysis-plan-checklist})
 
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
 \item
   Description of the sample to be used in the study
 \item
@@ -1153,49 +1150,34 @@ repositories will take your data in its proprietary (Stata, SAS, SPSS,
 etc.) form, and make it accessible in other formats.
 
 \subsection{Reporting Standards}\label{reporting-standards}
+In research, the devil truly is in the details. Whether it is for assessing the validity of a research design or for
+attempting to replicate a study, details of what exactly was done must be recorded and made available to other researchers.
+The exact details that are relevant will likely differ from field to field, but an increasing number of fields have
+produced centralized checklists that describe (in excruciating detail) what disclosure is required of published studies. These checklists are not often published with the paper, but can be submitted with the original article so that reviewers can check that it has been completed. With infinite and easy web storage, researchers can easily post these materials on their website even if journal editors insist on cutting their methods sections for space reasons. 
 
-MAYBE PUT PROTOCOLS SECTION HERE? Seems like appropriate place for that
-sort of detail
 
-Use the EQUATOR Network to find the right reporting standard for you.
-\url{http://www.equator-network.org/}
+%MAYBE PUT PROTOCOLS SECTION HERE? Seems like appropriate place for that sort of detail
 
-\subsubsection{Randomized Trials}\label{randomized-trials}
+\subsubsection{Randomized Trials and CONSORT}\label{randomized-trials}
+The most widely adopted reporting standard guideline is the Consolidated Standards of Reporting Trials (CONSORT), available at \url{http://www.consort-statement.org}. Parallel to construction of \href{http://clinicaltrials.gov}{clinicaltrials.gov} and registration,
+reporting standards evolved, and are now nearly universally adopted for randomized trials published in medical journals, required or requested by reviewers during the review process. This is still in its infancy in the social sciences.
 
-Parallel to construction of clinicaltrials.gov and registration,
-reporting standards evolved. Widely adopted, required/requested by
-medical journals. This is in its infancy/non-existent in social
-sciences.
+The original CONSORT  was developed in the mid 1990's (Begg C et al. 1996). After five years, research showed that reporting of essential details, as required by the checklist, had significantly increased in journals requiring the standard  (Moher D et al. 2001). The statement was revised in 2001, and simultaneously published in three of the top journals (Moher, Schulz, and Altman 2001). The statement was again revised in 2010 (Schulz et al. 2010) The statement is a 25-item checklist pertaining to the title, abstract, introduction, methods, results, and discussion of the article in question, and seeks to delineate the minimum requirements of disclosure that may not be sufficiently addressed through other measures.
 
-CONSORT
+\subsection{Social Science Reporting Standards}\label{soc-sci-standards}
+Though a standard akin to CONSORT has not been formally adopted by social science or behavioral science journals, at least as far as we are aware, there have been attempts to do this: In political science, the Experimental Research Section Standards Committee produced a detailed list of items required for disclosure of experiments in political science (A. Gerber et al. 2014). This checklist is available \href{http://www.davidhendry.net/research-supplemental/gerberetal2014-reportingstandards/gerberetal2014-reportingstandards&appendix1.pdf}{here}.\footnote{\url{http://www.davidhendry.net/research-supplemental/gerberetal2014-reportingstandards/gerberetal2014-reportingstandards&appendix1.pdf}}
 
-The original CONSORT (Begg C et al. 1996)
-
-Hey, it works! (Moher D et al. 2001)
-
-Revised 2001(Moher, Schulz, and Altman 2001)
-
-Revised 2010 (Schulz et al. 2010)
-
-Work in progress: political science RCTs (A. Gerber et al.)
-
-Make sure you report the details of how you randomized (Bruhn and
+In economics, one article has highlighted the fact that there is not much discussion of essential features of randomization (how was randomization stratified, if at all? How were control variables determined?), but no standards have been adoped. (Bruhn and
 McKenzie 2009)
 
-\subsubsection{Observational Reporting
-Standards}\label{observational-reporting-standards}
+\subsection{Observational Reporting Standards}\label{observational-standards}
+Social science has yet to make a serious push for reporting standards in observational work, but the medical/epidemiological literature has created standards in this type of work, though they are not as widely adopted as CONSORT. Perhaps the most well-known is the STROBE Statement (Strengthening the reporting of observational studies in epidemiology), available at \url{http://www.strobe-statement.org}. STROBE provides checklists for reporting of cohort, case-control, and cross-sectional studies. These standards have been endorsed by approximately 100 journals in the field.\footnote{\url{http://www.strobe-statement.org/index.php?id=strobe-endorsement}}
 
-Totally non-existent in social sciences
+Medicine has in fact come up with too many checklists to describe them all individually. Acknowledging that every field and type of research is different, the Equator Network (Enhancing the Quality of Transparency of Health Research) serves as an umbrella organization that seeks to keep tabs on all the best reporting standards and help researchers find which reporting standard is most relevant for their research. See \url{http://www.equator-network.org/} for more information.
 
-Observational epidemiology: STROBE
 
-Health Economics: CHEERS (Husereau et al. 2013)
 
 \subsection{Differential Privacy}\label{differential-privacy}
-
-**Wikipedia ``Differential privacy** aims to provide means to maximize
-the accuracy of queries from statistical databases while minimizing the
-chances of identifying its records.''
 
 One important caveat to making data widely available, is that despite
 anonymization, in the age of big data, sometimes individual subjects can
@@ -1204,7 +1186,8 @@ releases by Yahoo! Inc., the Massachusetts state government, and
 Netflix, that could easily be used to identify individuals in the data,
 despite the absence of direct identifiers such as names or social
 security numbers. The problem is that ``de-identification does not
-guarantee anonymization.''
+guarantee anonymization.'' This problem is well known in computer science, but solutions are not yet agreed upon, nor widely implemented.
+
 
 \section{Conclusion}\label{conclusion}
 
@@ -1229,7 +1212,12 @@ your own computer in seconds. Science moves forward.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{References}\label{references}
+\bibliographystyle{plainnat}
+\bibliography{Bibliography}
 
+References below this text are included manually
+
+%Change that!
 Alatas, Vivi, Abhijit Banerjee, Rema Hanna, Benjamin A Olken, and Julia
 Tobias. 2012. ``Targeting the Poor: Evidence from a Field Experiment in
 Indonesia.'' \emph{American Economic Review} 102 (4): 1206-40.
