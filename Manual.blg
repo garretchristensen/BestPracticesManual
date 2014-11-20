@@ -1,5 +1,10 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: Manual.aux
 The style file: plainnat.bst
-I found no \citation commands---while reading file Manual.aux
 Database file #1: Bibliography.bib
-(There was 1 error message)
+Warning--empty journal in baicker_katherine_oregon_2014
+Warning--empty institution in katz_elizabeth_pre-analysis_2013
+Warning--empty institution in olken_targeting_2009
+Warning--empty institution in olken_generasi_2009
+Warning--empty institution in olken_generasi_2010
+Warning--empty journal in taubman_oregon_2013
+(There were 6 warnings)

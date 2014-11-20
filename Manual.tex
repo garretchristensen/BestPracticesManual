@@ -431,7 +431,7 @@ merely assumes that a registered trial without an associated published
 paper produced a null result, it requires that the registration site
 itself obtain outcomes of trials. ClinicalTrials.gov is the only
 publicly available trial registry that requires such reporting of
-results, and only for certain FDA trials. Hartung et al. (2014) raises
+results, and only for certain FDA trials.\footnote{HHS and NIH took steps in November 2014 to expand the amount of results reporting required. See \url{http://www.nih.gov/news/health/nov2014/od-19.htm}}  Hartung et al. (2014) raises
 concerns about discrepancies between reporting of outcomes in published
 papers and in the ClinicalTrials.gov database; as many as 20\% of
 studies had discrepancies in primary outcomes and as many as 33\% had
@@ -513,7 +513,7 @@ assumptions and their data, but had the data turned out differently,
 they could have done other analyses that were just as reasonable in
 those circumstances.
 
-We regret the spread of the terms fishing" and ``p-hacking'' (and even
+We regret the spread of the terms ``fishing" and ``p-hacking'' (and even
 ``researcher degrees of freedom'') for two reasons: first, because when
 such terms are used to describe a study, there is the misleading
 implication that researchers were consciously trying out many different
@@ -527,26 +527,22 @@ In other words, the problem is even worse than you think. What can be
 done to solve it? We believe part of the answer lies in detailed
 pre-analysis plans, described in detail below.
 
-\subsection{Researcher Degrees of Freedom and Pre-Analysis
-Plans}\label{researcher-degrees-of-freedom-and-pre-analysis-plans}
+\subsection{Pre-Analysis
+Plans}\label{pre-analysis-plans}
 
-Registration of trials and Pre-analysis plans are closely related, but
-not the same. While registration is now the norm in medicine,
-registrations, and the associated trial protocols, often do not include
-detailed analysis plans, even though they are generally publicly
-available, and sometimes published in peer-reviewed journals. Sometimes
+While registration of studies can help to reduce publication bias or the file drawer problem, 
+A pre-analysis plan (PAP), a detailed outline of the analyses that will be conducted in a sutdy, can be used to reduce researcher degrees of freedom. While registration is now the norm in medicine,
+registrations, these often do not include
+detailed analysis plans. Sometimes
 this is because the medical researcher intends to do very little, if
 any, structural or economic-type modeling. But even if a researcher
 intends only to compare unadjusted means and bootstrap for standard
 errors, this should be explicitly stated. In the social sciences, this
 simple comparison is sometimes not the end goal of a randomized trial,
-so there may be even more value in registration and pre-specification.
-In the section below we explain some of the differences between
-registrations and pre analysis plans, and between their uses in medicine
-and in the social sciences.
+so there may be even more value in pre-specification of intended analyses.
+In the section below we explain what exactly should go into a pre-analysis plan.
 
-Part of registration is a pre-analysis plan (PAP), which contains a
-specification of the outcomes of the study, as well as a specification
+A pre-analysis plan (PAP) contains a specification of the outcomes of the study, as well as a specification
 of the methods that will be used to analyze the outcomes (sometimes
 referred to as endpoints in the medical literature). By describing the
 method(s) of analysis ahead of time, and to some degree tying the hands
@@ -557,7 +553,7 @@ widely, and the research community is still constructing norms for
 incorporating these documents into final analyses and papers.
 
 Suggestions have been made for the detailed contents of these documents.
-Glennerster and Takavarasha (2013) suggest including the following:
+\cite{glennerster_running_2013} suggest including the following:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -577,10 +573,12 @@ Glennerster and Takavarasha (2013) suggest including the following:
   the primary specification to be used for the analysis.
 \end{enumerate}
 
-Glennerster and Takavarasha (2013) also highlight the ``tension between
+\cite{glennerster_running_2013} also mention the ``tension between
 the benefits of the credibility that comes from tying ones hands versus
 the benefits of flexibility to respond to unforeseen events and
-results.''
+results.'' Writing a PAP can lend extra credibility to research by making it of a confirmatory nature as opposed to an exploratory nature.
+Both types of research are absolutely valuable, but knowing the distinction is important. If some sort of restriction on the data, be it a specific functional form, exclusion of outliers, or an interaction term (subgroup analysis) that terms a null effect for the population into a significant effect for some subgroup, is specified ahead of time based on theory or previous research, this can be considered confirmatory research. Some would say this is if more value than exploratory research: simply running 20 sub-group analyses and finding that one or two are significant. This may be an estimate of a true effect, but should be labeled as exploratory, and future researchers could attempt to confirm this finding by addressing the question of the sub-group specifically. The potential downside to pre-stating hypotheses and analysis plans is that no matter how carefully researchers plan ahead, something truly unexpected can occur. (An example discussed at a recent conference was subjects showing up for an experiment stoned. One example from a field experiment involved fatalities from a lightning strike at a school \citep{kremer2009incentives}. ) This is why, even though we may use the phrase ``bind our hands,'' we advocate that researchers not be punished for conducting research outside the analysis plan. We simply recommend that researchers clearly delineate which analysis was included in the analysis plan, and which was not, so that readers can know what is confirmatory and what is exploratory.
+
 
 David McKenzie of the World Bank Research Group proposed a list of ten
 items that should be included in a PAP, reproduced below. (For more
@@ -635,134 +633,44 @@ Simonsohn (2011) suggest the following requirements for authors:
   statistical results of the analysis without the covariate.
 \end{enumerate}
 
-\subsubsection{Project Protocols}\label{project-protocols}
+There is some question as to when one should write one's pre-analysis plan. ``Before you begin to analyze your data'' seems like the obvious answer, but this should be precisely defined. One could write the PAP before any baseline survey takes place, after any intervention but before endline, or after endline but before analysis has begun. \cite{glennerster_running_2013} has an informative discussion of the relative values of PAP timing. If one writes the PAP before the baseline, this is in some sense the purest, most free from accusations of p-hacking, but one could also miss valuable information. For example, suppose in baseline one learns that the intended outcome question is phrased poorly and elicits high rates of non-response, or that there is very little variation in the answers to a survey question. If the PAP was written after baseline, one could have accounted for this, but at the same time, researchers would also be free to change the scope of their analysis--for example, in the baseline survey of a field experiment designed to increase wages revealed that few of the subjects worked outside the home, the researcher could change the focus of the analysis. This is not necessarily wrong, but it does change the nature of the analysis somewhat.
 
-The PAP is similar to, but distinct from, a project protocol. Protocols
-are standard in the medical literature, as in all areas of lab science,
-but may be less familiar to those used to working with administrative or
-observational data. A protocol is a detailed recipe or instruction
-manual for others to use to reproduce an experiment. While the
-advantages of publishing a protocol related to the development of a new
-procedure (e.g. ``we have developed a new method of isolating mRNA'')
-should be obvious, the advantages of publishing protocols for randomized
-trials under way are perhaps less obvious, but still exist. \emph{BioMed
-Central} and \emph{BMJ Open,} among others, now publish protocols of
-trials planned or ongoing, with the hopes that this will reduce
-publication bias, allow patients to see trials in which they might like
-to enroll, allow funders and researchers to learn of work underway to
-avoid duplication, and to allow readers to compare what research was
-originally proposed to what was actually completed. (See
-\url{http://www.biomedcentral.com/authors/protocols} and
-\hyperref[studyprotocols]{http://bmjopen.bmj.com/site/about/guidelines.xhtml\#studyprotocols}.)
-The SPIRIT (Standard Protocol Items: Recommendations for Interventional
-Trials) statement includes a 33-item checklist of what should go into
-these protocols, of which one item is detailing the statistical methods
-to be used to analyze primary and secondary outcomes (Chan et al. 2013).
-\emph{BMJ Open} suggests, but does not require, that its published
-protocols include the items in the checklist.
+PAPs could also be written after endline data has been collected but before the investigators have begun to analyze the data. Some have suggested that one could even look at baseline data from the control group only before writing the PAP. We find this problematic, however, since a researcher could learn that the control group had a particularly low or high value of a certain outcome variable, and then choose to include or not include this variable in the analysis as a result. The original research design could have been intended to analyze the increase in secondary school attendance, but looking at the control group, researcher see that the control group had a very high rate of attendance, making a significant difference between control and treatment (the treatment effect) unlikely. Learning this after the experiment has concluded and searching for things that might be easily different between treatment and control is more exploratory than confirmatory. An alternative proposal from Ben Olken at MIT is to remove the treatment status variable from the dataset before looking at the data, which seems to alleviate some of the concerns. However, one could still search for sub-group analyses at this stage. If you parse the outcome data by gender, and males and females have a similar distribution, to find a differential treatment effect by gender would seem unlikely. If male and female had wildly different outcomes, it would seem like a significant interaction is more likely. This seems like exploratory research. 
 
-Even in published (or otherwise public) protocols, studies have found
-important differences between protocols and published results. 60-71\%
-of outcomes described in protocols went unreported in the paper while
-62\% had major discrepancies between primary outcomes in the protocols
-and in the published papers, though there was a relatively even mix of
-these discrepancies favoring significant or insignificant results (Chan
-A et al. 2004). Another study found that appropriate level of
-statistical detail is often lacking in protocols, and there are often
-discrepancies between protocols and published results (Saquib, Saquib,
-and Ioannidis 2013). 31\% of published papers had some sort of
-pre-specified plan for their regression adjustments (i.e.~specifying
-which baseline covariates would be controlled for), while 70-74\% of
-those that published a design paper or provided a protocol to the
-authors, but only 53\% of the plans matched what was published in the
-ultimate paper. While there seems to be internal disagreement in both
-medicine and economics over the appropriateness of including baseline
-control variables in regression analysis of a randomized trial, having
-researchers selectively report whatever method gives them the most
-significant-seeming results is obviously not the optimal outcome (Bruhn
-and McKenzie 2009).
-
-WHEN TO WRITE THEM
-
-Before you're done.
-
-PROS AND CONS
-
-Glennerster says there's zero downside to registration, some potential
-downside for PAPs from reduced flexibility.
 
 \subsubsection{Examples}\label{examples}
+Examples of pre-analysis plans in the social sciences are relatively rare, but several examples of good published papers resulting from studies with PAP exist. Several of the items below come from the \href{http://www.povertyactionlab.org/Hypothesis-Registry}{J-PAL Hypothesis Registry}; we highlight those that have publicly available final papers. 
 
-An example of a paper that resulted from a more detailed PAP is Casey,
-Glennerster, and Miguel (2012). The online appendix, available at
-\url{http://emiguel.econ.berkeley.edu/assets/miguel_research/8/_Appendix__Reshaping_Institutions_-_Evidence__on__Aid__Impacts__Using__a__Pre___Analysis__Plan.pdf},
+
+\begin{itemize}
+\item 
+ \cite{casey_reshaping_2012} includes evidence of large-scale field experiment on community driven development projects in Sierra Leone. The analysis finds no significant benefits. Given the somewhat vague nature of the development projects that resulted from the funding, and the wide variety of potential outcomes, finding signficant results would have been relatively easy. In fact, the paper includes an example of how, if they had the latitude to define outcomes without a pre-analysis plan, the authors could have reported large and significantly positive outcomes. The paper also includes a discussion of the history and purpose of pre-analysis plans. The online appendix, available at \url{http://emiguel.econ.berkeley.edu/assets/miguel_research/8/_Appendix__Reshaping_Institutions_-_Evidence__on__Aid__Impacts__Using__a__Pre___Analysis__Plan.pdf},
 contains the PAP.
 
-Other examples include:
 
-\textbf{Oregon}
+\item 
+Oregon expanded its medicare enrollment through a random lottery in 2008, providing researchers with an ideal avenue to evaluate the benefits of enrollment. \cite{finkelstein_oregon_2012, Taubman17012014, doi:10.1056/NEJMsa1212321} show that recipients did not improve in physical health measurements, but were more likely to have insurance, had beter self-reported health outcomes, utilized emergency rooms more, and had better detection and management of diabetes. Pre-analsyis plans from the project are available at the National Bureau of Economics' site devoted to the project: \url{http://www.nber.org/oregon/documents.html} (See, for example, \cite{taubman_oregon_2013, baicker_katherine_oregon_2014}.)
 
-Finkelstein, Amy, et al. ``The Oregon Health Insurance Experiment:
-Evidence from the First Year.'' \emph{The Quarterly journal of
-economics} 127.3 (2012): 1057-1106. (Finkelstein et al. 2012)
 
-The Oregon Health Insurance Experiment: Evidence From Emergency
-Department Data, Analysis Plan (Taubman Et Al. 2013)
+\item
+The shoe company Toms funded a rigorous evaluation of its in-kind shoe donation program. Researchers wrote a pre-analysis plan before conducting their research, and found no evidence that shoe donations displace local purchasing of shoes. See \cite{wydick_-kind_2014, katz_elizabeth_pre-analysis_2013}. The PAP is available at \url{http://www.povertyactionlab.org/doc/pre-analysis-planwydick2-12-13pdf}. This is one of many projects that has benefited from a pre-analysis plan because of the involvement of a group with a vested interest, such as a government or corporation.
 
-The Oregon Health Insurance Experiment: Evidence from
+\item
+Researchers from UC San Diego and the World Bank evaluated job training programs run by the Turkish government and found only insignificant improvements and a strongly negative return on investment. See \cite{almeida_impact_2012, vocationalTurkey}. The PAP is available in the J-PAL registry as well as at
+\url{http://blogs.worldbank.org/impactevaluations/files/impactevaluations/iskurie_analysisplan_v4a.pdf}).
 
-Criminal Charges Data, Analysis Plan (Baicker, Katherine, Finkelstein,
-Amy, and Taubman, Sarah 2014)
 
-\textbf{Toms}
+\item 
+Teams led by Ben Olkin have evaluated multiple randomized interventions in Indonesia. The \href{http://www.povertyactionlab.org/evaluation/project-generasi-conditional-community-block-grants-indonesia}{Generasi program} linked community block grants to performance. The PAP are \cite{olken_generasi_2009, olken_generasi_2010} and are available in the J-PAL Hypothesis Registry \url{http://www.povertyactionlab.org/Hypothesis-Registry}. The researchers found health improvement, but no education improvement \cite{olken_indonesias_2010, olken_should_2014}.
 
-Wydick, Bruce, Elizabeth Katz, and Brendan Janet. ``Do in-kind transfers
-damage local markets? The case of TOMS shoe donations in El Salvador.''
-\emph{Journal of Development Effectiveness} ahead-of-print (2014): 1-19.
-(Wydick, Katz, and Janet 2014)
+\item 
+Another project in Indonesia used a field experiment to evaluate different means of poverty targeting for cash transfer programs: proxy-means testing, community-based targeting, and a hybrid. Results show that the proxy-means testing outperformed the other methods by 10\%, but that community members were far more satisfied with the community method. The PAP and final paper are available as \cite{olken_targeting_2009} and \cite{alatas_targeting_2012}
 
-Pre-Analysis Plan: TOMS Shoes Impact Study (Katz, Elizabeth et al. 2013)
+\item
+An example from pyschology is a pre-registered replication of an implicit association test. Existing research showed evidence of stronger racial preferences among fertile women. \cite{NosekPreRegistered} failed to reproduce this effect in four tries, suggesting the association is weaker than originally found. The resulting manuscript, as well as the time-stamped registration of the analysis plan, can be found at \url{https://osf.io/g3sca/}
+\end{itemize}
 
-\textbf{Turkey}
-
-The Impact of Vocational Training for the Unemployed in Turkey:
-Pre-Analysis Plan
-
-Rita Almeida, Sarojini Hirshleifer, David McKenzie, Cristobal
-Ridao-Cano, Ahmed Levent Yener. 2012.(Almeida et al. 2012)
-
-(Available at
-\url{http://blogs.worldbank.org/impactevaluations/files/impactevaluations/iskurie_analysisplan_v4a.pdf})
-
-Hirshleifer, Sarojini, et al. ``The impact of vocational training for
-the unemployed: experimental evidence from Turkey.'' Forthcoming,
-\emph{Economic Journal} (2014).(Hirshleifer et al. 2014)
-
-\textbf{Olken-Generasi}
-
-Generasi Analysis Plan: Wave II (Olken, Onishi, and Wong 2009)
-
-Generasi Analysis Plan: Wave III (Olken, Onishi, and Wong 2010b)
-
-Olken, Benjamin A.; Onishi, Junko; Wong, Susan. 2010. \emph{Indonesia's
-PNPM Generasi program : interim impact evaluation report}. Washington,
-DC: World Bank.
-\url{http://documents.worldbank.org/curated/en/2010/01/13763479/indonesias-pnpm-generasi-program-interim-impact-evaluation-report}
-
-(Olken, Onishi, and Wong 2010a)
-
-Olken, Benjamin A., Junko Onishi, and Susan Wong. \emph{Should Aid
-Reward Performance? Evidence from a field experiment on health and
-education in Indonesia}. No. w17892. National Bureau of Economic
-Research, 2012. Forthcoming, AEJ Applied. (Olken, Onishi, and Wong 2012)
-
-\textbf{Olken-Poverty Targeting}
-
-Pre Analysis Plan (Olken 2009)
-
-AER Paper (Alatas et al. 2012)
-
-Adjust for multiple hypothesis testing (FWER---cite Michael L Anderson
+Several of the PAP above, and several of the lists of suggestions above involve corrections for multiple hypothesis testing.  (FWER---cite Michael L Anderson
 and the Van der Laan SuperLearner papers)
 
 One aspect of PAPs that seems to have taken hold widely in the medical
@@ -793,6 +701,53 @@ Grimes 2005)
 The original heart attack for libras and Gemini paper: (ISIS-2 (SECOND
 INTERNATIONAL STUDY OF INFARCT SURVIVAL) COLLABORATIVE GROUP 1988)
 
+
+\subsubsection{Project Protocols}\label{project-protocols}
+
+The PAP is similar to, but distinct from, a project protocol. A protocol is a detailed recipe or instruction
+manual for others to use to reproduce an experiment. Protocols
+are standard in the medical literature, as in all areas of lab science,
+but may be less familiar to those used to working with administrative or
+observational data. Lab sciences are rife with examples of experiments failing to replicate because of supposedly minor changes such as the brand of bedding in mouse cages or the gender of the laboratory assistant \citep{sorge2014olfactory}. \textit{Nature} has decided to expand its methods section in order to encourage better reporting.\footnote{\url{http://www.nature.com/news/announcement-reducing-our-irreproducibility-1.12852}}
+We believe the social sciences would benefit from more careful documentation of methods. When one uses administrative data this can be accomplished by sharing one's data and code so that analysis is transparent. This is discussed below in section~\ref{replication-and-reproducibility}.\footnote{It should be noted that the need for documentation of survey method is not eliminated by using administrative data, the burden simply falls upon the administration.} With original data collection, researchers should provide very detailed descriptions of what exactly they did. A 33-item checklist of suggested items is contained in the \href{http://www.spirit-statement.org/}{SPIRIT} (Standard Protocol Items: Recommendations for Interventional
+Trials) statement (see \url{http://www.spirit-statement.org}, Chan et al. 2013), including details on the participants, interventions, outcomes, assignment, blinding, data collection, data management, and statistical methods, among other things. 
+
+ Some medicine and science journals have begun to publish protocols.   While the
+advantages of publishing a protocol related to the development of a new
+procedure (e.g. ``we have developed a new method of isolating mRNA'')
+should be obvious, the advantages of publishing protocols for randomized
+trials under way are perhaps less obvious, but still exist. \emph{BioMed
+Central} and \emph{BMJ Open}, among others, now publish protocols of
+trials planned or ongoing, with the hopes that this will reduce
+publication bias, allow patients to see trials in which they might like
+to enroll, allow funders and researchers to learn of work underway to
+avoid duplication, and to allow readers to compare what research was
+originally proposed to what was actually completed. (See
+\url{http://www.biomedcentral.com/authors/protocols} and
+\url{http://bmjopen.bmj.com/site/about/guidelines.xhtml\#studyprotocols}.)
+\emph{BMJ Open} suggests, but does not require, that its published
+protocols include the items in the SPIRIT checklist.
+
+Even in published (or otherwise public) protocols, studies have found
+important differences between protocols and published results. 60-71\%
+of outcomes described in protocols went unreported in the paper while
+62\% had major discrepancies between primary outcomes in the protocols
+and in the published papers, though there was a relatively even mix of
+these discrepancies favoring significant or insignificant results (Chan
+A et al. 2004). Another study found that appropriate level of
+statistical detail is often lacking in protocols, and there are often
+discrepancies between protocols and published results (Saquib, Saquib,
+and Ioannidis 2013). 31\% of published papers had some sort of
+pre-specified plan for their regression adjustments (i.e.~specifying
+which baseline covariates would be controlled for), while 70-74\% of
+those that published a design paper or provided a protocol to the
+authors, but only 53\% of the plans matched what was published in the
+ultimate paper. While there seems to be internal disagreement in both
+medicine and the social sciences over the appropriateness of including baseline
+control variables in regression analysis of a randomized trial, having
+researchers selectively report whatever method gives them the most
+significant-seeming results is obviously not the optimal outcome (Bruhn
+and McKenzie 2009).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Replication and
@@ -1215,7 +1170,7 @@ your own computer in seconds. Science moves forward.
 \bibliographystyle{plainnat}
 \bibliography{Bibliography}
 
-References below this text are included manually
+\textbf{References below this text are included manually}
 
 %Change that!
 Alatas, Vivi, Abhijit Banerjee, Rema Hanna, Benjamin A Olken, and Julia

@@ -1,8 +1,188 @@
-\begin{thebibliography}{0}
+\begin{thebibliography}{20}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Alatas et~al.(2012)Alatas, Banerjee, Hanna, Olken, and
+  Tobias]{alatas_targeting_2012}
+Vivi Alatas, Abhijit Banerjee, Rema Hanna, Benjamin~A Olken, and Julia Tobias.
+\newblock Targeting the poor: Evidence from a field experiment in indonesia.
+\newblock \emph{American Economic Review}, 102\penalty0 (4):\penalty0
+  1206--1240, June 2012.
+\newblock ISSN 0002-8282.
+\newblock \doi{10.1257/aer.102.4.1206}.
+\newblock URL
+  \url{https://www.aeaweb.org/articles.php?doi=10.1257/aer.102.4.1206&fnd=s}.
+
+\bibitem[Almeida et~al.(2012)Almeida, Hirshleifer, McKenzie, Ridao-Cano, and
+  Yener]{almeida_impact_2012}
+Rita Almeida, Sarojini Hirshleifer, David McKenzie, Cristobal Ridao-Cano, and
+  Ahmed~Levent Yener.
+\newblock The impact of vocational training for the unemployed in turkey:
+  Pre-analysis plan.
+\newblock \emph{Poverty Action Lab Hypothesis Registry}, February 2012.
+\newblock URL
+  \url{http://www.povertyactionlab.org/sites/default/files/documents/ISKURIE_AnalysisPlan_v4.pdf}.
+
+\bibitem[Baicker et~al.(2013)Baicker, Taubman, Allen, Bernstein, Gruber,
+  Newhouse, Schneider, Wright, Zaslavsky, and
+  Finkelstein]{doi:10.1056/NEJMsa1212321}
+Katherine Baicker, Sarah~L. Taubman, Heidi~L. Allen, Mira Bernstein,
+  Jonathan~H. Gruber, Joseph~P. Newhouse, Eric~C. Schneider, Bill~J. Wright,
+  Alan~M. Zaslavsky, and Amy~N. Finkelstein.
+\newblock The oregon experiment — effects of medicaid on clinical outcomes.
+\newblock \emph{New England Journal of Medicine}, 368\penalty0 (18):\penalty0
+  1713--1722, 2013.
+\newblock \doi{10.1056/NEJMsa1212321}.
+\newblock URL \url{http://www.nejm.org/doi/full/10.1056/NEJMsa1212321}.
+\newblock PMID: 23635051.
+
+\bibitem[Baicker et~al.(2014)Baicker, Finkelstein, and
+  Taubman]{baicker_katherine_oregon_2014}
+Katherine Baicker, Amy Finkelstein, and Sarah Taubman.
+\newblock The oregon health insurance experiment: Evidence from criminal
+  charges data, analysis plan.
+\newblock April 2014.
+\newblock URL
+  \url{http://www.nber.org/oregon/files/oregon_hie_crime_analysis_plan.pdf}.
+
+\bibitem[Casey et~al.(2012)Casey, Glennerster, and
+  Miguel]{casey_reshaping_2012}
+Katherine Casey, Rachel Glennerster, and Edward Miguel.
+\newblock Reshaping institutions: Evidence on aid impacts using a preanalysis
+  plan*.
+\newblock \emph{The Quarterly Journal of Economics}, 127\penalty0 (4):\penalty0
+  1755--1812, November 2012.
+\newblock ISSN 0033-5533, 1531-4650.
+\newblock \doi{10.1093/qje/qje027}.
+\newblock URL \url{http://qje.oxfordjournals.org/content/127/4/1755}.
+
+\bibitem[Finkelstein et~al.(2012)Finkelstein, Taubman, Wright, Bernstein,
+  Gruber, Newhouse, Allen, and Baicker]{finkelstein_oregon_2012}
+Amy Finkelstein, Sarah Taubman, Bill Wright, Mira Bernstein, Jonathan Gruber,
+  Joseph~P. Newhouse, Heidi Allen, and Katherine Baicker.
+\newblock The oregon health insurance experiment: Evidence from the first
+  year*.
+\newblock \emph{The Quarterly Journal of Economics}, 127\penalty0 (3):\penalty0
+  1057--1106, August 2012.
+\newblock ISSN 0033-5533, 1531-4650.
+\newblock \doi{10.1093/qje/qjs020}.
+\newblock URL \url{http://qje.oxfordjournals.org/content/127/3/1057}.
+
+\bibitem[Glennerster and Takavarasha(2013)]{glennerster_running_2013}
+Rachel Glennerster and Kudzai Takavarasha.
+\newblock \emph{Running Randomized Evaluations: A Practical Guide}.
+\newblock Princeton University Press, November 2013.
+\newblock ISBN 9781400848447.
+
+\bibitem[Hawkins et~al.(In Press)Hawkins, Fitzgerald, and
+  Nosek]{NosekPreRegistered}
+Carlee~Beth Hawkins, Cailey~E. Fitzgerald, and Brian~A. Nosek.
+\newblock In search of an association between conception risk and prejudice.
+\newblock \emph{Psychological Science}, In Press.
+
+\bibitem[Hirshleifer et~al.(2014)Hirshleifer, McKenzie, Almeida, and
+  Ridao-Cano]{vocationalTurkey}
+Sarojini Hirshleifer, David McKenzie, Rita Almeida, and Cristobal Ridao-Cano.
+\newblock The impact of vocational training for the unemployed: Experimental
+  evidence from turkey.
+\newblock \emph{The Economic Journal}, pages n/a--n/a, 2014.
+\newblock ISSN 1468-0297.
+\newblock \doi{10.1111/ecoj.12211}.
+\newblock URL \url{http://dx.doi.org/10.1111/ecoj.12211}.
+
+\bibitem[Katz et~al.(2013)Katz, Janet, Wydick, and
+  Gutierrez]{katz_elizabeth_pre-analysis_2013}
+Elizabeth Katz, Brendan Janet, Bruce Wydick, and Felipe Gutierrez.
+\newblock Pre-analysis plan: {TOMS} shoes impact study.
+\newblock Technical report, February 2013.
+\newblock URL
+  \url{http://www.povertyactionlab.org/sites/default/files/documents/Pre-Analysis%20Plan_Wydick_2-12-13.pdf}.
+
+\bibitem[Kremer et~al.(2009)Kremer, Miguel, and Thornton]{kremer2009incentives}
+Michael Kremer, Edward Miguel, and Rebecca Thornton.
+\newblock Incentives to learn.
+\newblock \emph{The Review of Economics and Statistics}, 91\penalty0
+  (3):\penalty0 437--456, 2009.
+
+\bibitem[Olken(2009)]{olken_targeting_2009}
+Benjamin~A. Olken.
+\newblock Targeting analysis protocol.
+\newblock Technical report, March 2009.
+\newblock URL
+  \url{https://www.povertyactionlab.org/sites/default/files/documents/090318a%20Targeting%20Analysis%20Protocol.pdf}.
+
+\bibitem[Olken et~al.(2009)Olken, Onishi, and Wong]{olken_generasi_2009}
+Benjamin~A. Olken, Junko Onishi, and Susan Wong.
+\newblock Generasi analysis plan.
+\newblock Technical report, April 2009.
+\newblock URL
+  \url{http://www.povertyactionlab.org/sites/default/files/documents/090408_Generasi_Analysis_Plan_CLEAN.pdf}.
+
+\bibitem[Olken et~al.(2010{\natexlab{a}})Olken, Onishi, and
+  Wong]{olken_generasi_2010}
+Benjamin~A. Olken, Junko Onishi, and Susan Wong.
+\newblock Generasi analysis plan: Wave {III}.
+\newblock Technical report, January 2010{\natexlab{a}}.
+\newblock URL
+  \url{http://www.povertyactionlab.org/sites/default/files/documents/100122_Generasi_AnalysisPlan_Wave_III_CLEAN.pdf}.
+
+\bibitem[Olken et~al.(2010{\natexlab{b}})Olken, Onishi, and
+  Wong]{olken_indonesias_2010}
+Benjamin~A. Olken, Junko Onishi, and Susan Wong.
+\newblock Indonesia's {PNPM} generasi program : interim impact evaluation
+  report.
+\newblock Technical Report 59567, The World Bank, January 2010{\natexlab{b}}.
+\newblock URL
+  \url{http://documents.worldbank.org/curated/en/2010/01/13763479/indonesias-pnpm-generasi-program-interim-impact-evaluation-report}.
+
+\bibitem[Olken et~al.(2014)Olken, Onishi, and Wong]{olken_should_2014}
+Benjamin~A. Olken, Junko Onishi, and Susan Wong.
+\newblock Should aid reward performance? evidence from a field experiment on
+  health and education in indonesia.
+\newblock \emph{American Economic Journal: Applied Economics}, 6\penalty0
+  (4):\penalty0 1--34, 2014.
+\newblock \doi{10.1257/app.6.4.1}.
+\newblock URL \url{http://www.aeaweb.org/articles.php?doi=10.1257/app.6.4.1}.
+
+\bibitem[Sorge et~al.(2014)Sorge, Martin, Isbester, Sotocinal, Rosen, Tuttle,
+  Wieskopf, Acland, Dokova, Kadoura, et~al.]{sorge2014olfactory}
+Robert~E Sorge, Loren~J Martin, Kelsey~A Isbester, Susana~G Sotocinal, Sarah
+  Rosen, Alexander~H Tuttle, Jeffrey~S Wieskopf, Erinn~L Acland, Anastassia
+  Dokova, Basil Kadoura, et~al.
+\newblock Olfactory exposure to males, including men, causes stress and related
+  analgesia in rodents.
+\newblock \emph{Nature methods}, 2014.
+
+\bibitem[Taubman et~al.(2013)Taubman, Allen, Baicker, Wright, and
+  Finkelstein]{taubman_oregon_2013}
+Sarah Taubman, Heidi Allen, Katherine Baicker, Bill Wright, and Amy
+  Finkelstein.
+\newblock {THE} {OREGON} {HEALTH} {INSURANCE} {EXPERIMENT}: {EVIDENCE} {FROM}
+  {EMERGENCY} {DEPARTMENT} {DATA} analysis plan.
+\newblock March 2013.
+\newblock URL \url{http://www.nber.org/oregon/files/ED%20Analysis%20Plan.pdf}.
+
+\bibitem[Taubman et~al.(2014)Taubman, Allen, Wright, Baicker, and
+  Finkelstein]{Taubman17012014}
+Sarah~L. Taubman, Heidi~L. Allen, Bill~J. Wright, Katherine Baicker, and Amy~N.
+  Finkelstein.
+\newblock Medicaid increases emergency-department use: Evidence from oregon's
+  health insurance experiment.
+\newblock \emph{Science}, 343\penalty0 (6168):\penalty0 263--268, 2014.
+\newblock \doi{10.1126/science.1246183}.
+\newblock URL \url{http://www.sciencemag.org/content/343/6168/263.abstract}.
+
+\bibitem[Wydick et~al.(2014)Wydick, Katz, and Janet]{wydick_-kind_2014}
+Bruce Wydick, Elizabeth Katz, and Brendan Janet.
+\newblock Do in-kind transfers damage local markets? the case of {TOMS} shoe
+  donations in el salvador.
+\newblock \emph{Journal of Development Effectiveness}, 6\penalty0 (3):\penalty0
+  249--267, May 2014.
+\newblock ISSN 1943-9342.
+\newblock \doi{10.1080/19439342.2014.919012}.
+\newblock URL \url{http://dx.doi.org/10.1080/19439342.2014.919012}.
 
 \end{thebibliography}
