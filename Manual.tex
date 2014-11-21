@@ -6,6 +6,7 @@
 \PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
 \usepackage{pslatex}
 \renewcommand{\baselinestretch}{2}
+\usepackage{setspace}
 
 
 \begin{document}
@@ -670,8 +671,18 @@ Another project in Indonesia used a field experiment to evaluate different means
 An example from pyschology is a pre-registered replication of an implicit association test. Existing research showed evidence of stronger racial preferences among fertile women. \cite{NosekPreRegistered} failed to reproduce this effect in four tries, suggesting the association is weaker than originally found. The resulting manuscript, as well as the time-stamped registration of the analysis plan, can be found at \url{https://osf.io/g3sca/}
 \end{itemize}
 
-Several of the PAP above, and several of the lists of suggestions above involve corrections for multiple hypothesis testing.  (FWER---cite Michael L Anderson
-and the Van der Laan SuperLearner papers)
+\subsection{Multiple Hypothesis Testing}
+Several of the PAP above, and several of the lists of suggestions above involve corrections for multiple hypothesis testing. The idea of correcting for multiple tests is widespread in certain fields, but has yet to take hold in the social sciences. Simply put, the idea is that because we are aware of the fact that test statistics and p-values appear significant purely by chance a certain proportion of the time, we can report different, \textit{better} p-values that control for the fact that we are running multiple tests. There are several ways to do this, all of which are used and explained in a simple and straightforward manner by \cite{anderson_fwer}:
+\begin{itemize}
+\item
+Report index tests---instead of reporting the outcomes of numerous tests, standardize outcomes and combine them into a smaller number of indeces (e.g. instead of separately reporting whether a long-term health intervention reduced blood pressure, diabetes, obesity, cancer, heart disease, and Alzheimer's, report the results of a single health index.)
+\item
+Control the Family-Wise Error Rate (FWER)---FWER is the probability that at least one true hypothesis in a group is rejected, meaning it is advisable when the damage from falsely claiming \textit{any} hypotheses are false is important. There are several ways to do this, with the simplest (but too conservative) method being the Bonferroni correction of simply multiplying every original p-value by the number of tests done. Holm's sequential method involves ordering p-values by class and multiplying the lower p-values by higher dicsount factors \citep{holm_multipletesting}. An efficient recent method is the free step-down resampling method, developed by \cite{westfall_young_multiple}
+  
+\item
+Control the False Discovery Rate (FDR)---
+\end{itemize}
+
 
 One aspect of PAPs that seems to have taken hold widely in the medical
 literature is the aversion to sub-group analysis (``interactions'' to
@@ -1166,6 +1177,7 @@ published paper, you click the link in the paper and have the data on
 your own computer in seconds. Science moves forward.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\singlespacing
 \section{References}\label{references}
 \bibliographystyle{plainnat}
 \bibliography{Bibliography}

@@ -122,6 +122,26 @@
   Urldate                  = {2014-08-21}
 }
 
+@Article{anderson_fwer,
+  Title                    = {Multiple Inference and Gender Differences in the Effects of Early Intervention: A Reevaluation of the Abecedarian, Perry Preschool, and Early Training Projects},
+  Author                   = {Anderson, Michael L.},
+  Journal                  = {Journal of the American Statistical Association},
+  Year                     = {2008},
+  Number                   = {484},
+  Pages                    = {1481-1495},
+  Volume                   = {103},
+
+  Doi                      = {10.1198/016214508000000841},
+  Eprint                   = { 
+ http://dx.doi.org/10.1198/016214508000000841
+ 
+},
+  Url                      = { 
+ http://dx.doi.org/10.1198/016214508000000841
+ 
+}
+}
+
 @Article{anderson_registration_2013,
   Title                    = {Registration and Replication: A Comment},
   Author                   = {Anderson, Richard G.},

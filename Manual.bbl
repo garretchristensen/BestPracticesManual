@@ -1,4 +1,4 @@
-\begin{thebibliography}{20}
+\begin{thebibliography}{23}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -25,6 +25,16 @@ Rita Almeida, Sarojini Hirshleifer, David McKenzie, Cristobal Ridao-Cano, and
 \newblock \emph{Poverty Action Lab Hypothesis Registry}, February 2012.
 \newblock URL
   \url{http://www.povertyactionlab.org/sites/default/files/documents/ISKURIE_AnalysisPlan_v4.pdf}.
+
+\bibitem[Anderson(2008)]{anderson_fwer}
+Michael~L. Anderson.
+\newblock Multiple inference and gender differences in the effects of early
+  intervention: A reevaluation of the abecedarian, perry preschool, and early
+  training projects.
+\newblock \emph{Journal of the American Statistical Association}, 103\penalty0
+  (484):\penalty0 1481--1495, 2008.
+\newblock \doi{10.1198/016214508000000841}.
+\newblock URL \url{http://dx.doi.org/10.1198/016214508000000841}.
 
 \bibitem[Baicker et~al.(2013)Baicker, Taubman, Allen, Bernstein, Gruber,
   Newhouse, Schneider, Wright, Zaslavsky, and
@@ -92,6 +102,14 @@ Sarojini Hirshleifer, David McKenzie, Rita Almeida, and Cristobal Ridao-Cano.
 \newblock ISSN 1468-0297.
 \newblock \doi{10.1111/ecoj.12211}.
 \newblock URL \url{http://dx.doi.org/10.1111/ecoj.12211}.
+
+\bibitem[Holm(1979)]{holm_multipletesting}
+Sture Holm.
+\newblock A simple sequentially rejective multiple test procedure.
+\newblock \emph{Scandinavian Journal of Statistics}, 6\penalty0 (2):\penalty0
+  pp. 65--70, 1979.
+\newblock ISSN 03036898.
+\newblock URL \url{http://www.jstor.org/stable/4615733}.
 
 \bibitem[Katz et~al.(2013)Katz, Janet, Wydick, and
   Gutierrez]{katz_elizabeth_pre-analysis_2013}
@@ -174,6 +192,11 @@ Sarah~L. Taubman, Heidi~L. Allen, Bill~J. Wright, Katherine Baicker, and Amy~N.
 \newblock \emph{Science}, 343\penalty0 (6168):\penalty0 263--268, 2014.
 \newblock \doi{10.1126/science.1246183}.
 \newblock URL \url{http://www.sciencemag.org/content/343/6168/263.abstract}.
+
+\bibitem[Westfall and Young(1993)]{westfall_young_multiple}
+Peter~H. Westfall and S.~Stanley Young.
+\newblock \emph{Resampling-Based Multiple Testing}.
+\newblock Wiley, 1993.
 
 \bibitem[Wydick et~al.(2014)Wydick, Katz, and Janet]{wydick_-kind_2014}
 Bruce Wydick, Elizabeth Katz, and Brendan Janet.
