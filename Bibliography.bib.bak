@@ -423,6 +423,28 @@ Evidence produced repeatedly over the last 30 years indicates a wide chasm betwe
   Urldate                  = {2014-09-23}
 }
 
+@Article{benjamini1995controlling,
+  Title                    = {Controlling the false discovery rate: a practical and powerful approach to multiple testing},
+  Author                   = {Benjamini, Yoav and Hochberg, Yosef},
+  Journal                  = {Journal of the Royal Statistical Society. Series B (Methodological)},
+  Year                     = {1995},
+  Pages                    = {289--300},
+
+  Publisher                = {JSTOR}
+}
+
+@Article{benjamini2006adaptive,
+  Title                    = {Adaptive linear step-up procedures that control the false discovery rate},
+  Author                   = {Benjamini, Yoav and Krieger, Abba M and Yekutieli, Daniel},
+  Journal                  = {Biometrika},
+  Year                     = {2006},
+  Number                   = {3},
+  Pages                    = {491--507},
+  Volume                   = {93},
+
+  Publisher                = {Biometrika Trust}
+}
+
 @Article{bhattacharjee_diederik_2013,
   Title                    = {Diederik Stapel Audacious Academic Fraud},
   Author                   = {Bhattacharjee, Yudhijit},
@@ -1712,6 +1734,25 @@ Science, this issue p. 1502},
   ISSN                     = {1468-0297},
   Keywords                 = {Vocational training, Active Labour Market Programs, Randomized Experiment, Private Provision},
   Url                      = {http://dx.doi.org/10.1111/ecoj.12211}
+}
+
+@Article{holm_multipletesting,
+  Title                    = {A Simple Sequentially Rejective Multiple Test Procedure},
+  Author                   = {Holm, Sture},
+  Journal                  = {Scandinavian Journal of Statistics},
+  Year                     = {1979},
+  Number                   = {2},
+  Pages                    = {pp. 65-70},
+  Volume                   = {6},
+
+  Abstract                 = {This paper presents a simple and widely applicable multiple test procedure of the sequentially rejective type, i.e. hypotheses are rejected one at a time until no further rejections can be done. It is shown that the test has a prescribed level of significance protection against error of the first kind for any combination of true hypotheses. The power properties of the test and a number of possible applications are also discussed.},
+  Copyright                = {Copyright © 1979 Board of the Foundation of the Scandinavian Journal of Statistics},
+  ISSN                     = {03036898},
+  Jstor_articletype        = {research-article},
+  Jstor_formatteddate      = {1979},
+  Language                 = {English},
+  Publisher                = {Wiley on behalf of Board of the Foundation of the Scandinavian Journal of Statistics},
+  Url                      = {http://www.jstor.org/stable/4615733}
 }
 
 @Article{hoxby_does_2007,
@@ -3405,6 +3446,16 @@ Subgroup analyses can pose serious multiplicity concerns. By testing enough subg
   Language                 = {en},
   Url                      = {http://onlinelibrary.wiley.com/doi/10.1111/j.1465-7295.1974.tb00401.x/abstract},
   Urldate                  = {2014-10-01}
+}
+
+@Book{westfall_young_multiple,
+  Title                    = {Resampling-Based Multiple Testing},
+  Author                   = {Peter H. Westfall and S. Stanley Young},
+  Publisher                = {Wiley},
+  Year                     = {1993},
+
+  Owner                    = {garret},
+  Timestamp                = {2014.11.20}
 }
 
 @Article{williams_registration_2010,
