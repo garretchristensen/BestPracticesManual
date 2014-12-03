@@ -12,9 +12,14 @@
 \begin{document}
 \title{Manual of Best Practices in Transparent Social Science Research}
 
-\author{Garret Christensen\thanks{Berkeley Initiative for Transparency in the Social Sciences, Center for Open Science}}
+\author{Garret Christensen\thanks{Berkeley Initiative for Transparency in the Social Sciences, Center for Open Science. Comments and suggestions are welcome. Please send correspondence to garret@berkeley.edu, or find the latest version of the manual on github:\url{https://github.com/garretchristensen/BestPracticesManual}}}
 \date{\today}
 \maketitle
+
+\begin{center}
+Please find the latest version \href{https://github.com/garretchristensen/BestPracticesManual}{here}.
+\end{center}
+
 \newpage
 \tableofcontents
 
@@ -107,8 +112,8 @@ more benevolent. Part of the US Department of Health and Human Services
 integrity and document misconduct, especially when it involves federally
 funded research. The misconduct case summaries of the ORI
 (\url{http://ori.hhs.gov/case_summary}), and the stories of Diederik
-Stapel (Bhattacharjee 2013; Carey 2011) Hwang Woo-Suk (Cyranoski 2014)
-and Marc Hauser (Johnson 2012) should be sobering warnings to us all.
+Stapel \citep{carey_noted_2011, bhattacharjee_diederik_2013} Hwang Woo-Suk \citep{cyranoski_cloning_2014}
+and Marc Hauser \citep{johnson_harvard_2012} should be sobering warnings to us all.
 
 \subsection{Unintentional Bias}\label{unintentional-bias}
 
@@ -116,7 +121,7 @@ Perhaps in addition to the obvious need to avoid deliberate fraud and
 protect our human subjects is the need to avoid subconsciously biasing
 our own results.
 
-Nosek, Spies, and Motyl (2012) summarize some of the evidence on this
+\cite{nosek_scientific_2012} summarize some of the evidence on this
 subject, concluding that there are many circumstances common to academia
 and the publishing paradigm that cause researchers to frequently use
 motivated reasoning:
@@ -407,7 +412,7 @@ relatively new to the social sciences. After congress passed a law in
 the NIH created clinicaltrials.gov in 2000, The International Committee
 of Medical Journal Editors (ICMJE), a collection of editors of top
 medical journals, instituted a policy of publishing only registered
-trials in 2005 (De Angelis et al. 2004), and the policy has spread to
+trials in 2005 \citep{DeAngelis2004}, and the policy has spread to
 other journals and been generally accepted by researchers \citep{laine_clinical_2007}.
 
 A profound example of the benefit of trial registries is detailed in
@@ -422,16 +427,16 @@ rates of publication, and a large amount of publication bias.
 \begin{center}
 \includegraphics{TurnerFigure1.PNG}
 
-Panel A of Figure 1 from (Turner et al. 2008)
+Panel A of Figure 1 from \cite{turner_selective_2008}
 \end{center}
 Of course for this sort of exercise to be possible, unless a reader
 merely assumes that a registered trial without an associated published
 paper produced a null result, it requires that the registration site
-itself obtain outcomes of trials. ClinicalTrials.gov is the only
+itself obtain outcomes of trials. \href{http://www.clinicaltrials.gov}{ClinicalTrials.gov} is the only
 publicly available trial registry that requires such reporting of
 results, and only for certain FDA trials.\footnote{HHS and NIH took steps in November 2014 to expand the amount of results reporting required. See \url{http://www.nih.gov/news/health/nov2014/od-19.htm}}  \cite{hartung_reporting_2014} raises
 concerns about discrepancies between reporting of outcomes in published
-papers and in the ClinicalTrials.gov database; as many as 20\% of
+papers and in the \href{http://www.clinicaltrials.gov}{ClinicalTrials.gov} database; as many as 20\% of
 studies had discrepancies in primary outcomes and as many as 33\% had
 discrepancies in reporting of adverse events.
 
@@ -695,6 +700,15 @@ not, we feel that social scientists could benefit from reporting the number of
 interactions tested, possibly adjusting for multiple hypotheses, and
 ideally specifying beforehand the interactions to be tested, with a justification from theory or previous evidence as to why the test is of interest. 
 
+
+\subsection{Results-Blind Reviewing}
+A new development in research transparency which helps to address both publication bias and researcher degrees of freedom is results-blind reviewing. In results-blind reviewing, authors submit a detailed research plan \textit{before} conducting the research. They submit this plan to a journal, and the journal rejects or gives an in-principle acceptance of the not-yet-written article based on the scientific merit of the question being asked and the methods proposed to answer them, as opposed to whether the results pass an arbitrary threshold of statistical significance. Then the authors conduct the research, and their paper is published as long as they don't deviate too much from what they initially proposed. The editors and reviewers have tied their hands and have no ability to accept only significant results, and the authors have less incentive to run every statistical analysis possible in order to find something signficant. 
+
+This new mode of publication, called ``Registered Reports," is championed by Chris Chambers, psychologist at Cardiff University, and has been adopted by over a dozen journals. See a full list of journals adopting the procedure at \url{https://osf.io/8mpji/}. \textit{Social Pyschology} run an issue dedicated to this type of article, with an editorial explaining the concept \citep{nosek2014registered}. \textit{AIMS Neuroscience}, which uses this format, published an editorial answering 25 frequently asked questions pertaining to registered reports \citep{chambers2014instead}. 
+
+  
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Replication and
 Reproducibility}\label{replication-and-reproducibility}
@@ -712,7 +726,7 @@ including yourself next week''---Philip Stark, UC Berkeley Statistics
 
 Replication, in both practice and principle, is a key part of social
 science research. We first define what exactly we mean by replication
-using the taxonomy developed in Hamermesh (2007) and Hunter (2001).
+using the taxonomy developed in \cite{hamermesh_viewpoint:_2007} and \cite{hunter_desperate_2001}.
 Replication comes in a few different shapes: pure, statistical, and
 scientific.
 
@@ -743,7 +757,7 @@ but may be less familiar to those used to working with administrative or
 observational data. Lab sciences are rife with examples of experiments failing to replicate because of supposedly minor changes such as the brand of bedding in mouse cages or the gender of the laboratory assistant \citep{sorge2014olfactory}. \textit{Nature} has decided to expand its methods section in order to encourage better reporting.\footnote{\url{http://www.nature.com/news/announcement-reducing-our-irreproducibility-1.12852}}
 
 We believe the social sciences would benefit from more careful documentation of methods. When one uses administrative data this can be accomplished by sharing one's data and code so that analysis is transparent. This is discussed below in section~\ref{replication-and-reproducibility}.\footnote{It should be noted that the need for documentation of survey method is not eliminated by using administrative data, the burden simply falls upon the administration.} With original data collection, researchers should provide very detailed descriptions of what exactly they did. A 33-item checklist of suggested items is contained in the \href{http://www.spirit-statement.org/}{SPIRIT} (Standard Protocol Items: Recommendations for Interventional
-Trials) statement (see \url{http://www.spirit-statement.org}, Chan et al. 2013), including details on the participants, interventions, outcomes, assignment, blinding, data collection, data management, and statistical methods, among other things. 
+Trials) statement (see \url{http://www.spirit-statement.org}, \cite{chan_spirit_2013}), including details on the participants, interventions, outcomes, assignment, blinding, data collection, data management, and statistical methods, among other things. 
 
 One area in which social sciences could improve involves details of randomization. \cite{bruhn_pursuit_2009} documents the lack of clear explanation pertatining to how randomization was conducted in RCTs published in economics journals. Variables used for stratification are not described, and the decision of whether to control for baseline characteristics was often done after the fact. While there seems to be internal disagreement in both
 medicine and the social sciences over the appropriateness of including baseline
@@ -1160,8 +1174,8 @@ your own computer in seconds. Science moves forward.
 \bibliography{Bibliography}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Index}\label{index}
+%\section{Index}\label{index}
 
-I'm guessing it's super annoying to make, but we should have an index.
+%I'm guessing it's super annoying to make, but we should have an index.
 
 \end{document}

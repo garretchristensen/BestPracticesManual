@@ -17,21 +17,21 @@
 \contentsline {subsubsection}{\numberline {5.1.1}Examples}{25}{subsubsection.5.1.1}
 \contentsline {subsection}{\numberline {5.2}Multiple Hypothesis Testing}{27}{subsection.5.2}
 \contentsline {subsection}{\numberline {5.3}Subgroup Analysis}{28}{subsection.5.3}
-\contentsline {section}{\numberline {6}Replication and Reproducibility}{29}{section.6}
-\contentsline {subsection}{\numberline {6.1}Project Protocols}{30}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Code and Workflow}{33}{subsection.6.2}
-\contentsline {subsubsection}{\numberline {6.2.1}Publicly Sharing Code}{33}{subsubsection.6.2.1}
-\contentsline {subsubsection}{\numberline {6.2.2}Managing Workflow}{34}{subsubsection.6.2.2}
-\contentsline {subsection}{\numberline {6.3}General Worflow Suggestions:}{36}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Stata-specific Suggestions}{37}{subsection.6.4}
-\contentsline {subsection}{\numberline {6.5}Sharing Data}{39}{subsection.6.5}
+\contentsline {subsection}{\numberline {5.4}Results-Blind Reviewing}{29}{subsection.5.4}
+\contentsline {section}{\numberline {6}Replication and Reproducibility}{30}{section.6}
+\contentsline {subsection}{\numberline {6.1}Project Protocols}{31}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Code and Workflow}{34}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}Publicly Sharing Code}{34}{subsubsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.2}Managing Workflow}{35}{subsubsection.6.2.2}
+\contentsline {subsection}{\numberline {6.3}General Worflow Suggestions:}{37}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Stata-specific Suggestions}{38}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}Sharing Data}{40}{subsection.6.5}
 \contentsline {subsubsection}{\numberline {6.5.1}The JMCB Project and Economics}{40}{subsubsection.6.5.1}
 \contentsline {subsubsection}{\numberline {6.5.2}General Repositories}{42}{subsubsection.6.5.2}
-\contentsline {subsection}{\numberline {6.6}Reporting Standards}{42}{subsection.6.6}
+\contentsline {subsection}{\numberline {6.6}Reporting Standards}{43}{subsection.6.6}
 \contentsline {subsubsection}{\numberline {6.6.1}Randomized Trials and CONSORT}{43}{subsubsection.6.6.1}
-\contentsline {subsection}{\numberline {6.7}Social Science Reporting Standards}{43}{subsection.6.7}
+\contentsline {subsection}{\numberline {6.7}Social Science Reporting Standards}{44}{subsection.6.7}
 \contentsline {subsection}{\numberline {6.8}Observational Reporting Standards}{44}{subsection.6.8}
 \contentsline {subsection}{\numberline {6.9}Differential Privacy}{45}{subsection.6.9}
-\contentsline {section}{\numberline {7}Conclusion}{45}{section.7}
+\contentsline {section}{\numberline {7}Conclusion}{46}{section.7}
 \contentsline {section}{\numberline {8}References}{46}{section.8}
-\contentsline {section}{\numberline {9}Index}{52}{section.9}

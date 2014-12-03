@@ -884,7 +884,7 @@ completion.},
 
 @Article{dal-re_making_2014,
   Title                    = {Making Prospective Registration of Observational Research a Reality},
-  Author                   = {Dal-Ré, Rafael and Ioannidis, John P. and Bracken, Michael B. and Buffler, Patricia A. and Chan, An-Wen and Franco, Eduardo L. and Vecchia, Carlo La and Weiderpass, Elisabete},
+  Author                   = {Dal-, Rafael and Ioannidis, John P. and Bracken, Michael B. and Buffler, Patricia A. and Chan, An-Wen and Franco, Eduardo L. and Vecchia, Carlo La and Weiderpass, Elisabete},
   Journal                  = {Science Translational Medicine},
   Year                     = {2014},
 
@@ -901,6 +901,20 @@ The vast majority of health-related observational studies are not prospectively 
   Pmid                     = {24553383},
   Url                      = {http://stm.sciencemag.org/content/6/224/224cm1},
   Urldate                  = {2014-10-28}
+}
+
+@Article{DeAngelis2004,
+  Title                    = {Clinical Trial Registration: A Statement from the International Committee of Medical Journal Editors},
+  Author                   = {De Angelis, Catherine AND Jeffrey M. Drazen AND Frank A. Frizelle AND Charlotte Haug AND John Hoey AND Richard Horton AND Sheldon Kotzin},
+  Journal                  = {New England Journal of Medicine},
+  Year                     = {2004},
+  Note                     = {doi:10.1056/NEJMe048225},
+  Number                   = {12},
+  Pages                    = {1250-1251},
+  Volume                   = {351},
+
+  Owner                    = {garret},
+  Timestamp                = {2014.12.02}
 }
 
 @Misc{deaton_letter_2012,
@@ -1476,6 +1490,7 @@ Science, this issue p. 1502},
 @TechReport{gerber_reporting_????,
   Title                    = {Reporting Guidelines for Experimental Research: A Report from the Experimental Research Section Standards Committee},
   Author                   = {Gerber, Alan and Arceneaux, Kevin and Boudreau, Cheryl and Dowling, Conor and Hillygus, Sunshine and Palfrey, Thomas and Biggers, Daniel R. and Hendry, David J.},
+  Year                     = {2014},
 
   Url                      = {http://www.davidhendry.net/research-supplemental/gerberetal2014-reportingstandards/gerberetal2014-reportingstandards&appendix1.pdf}
 }
@@ -1816,7 +1831,7 @@ Science, this issue p. 1502},
 
 @Article{hunter_desperate_2001,
   Title                    = {The Desperate Need for Replications},
-  Author                   = {Hunter, John E.},
+  Author                   = {Hunter, John},
   Journal                  = {Journal of Consumer Research},
   Year                     = {2001},
 

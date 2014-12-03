@@ -1,4 +1,4 @@
-\begin{thebibliography}{63}
+\begin{thebibliography}{73}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -84,6 +84,14 @@ Yoav Benjamini and Yosef Hochberg.
 \newblock \emph{Journal of the Royal Statistical Society. Series B
   (Methodological)}, pages 289--300, 1995.
 
+\bibitem[Bhattacharjee(2013)]{bhattacharjee_diederik_2013}
+Yudhijit Bhattacharjee.
+\newblock Diederik stapel audacious academic fraud.
+\newblock \emph{The New York Times}, April 2013.
+\newblock ISSN 0362-4331.
+\newblock URL
+  \url{http://www.nytimes.com/2013/04/28/magazine/diederik-stapels-audacious-academic-fraud.html}.
+
 \bibitem[Bruhn and McKenzie(2009)]{bruhn_pursuit_2009}
 Miriam Bruhn and David McKenzie.
 \newblock In pursuit of balance: Randomization in practice in development field
@@ -91,6 +99,14 @@ Miriam Bruhn and David McKenzie.
 \newblock \emph{American Economic Journal: Applied Economics}, 1\penalty0
   (4):\penalty0 200--232, October 2009.
 \newblock \doi{10.1257/app.1.4.200}.
+
+\bibitem[Carey(2011)]{carey_noted_2011}
+Benedict Carey.
+\newblock Noted dutch psychologist, stapel, accused of research fraud.
+\newblock \emph{The New York Times}, November 2011.
+\newblock ISSN 0362-4331.
+\newblock URL
+  \url{http://www.nytimes.com/2011/11/03/health/research/noted-dutch-psychologist-stapel-accused-of-research-fraud.html}.
 
 \bibitem[Casey et~al.(2012)Casey, Glennerster, and
   Miguel]{casey_reshaping_2012}
@@ -103,6 +119,28 @@ Katherine Casey, Rachel Glennerster, and Edward Miguel.
 \newblock \doi{10.1093/qje/qje027}.
 \newblock URL \url{http://qje.oxfordjournals.org/content/127/4/1755}.
 
+\bibitem[Chambers et~al.(2014)Chambers, Feredoes, Muthukumaraswamy, and
+  Etchells]{chambers2014instead}
+Christopher~D Chambers, Eva Feredoes, Suresh~Daniel Muthukumaraswamy, and Peter
+  Etchells.
+\newblock Instead of" playing the game" it is time to change the rules:
+  Registered reports at aims neuroscience and beyond.
+\newblock \emph{AIMS Neuroscience}, 1\penalty0 (1):\penalty0 4--17, 2014.
+
+\bibitem[Chan et~al.(2013)Chan, Tetzlaff, Gotzsche, Altman, Mann, Berlin,
+  Dickersin, Hrobjartsson, Schulz, Parulekar, Krleza-Jeric, Laupacis, and
+  Moher]{chan_spirit_2013}
+A.-W. Chan, J.~M. Tetzlaff, P.~C. Gotzsche, D.~G. Altman, H.~Mann, J.~A.
+  Berlin, K.~Dickersin, A.~Hrobjartsson, K.~F. Schulz, W.~R. Parulekar,
+  K.~Krleza-Jeric, A.~Laupacis, and D.~Moher.
+\newblock {SPIRIT} 2013 explanation and elaboration: guidance for protocols of
+  clinical trials.
+\newblock \emph{{BMJ}}, 346\penalty0 (jan08 15):\penalty0 e7586--e7586, January
+  2013.
+\newblock ISSN 1756-1833.
+\newblock \doi{10.1136/bmj.e7586}.
+\newblock URL \url{http://www.bmj.com/cgi/doi/10.1136/bmj.e7586}.
+
 \bibitem[{Chan A} et~al.(2004){Chan A}, {Hrbjartsson A}, {Haahr MT}, {Gtzsche
   PC}, and {Altman DG}]{chan_a_empirical_2004}
 {Chan A}, {Hrbjartsson A}, {Haahr MT}, {Gtzsche PC}, and {Altman DG}.
@@ -112,6 +150,24 @@ Katherine Casey, Rachel Glennerster, and Edward Miguel.
 \newblock ISSN 0098-7484.
 \newblock \doi{10.1001/jama.291.20.2457}.
 \newblock URL \url{http://dx.doi.org/10.1001/jama.291.20.2457}.
+
+\bibitem[Cyranoski(2014)]{cyranoski_cloning_2014}
+David Cyranoski.
+\newblock Cloning comeback.
+\newblock \emph{Nature}, 505\penalty0 (7484):\penalty0 468--471, January 2014.
+\newblock ISSN 0028-0836, 1476-4687.
+\newblock \doi{10.1038/505468a}.
+\newblock URL \url{http://www.nature.com/news/cloning-comeback-1.14504}.
+
+\bibitem[De~Angelis et~al.(2004)De~Angelis, Drazen, Frizelle, Haug, Hoey,
+  Horton, and Kotzin]{DeAngelis2004}
+Catherine De~Angelis, Jeffrey~M. Drazen, Frank~A. Frizelle, Charlotte Haug,
+  John Hoey, Richard Horton, and Sheldon Kotzin.
+\newblock Clinical trial registration: A statement from the international
+  committee of medical journal editors.
+\newblock \emph{New England Journal of Medicine}, 351\penalty0 (12):\penalty0
+  1250--1251, 2004.
+\newblock doi:10.1056/NEJMe048225.
 
 \bibitem[DeLong and Lang(1992)]{delong_are_1992}
 J.~Bradford DeLong and Kevin Lang.
@@ -199,6 +255,16 @@ Rachel Glennerster and Kudzai Takavarasha.
 \newblock Princeton University Press, November 2013.
 \newblock ISBN 9781400848447.
 
+\bibitem[Hamermesh(2007)]{hamermesh_viewpoint:_2007}
+Daniel~S. Hamermesh.
+\newblock Viewpoint: Replication in economics.
+\newblock \emph{Canadian Journal of Economics/Revue canadienne d'economique},
+  40\penalty0 (3):\penalty0 715--733, August 2007.
+\newblock ISSN 1540-5982.
+\newblock \doi{10.1111/j.1365-2966.2007.00428.x}.
+\newblock URL
+  \url{http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2966.2007.00428.x/abstract}.
+
 \bibitem[Hartung et~al.(2014)Hartung, Zarin, Guise, McDonagh, Paynter, and
   Helfand]{hartung_reporting_2014}
 Daniel~M. Hartung, Deborah~A. Zarin, Jeanne-Marie Guise, Marian McDonagh, Robin
@@ -257,6 +323,15 @@ Macartan Humphreys, Raul Sanchez de~la Sierra, and Peter van~der Windt.
 \newblock \doi{10.1093/pan/mps021}.
 \newblock URL \url{http://pan.oxfordjournals.org/content/21/1/1}.
 
+\bibitem[Hunter(2001)]{hunter_desperate_2001}
+John Hunter.
+\newblock The desperate need for replications.
+\newblock \emph{Journal of Consumer Research}, 28\penalty0 (1):\penalty0
+  149--158, June 2001.
+\newblock ISSN 0093-5301.
+\newblock \doi{10.1086/jcr.2001.28.issue-1}.
+\newblock URL \url{http://www.jstor.org/stable/10.1086/321953}.
+
 \bibitem[Ioannidis(2005)]{ioannidis_why_2005}
 John P.~A. Ioannidis.
 \newblock Why most published research findings are false.
@@ -286,6 +361,14 @@ John~PA Ioannidis.
 \newblock \doi{10.1016/S0140-6736(88)92833-4}.
 \newblock URL
   \url{http://www.sciencedirect.com/science/article/pii/S0140673688928334}.
+
+\bibitem[Johnson(2012)]{johnson_harvard_2012}
+Carolyn~Y. Johnson.
+\newblock Harvard professor who resigned fabricated, manipulated data, {US}
+  says - the boston globe.
+\newblock \emph{{BostonGlobe}.com}, September 2012.
+\newblock URL
+  \url{https://www.bostonglobe.com/news/science/2012/09/05/harvard-professor-who-resigned-fabricated-manipulated-data-says/6gDVkzPNxv1ZDkh4wVnKhO/story.html}.
 
 \bibitem[Katz et~al.(2013)Katz, Janet, Wydick, and
   Gutierrez]{katz_elizabeth_pre-analysis_2013}
@@ -397,6 +480,11 @@ David Neumark.
 \newblock \doi{10.1111/0019-8676.00199}.
 \newblock URL
   \url{http://onlinelibrary.wiley.com/doi/10.1111/0019-8676.00199/abstract}.
+
+\bibitem[Nosek and Lakens(2014)]{nosek2014registered}
+Brian~A Nosek and Dani{\"e}l Lakens.
+\newblock Registered reports.
+\newblock \emph{Social Psychology}, 45\penalty0 (3):\penalty0 137--141, 2014.
 
 \bibitem[Nosek et~al.(2012)Nosek, Spies, and Motyl]{nosek_scientific_2012}
 Brian~A. Nosek, Jeffrey~R. Spies, and Matt Motyl.
