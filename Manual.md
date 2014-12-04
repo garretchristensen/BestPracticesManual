@@ -580,6 +580,11 @@ Though the exact content of the plan may vary somewhat between fields and study 
 
 9. the primary specification to be used for the analysis.
 
+
+###Exploratory vs. Confirmatory Analyses
+When talking about pre-analysis plans, inevitably the quesiton of exploratory analyses is raised. Due to the fact that they require researcher to make as many data analytic choices a priori as possible, one criticism of pre-analysis plans if often that because they tie researchers hands, such plans may actually harm science and waste scientific resources. However, the point of a pre-analysis plan is not to outlaw exploratory data analysis, it is simlpy to make the disctinction between confirmatory and exploratory anaylyses within a study clear. 
+
+
 Glennerster and Takavarasha (2013) also highlight the "tension between the
 benefits of the credibility that comes from tying ones hands versus the
 benefits of flexibility to respond to unforeseen events and results."
