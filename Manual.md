@@ -548,19 +548,8 @@ pre-analysis plans, described in detail below.
 ========================
 
 Registration of trials and Pre-analysis plans are closely related, but
-not the same. While registration is now the norm in medicine,
-registrations, and the associated trial protocols, often do not include
-detailed analysis plans, even though they are generally publicly
-available, and sometimes published in peer-reviewed journals. Sometimes
-this is because the medical researcher intends to do very little, if
-any, structural or economic-type modeling. But even if a researcher
-intends only to compare unadjusted means and bootstrap for standard
-errors, this should be explicitly stated. In the social sciences, this
-simple comparison is sometimes not the end goal of a randomized trial,
-so there may be even more value in registration and pre-specification.
-In the section below we explain some of the differences between
-registrations and pre analysis plans, and between their uses in medicine
-and in the social sciences.
+not the same. Trial registrations work to decrease the file-drawer effect and increase the discoverability of unpublished results. The most basic of registrations may simply provide information about the hypothesis under investigation, or the conceptual varaibles which will be studies. Though pre-anaysis plans are generally accompanied by a trial registration, they do not help to reduce hte file-drawer effect. Instead, their purpose is to decrease researcher degrees of freedom, and thus lower the rate of false positives within a study. 
+
 
 Part of registration is a pre-analysis plan (PAP), which contains a
 specification of the outcomes of the study, as well as a specification
