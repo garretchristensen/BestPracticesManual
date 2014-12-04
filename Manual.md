@@ -510,18 +510,10 @@ will be discussed more below, also see Nosek, Spies, and Motyl (2012).
 
 Researcher Degrees of Freedom
 ---------
-In addition to publication bias, a problem with research is specification
-searching: the manipulation of statistical or regression models unknowingly (or deliberately) until significance is obtained.
-Though registration helps solve the problem of publication bias, it does
-not solve the problem of fishing for statistical significance within a
-given study. Simmons, Nelson, and Simonsohn (2011) refer to this as
-"researcher degrees of freedom," and it has also been referred to as "fishing" or "p-hacking." 
-Using flexibility around when to stop
-collecting data, excluding certain observations, combining and comparing
-certain conditions, including certain control variables, and combining
-or transforming certain measures, they "prove" that listening to the
-Beatles' song "When I'm Sixty-Four" made listeners a year and a half
-younger. The extent and ease of this "fishing" is also described in
+In addition to publication bias, another factor that can lead to increased rates of positive results (in this case false positive results) in the published literature is "researcher degrees of freedom", also sometimes referred to as "fishing" or "p-hacking" (Simmons, Nelson, & Simonsohn, 2011). Over the course of a research project there are numerous analytical choices researchers must make, everything from determining the key dependent variable to deciding what covariate to include in an analyses, to what subgroup analyses to perform. This leads to a great amount of flexibiltiy in analysis options. Illustrating this, Carpe (2012) found there were over 3,000 different combinations of analytic methods that could be applied to a single fMRI dataset. When these analytic choices are made during the data-analytic process, they become data dependent and can significantly inflate the false positive rate, pushing it as high as 61% (Simmons et al., 2011). For example, using flexibility around when to stop collecting data, excluding certain observations, combining and comparing certain conditions, including certain control variables, and combining or transforming certain measures, they "prove" that listening to the
+Beatles' song "When I'm Sixty-Four" made listeners a year and a half younger. 
+
+The extent and ease of this "fishing" is also described in
 (Humphreys, Sierra, and Windt 2013). Gelman and Loken (2013) agree that
 "[a] dataset can be analyzed in so many different ways (with the choices
 being not just what statistical test to perform but also decisions on
