@@ -389,6 +389,10 @@ Institutional Training Initiative at the University of Miami (CITI,
 Subjects Research is often a requirement of being included on a research
 proposal.
 
+<a name="ethics">Power Analyses</a>
+========================================================================================================================================================================================================================================
+
+
 <a name="registration">Registration</a>
 ========================================================================================================================================================================================================================================
 
@@ -510,18 +514,10 @@ will be discussed more below, also see Nosek, Spies, and Motyl (2012).
 
 Researcher Degrees of Freedom
 ---------
-In addition to publication bias, a problem with research is specification
-searching: the manipulation of statistical or regression models unknowingly (or deliberately) until significance is obtained.
-Though registration helps solve the problem of publication bias, it does
-not solve the problem of fishing for statistical significance within a
-given study. Simmons, Nelson, and Simonsohn (2011) refer to this as
-"researcher degrees of freedom," and it has also been referred to as "fishing" or "p-hacking." 
-Using flexibility around when to stop
-collecting data, excluding certain observations, combining and comparing
-certain conditions, including certain control variables, and combining
-or transforming certain measures, they "prove" that listening to the
-Beatles' song "When I'm Sixty-Four" made listeners a year and a half
-younger. The extent and ease of this "fishing" is also described in
+In addition to publication bias, another factor that can lead to increased rates of positive results (in this case false positive results) in the published literature is "researcher degrees of freedom", also sometimes referred to as "fishing" or "p-hacking" (Simmons, Nelson, & Simonsohn, 2011). Over the course of a research project there are numerous analytical choices researchers must make, everything from determining the key dependent variable to deciding what covariate to include in an analyses, to what subgroup analyses to perform. This leads to a great amount of flexibiltiy in analysis options. Illustrating this, Carpe (2012) found there were over 3,000 different combinations of analytic methods that could be applied to a single fMRI dataset. When these analytic choices are made during the data-analytic process, they become data dependent and can significantly inflate the false positive rate, pushing it as high as 61% (Simmons et al., 2011). For example, using flexibility around when to stop collecting data, excluding certain observations, combining and comparing certain conditions, including certain control variables, and combining or transforming certain measures, they "prove" that listening to the
+Beatles' song "When I'm Sixty-Four" made listeners a year and a half younger. 
+
+The extent and ease of this "fishing" is also described in
 (Humphreys, Sierra, and Windt 2013). Gelman and Loken (2013) agree that
 "[a] dataset can be analyzed in so many different ways (with the choices
 being not just what statistical test to perform but also decisions on
@@ -556,97 +552,47 @@ pre-analysis plans, described in detail below.
 ========================
 
 Registration of trials and Pre-analysis plans are closely related, but
-not the same. While registration is now the norm in medicine,
-registrations, and the associated trial protocols, often do not include
-detailed analysis plans, even though they are generally publicly
-available, and sometimes published in peer-reviewed journals. Sometimes
-this is because the medical researcher intends to do very little, if
-any, structural or economic-type modeling. But even if a researcher
-intends only to compare unadjusted means and bootstrap for standard
-errors, this should be explicitly stated. In the social sciences, this
-simple comparison is sometimes not the end goal of a randomized trial,
-so there may be even more value in registration and pre-specification.
-In the section below we explain some of the differences between
-registrations and pre analysis plans, and between their uses in medicine
-and in the social sciences.
+not the same. Trial registrations work to decrease the file-drawer effect and increase the discoverability of unpublished results. The most basic of registrations may simply provide information about the hypothesis under investigation, or the conceptual varaibles which will be studies. Though pre-anaysis plans are generally accompanied by a trial registration, they do not help to reduce hte file-drawer effect. Instead, their purpose is to decrease researcher degrees of freedom, and thus preserve the validity of the p-values that results from the statistical analyses wihtin a study. 
 
-Part of registration is a pre-analysis plan (PAP), which contains a
-specification of the outcomes of the study, as well as a specification
-of the methods that will be used to analyze the outcomes (sometimes
-referred to as endpoints in the medical literature).  By describing the
-method(s) of analysis ahead of time, and to some degree tying the hands
-of the researcher, we reduce the ability to data mine. Though one example
-of this exists in economics from 2001 (Neumark 2001), the idea is still quite new to
-the social sciences. The level of detail varies widely, and the research
-community is still constructing norms for incorporating these documents
-into final analyses and papers.
+Pre-analysis plans obtain this objective by requiring the researcher to make as many analysis decisions as possible before they have begun to interact with their data. This means the analytic choices they make will be data-independent, preserving the validiity of the p-values that results from those analyses. Though one example of this exists in economics from 2001 (Neumark 2001), the idea is still quite new to the social sciences. These plans can vary greatly in their level of detail, from a simple written description of the general statistical approach that will be taken to a fully written analysis script, but the more specific the plan the more research degrees of freedom are potentially reduced. 
 
-Suggestions have been made for the detailed contents of these documents.
-Glennerster and Takavarasha (2013) suggest including the following:
+Though the exact content of the plan may vary somewhat between fields and study type, some suugestions for content areas to include are (Glennerster & Takavarasha 2013, MacKenzie, 2012, Simmons et al., 2012) :
 
-1.  the main outcome measures
+1. The target sample size and experiment stopping rule,
 
-2.  which outcome measures are primary and which are secondary,
+2. the main outcome measures,
 
-3.  the precise composition of any families that will be used for mean
-    effects analysis,
+2. how all variables used in the analyses will be constructed,
 
-4.  the subgroups that will be analyzed,
+3. exlucsion criterion for participants, trials, and/or outliers,
 
-5.  the direction of expected impact if we want to use a one-sided test,
-    and
+4. data processing and cleaning choices,
 
-6.  the primary specification to be used for the analysis.
+5. how will missing data be dealt with 
+
+5. which outcome measures are primary and which are secondary,
+
+6. how multiple outcomes and multiple comparisons will be dealt with, 
+
+6. the precise composition of any families that will be used for mean
+   effects analysis,
+
+7. the subgroups that will be analyzed,
+
+8. the direction of expected impact if we want to use a one-sided test,
+   and
+
+9. the primary specification to be used for the analysis.
+
+
+###Exploratory vs. Confirmatory Analyses
+When talking about pre-analysis plans, inevitably the quesiton of exploratory analyses is raised. Due to the fact that they require researcher to make as many data analytic choices a priori as possible, one criticism of pre-analysis plans if often that because they tie researchers hands, such plans may actually harm science and waste scientific resources. However, the point of a pre-analysis plan is not to outlaw exploratory data analysis, it is simlpy to make the disctinction between confirmatory and exploratory anaylyses within a study clear. 
+
 
 Glennerster and Takavarasha (2013) also highlight the "tension between the
 benefits of the credibility that comes from tying ones hands versus the
 benefits of flexibility to respond to unforeseen events and results."
 
-David McKenzie of the World Bank Research Group proposed a list of ten
-items that should be included in a PAP, reproduced below. (For more
-detail see
-<http://blogs.worldbank.org/impactevaluations/a-pre-analysis-plan-checklist>)
-
-1.  Description of the sample to be used in the study
-
-2.  Key data sources
-
-3.  Hypotheses to be tested throughout the causal chain
-
-4.  Specify how variables will be constructed
-
-5.  Specify the treatment effect equation to be estimated
-
-6.  What is the plan for how to deal with multiple outcomes and multiple
-    hypothesis testing?
-
-7.  Procedures to be used for addressing survey attrition
-
-8.  How will the study deal with outcomes with limited variation?
-
-9.  If you are going to be testing a model, include the model
-
-10. Remember to archive it
-
-In their article on researcher degrees of freedom, Simmons, Nelson, and
-Simonsohn (2011) suggest the following requirements for authors:
-
-1.  Authors must decide the rule for terminating data collection before
-    data collection begins and report this rule in the article.
-
-2.  Authors must collect at least 20 observations per cell or else
-    provide a compelling cost-of-data-collection justification.
-
-3.  Authors must list all variables collected in a study.
-
-4.  Authors must report all experimental conditions, including failed
-    manipulations.
-
-5.  If observations are eliminated, authors must also report what the
-    statistical results are if those observations are included.
-
-6.  If an analysis includes a covariate, authors must report the
-    statistical results of the analysis without the covariate.
 
 ### Project Protocols
 
