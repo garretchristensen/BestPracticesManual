@@ -705,6 +705,18 @@ in uenza pandemic.},
   Urldate                  = {2014-08-26}
 }
 
+@Article{chambers2014instead,
+  Title                    = {Instead of" playing the game" it is time to change the rules: Registered Reports at AIMS Neuroscience and beyond},
+  Author                   = {Chambers, Christopher D and Feredoes, Eva and Muthukumaraswamy, Suresh Daniel and Etchells, Peter},
+  Journal                  = {AIMS Neuroscience},
+  Year                     = {2014},
+  Number                   = {1},
+  Pages                    = {4--17},
+  Volume                   = {1},
+
+  Publisher                = {AIMS Press}
+}
+
 @Article{chan_a_empirical_2004,
   Title                    = {Empirical evidence for selective reporting of outcomes in randomized trials: Comparison of protocols to published articles},
   Author                   = {{Chan A} and {Hrbjartsson A} and {Haahr MT} and {Gtzsche PC} and {Altman DG}},
@@ -1406,14 +1418,6 @@ The vast majority of health-related observational studies are not prospectively 
 }
 
 @Article{franco_publication_2014,
-  Title                    = {Publication Bias in the Social Sciences: Unlocking the File Drawer},
-  Author                   = {Franco, Annie and Malhotra, Neil and Simonovits, Gabor},
-  Journal                  = {Science},
-  Year                     = {2014},
-  Volume                   = {Forthcoming}
-}
-
-@Article{franco_publication_2014-1,
   Title                    = {Publication bias in the social sciences: Unlocking the file drawer},
   Author                   = {Franco, Annie and Malhotra, Neil and Simonovits, Gabor},
   Journal                  = {Science},
@@ -2791,6 +2795,18 @@ quality of reports of {RCTs}.},
   Shorttitle               = {Minimum Wages and Employment},
   Url                      = {http://www.jstor.org/stable/2677855},
   Urldate                  = {2014-08-20}
+}
+
+@Article{nosek2014registered,
+  Title                    = {Registered Reports},
+  Author                   = {Nosek, Brian A and Lakens, Dani{\"e}l},
+  Journal                  = {Social Psychology},
+  Year                     = {2014},
+  Number                   = {3},
+  Pages                    = {137--141},
+  Volume                   = {45},
+
+  Publisher                = {Hogrefe \& Huber}
 }
 
 @Article{nosek_scientific_2012,

@@ -1,4 +1,4 @@
-\begin{thebibliography}{73}
+\begin{thebibliography}{74}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -213,7 +213,11 @@ Amy Finkelstein, Sarah Taubman, Bill Wright, Mira Bernstein, Jonathan Gruber,
   Simonovits]{franco_publication_2014}
 Annie Franco, Neil Malhotra, and Gabor Simonovits.
 \newblock Publication bias in the social sciences: Unlocking the file drawer.
-\newblock \emph{Science}, Forthcoming, 2014.
+\newblock \emph{Science}, 345\penalty0 (6203):\penalty0 1502--1505, September
+  2014.
+\newblock ISSN 0036-8075, 1095-9203.
+\newblock \doi{10.1126/science.1255484}.
+\newblock URL \url{http://www.sciencemag.org/content/345/6203/1502}.
 
 \bibitem[Gelman and Loken(2013)]{gelman_garden_2013}
 Andrew Gelman and Eric Loken.
@@ -293,6 +297,12 @@ Ori Heffetz and Katrina Ligett.
 \newblock \doi{10.1257/jep.28.2.75}.
 \newblock URL
   \url{https://www-aeaweb-org.proxy.swarthmore.edu/articles.php?doi=10.1257/jep.28.2.75}.
+
+\bibitem[Hines et~al.(2014)Hines, Su, Kuhn, Polyak, and
+  Bissell]{hines2014sorting}
+William~C Hines, Ying Su, Irene Kuhn, Kornelia Polyak, and Mina~J Bissell.
+\newblock Sorting out the facs: A devil in the details.
+\newblock \emph{Cell reports}, 6\penalty0 (5):\penalty0 779--781, 2014.
 
 \bibitem[Hirshleifer et~al.(2014)Hirshleifer, McKenzie, Almeida, and
   Ridao-Cano]{vocationalTurkey}

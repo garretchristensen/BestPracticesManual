@@ -7,6 +7,7 @@
 \usepackage{pslatex}
 \renewcommand{\baselinestretch}{2}
 \usepackage{setspace}
+\usepackage[nottoc]{tocbibind} 
 
 
 \begin{document}
@@ -60,7 +61,7 @@ research, specifically publication bias. We also discuss how this
 problem can be resolved through the practice of registration.
 Publication bias stems from the fact that published results are
 overwhelmingly statistically significant. But without knowing how many
-tests were run, it is impossible to know whether these significant
+tests were run (the number of unpublished results), it is impossible to know whether these significant
 results are meaningful, or whether they are the 5\% of tests that we
 would expect to appear significant due to random sampling, even with no
 true effect. By publicly registering all studies, we can have a better
@@ -90,7 +91,7 @@ identification of individuals in the data. We also discuss the issue of
 reporting standards: a standardized list of things that authors should
 report to help make their work reproducible.
 
-Section~\ref{conclusion} concludes.
+Section~\ref{conclusion} concludes and presents a vision for moving forward.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Ethical Research}\label{ethical-research}
@@ -379,11 +380,11 @@ increased awareness of publication bias. Numerous papers use collections
 of published papers to show that the proportion of significant results
 are extremely unlikely to come from any true population distribution
 \citep{delong_are_1992, gerber_testing_2001,  ioannidis_why_2005}. By examining the publication rates of null results and
-significant results from a large set of NSF-funded studies, \cite{franco_publication_2014} show that the publication of only
+significant results from a large set of NSF-funded studies, \cite{franco_publication_2014} show that the selective publication of only
 significant results may stem from the fact that social science
 researchers largely fail to write up and submit results from studies
 resulting in null findings, citing lack of interest or fear of
-rejection. In fact, the percentage of null findings published in
+rejection. This idea of rejecting, or not even submitting for review, papers with null-results, is commonly referred to as the ``file drawer problem.'' In fact, the percentage of null findings published in
 journals appeas to have been decreasing over time, across all
 disciplines \citep{fanelli_negative_2012}. Clearly, there is no reason why this would
 be an accurate reflection of the state of the universe. If journals only
@@ -392,20 +393,20 @@ those significant results are evidence of real effects, and which are
 the 5\% of random draws that we should expect to show a significant
 result with a true zero effect. One way to combat this problem is to
 require registration of all studies undertaken. Ideally we then search
-the registry for studies of X on Y. If numerous studies all show an
+the registry for studies of X on Y. If numerous studies show an
 effect, we have confidence the effect is real. If 5\% of studies show a
-significant effect, we give the outlier study less credence.
+significant effect, we give these outliers studies less credence.
 
 \subsection{Trial Registration}\label{trial-registration}
 
 A basic definition of registration is to publicly declare \emph{all}
 research that one plans on conducting. Ideally this is done in a public
-registry designed to accept registries in the given research discipline,
+registry designed to accept registrations in the given research discipline,
 and ideally the registration takes place before data collection begins.
 
 Almost all registration efforts have thus far been limited to randomized
-control trials, as opposed to observational data. (However, we believe
-that registering all types of analysis would be ideal.) Registration of
+control trials, as opposed to observational data. However, we believe
+that registering all types of analysis should be accepted and encouraged. Registration of
 randomized trials has achieved wide adoption in medicine, but is still
 relatively new to the social sciences. After congress passed a law in
 1997 requiring the creation of a registry for FDA-regulated trials, and
@@ -420,8 +421,8 @@ A profound example of the benefit of trial registries is detailed in
 related to FDA-approved antidepressants. (See also \cite{ioannidis_effectiveness_2008}.)
 The outcome is perhaps what the most hardened cynic would expect:
 essentially all the trials with positive outcomes were published, a
-50/50 mix of questionable studies were published, and a majority of the
-negative studies were unpublished a minimum of four years after the
+50/50 mix of questionable-outcome studies were published, and a majority of the
+negative-outcome studies were unpublished a minimum of four years after the
 study was completed. The figure below shows the drastically different
 rates of publication, and a large amount of publication bias.
 \begin{center}
@@ -492,7 +493,7 @@ Though registration helps solve the problem of publication bias, it does
 not solve the problem of fishing for statistical significance within a
 given study. \cite{simmons_false-positive_2011} refer to this as
 ``researcher degrees of freedom,'' and it has also been referred to as
-``fishing'' or ``p-hacking.'' Using flexibility around when to stop
+``fishing'' or ``p-hacking.'' \citep{humphreys_fishing_2013} Using flexibility around when to stop
 collecting data, excluding certain observations, combining and comparing
 certain conditions, including certain control variables, and combining
 or transforming certain measures, they ``prove'' that listening to the
@@ -528,20 +529,19 @@ researcher degrees of freedom."
 
 In other words, the problem is even worse than you think. What can be
 done to solve it? We believe part of the answer lies in detailed
-pre-analysis plans, described in detail below.
+pre-analysis plans, described below.
 
 \subsection{Pre-Analysis
 Plans}\label{pre-analysis-plans}
 
 While registration of studies can help to reduce publication bias or the file drawer problem, 
-A pre-analysis plan (PAP), a detailed outline of the analyses that will be conducted in a sutdy, can be used to reduce researcher degrees of freedom. While registration is now the norm in medicine,
-registrations, these often do not include
+A pre-analysis plan (PAP), a detailed outline of the analyses that will be conducted in a study, can be used to reduce researcher degrees of freedom. While registration is now the norm in medicine for randomized trials, these often do not include
 detailed analysis plans. Sometimes
 this is because the medical researcher intends to do very little, if
-any, structural or economic-type modeling. But even if a researcher
+any, structural or formal modeling. But even if a researcher
 intends only to compare unadjusted means and bootstrap for standard
 errors, this should be explicitly stated. In the social sciences, this
-simple comparison is sometimes not the end goal of a randomized trial,
+simple comparison is often not the end goal of a randomized trial,
 so there may be even more value in pre-specification of intended analyses.
 In the section below we explain what exactly should go into a pre-analysis plan.
 
@@ -561,7 +561,7 @@ Suggestions have been made for the detailed contents of these documents.
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  the main outcome measures
+  the main outcome measures,
 \item
   which outcome measures are primary and which are secondary,
 \item
@@ -575,14 +575,6 @@ Suggestions have been made for the detailed contents of these documents.
 \item
   the primary specification to be used for the analysis.
 \end{enumerate}
-
-\cite{glennerster_running_2013} also mention the ``tension between
-the benefits of the credibility that comes from tying ones hands versus
-the benefits of flexibility to respond to unforeseen events and
-results.'' Writing a PAP can lend extra credibility to research by making it of a confirmatory nature as opposed to an exploratory nature.
-Both types of research are absolutely valuable, but knowing the distinction is important. If some sort of restriction on the data, be it a specific functional form, exclusion of outliers, or an interaction term (subgroup analysis) that terms a null effect for the population into a significant effect for some subgroup, is specified ahead of time based on theory or previous research, this can be considered confirmatory research. Some would say this is if more value than exploratory research: simply running 20 sub-group analyses and finding that one or two are significant. This may be an estimate of a true effect, but should be labeled as exploratory, and future researchers could attempt to confirm this finding by addressing the question of the sub-group specifically. The potential downside to pre-stating hypotheses and analysis plans is that no matter how carefully researchers plan ahead, something truly unexpected can occur. (An example discussed at a recent conference was subjects showing up for an experiment stoned. One example from a field experiment involved fatalities from a lightning strike at a school \citep{kremer2009incentives}. ) This is why, even though we may use the phrase ``bind our hands,'' we advocate that researchers not be punished for conducting research outside the analysis plan. We simply recommend that researchers clearly delineate which analysis was included in the analysis plan, and which was not, so that readers can know what is confirmatory and what is exploratory.
-
-
 David McKenzie of the World Bank Research Group proposed a list of ten
 items that should be included in a PAP, reproduced below. (For more
 detail see
@@ -636,9 +628,18 @@ Simonsohn (2011) suggest the following requirements for authors:
   statistical results of the analysis without the covariate.
 \end{enumerate}
 
+
+\cite{glennerster_running_2013} also mention the ``tension between
+the benefits of the credibility that comes from tying ones hands versus
+the benefits of flexibility to respond to unforeseen events and
+results.'' Writing a PAP can lend extra credibility to research by making it of a confirmatory nature as opposed to an exploratory nature.
+Both types of research are absolutely valuable, but knowing the distinction is important. If some sort of restriction on the data, be it a specific functional form, exclusion of outliers, or an interaction term (subgroup analysis) that turns a null effect for the population into a significant effect for some subgroup, is specified ahead of time based on theory or previous research, this can be considered confirmatory research. Some would say this is of more value than the exploratory research approach of simply running 20 sub-group analyses and finding that one or two are significant. This may be an estimate of a true effect, but should be labeled as exploratory, and future researchers could attempt to confirm this finding by addressing the question of the sub-group specifically. The potential downside to pre-stating hypotheses and analysis plans is that no matter how carefully researchers plan ahead, something truly unexpected can occur. (An example discussed at a recent conference was subjects showing up for an experiment stoned. One example from a field experiment involved fatalities from a lightning strike at a school \citep{kremer2009incentives}. ) This is why, even though we may use the phrase ``bind our hands,'' we advocate that researchers not be punished for conducting research outside the analysis plan. We simply recommend that researchers clearly delineate which analysis was included in the analysis plan, and which was not, so that readers can know what is confirmatory and what is exploratory.
+
+
+
 There is some question as to when one should write one's pre-analysis plan. ``Before you begin to analyze your data'' seems like the obvious answer, but this should be precisely defined. One could write the PAP before any baseline survey takes place, after any intervention but before endline, or after endline but before analysis has begun. \cite{glennerster_running_2013} has an informative discussion of the relative values of PAP timing. If one writes the PAP before the baseline, this is in some sense the purest, most free from accusations of p-hacking, but one could also miss valuable information. For example, suppose in baseline one learns that the intended outcome question is phrased poorly and elicits high rates of non-response, or that there is very little variation in the answers to a survey question. If the PAP was written after baseline, one could have accounted for this, but at the same time, researchers would also be free to change the scope of their analysis--for example, in the baseline survey of a field experiment designed to increase wages revealed that few of the subjects worked outside the home, the researcher could change the focus of the analysis. This is not necessarily wrong, but it does change the nature of the analysis somewhat.
 
-PAPs could also be written after endline data has been collected but before the investigators have begun to analyze the data. Some have suggested that one could even look at baseline data from the control group only before writing the PAP. We find this problematic, however, since a researcher could learn that the control group had a particularly low or high value of a certain outcome variable, and then choose to include or not include this variable in the analysis as a result. The original research design could have been intended to analyze the increase in secondary school attendance, but looking at the control group, researcher see that the control group had a very high rate of attendance, making a significant difference between control and treatment (the treatment effect) unlikely. Learning this after the experiment has concluded and searching for things that might be easily different between treatment and control is more exploratory than confirmatory. An alternative proposal from Ben Olken at MIT is to remove the treatment status variable from the dataset before looking at the data, which seems to alleviate some of the concerns. However, one could still search for sub-group analyses at this stage. If you parse the outcome data by gender, and males and females have a similar distribution, to find a differential treatment effect by gender would seem unlikely. If male and female had wildly different outcomes, it would seem like a significant interaction is more likely. This seems like exploratory research. 
+PAPs could also be written after endline data has been collected but before the investigators have begun to analyze the data. Some have suggested that one could even look at baseline data from the control group only before writing the PAP. We find this problematic, however, since a researcher could learn that the control group had a particularly low or high value of a certain outcome variable, and then choose to include or not include this variable in the analysis as a result. The original research design could have been intended to analyze the increase in secondary school attendance, but looking at the control group, the researcher sees that the control group had a very high rate of attendance, making a significant difference between control and treatment (the treatment effect) unlikely. Learning this after the experiment has concluded and searching for things that might be easily different between treatment and control is more exploratory than confirmatory. An alternative proposal from Ben Olken at MIT is to remove the treatment status variable from the dataset before looking at the data, which seems to alleviate some of the concerns. However, one could still search for sub-group analyses at this stage. If you parse the outcome data by gender, and males and females have a similar distribution, to find a differential treatment effect by gender would seem unlikely. If male and female had wildly different outcomes, it would seem like a significant interaction is more likely. This is more exploratory than confirmatory. 
 
 
 \subsubsection{Examples}\label{examples}
@@ -647,12 +648,12 @@ Examples of pre-analysis plans in the social sciences are relatively rare, but s
 
 \begin{itemize}
 \item 
- \cite{casey_reshaping_2012} includes evidence of large-scale field experiment on community driven development projects in Sierra Leone. The analysis finds no significant benefits. Given the somewhat vague nature of the development projects that resulted from the funding, and the wide variety of potential outcomes, finding signficant results would have been relatively easy. In fact, the paper includes an example of how, if they had the latitude to define outcomes without a pre-analysis plan, the authors could have reported large and significantly positive outcomes. The paper also includes a discussion of the history and purpose of pre-analysis plans. The online appendix, available at \url{http://emiguel.econ.berkeley.edu/assets/miguel_research/8/_Appendix__Reshaping_Institutions_-_Evidence__on__Aid__Impacts__Using__a__Pre___Analysis__Plan.pdf},
+ \cite{casey_reshaping_2012} includes evidence from a large-scale field experiment on community driven development projects in Sierra Leone. The analysis finds no significant benefits. Given the somewhat vague nature of the development projects that resulted from the funding, and the wide variety of potential outcomes, finding signficant results would have been relatively easy. In fact, the paper includes an example of how, if they had the latitude to define outcomes without a pre-analysis plan, the authors could have reported large and significantly positive outcomes. The paper also includes a discussion of the history and purpose of pre-analysis plans. The online appendix, available at \url{http://emiguel.econ.berkeley.edu/assets/miguel_research/8/_Appendix__Reshaping_Institutions_-_Evidence__on__Aid__Impacts__Using__a__Pre___Analysis__Plan.pdf},
 contains the PAP.
 
 
 \item 
-Oregon expanded its medicare enrollment through a random lottery in 2008, providing researchers with an ideal avenue to evaluate the benefits of enrollment. \cite{finkelstein_oregon_2012, Taubman17012014, doi:10.1056/NEJMsa1212321} show that recipients did not improve in physical health measurements, but were more likely to have insurance, had beter self-reported health outcomes, utilized emergency rooms more, and had better detection and management of diabetes. Pre-analsyis plans from the project are available at the National Bureau of Economics' site devoted to the project: \url{http://www.nber.org/oregon/documents.html} (See, for example, \cite{taubman_oregon_2013, baicker_katherine_oregon_2014}.)
+Oregon expanded its medicare enrollment through a random lottery in 2008, providing researchers with an ideal avenue to evaluate the benefits of enrollment. \cite{finkelstein_oregon_2012, doi:10.1056/NEJMsa1212321, Taubman17012014} show that recipients did not improve in physical health measurements, but were more likely to have insurance, had beter self-reported health outcomes, utilized emergency rooms more, and had better detection and management of diabetes. Pre-analsyis plans from the project are available at the National Bureau of Economics' site devoted to the project: \url{http://www.nber.org/oregon/documents.html} (See, for example, \cite{taubman_oregon_2013, baicker_katherine_oregon_2014}.)
 
 
 \item
@@ -664,34 +665,33 @@ Researchers from UC San Diego and the World Bank evaluated job training programs
 
 
 \item 
-Teams led by Ben Olkin have evaluated multiple randomized interventions in Indonesia. The \href{http://www.povertyactionlab.org/evaluation/project-generasi-conditional-community-block-grants-indonesia}{Generasi program} linked community block grants to performance. The PAP are \cite{olken_generasi_2009, olken_generasi_2010} and are available in the J-PAL Hypothesis Registry \url{http://www.povertyactionlab.org/Hypothesis-Registry}. The researchers found health improvement, but no education improvement \cite{olken_indonesias_2010, olken_should_2014}.
+Teams led by Ben Olken have evaluated multiple randomized interventions in Indonesia. The \href{http://www.povertyactionlab.org/evaluation/project-generasi-conditional-community-block-grants-indonesia}{Generasi program} linked community block grants to performance. The PAP are \cite{olken_generasi_2009, olken_generasi_2010} and are available in the J-PAL Hypothesis Registry \url{http://www.povertyactionlab.org/Hypothesis-Registry}. The researchers found health improvement, but no education improvement \citep{olken_indonesias_2010, olken_should_2014}.
 
 \item 
-Another project in Indonesia used a field experiment to evaluate different means of poverty targeting for cash transfer programs: proxy-means testing, community-based targeting, and a hybrid. Results show that the proxy-means testing outperformed the other methods by 10\%, but that community members were far more satisfied with the community method. The PAP and final paper are available as \cite{olken_targeting_2009} and \cite{alatas_targeting_2012}
+Another project in Indonesia used a field experiment to evaluate different means of poverty targeting for cash transfer programs: proxy-means testing, community-based targeting, and a hybrid of the two. Results show that the proxy-means testing outperformed the other methods by 10\%, but that community members were far more satisfied with the community method. The PAP and final paper are available as \cite{olken_targeting_2009} and \cite{alatas_targeting_2012}
 
 \item
 An example from pyschology is a pre-registered replication of an implicit association test. Existing research showed evidence of stronger racial preferences among fertile women. \cite{NosekPreRegistered} failed to reproduce this effect in four tries, suggesting the association is weaker than originally found. The resulting manuscript, as well as the time-stamped registration of the analysis plan, can be found at \url{https://osf.io/g3sca/}
 \end{itemize}
 
 \subsection{Multiple Hypothesis Testing}
-Several of the PAP above, and several of the lists of suggestions above involve corrections for multiple hypothesis testing. The idea of correcting for multiple tests is widespread in certain fields, but has yet to take hold in the social sciences. Simply put, the idea is that because we are aware of the fact that test statistics and p-values appear significant purely by chance a certain proportion of the time, we can report different, \textit{better} p-values that control for the fact that we are running multiple tests. There are several ways to do this, all of which are used and explained in a simple and straightforward manner by \cite{anderson_fwer}:
+Several of the PAP above, and several of the lists of suggestions above include corrections for multiple hypothesis testing. The idea of correcting for multiple tests is widespread in certain fields, but has yet to take hold in the social sciences. Simply put, the idea is that because we are aware of the fact that test statistics and p-values appear significant purely by chance a certain proportion of the time, we can report different, \textit{better} p-values that control for the fact that we are running multiple tests. There are several ways to do this, all of which are used and explained in a simple and straightforward manner by \cite{anderson_fwer}:
 \begin{itemize}
 \item
 Report index tests---instead of reporting the outcomes of numerous tests, standardize outcomes and combine them into a smaller number of indeces (e.g. instead of separately reporting whether a long-term health intervention reduced blood pressure, diabetes, obesity, cancer, heart disease, and Alzheimer's, report the results of a single health index.)
 \item
-Control the Family-Wise Error Rate (FWER)---FWER is the probability that at least one true hypothesis in a group is rejected, meaning it is advisable when the damage from falsely claiming \textit{any} hypotheses are false is important. There are several ways to do this, with the simplest (but too conservative) method being the Bonferroni correction of simply multiplying every original p-value by the number of tests done. Holm's sequential method involves ordering p-values by class and multiplying the lower p-values by higher dicsount factors \citep{holm_multipletesting}. An efficient recent method is the free step-down resampling method, developed by \cite{westfall_young_multiple}.
+Control the Family-Wise Error Rate (FWER)---FWER is the probability that at least one true hypothesis in a group is rejected (a type I error), meaning it is advisable when the damage from falsely claiming \textit{any} hypotheses are false is important. There are several ways to do this, with the simplest (but too conservative) method being the Bonferroni correction of simply multiplying every original p-value by the number of tests done. Holm's sequential method involves ordering p-values by class and multiplying the lower p-values by higher dicsount factors \citep{holm_multipletesting}. An efficient recent method is the free step-down resampling method, developed by \cite{westfall_young_multiple}.
   
 \item
-Control the False Discovery Rate (FDR)---In situations where a single rejection of a true hypothesis is not catastrophic, researchers may be willing to use a less conservative method and trade off some incorrect rejections in exchange for greater power. This is possible by controlling the FDR, or the percentage of rejections that are type I errors. \cite{benjamini1995controlling} details a simple algorithm to control this rate at a chosen level, and \cite{benjamini2006adapative} described a two-step procedure with greater power. 
+Control the False Discovery Rate (FDR)---In situations where a single type I error is not catastrophic, researchers may be willing to use a less conservative method and trade off some incorrect rejections in exchange for greater power. This is possible by controlling the FDR, or the percentage of rejections that are type I errors. \cite{benjamini1995controlling} details a simple algorithm to control this rate at a chosen level, and \cite{benjamini2006adapative} described a two-step procedure with greater power. 
 
 
 \end{itemize}
 
 \subsection{Subgroup Analysis}
 One aspect of researcher degrees of freedom related to multiple hypothesis testing that seems to have taken hold widely in the medical literature is the aversion to sub-group analysis (``interactions'' to
-most economists). Given the ability to test for a differential effect by many different groupings, crossed with each outcome variable, sub-groups analyses can almost always find some sort of supposedly significant effect. An oft-repeated story revolves around the publication
-of a study on aspirin after heart attacks. When the editors suggested
-including 40 subgroup analyses, the authors relented on the condition
+most economists). Given the ability to test for a differential effect by many different groupings, crossed with each outcome variable, sub-groups analysis can almost always find some sort of supposedly significant effect. An oft-repeated story in the medical literature revolves around the publication
+of a study on aspirin after heart attacks. When the editors suggested including 40 subgroup analyses, the authors relented on the condition
 they include some of their own. Gemini and Libras had worse outcomes
 when taking aspirin after heart attacks, despite the large beneficial
 effects for everyone else. (Described in \cite{schulz_multiplicity_2005},
@@ -702,9 +702,9 @@ ideally specifying beforehand the interactions to be tested, with a justificatio
 
 
 \subsection{Results-Blind Reviewing}
-A new development in research transparency which helps to address both publication bias and researcher degrees of freedom is results-blind reviewing. In results-blind reviewing, authors submit a detailed research plan \textit{before} conducting the research. They submit this plan to a journal, and the journal rejects or gives an in-principle acceptance of the not-yet-written article based on the scientific merit of the question being asked and the methods proposed to answer them, as opposed to whether the results pass an arbitrary threshold of statistical significance. Then the authors conduct the research, and their paper is published as long as they don't deviate too much from what they initially proposed. The editors and reviewers have tied their hands and have no ability to accept only significant results, and the authors have less incentive to run every statistical analysis possible in order to find something signficant. 
+A new development in research transparency which helps to address both publication bias and researcher degrees of freedom is results-blind reviewing. In results-blind reviewing, authors submit a detailed research plan \textit{before} conducting the research. They submit this plan to a journal, and the journal rejects or gives an in-principle acceptance of the not-yet-written article based on the scientific merit of the question being asked and the methods proposed to answer them, as opposed to whether the results pass an arbitrary threshold of statistical significance. Then the authors conduct the research, and their paper is published as long as they don't deviate too much from what they initially proposed. The editors and reviewers have tied their hands and have no ability to accept only significant results, and the authors have less incentive to game their statistical analysis in order to find something signficant. 
 
-This new mode of publication, called ``Registered Reports," is championed by Chris Chambers, psychologist at Cardiff University, and has been adopted by over a dozen journals. See a full list of journals adopting the procedure at \url{https://osf.io/8mpji/}. \textit{Social Pyschology} run an issue dedicated to this type of article, with an editorial explaining the concept \citep{nosek2014registered}. \textit{AIMS Neuroscience}, which uses this format, published an editorial answering 25 frequently asked questions pertaining to registered reports \citep{chambers2014instead}. 
+This new mode of publication, called ``Registered Reports," is championed by Chris Chambers, psychologist at Cardiff University, and has been adopted by over a dozen journals. See a full list of journals adopting the procedure at \url{https://osf.io/8mpji/}. \textit{Social Pyschology} ran an issue dedicated to this type of article, with an editorial explaining the concept \citep{nosek2014registered}. \textit{AIMS Neuroscience}, which uses this format, published an editorial answering 25 frequently asked questions pertaining to registered reports \citep{chambers2014instead}. 
 
   
 
@@ -721,7 +721,7 @@ University of Texas at Austin Economics
 
 \begin{quote}
 ``Reproducibility is just collaboration with people you don't know,
-including yourself next week''---Philip Stark, UC Berkeley Statistics
+including yourself next week''---Philip Stark, University of California Berkeley Statistics
 \end{quote}
 
 Replication, in both practice and principle, is a key part of social
@@ -739,31 +739,33 @@ scientific.
   similar, but perhaps not identical model .
 \item
   Statistical: Using the same model and underlying population but a
-  different sample. In Hamermesh's view, less relevant to economists,
-  who are likely to already use as large a sample as is available.
+  different sample. In Hamermesh's view, this is less relevant to certain fields, such as economics,
+  where researchers are likely to already use as large a sample as is available.
 \end{itemize}
 
 Others have described this in terms of a spectrum from full replication
 (independent collection of data and re-running analysis) to
 reproducibility, where the same data and code are re-used by other
-researchers \citep{peng_reproducible_2011}. Whatever the terminology used, transparent
-research requires making data and code available to other researchers.
+researchers \citep{peng_reproducible_2011}. Whatever the terminology used, replication or reproducibility, transparent
+research requires making data and code available to other researchers so they can try and get the same results.
 
 \subsection{Project Protocols}\label{project-protocols}
 
 A project protocol can be somewhat similar to a PAP, but is distinct. A protocol is a detailed recipe or instruction
 manual for others to use to reproduce an experiment. Protocols are important both in helping solve researcher degrees of freedom problems by making the exact details of analysis known and help avoid selective reporting, as well as in making one's work reproducible. Protocols are standard in the medical literature, as in all areas of lab science,
 but may be less familiar to those used to working with administrative or
-observational data. Lab sciences are rife with examples of experiments failing to replicate because of supposedly minor changes such as the brand of bedding in mouse cages or the gender of the laboratory assistant \citep{sorge2014olfactory}. \textit{Nature} has decided to expand its methods section in order to encourage better reporting.\footnote{\url{http://www.nature.com/news/announcement-reducing-our-irreproducibility-1.12852}}
+observational data. Lab sciences are rife with examples of experiments failing to replicate because of supposedly minor changes such as the brand of bedding in mouse cages or the gender of the laboratory assistant or the speed at which one stirs a reagent \citep{sorge2014olfactory, hines2014sorting}, and we assume the same situation exists in the social sciences. \textit{Nature} has decided to expand its methods section in order to encourage better reporting.\footnote{\url{http://www.nature.com/news/announcement-reducing-our-irreproducibility-1.12852}}
 
-We believe the social sciences would benefit from more careful documentation of methods. When one uses administrative data this can be accomplished by sharing one's data and code so that analysis is transparent. This is discussed below in section~\ref{replication-and-reproducibility}.\footnote{It should be noted that the need for documentation of survey method is not eliminated by using administrative data, the burden simply falls upon the administration.} With original data collection, researchers should provide very detailed descriptions of what exactly they did. A 33-item checklist of suggested items is contained in the \href{http://www.spirit-statement.org/}{SPIRIT} (Standard Protocol Items: Recommendations for Interventional
+We believe the social sciences would benefit from more careful documentation of methods. When one uses administrative data this can be accomplished by sharing one's data and code so that analysis is transparent.\footnote{It should be noted that the need for documentation of survey method is not eliminated by using administrative data, the burden simply falls upon the administration.} This is discussed below in section~\ref{replication-and-reproducibility}. With original data collection, researchers should provide very detailed descriptions of what exactly they did. A 33-item checklist of suggested items is contained in the \href{http://www.spirit-statement.org/}{SPIRIT} (Standard Protocol Items: Recommendations for Interventional
 Trials) statement (see \url{http://www.spirit-statement.org}, \cite{chan_spirit_2013}), including details on the participants, interventions, outcomes, assignment, blinding, data collection, data management, and statistical methods, among other things. 
 
-One area in which social sciences could improve involves details of randomization. \cite{bruhn_pursuit_2009} documents the lack of clear explanation pertatining to how randomization was conducted in RCTs published in economics journals. Variables used for stratification are not described, and the decision of whether to control for baseline characteristics was often done after the fact. While there seems to be internal disagreement in both
+One area in which social sciences could improve involves details of randomization. \cite{bruhn_pursuit_2009} documents the lack of clear explanation pertaining to how randomization was conducted in RCTs published in economics journals. Variables used for stratification are not described, and the decision of whether to control for baseline characteristics was often done after the fact. While there seems to be internal disagreement in both
 medicine and the social sciences over the appropriateness of including baseline
 control variables in regression analysis of a randomized trial, having
 researchers selectively report whatever method gives them the most
-significant-seeming results is obviously not the optimal outcome. The medical literature also exhibits much greater concern over the blinding and concealment of randomized assignment. In some situations a social scientist interested in the potential scaling up of a government program may rightfully be unperturbed by a respondent assigned to the control group somehow gaining access to treatment, since this behavior would undoubtedly occur if the program were scaled and the researcher still has a valid intention to treat estimate, but this is clearly not always the case, especially if one wants an accurate estimate of the efficacy of a program or a treatment on the treated estimate. Tales of trials ruined through carelessness with the original randomization assignment as well as tips on how to avoid the same problem are described in \cite{schulz_allocation_2002}. In addition to \cite{bruhn_pursuit_2009}, political science has produced guidelines for randomization and related disclosure, avaialable at \url{http://e-gap.org/resources/guides/randomization/}.
+significant-seeming results is obviously not the optimal outcome. 
+
+The medical literature also exhibits much greater concern over the blinding and concealment of randomized assignment than some of the social science literature. In some situations a social scientist interested in the potential scaling up of a government program may rightfully be unperturbed by a respondent assigned to the control group somehow gaining access to treatment, since this behavior would undoubtedly occur if the program were scaled and the researcher still has a valid intention to treat estimate, but this is clearly not always the case, especially if one wants an accurate estimate of the efficacy of a program or a treatment on the treated estimate. Tales of trials ruined through carelessness with the original randomization assignment as well as tips on how to avoid the same problem are described in \cite{schulz_allocation_2002}. In addition to \cite{bruhn_pursuit_2009}, political science has produced guidelines for randomization and related disclosure, avaialable at \url{http://e-gap.org/resources/guides/randomization/}.
 
 
  Some medicine and science journals have begun to publish protocols.   While the
@@ -837,7 +839,7 @@ combination of data, code, organization, and documentation: everything
 from file and variable names to folder organization as well as efficient
 and readable programming, and data storage and documentation.
 
-Software:
+\paragraph{Software:}
 
 Although there is a movement by many towards open source software such
 as \href{http://www.r-project.org/}{R} and \href{https://www.python.org/}{Python}, we appreciate that many disciplines have long
@@ -848,6 +850,7 @@ coding rules that all researchers should use when organizing and
 implementing their analysis, and researchers should strive to make their
 work usable by as many others as possible.
 
+\paragraph{Writing Code:}
 Perhaps the most important rule is to write code, don't work by hand. By
 that we mean:
 
@@ -912,7 +915,7 @@ Suggestions:}\label{general-worflow-suggestions}
 
 \begin{itemize}
 \item
-  Do not use spaces in directory names
+  Do not use spaces in directory or file names, as it complicates referring to them in certain software.
 \item
   Use ``naming directories'', .i.e.~a directory beginning with ``-'' (so
   that it will appear first alphabetically) inside each directory to
@@ -921,27 +924,23 @@ Suggestions:}\label{general-worflow-suggestions}
   Add name, date, and describe contents, as well as updates, to all
   scripting files.
 \item
-  Keep a research log
+  Keep a daily research log, i.e. a detailed written diary of what research is done on a given day. You'll be surprised how often this will be useful to answer questions about whether you ran a certain test or not, when you did it, and what you called the file.
+  
 \item
-  \begin{itemize}
-  \item
     Make sure that all .do files are self-contained, do not require data
     in memory, or ideally, certain directory.
-  \end{itemize}
+ 
 \item
   You can never comment too much.
 \item
   Indent your code
 \item
-  \begin{itemize}
-  \item
     Once you post/distribute code or data, any changes at all require a
     new file name.
-  \end{itemize}
 \item
-  Separate your cleaning and analysis files; don't make any new vars
+  Separate your cleaning and analysis files; don't make any new variables
   that need saving (or will be used by a different analysis
-  file)---better to only create once so you know they're the same.
+  file) in an analysis file--- it is better to only create them once so you know they're the same.
 \item
   Never name a file ``final'' because it won't be.
 \item
@@ -961,46 +960,46 @@ Suggestions}\label{stata-specific-suggestions}
 \begin{itemize}
 \item
   Use the different missing values (``.a''-``.z'', not exclusively
-  ``.'')
+  ``.'') in order to distinguish between ``don't know'' and ``didn't ask'' or other distinct reasons for missing data.
 \item
   Make sure code always produces same result---set seed and sort/merge
   stable
 \item
-  Use the version command
+  Use the `version' command in your .do file to ensure that other researchers who run your code with a newer version of Stata get the same results. 
 \item
-  Don't use abbreviations for variables (may become unstable after
-  adding variables) or commands
+  Don't use abbreviations for variables ( which may become unstable after
+  adding variables) or commands (beyond reason)
 \item
-  Avoid using global macros
+  Avoid using global macros. (This is a common piece of programming advice.)
 \item
-  Use locals for varlists
+  Use locals for varlists to ensure that long lists of variables include the same variables whenever intended.
 \item
   Use `return' command instead of typing in numbers
 \item
-  If you have a master .do file that calls other .do files, you can run
+  If you have a master .do file that calls other .do files, which each have their own .log file, you can run
   multiple log files at the same time (so you have a master .log file)
 \item
-  Use the label data and notes commands.
+  Use the `label data' and `notes' commands to label datasets and help yourself and other researchers easily identify the contents.
 \item
-  Use the notes command for variables as well.
+  Use the `notes' command for variables as well for identifying information that is too long for the variable label.
 \item
-  Use the datasignature command to run a hash and ensure that data is
+  Use the `datasignature' command to generate a hash and help ensure that data is
   the same as before.
 \item
   Use value labels for all categorical variables, but include the
   numerical value in the label.
 \item
-  Don't use capital in variable names since not all software packages
+  Even though Stata is case sensitive, don't use capital letters in variable names since not all software packages
   are case sensitive.
 \item
   Make your files as non-proprietary as possible (use the `saveold'
   command to enable those with earlier versions to use your data. This
-  is why trusted repositories are so good--they'll do this for you.)
+  is why trusted repositories are so useful--they'll do this for you.)
 \end{itemize}
 
 In addition to making code available to the public, the code itself
 should be written in a reader-friendly format, referred to as ``Literate
-Programming'' introduced in \cite{knuth_literate_1984} and \cite{knuth_literate_1992}. The basic
+Programming,'' introduced in \cite{knuth_literate_1984} and \cite{knuth_literate_1992}. The basic
 idea is that ``the time is ripe for significantly better documentation
 of programs, and that we can best achieve this by considering programs
 to be \emph{works of literature}\ldots{}Instead of imagining that our
@@ -1022,9 +1021,9 @@ and shareable HTML, PDF, or MS Word document. These can be posted and
 shared for free at RPubs (\url{https://rpubs.com}), an easy to use
 hosting service by Rstudio.
 
-ADD EXAMPLE
+%ADD EXAMPLE
 
-R MarkdownMarkdownHTML (edit only the first)
+%R MarkdownMarkdownHTML (edit only the first)
 
 \subsection{Sharing Data}\label{sharing-data}
 
@@ -1075,7 +1074,7 @@ papers presented at the St.~Louis Federal Reserve Bank conference in
 1992, and obtained similar response rates as original JMCB Project. The
 flagship economics journal, the \emph{American Economic Review} (AER),
 did not start requesting data until 2003. Finally, after a 2003 article
-showing the nonlinear maximization methods often produce wildly
+showing that nonlinear maximization methods often produce wildly
 different estimates across different software packages, that not a
 single AER article tested their solution with different software, and
 that fully half of queried authors from a chosen issue of the AER,
@@ -1101,14 +1100,26 @@ submit your research does not require you to supply them with your code
 and data, researchers should still share these things. Though some
 repositories, particularly Harvard's Dataverse, seem equipped to handle
 data from practically any researcher (a free 1 TB of storage is
-standard, with more possible), many repositories specialize. The
+standard, with more possible upon request), many repositories specialize. The
 Registry of Research Data Repositories (\url{http://www.re3data.org})
 has described over 900 data repositories to help you find the right data
 repository for your data. A key advantage to using a trusted repository
 such as one listed here, in lieu of simply throwing the data up on your
 own website or making your Dropbox folder public, is that many of these
 repositories will take your data in its proprietary (Stata, SAS, SPSS,
-etc.) form, and make it accessible in other formats.
+etc.) form, and make it accessible in other formats. Storing your data in a repository with other similar datasets also makes it easier for others to find your data, instead of requiring that they already know of its existence, as would likely be the case with personal websites. Your own personal website is also more likely to be taken offline, should a researcher change schools or retire.
+
+\subsubsection{Differential Privacy}\label{differential-privacy}
+
+One important caveat to making data widely available, is that despite
+anonymization, in the age of big data, sometimes individual subjects can
+easily be identified. \cite{heffetz_privacy_2014} recount deliberate data
+releases by Yahoo! Inc., the Massachusetts state government, and
+Netflix, that could easily be used to identify individuals in the data,
+despite the absence of direct identifiers such as names or social
+security numbers. The problem is that ``de-identification does not
+guarantee anonymization.'' This problem is well known in computer science, but solutions are not yet agreed upon, nor widely implemented.
+
 
 \subsection{Reporting Standards}\label{reporting-standards}
 In research, the devil truly is in the details. Whether it is for assessing the validity of a research design or for
@@ -1134,16 +1145,6 @@ Medicine has in fact come up with too many checklists to describe them all indiv
 
 
 
-\subsection{Differential Privacy}\label{differential-privacy}
-
-One important caveat to making data widely available, is that despite
-anonymization, in the age of big data, sometimes individual subjects can
-easily be identified. \cite{heffetz_privacy_2014} recount deliberate data
-releases by Yahoo! Inc., the Massachusetts state government, and
-Netflix, that could easily be used to identify individuals in the data,
-despite the absence of direct identifiers such as names or social
-security numbers. The problem is that ``de-identification does not
-guarantee anonymization.'' This problem is well known in computer science, but solutions are not yet agreed upon, nor widely implemented.
 
 
 \section{Conclusion}\label{conclusion}
@@ -1167,9 +1168,11 @@ changes. And the next time you want to extend the analysis of a
 published paper, you click the link in the paper and have the data on
 your own computer in seconds. Science moves forward.
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
 \singlespacing
-\section{References}\label{references}
+%\section{References}\label{references}
 \bibliographystyle{plainnat}
 \bibliography{Bibliography}
 
