@@ -25,7 +25,7 @@
 \contentsline {subsubsection}{\numberline {6.2.2}Managing Workflow}{36}{subsubsection.6.2.2}
 \contentsline {paragraph}{Software:}{36}{section*.4}
 \contentsline {paragraph}{Writing Code:}{36}{section*.5}
-\contentsline {subsection}{\numberline {6.3}General Worflow Suggestions:}{38}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.3}General Workflow Suggestions:}{38}{subsection.6.3}
 \contentsline {subsection}{\numberline {6.4}Stata-specific Suggestions}{39}{subsection.6.4}
 \contentsline {subsection}{\numberline {6.5}Sharing Data}{41}{subsection.6.5}
 \contentsline {subsubsection}{\numberline {6.5.1}The JMCB Project and Economics}{42}{subsubsection.6.5.1}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.12)  4 DEC 2014 18:12
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.12)  5 DEC 2014 10:25
 entering extended mode
 **C:/Users/garret/Documents/Research/BITSS/BestPractices/BestPracticesManual/Ma
 nual.tex
@@ -535,7 +535,7 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1184.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1184.
 
 Package rerunfilecheck Info: File `Manual.out' has not changed.
-(rerunfilecheck)             Checksum: 56A8072A740EDC60CF813C5DA65B2E5A;2429.
+(rerunfilecheck)             Checksum: B736803542CBCE7CC251D00C48935B8B;2430.
 
 
 LaTeX Warning: There were undefined references.
@@ -544,8 +544,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1184.
  ) 
 Here is how much of TeX's memory you used:
  6824 strings out of 493921
- 102294 string characters out of 3148882
- 188624 words of memory out of 3000000
+ 102295 string characters out of 3148882
+ 188625 words of memory out of 3000000
  9820 multiletter control sequences out of 15000+200000
  55993 words of font info for 116 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
