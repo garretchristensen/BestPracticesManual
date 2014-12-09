@@ -363,7 +363,40 @@ Subjects Research is often a requirement of being included on a research
 proposal.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Study Design}\label{study-design}
-%Courtney to add this section
+Given that researchers are working within a null hypothesis testing framework, the ‘power’ 
+of a study, the probability of rejecting the null hypothesis when it is false, is extremely 
+important. Though 80\% power is held as a lower bound for acceptable power in many disciplines 
+such as medical research, the actual power of studies can be much lower. For example, research 
+by \cite{button_power_2013 found that the median power in Neuroscience was 21\%. This means that 
+if a study investigating a true effect were run 100 time, 79 studies would fail to reach significance, 
+meaning that the change of a false negative is extremely high. 
+
+Though false negatives probably the most often discussed issue with low powered studies, they are not the only issue. 
+A second issue is that low powered studies actually decrease the likelihood of a true positive \cite{button_power_2013}. 
+This means that when a low powered studies does find and effect, the lower the likelihood that this effect is true in 
+the population; it is more likely that it is a false positive.  A third issue with low powered studies relates to effect 
+sizes. Small, low powered studies that reach statistical significance will over-estimate the true effect size in the 
+population \cite{button_power_2013}. These inflated effect size estimates will make it difficult to properly power future 
+studies, and the inaccuracy of the estimate may also be problematic for making decisions based on scientific results. 
+ 
+An obvious way to help mitigate the problems of underpowered studies is to run studies with higher power. However, this 
+process is not always that straightforward. As previously mentioned, effect sizes from published studies are often inflated, 
+and so may not provide the most accurate estimate. Meta-analyses can provide better information, but they also often suffer 
+from publication bias and thus inflated effect sizes. Additionally, effect sizes may be highly heterogeneous between studies, 
+even studies with the same materials and methodologies \cite{many_labs}. Thus, using a single point estimate of an effect size 
+from published literature may lead to inaccurate power calculations.
+
+To combat these problems alternatives to the ‘standard’ power analysis have been suggested. For example, \cite{perugini_2014} 
+have suggested a technique called ‘safeguard power’ which takes into account the uncertainty surrounding effect size estimates 
+when conducting power analyses. Specifically, they suggest basing power calculations off of the effect size corresponding 
+to the lower bound of a 60\% confidence interval around the point estimate from published literature. Another approach 
+by \cite{mcshane_2014} takes into account the between study variation in effect sizes when conducting power analyses to 
+give a more conservative estimate of the number of participants needed to reach a given level of statistical power. 
+Yet another approach, which is also feasible when an effect size estimate from the previous literature is not available, 
+is to determine the smallest effect size you wish to be able to detect, and power your study to find this effect size.  
+
+ 
+\subsection{Conductin Power Analyses}\label{Conducting Power Analyses}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Registration}\label{registration}
@@ -490,7 +523,7 @@ In addition to publication bias, a problem with research is
 specification searching: the manipulation of statistical or regression
 models unknowingly (or deliberately) until significance is obtained.
 Though registration helps solve the problem of publication bias, it does
-not solve the problem of fishing for statistical significance within a
+not solve the problem of fishing for statistical signCificance within a
 given study. \cite{simmons_false-positive_2011} refer to this as
 ``researcher degrees of freedom,'' and it has also been referred to as
 ``fishing'' or ``p-hacking.'' \citep{humphreys_fishing_2013} Using flexibility around when to stop
