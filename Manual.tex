@@ -8,17 +8,21 @@
 \renewcommand{\baselinestretch}{2}
 \usepackage{setspace}
 \usepackage[nottoc]{tocbibind} 
+\usepackage{authblk}
 
 
 \begin{document}
 \title{Manual of Best Practices in Transparent Social Science Research}
 
-\author{Garret Christensen\thanks{Berkeley Initiative for Transparency in the Social Sciences, Center for Open Science. Comments and suggestions are welcome. Please send correspondence to garret@berkeley.edu, or find the latest version of the manual on github:\url{https://github.com/garretchristensen/BestPracticesManual}}}
+\author[1]{Garret Christensen}
+\author[2]{Courtney Soderberg}
+\affil[1]{Berkeley Initiative for Transparency in the Social Sciences}
+\affil[2]{Center for Open Science}
 \date{\today}
 \maketitle
 
 \begin{center}
-Please find the latest version \href{https://github.com/garretchristensen/BestPracticesManual}{here}.
+Comments and suggestions are encouraged. Please send correspondence to garret@berkeley.edu, or find the latest version of the manual on \href{https://github.com/garretchristensen/BestPracticesManual}{github}.
 \end{center}
 
 \newpage
@@ -363,11 +367,14 @@ Subjects Research is often a requirement of being included on a research
 proposal.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Study Design}\label{study-design}
+
+\subsection{Power Analysis}\label{Conducting Power Analysis}
+%By CS
 Given that researchers are working within a null hypothesis testing framework, the ‘power’ 
 of a study, the probability of rejecting the null hypothesis when it is false, is extremely 
 important. Though 80\% power is held as a lower bound for acceptable power in many disciplines 
 such as medical research, the actual power of studies can be much lower. For example, research 
-by \cite{button_power_2013 found that the median power in Neuroscience was 21\%. This means that 
+by \cite{button_power_2013} found that the median power in Neuroscience was 21\%. This means that 
 if a study investigating a true effect were run 100 time, 79 studies would fail to reach significance, 
 meaning that the change of a false negative is extremely high. 
 
@@ -386,7 +393,7 @@ from publication bias and thus inflated effect sizes. Additionally, effect sizes
 even studies with the same materials and methodologies \cite{many_labs}. Thus, using a single point estimate of an effect size 
 from published literature may lead to inaccurate power calculations.
 
-To combat these problems alternatives to the ‘standard’ power analysis have been suggested. For example, \cite{perugini_2014} 
+To combat these problems alternatives to the ‘standard’ power analysis have been suggested. For example, \cite{perugini2014safeguard} 
 have suggested a technique called ‘safeguard power’ which takes into account the uncertainty surrounding effect size estimates 
 when conducting power analyses. Specifically, they suggest basing power calculations off of the effect size corresponding 
 to the lower bound of a 60\% confidence interval around the point estimate from published literature. Another approach 
@@ -396,7 +403,7 @@ Yet another approach, which is also feasible when an effect size estimate from t
 is to determine the smallest effect size you wish to be able to detect, and power your study to find this effect size.  
 
  
-\subsection{Conductin Power Analyses}\label{Conducting Power Analyses}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Registration}\label{registration}

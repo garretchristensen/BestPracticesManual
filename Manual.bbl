@@ -1,4 +1,4 @@
-\begin{thebibliography}{74}
+\begin{thebibliography}{77}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -99,6 +99,15 @@ Miriam Bruhn and David McKenzie.
 \newblock \emph{American Economic Journal: Applied Economics}, 1\penalty0
   (4):\penalty0 200--232, October 2009.
 \newblock \doi{10.1257/app.1.4.200}.
+
+\bibitem[Button et~al.(2013)Button, Ioannidis, Mokrysz, Nosek, Flint, Robinson,
+  and Munaf{\`o}]{button_power_2013}
+Katherine~S Button, John~PA Ioannidis, Claire Mokrysz, Brian~A Nosek, Jonathan
+  Flint, Emma~SJ Robinson, and Marcus~R Munaf{\`o}.
+\newblock Power failure: why small sample size undermines the reliability of
+  neuroscience.
+\newblock \emph{Nature Reviews Neuroscience}, 14\penalty0 (5):\penalty0
+  365--376, 2013.
 
 \bibitem[Carey(2011)]{carey_noted_2011}
 Benedict Carey.
@@ -393,6 +402,14 @@ Oliver Kirchkamp.
 \newblock \emph{Workflow of Statistical Data Analysis}.
 \newblock URL \url{http://www.kirchkamp.de/oekonometrie/pdf/wf-screen2.pdf}.
 
+\bibitem[Klein et~al.(2014)Klein, Ratliff, Vianello, Adams~Jr, Bahn{\'\i}k,
+  Bernstein, Bocian, Brandt, Brooks, Brumbaugh, et~al.]{many_labs}
+Richard~A Klein, Kate~A Ratliff, Michelangelo Vianello, Reginald~B Adams~Jr,
+  {\v{S}}t{\v{e}}p{\'a}n Bahn{\'\i}k, Michael~J Bernstein, Konrad Bocian,
+  Mark~J Brandt, Beach Brooks, Claudia~Chloe Brumbaugh, et~al.
+\newblock Investigating variation in replicability.
+\newblock \emph{Social Psychology}, 45\penalty0 (3):\penalty0 142--152, 2014.
+
 \bibitem[Knuth(1984)]{knuth_literate_1984}
 D.~E. Knuth.
 \newblock Literate programming.
@@ -554,6 +571,13 @@ Roger~D. Peng.
 \newblock ISSN 0036-8075, 1095-9203.
 \newblock \doi{10.1126/science.1213847}.
 \newblock URL \url{http://www.sciencemag.org/content/334/6060/1226}.
+
+\bibitem[Perugini et~al.(2014)Perugini, Gallucci, and
+  Costantini]{perugini2014safeguard}
+Marco Perugini, Marcello Gallucci, and Giulio Costantini.
+\newblock Safeguard power as a protection against imprecise power estimates.
+\newblock \emph{Perspectives on Psychological Science}, 9\penalty0
+  (3):\penalty0 319--332, 2014.
 
 \bibitem[Saquib et~al.(2013)Saquib, Saquib, and
   Ioannidis]{saquib_practices_2013}
