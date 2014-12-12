@@ -9,3 +9,5 @@ Version Notes:
 Original Word doc formatted in Markdown using pandoc.
 
 2. 2014.11.18 Changed to LaTeX because Markdown simply isn't designed for 50-page documents. The section headings alone were killing me. If we use github to sync the files offline, I think we/anyone should easily be able to compile the document.
+
+3. 2014.12.11 Version presented at BITSS Annual Meeting
