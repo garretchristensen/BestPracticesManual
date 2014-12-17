@@ -1,4 +1,4 @@
-BestPracticesManual
+Best Practices Manual README
 ===================
 
 This is a manual of best practices in research transparency, written by Garret Christensen at the Berkeley Institute for Transparency in the Social Sciences, with assistance from Courtney Soderberg at the Center for Open Science. Our intention is to write and maintain a guide or reference volume of best practices for transparent quantitative social science reseach.
