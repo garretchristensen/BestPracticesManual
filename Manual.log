@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.12)  10 DEC 2014 13:04
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.12)  16 DEC 2014 17:19
 entering extended mode
 **C:/Users/garret/Documents/Research/BITSS/BestPractices/BestPracticesManual/Ma
 nual.tex
@@ -420,12 +420,8 @@ Missing character: There is no ˜ in font ptmr7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
-
-
-Package natbib Warning: Citation `mcshane_2014' on page 15 undefined on input l
-ine 400.
-
-[15] [16] [17] <TurnerFigure1.PNG, id=353, 250.68657pt x 263.48438pt>
+ [15] [16]
+[17] <TurnerFigure1.PNG, id=355, 250.68657pt x 263.48438pt>
 File: TurnerFigure1.PNG Graphic file (type png)
 
 <use TurnerFigure1.PNG>
@@ -542,7 +538,7 @@ $\OT1/pcr/m/n/12 replicability -[] the -[] journal -[] of -[] money -[] credit
  []
 
 [54]
-Underfull \hbox (badness 10000) in paragraph at lines 527--532
+Underfull \hbox (badness 10000) in paragraph at lines 534--539
 []$\OT1/pcr/m/n/12 https : / / www . povertyactionlab . org / sites / default /
  files / documents / 090318a %$
  []
@@ -569,13 +565,13 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1224.
  ) 
 Here is how much of TeX's memory you used:
- 6895 strings out of 493921
- 103165 string characters out of 3148882
- 189752 words of memory out of 3000000
- 9889 multiletter control sequences out of 15000+200000
+ 6899 strings out of 493921
+ 103236 string characters out of 3148882
+ 190797 words of memory out of 3000000
+ 9892 multiletter control sequences out of 15000+200000
  47759 words of font info for 98 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 29i,8n,28p,1640b,564s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,8n,28p,1640b,566s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.9} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -609,9 +605,9 @@ e1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MikTek/fonts/type1/urw/couri
 er/ucrr8a.pfb><C:/Program Files/MikTek/fonts/type1/urw/times/utmb8a.pfb><C:/Pro
 gram Files/MikTek/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MikTek/fon
 ts/type1/urw/times/utmri8a.pfb>
-Output written on Manual.pdf (57 pages, 340222 bytes).
+Output written on Manual.pdf (57 pages, 340830 bytes).
 PDF statistics:
- 997 PDF objects out of 1000 (max. 8388607)
- 217 named destinations out of 1000 (max. 500000)
+ 1000 PDF objects out of 1000 (max. 8388607)
+ 218 named destinations out of 1000 (max. 500000)
  294 words of extra memory for PDF output out of 10000 (max. 10000000)
 

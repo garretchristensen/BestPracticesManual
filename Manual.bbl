@@ -1,4 +1,4 @@
-\begin{thebibliography}{77}
+\begin{thebibliography}{78}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -476,6 +476,13 @@ B.~D. McCullough and H.~D. Vinod.
   873--892, June 2003.
 \newblock ISSN 0002-8282.
 \newblock URL \url{http://www.jstor.org/stable/3132121}.
+
+\bibitem[McShane and B{\"o}ckenholt(2014)]{mcshane_2014}
+Blakeley~B McShane and Ulf B{\"o}ckenholt.
+\newblock You cannot step into the same river twice when power analyses are
+  optimistic.
+\newblock \emph{Perspectives on Psychological Science}, 9\penalty0
+  (6):\penalty0 612--625, 2014.
 
 \bibitem[Moher et~al.(2001)Moher, Schulz, and Altman]{moher_consort_2001}
 David Moher, Kenneth~F. Schulz, and Douglas~G. Altman.
