@@ -1,4 +1,4 @@
-\begin{thebibliography}{78}
+\begin{thebibliography}{83}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -44,6 +44,13 @@ Richard~G. Anderson and William~G. Dewald.
   (Nov):\penalty0 79--83, 1994.
 \newblock URL
   \url{http://econpapers.repec.org/article/fipfedlrv/y_3a1994_3ai_3anov_3ap_3a79-83.htm}.
+
+\bibitem[Ashenfelter et~al.(1999)Ashenfelter, Harmon, and
+  Oosterbeek]{ashenfelter1999review}
+Orley Ashenfelter, Colm Harmon, and Hessel Oosterbeek.
+\newblock A review of estimates of the schooling/earnings relationship, with
+  tests for publication bias.
+\newblock \emph{Labour economics}, 6\penalty0 (4):\penalty0 453--470, 1999.
 
 \bibitem[Baicker et~al.(2013)Baicker, Taubman, Allen, Bernstein, Gruber,
   Newhouse, Schneider, Wright, Zaslavsky, and
@@ -108,6 +115,11 @@ Katherine~S Button, John~PA Ioannidis, Claire Mokrysz, Brian~A Nosek, Jonathan
   neuroscience.
 \newblock \emph{Nature Reviews Neuroscience}, 14\penalty0 (5):\penalty0
   365--376, 2013.
+
+\bibitem[Card and Krueger(1995)]{card1995time}
+David Card and Alan~B Krueger.
+\newblock Time-series minimum-wage studies: a meta-analysis.
+\newblock \emph{The American Economic Review}, pages 238--243, 1995.
 
 \bibitem[Carey(2011)]{carey_noted_2011}
 Benedict Carey.
@@ -227,6 +239,11 @@ Annie Franco, Neil Malhotra, and Gabor Simonovits.
 \newblock ISSN 0036-8075, 1095-9203.
 \newblock \doi{10.1126/science.1255484}.
 \newblock URL \url{http://www.sciencemag.org/content/345/6203/1502}.
+
+\bibitem[Gandrud(2013)]{gandrud2013reproducible}
+Christopher Gandrud.
+\newblock \emph{Reproducible Research with R and R Studio}.
+\newblock CRC Press, 2013.
 
 \bibitem[Gelman and Loken(2013)]{gelman_garden_2013}
 Andrew Gelman and Eric Loken.
@@ -504,6 +521,14 @@ David Moher, Kenneth~F. Schulz, and Douglas~G. Altman.
 \newblock \doi{10.1001/jama.285.15.1992}.
 \newblock URL \url{http://dx.doi.org/10.1001/jama.285.15.1992}.
 
+\bibitem[Montgomery et~al.(2013)Montgomery, Grant, Hopewell, Macdonald, Moher,
+  Michie, and Mayo-Wilson]{montgomery2013protocol}
+Paul Montgomery, Sean Grant, Sally Hopewell, Geraldine Macdonald, David Moher,
+  Susan Michie, and Evan Mayo-Wilson.
+\newblock Protocol for consort-spi: an extension for social and psychological
+  interventions.
+\newblock \emph{Implement Sci}, 8\penalty0 (1):\penalty0 99, 2013.
+
 \bibitem[Neumark(2001)]{neumark_employment_2001}
 David Neumark.
 \newblock The employment effects of minimum wages: Evidence from a prespecified
@@ -649,6 +674,12 @@ Robert~E Sorge, Loren~J Martin, Kelsey~A Isbester, Susana~G Sotocinal, Sarah
 \newblock Olfactory exposure to males, including men, causes stress and related
   analgesia in rodents.
 \newblock \emph{Nature methods}, 2014.
+
+\bibitem[Stanley(2005)]{stanley2005beyond}
+Tom~D Stanley.
+\newblock Beyond publication bias.
+\newblock \emph{Journal of Economic Surveys}, 19\penalty0 (3):\penalty0
+  309--345, 2005.
 
 \bibitem[Taubman et~al.(2013)Taubman, Allen, Baicker, Wright, and
   Finkelstein]{taubman_oregon_2013}

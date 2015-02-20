@@ -522,6 +522,11 @@ designs registered as of October 2014.\footnote{Other less-widely
 
 Another location for registrations is the \href{http://osf.io}{Open Science Framework} (OSF), created by the \href{http://centerforopenscience.org/}{Center for Open Science}. The OSF serves as a broad research management tool that encourages and facilitates transparency (see \cite{nosek_scientific_2012}.) Registrations are simply unalterable snapshots of research frozen in time, with a persistent URL and timestamp. Researchers can upload their data, code, hypotheses, etc. to the OSF, register it, and then share the resulting URL as proof of registration. OSF registrations can be relatively free-form, but templates exist to conform to standards in different disciplines. Psychology registrations are presently the most numerous on the OSF (\hyperref[newPublicRegistrations]{https://osf.io/explore/activity/\#newPublicRegistrations}).
 
+\subsection{Meta-Analysis Research}
+Another method of detecting and dealing with publication bias is to conduct meta-analysis. This method of research collects all published findings on a given topic, and analyzes the results collectively, and can detect, and attempt to adjust for, publication bias in the literature. Although quite common in medical research, the tool is not widely used in some parts of the social sciences. But even in economics, where many students are completely unfamiliar with the technqiue, important papers exist that have quantitatively synthesized bodies of literature. The unemployment effects of the minimum wage were meta-analyzed in \cite{card1995time}, and the returns to education in \cite{ashenfelter1999review}. A meta-analysis of 87 meta-analyses in economics shows that publication bias is widespread, but not universal.\footnote{A helpful resource, which includes meta-analysis datasets for economics researchers interested in conducting a meta-analysis is available \href{http://www.deakin.edu.au/business/economics/research/meta-analysis}{here}. Also see \cite{stanley2005beyond}, which helpfully describes the tools of meta-analysis, and is part of a special issue of \textit{The Journal of Economic Surveys} dedicated to meta-analysis.}
+
+ADD Medical, Psych, Poly Sci references
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Researcher Degrees of
 Freedom}\label{rdof}
@@ -530,7 +535,7 @@ In addition to publication bias, a problem with research is
 specification searching: the manipulation of statistical or regression
 models unknowingly (or deliberately) until significance is obtained.
 Though registration helps solve the problem of publication bias, it does
-not solve the problem of fishing for statistical signCificance within a
+not solve the problem of fishing for statistical significance within a
 given study. \cite{simmons_false-positive_2011} refer to this as
 ``researcher degrees of freedom,'' and it has also been referred to as
 ``fishing'' or ``p-hacking.'' \citep{humphreys_fishing_2013} Using flexibility around when to stop
@@ -713,6 +718,7 @@ Another project in Indonesia used a field experiment to evaluate different means
 \item
 An example from pyschology is a pre-registered replication of an implicit association test. Existing research showed evidence of stronger racial preferences among fertile women. \cite{NosekPreRegistered} failed to reproduce this effect in four tries, suggesting the association is weaker than originally found. The resulting manuscript, as well as the time-stamped registration of the analysis plan, can be found at \url{https://osf.io/g3sca/}
 \end{itemize}
+A template 
 
 \subsection{Multiple Hypothesis Testing}
 Several of the PAP above, and several of the lists of suggestions above include corrections for multiple hypothesis testing. The idea of correcting for multiple tests is widespread in certain fields, but has yet to take hold in the social sciences. Simply put, the idea is that because we are aware of the fact that test statistics and p-values appear significant purely by chance a certain proportion of the time, we can report different, \textit{better} p-values that control for the fact that we are running multiple tests. There are several ways to do this, all of which are used and explained in a simple and straightforward manner by \cite{anderson_fwer}:
@@ -877,11 +883,11 @@ Code is just one aspect of a larger structure we refer to as
 ``workflow'' after \cite{long_workflow_2008} and \cite{kirchkamp_workflow_????}, by which we mean the
 combination of data, code, organization, and documentation: everything
 from file and variable names to folder organization as well as efficient
-and readable programming, and data storage and documentation.
+and readable programming, and data storage and documentation. We strongly recommend that Stata-users read \cite{long_workflow_2008} and R users read \cite{gandrud2013reproducible} for workflow recommendations both general and specific to their respective programming language. Our suggestions here borrw heavily from their excellent work.
 
 \paragraph{Software:}
 
-Although there is a movement by many towards open source software such
+Although we agree with the movement by many towards open source software such
 as \href{http://www.r-project.org/}{R} and \href{https://www.python.org/}{Python}, we appreciate that many disciplines have long
 traditions of using proprietary software such as SAS and STATA, and
 learning a new programming language may be an undesirable additional
@@ -1177,6 +1183,8 @@ The original CONSORT  was developed in the mid 1990's \citep{begg_c_improving_19
 Though a standard akin to CONSORT has not been formally adopted by social science or behavioral science journals, at least as far as we are aware, there have been attempts to do this: In political science, the Experimental Research Section Standards Committee produced a detailed list of items required for disclosure of experiments in political science \citep{gerber_reporting_????}. This checklist is available \href{http://www.davidhendry.net/research-supplemental/gerberetal2014-reportingstandards/gerberetal2014-reportingstandards&appendix1.pdf}{here}.\footnote{\url{http://www.davidhendry.net/research-supplemental/gerberetal2014-reportingstandards/gerberetal2014-reportingstandards&appendix1.pdf}}
 
 In economics, one article has highlighted the fact that there is not much discussion of essential features of randomization (how was randomization stratified, if at all? How were control variables determined?), but no standards have been adopted. \citep{bruhn_pursuit_2009}
+
+In psychological and behavioral research, an extention to CONSORT for Social and Psychological Interventions (CONSORT-SPI) was developed in \citep{montgomery2013protocol}, but has so far not been widely adopted, or required by journals. 
 
 \subsection{Observational Reporting Standards}\label{observational-standards}
 Social science has yet to make a serious push for reporting standards in observational work, but the medical/epidemiological literature has created standards in this type of work, though they are not as widely adopted as CONSORT. Perhaps the most well-known is the STROBE Statement (Strengthening the reporting of observational studies in epidemiology), available at \url{http://www.strobe-statement.org}. STROBE provides checklists for reporting of cohort, case-control, and cross-sectional studies. These standards have been endorsed by approximately 100 journals in the field.\footnote{\url{http://www.strobe-statement.org/index.php?id=strobe-endorsement}}
