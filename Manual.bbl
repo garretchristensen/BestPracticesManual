@@ -1,4 +1,4 @@
-\begin{thebibliography}{83}
+\begin{thebibliography}{84}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -179,6 +179,17 @@ David Cyranoski.
 \newblock ISSN 0028-0836, 1476-4687.
 \newblock \doi{10.1038/505468a}.
 \newblock URL \url{http://www.nature.com/news/cloning-comeback-1.14504}.
+
+\bibitem[Dal-Re et~al.(2014)Dal-Re, Ioannidis, Bracken, Buffler, Chan, Franco,
+  Vecchia, and Weiderpass]{dal-re_making_2014}
+Rafael Dal-Re, John~P. Ioannidis, Michael~B. Bracken, Patricia~A. Buffler,
+  An-Wen Chan, Eduardo~L. Franco, Carlo~La Vecchia, and Elisabete Weiderpass.
+\newblock Making prospective registration of observational research a reality.
+\newblock \emph{Science Translational Medicine}, 6\penalty0 (224):\penalty0
+  224cm1--224cm1, February 2014.
+\newblock ISSN 1946-6234, 1946-6242.
+\newblock \doi{10.1126/scitranslmed.3007513}.
+\newblock URL \url{http://stm.sciencemag.org/content/6/224/224cm1}.
 
 \bibitem[De~Angelis et~al.(2004)De~Angelis, Drazen, Frizelle, Haug, Hoey,
   Horton, and Kotzin]{DeAngelis2004}
