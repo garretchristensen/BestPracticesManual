@@ -97,7 +97,7 @@ report to help make their work reproducible.
 
 Section~\ref{conclusion} concludes and presents a vision for moving forward.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Ethical Research}\label{ethical-research}
 
 We believe that making one's research transparent and reproducible is a
@@ -365,7 +365,7 @@ Institutional Training Initiative at the University of Miami (CITI,
 \url{https://www.citiprogram.org/}). Completing their course on Human
 Subjects Research is often a requirement of being included on a research
 proposal.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Study Design}\label{study-design}
 
 \subsection{Power Analysis}\label{Conducting Power Analysis}
@@ -375,7 +375,7 @@ of a study, the probability of rejecting the null hypothesis when it is false, i
 important. Though 80\% power is held as a lower bound for acceptable power in many disciplines 
 such as medical research, the actual power of studies can be much lower. For example, research 
 by \cite{button_power_2013} found that the median power in Neuroscience was 21\%. This means that 
-if a study investigating a true effect were run 100 time, 79 studies would fail to reach significance, 
+if a study investigating a true effect were run 100 times, 79 studies would fail to reach significance, 
 meaning that the chance of a false negative is extremely high. 
 
 Though false negatives probably the most often discussed issue with low powered studies, they are not the only issue. 
@@ -405,7 +405,7 @@ is to determine the smallest effect size you wish to be able to detect, and powe
  
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Registration}\label{registration}
 
 One of the problems brought into focus recently is publication bias.
@@ -472,7 +472,7 @@ merely assumes that a registered trial without an associated published
 paper produced a null result, it requires that the registration site
 itself obtain outcomes of trials. \href{http://www.clinicaltrials.gov}{ClinicalTrials.gov} is the only
 publicly available trial registry that requires such reporting of
-results, and only for certain FDA trials.\footnote{HHS and NIH took steps in November 2014 to expand the amount of results reporting required. See \url{http://www.nih.gov/news/health/nov2014/od-19.htm}}  \cite{hartung_reporting_2014} raises
+results, and only for certain FDA trials.\footnote{\cite{resultscompliance} finds that compliance with results reporting even among those required was fairly low (22\%). HHS and NIH took steps in November 2014 to expand the amount of results reporting required. See \url{http://www.nih.gov/news/health/nov2014/od-19.htm}}  \cite{hartung_reporting_2014} raises
 concerns about discrepancies between reporting of outcomes in published
 papers and in the \href{http://www.clinicaltrials.gov}{ClinicalTrials.gov} database; as many as 20\% of
 studies had discrepancies in primary outcomes and as many as 33\% had
@@ -528,7 +528,11 @@ Another method of detecting and dealing with publication bias is to conduct meta
 
 ADD Medical, Psych, Poly Sci references
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Design-Based Review and Publication}
+Another proposed method of reducing publication bias is by altering the time at which peer review takes place. The standard method is for peers to review a completed paper, with results. Even with editorial statements in place encouraging reviewers to not be prejudiced against null results, the odds are stacked against null-result papers. The new method, refered to as `registered reports'\footnote{We consider the name `registered reports' unfortunate, since it can be easily confused with trial registrations, and we prefer the terms `design-based review' or `design-based publication.'} has reviewers evaluate a paper before the data is collected and analyzed. That is, a researcher submits a detailed protocol and analysis plan, and reviewers judge based on the importance of the question being asked and the appropriateness of the methods being used. The protocol is then rejected or given in-principle acceptance. If accepted in-principle, the author conducts the experiment and the analysis as planned, and submits the final result. If the author followed through on his promise, the paper is published, regardless of the statistical significance of the article. 
+
+This method of review and publication is championed by Chris Chambers at Cardiff University. Nearly 20 journals have adopted this method to one degree or another. More information can be found at the project's \href{https://osf.io/8mpji/wiki/home/}{Open Science Framework page}. It is too early to do a sophisticated analysis of the effects on publication, but we believe it to be a promising development. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Researcher Degrees of
 Freedom}\label{rdof}
 
@@ -719,7 +723,54 @@ Another project in Indonesia used a field experiment to evaluate different means
 \item
 An example from pyschology is a pre-registered replication of an implicit association test. Existing research showed evidence of stronger racial preferences among fertile women. \cite{NosekPreRegistered} failed to reproduce this effect in four tries, suggesting the association is weaker than originally found. The resulting manuscript, as well as the time-stamped registration of the analysis plan, can be found at \url{https://osf.io/g3sca/}
 \end{itemize}
-A template 
+Additionally, Alejandro Ganimian developed \href{http://scholar.harvard.edu/files/alejandro_ganimian/files/pre-analysis_plan_template.pdf}{a template for pre-analysis plans} that instructors may find useful when teaching tranpsarency methods, or researcher themselves may find useful when developing their own pre-analysis plan.
+
+\subsubsection{Project Protocols}\label{project-protocols}
+
+A project protocol can be somewhat similar to a PAP, but is distinct. A protocol is a detailed recipe or instruction manual for others to use to reproduce an experiment. Protocols are important both in helping solve researcher degrees of freedom problems by making the exact details of analysis known and help avoid selective reporting, as well as in making one's work reproducible. Protocols are standard in the medical literature, as in all areas of lab science, but may be less familiar to those used to working with administrative or observational data. Lab sciences are rife with examples of experiments failing to replicate because of supposedly minor changes such as the brand of bedding in mouse cages or the gender of the laboratory assistant or the speed at which one stirs a reagent \citep{sorge2014olfactory, hines2014sorting}, and we assume the same situation exists in the social sciences. \textit{Nature} has decided to expand its methods section in order to encourage better reporting.\footnote{\url{http://www.nature.com/news/announcement-reducing-our-irreproducibility-1.12852}}
+
+We believe the social sciences would benefit from more careful documentation of methods. When one uses administrative data this can be accomplished by sharing one's data and code so that analysis is transparent.\footnote{It should be noted that the need for documentation of survey method is not eliminated by using administrative data, the burden simply falls upon the administration.} This is discussed below in section~\ref{replication-and-reproducibility}. With original data collection, researchers should provide very detailed descriptions of what exactly they did. A 33-item checklist of suggested items is contained in the \href{http://www.spirit-statement.org/}{SPIRIT} (Standard Protocol Items: Recommendations for Interventional
+Trials) statement (see \url{http://www.spirit-statement.org}, \cite{chan_spirit_2013}), including details on the participants, interventions, outcomes, assignment, blinding, data collection, data management, and statistical methods, among other things. 
+
+One area in which social sciences could improve involves details of randomization. \cite{bruhn_pursuit_2009} documents the lack of clear explanation pertaining to how randomization was conducted in RCTs published in economics journals. Variables used for stratification are not described, and the decision of whether to control for baseline characteristics was often done after the fact. While there seems to be internal disagreement in both
+medicine and the social sciences over the appropriateness of including baseline
+control variables in regression analysis of a randomized trial, having
+researchers selectively report whatever method gives them the most
+significant-seeming results is obviously not the optimal outcome. 
+
+The medical literature also exhibits much greater concern over the blinding and concealment of randomized assignment than some of the social science literature. In some situations a social scientist interested in the potential scaling up of a government program may rightfully be unperturbed by a respondent assigned to the control group somehow gaining access to treatment, since this behavior would undoubtedly occur if the program were scaled and the researcher still has a valid intention to treat estimate, but this is clearly not always the case, especially if one wants an accurate estimate of the efficacy of a program or a treatment on the treated estimate. Tales of trials ruined through carelessness with the original randomization assignment as well as tips on how to avoid the same problem are described in \cite{schulz_allocation_2002}. In addition to \cite{bruhn_pursuit_2009}, political science has produced guidelines for randomization and related disclosure, avaialable at \url{http://e-gap.org/resources/guides/randomization/}.
+
+
+ Some medicine and science journals have begun to publish protocols.   While the
+advantages of publishing a protocol related to the development of a new
+procedure (e.g. ``we have developed a new method of isolating mRNA'')
+should be obvious, the advantages of publishing protocols for randomized
+trials under way are perhaps less obvious, but still exist. \emph{BioMed
+Central} and \emph{BMJ Open}, among others, now publish protocols of
+trials planned or ongoing, with the hopes that this will reduce
+publication bias, allow patients to see trials in which they might like
+to enroll, allow funders and researchers to learn of work underway to
+avoid duplication, and to allow readers to compare what research was
+originally proposed to what was actually completed. (See
+\url{http://www.biomedcentral.com/authors/protocols} and
+\url{http://bmjopen.bmj.com/site/about/guidelines.xhtml\#studyprotocols}.)
+\emph{BMJ Open} suggests, but does not require, that its published
+protocols include the items in the SPIRIT checklist.
+
+Even in published (or otherwise public) protocols, studies have found
+important differences between protocols and published results. 60-71\%
+of outcomes described in protocols went unreported in the paper while
+62\% had major discrepancies between primary outcomes in the protocols
+and in the published papers, though there was a relatively even mix of
+these discrepancies favoring significant or insignificant results \citep{chan_a_empirical_2004}. Another study found that appropriate level of
+statistical detail is often lacking in protocols, and there are often
+discrepancies between protocols and published results \citep{saquib_practices_2013}. 31\% of published papers had some sort of
+pre-specified plan for their regression adjustments (i.e.~specifying
+which baseline covariates would be controlled for), while 70-74\% of
+those that published a design paper or provided a protocol to the
+authors, but only 53\% of the plans matched what was published in the
+ultimate paper.
+
 
 \subsection{Multiple Hypothesis Testing}
 Several of the PAP above, and several of the lists of suggestions above include corrections for multiple hypothesis testing. The idea of correcting for multiple tests is widespread in certain fields, but has yet to take hold in the social sciences. Simply put, the idea is that because we are aware of the fact that test statistics and p-values appear significant purely by chance a certain proportion of the time, we can report different, \textit{better} p-values that control for the fact that we are running multiple tests. There are several ways to do this, all of which are used and explained in a simple and straightforward manner by \cite{anderson_fwer}:
@@ -774,7 +825,7 @@ including yourself next week''---Philip Stark, University of California Berkeley
 Replication, in both practice and principle, is a key part of social
 science research. We first define what exactly we mean by replication
 using the taxonomy developed in \cite{hamermesh_viewpoint:_2007} and \cite{hunter_desperate_2001}.
-Replication comes in a few different shapes: pure, statistical, and
+According to Hamermesh, replication comes in a few different shapes: pure, statistical, and
 scientific.
 
 \begin{itemize}
@@ -790,60 +841,12 @@ scientific.
   where researchers are likely to already use as large a sample as is available.
 \end{itemize}
 
-Others have described this in terms of a spectrum from full replication
-(independent collection of data and re-running analysis) to
+One might imagine a fourth type that uses the same data but probes the data using additional robustness and sensitivity checks. Others have described replication in terms of a spectrum from full replication (independent collection of data and re-running analysis) to
 reproducibility, where the same data and code are re-used by other
 researchers \citep{peng_reproducible_2011}. Whatever the terminology used, replication or reproducibility, transparent
 research requires making data and code available to other researchers so they can try and get the same results.
 
-\subsection{Project Protocols}\label{project-protocols}
 
-A project protocol can be somewhat similar to a PAP, but is distinct. A protocol is a detailed recipe or instruction
-manual for others to use to reproduce an experiment. Protocols are important both in helping solve researcher degrees of freedom problems by making the exact details of analysis known and help avoid selective reporting, as well as in making one's work reproducible. Protocols are standard in the medical literature, as in all areas of lab science,
-but may be less familiar to those used to working with administrative or
-observational data. Lab sciences are rife with examples of experiments failing to replicate because of supposedly minor changes such as the brand of bedding in mouse cages or the gender of the laboratory assistant or the speed at which one stirs a reagent \citep{sorge2014olfactory, hines2014sorting}, and we assume the same situation exists in the social sciences. \textit{Nature} has decided to expand its methods section in order to encourage better reporting.\footnote{\url{http://www.nature.com/news/announcement-reducing-our-irreproducibility-1.12852}}
-
-We believe the social sciences would benefit from more careful documentation of methods. When one uses administrative data this can be accomplished by sharing one's data and code so that analysis is transparent.\footnote{It should be noted that the need for documentation of survey method is not eliminated by using administrative data, the burden simply falls upon the administration.} This is discussed below in section~\ref{replication-and-reproducibility}. With original data collection, researchers should provide very detailed descriptions of what exactly they did. A 33-item checklist of suggested items is contained in the \href{http://www.spirit-statement.org/}{SPIRIT} (Standard Protocol Items: Recommendations for Interventional
-Trials) statement (see \url{http://www.spirit-statement.org}, \cite{chan_spirit_2013}), including details on the participants, interventions, outcomes, assignment, blinding, data collection, data management, and statistical methods, among other things. 
-
-One area in which social sciences could improve involves details of randomization. \cite{bruhn_pursuit_2009} documents the lack of clear explanation pertaining to how randomization was conducted in RCTs published in economics journals. Variables used for stratification are not described, and the decision of whether to control for baseline characteristics was often done after the fact. While there seems to be internal disagreement in both
-medicine and the social sciences over the appropriateness of including baseline
-control variables in regression analysis of a randomized trial, having
-researchers selectively report whatever method gives them the most
-significant-seeming results is obviously not the optimal outcome. 
-
-The medical literature also exhibits much greater concern over the blinding and concealment of randomized assignment than some of the social science literature. In some situations a social scientist interested in the potential scaling up of a government program may rightfully be unperturbed by a respondent assigned to the control group somehow gaining access to treatment, since this behavior would undoubtedly occur if the program were scaled and the researcher still has a valid intention to treat estimate, but this is clearly not always the case, especially if one wants an accurate estimate of the efficacy of a program or a treatment on the treated estimate. Tales of trials ruined through carelessness with the original randomization assignment as well as tips on how to avoid the same problem are described in \cite{schulz_allocation_2002}. In addition to \cite{bruhn_pursuit_2009}, political science has produced guidelines for randomization and related disclosure, avaialable at \url{http://e-gap.org/resources/guides/randomization/}.
-
-
- Some medicine and science journals have begun to publish protocols.   While the
-advantages of publishing a protocol related to the development of a new
-procedure (e.g. ``we have developed a new method of isolating mRNA'')
-should be obvious, the advantages of publishing protocols for randomized
-trials under way are perhaps less obvious, but still exist. \emph{BioMed
-Central} and \emph{BMJ Open}, among others, now publish protocols of
-trials planned or ongoing, with the hopes that this will reduce
-publication bias, allow patients to see trials in which they might like
-to enroll, allow funders and researchers to learn of work underway to
-avoid duplication, and to allow readers to compare what research was
-originally proposed to what was actually completed. (See
-\url{http://www.biomedcentral.com/authors/protocols} and
-\url{http://bmjopen.bmj.com/site/about/guidelines.xhtml\#studyprotocols}.)
-\emph{BMJ Open} suggests, but does not require, that its published
-protocols include the items in the SPIRIT checklist.
-
-Even in published (or otherwise public) protocols, studies have found
-important differences between protocols and published results. 60-71\%
-of outcomes described in protocols went unreported in the paper while
-62\% had major discrepancies between primary outcomes in the protocols
-and in the published papers, though there was a relatively even mix of
-these discrepancies favoring significant or insignificant results \citep{chan_a_empirical_2004}. Another study found that appropriate level of
-statistical detail is often lacking in protocols, and there are often
-discrepancies between protocols and published results \citep{saquib_practices_2013}. 31\% of published papers had some sort of
-pre-specified plan for their regression adjustments (i.e.~specifying
-which baseline covariates would be controlled for), while 70-74\% of
-those that published a design paper or provided a protocol to the
-authors, but only 53\% of the plans matched what was published in the
-ultimate paper.
 
 \subsection{Code and Workflow}\label{code-and-workflow}
 
@@ -884,7 +887,7 @@ Code is just one aspect of a larger structure we refer to as
 ``workflow'' after \cite{long_workflow_2008} and \cite{kirchkamp_workflow_????}, by which we mean the
 combination of data, code, organization, and documentation: everything
 from file and variable names to folder organization as well as efficient
-and readable programming, and data storage and documentation. We strongly recommend that Stata-users read \cite{long_workflow_2008} and R users read \cite{gandrud2013reproducible} for workflow recommendations both general and specific to their respective programming language. Our suggestions here borrw heavily from their excellent work.
+and readable programming, and data storage and documentation. We strongly recommend that Stata-users read \cite{long_workflow_2008} and R users read \cite{gandrud2013reproducible} for workflow recommendations both general and specific to their respective programming language. Our suggestions here borrw heavily from their excellent work. We also refer undergraduate instructors and others who may be interested to Richard Ball and Norm Medeiros' \href{http://www.haverford.edu/TIER/}{Project TIER} (Teaching Integrity in Empirical Research), which is a ``protocol for comprehensively documenting all the steps of data management and analysis that go into an empirical research paper.'' A specific file organization is taught so that teachers can exactly reproduce the work of every student (and so students can reliably get the same answer every time they conduct their analysis). 
 
 \paragraph{Software:}
 
@@ -1075,7 +1078,7 @@ hosting service by Rstudio.
 \subsection{Sharing Data}\label{sharing-data}
 
 In addition to code, researchers should share their data if at all
-possible. Many journals do not require sharing of code, but the number
+possible. Many journals do not require sharing of data, but the number
 that do is increasing.
 
 \subsubsection{The JMCB Project and
@@ -1138,6 +1141,9 @@ Political Economy, The Review of Economics and Statistics, and the
 Review of Economic Studies}, now explicitly require data and code to be
 submitted at the time of publication. The AER conducted a review and
 found good, but incomplete, compliance \citep{glandon_report_2010}.
+
+%EXPAND HERE ON JUST HOW MUCH DATA YOU SHOULD SHARE
+
 
 \subsubsection{General Repositories}\label{general-repositories}
 
@@ -1219,15 +1225,80 @@ your own computer in seconds. Science moves forward.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Glossary of Terms}
+We feel that it is important to define the terms we use in this document. Although many of the concepts overlap, we suggest that researchers use the following terms:
+\begin{itemize}
+\item
+Analysis Plan: see \hyperref[def-pap]{Pre-analysis Plan}
+
+\item
+Data citation: The practice of specifically citing datasets, and not just the paper in which a dataset was used.  This helps other researchers to find data and rewards researchers who share data, leading to better science. Read more at \url{http://www.icpsr.umich.edu/icpsrweb/ICPSR/curation/citations.jsp}. 
+
+\item \label{def-mining}
+Data mining: Searching blindly and repeatedly through data to find supposedly statistically significant relationships. While not inherently wrong, if done without a plan or without adjusting for multiple hypothesis testing, test statistics and p-values that result no longer hold their traditional meaning, and can lead to research that cannot be replicated.
+
+\item
+Data sharing: Researchers making the data they use in an analysis available to other researchers, ideally through a trusted public archive. 
+
+\item\label{def-dbp}
+Design-based publication: To help reduce publication bias, peer review can take place before results of a study are determined. Reviewers look evaluate the design of a study to see whether the question is important and whether the study is well-designed. Good studies are given in-principle acceptance, and cannot be discriminated against for a null result, which, after all, may be the truth. See \url{https://osf.io/8mpji/wiki/home/} for journals practicing this form of publication.
+
+\item
+Literate Programming: the idea of writing programming code designed to be read and easily understood by a human. Use of this best practice can make a researcher’s code far more easily reproducible by others.
+
+\item
+Multiple hypothesis correction: Statistically taking into account the fact that multiple hypotheses have been tested. This tends to decrease the reported statistical significance of any individual test conducted. The oldest method, known as the Bonferroni correction simply divides the significance threshold by the number of tests. This is quite conservative, and more modern methods are helpfully described in (Anderson 2008).
+
+\item
+P-hacking: see \hyperref[def-mining]{data mining}
+
+\item\label{def-pap}
+Pre-analysis plan: A document that details, ahead of time, the statistical analysis plan that will be conducted for a given research project. Outcomes, control variables, and regression specifications are all written in as much detail as possible. This serves to make research more confirmatory in nature. 
+
+\item
+Protocol: A general term meaning a document that provides a detailed description of a research project, ideally written before the project takes place, and in enough detail that other researchers may reproduce the project on their own. Often used in the context of human subjects IRB protocols, but increasingly used in connection with pre-analysis plans. 
+
+\item
+Publication Bias: The unfortunate fact that research is often only published when it contains the rejection of a null hypothesis test, i.e. a statistically significant relationship. Reviewers or journal editors may consider a null finding to be of less interest, or a researcher may fail to write up a null result, even though the null result may be the truth.
+
+\item
+Registration: Publicly declaring that an investigation of a hypothesis is or will be undertaken.
+\begin{itemize}
+\item  Study Registration: Registering a research project that is not a randomized trial.
+\item  Trial Registration: Registering a randomized trial. 
+\end{itemize}
+\item
+Registry: A database of registered studies or trials. For instance, socialscienceregistry.org or clinicaltrials.gov. Some of the largest registries only accept randomized trials, hence the frequent discussion of ‘trial registries.’
+
+\item
+Registered Reports: see \hyperref[def-dbp]{design-based publication}
+
+\item
+Replicable: see \hyperref[def-repro]{reproducible}
+
+\item
+Replication: The idea of conducting an existing research project over again, with the hope of obtaining the same result. A subtle taxonomy exists, explained in (Hamermesh 2007).
+\begin{itemize}
+\item
+Pure Replication: Re-running existing code, with error-checking, on the original dataset and seeing if the published results are obtained.
+\item
+Scientific Replication: Attempting to reproduce the published results with a new sample, with the same code or with slight variations from the original analysis.
+\end{itemize}
+\item \label{def-repro}
+Reproducible: The test of whether research can redone by another researcher and produce the same results as the original. 
+\item
+Researcher Degrees of Freedom: the flexibility that a researcher has in data analysis, whether consciously abused or not. See \hyperref[def-mining]{data mining}. 
+\item Specification searching: Testing numerous regression specifications and reporting only the model that produces the desired results. See \hyperref[def-mining]{data mining}. 
+\item
+Trusted Digital Repository: a location for storing data that others can believe will not be manipulated, and will be available into the future. Storing data here is superior to simply posting on an individual website, since it is more easily accessible and less easily changed.  
+\item
+Version Control: A method of tracking every edit made to a computer file. This is often quite useful for empirical researchers who may edit their programming code hundreds or thousands of times.
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \singlespacing
 %\section{References}\label{references}
 \bibliographystyle{plainnat}
 \bibliography{Bibliography}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\section{Index}\label{index}
-
-%I'm guessing it's super annoying to make, but we should have an index.
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
