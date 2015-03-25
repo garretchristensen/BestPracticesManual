@@ -1,4 +1,4 @@
-\begin{thebibliography}{84}
+\begin{thebibliography}{87}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -73,6 +73,12 @@ Katherine Baicker, Amy Finkelstein, and Sarah Taubman.
 \newblock April 2014.
 \newblock URL
   \url{http://www.nber.org/oregon/files/oregon_hie_crime_analysis_plan.pdf}.
+
+\bibitem[Barrick and Mount(1991)]{barrick1991big5}
+Murray~R Barrick and Michael~K Mount.
+\newblock The big five personality dimensions and job performance: a
+  meta-analysis.
+\newblock \emph{Personnel psychology}, 44\penalty0 (1):\penalty0 1--26, 1991.
 
 \bibitem[{Begg C} et~al.(1996){Begg C}, {Cho M}, {Eastwood S}, and {et
   al}]{begg_c_improving_1996}
@@ -295,6 +301,15 @@ Rachel Glennerster and Kudzai Takavarasha.
 \newblock \emph{Running Randomized Evaluations: A Practical Guide}.
 \newblock Princeton University Press, November 2013.
 \newblock ISBN 9781400848447.
+
+\bibitem[Greenwald et~al.(2009)Greenwald, Poehlman, Uhlmann, and
+  Banaji]{greenwald2009understanding}
+Anthony~G Greenwald, T~Andrew Poehlman, Eric~Luis Uhlmann, and Mahzarin~R
+  Banaji.
+\newblock Understanding and using the implicit association test: Iii.
+  meta-analysis of predictive validity.
+\newblock \emph{Journal of personality and social psychology}, 97\penalty0
+  (1):\penalty0 17, 2009.
 
 \bibitem[Hamermesh(2007)]{hamermesh_viewpoint:_2007}
 Daniel~S. Hamermesh.
@@ -621,6 +636,14 @@ Marco Perugini, Marcello Gallucci, and Giulio Costantini.
 \newblock Safeguard power as a protection against imprecise power estimates.
 \newblock \emph{Perspectives on Psychological Science}, 9\penalty0
   (3):\penalty0 319--332, 2014.
+
+\bibitem[Prayle et~al.(2012)Prayle, Hurley, and Smyth]{resultscompliance}
+Andrew~P Prayle, Matthew~N Hurley, and Alan~R Smyth.
+\newblock Compliance with mandatory reporting of clinical trial results on
+  clinicaltrials.gov: cross sectional study.
+\newblock \emph{BMJ}, 344, 2012.
+\newblock ISSN 0959-8138.
+\newblock \doi{10.1136/bmj.d7373}.
 
 \bibitem[Saquib et~al.(2013)Saquib, Saquib, and
   Ioannidis]{saquib_practices_2013}

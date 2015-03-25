@@ -524,14 +524,17 @@ designs registered as of October 2014.\footnote{Other less-widely
 Another location for registrations is the \href{http://osf.io}{Open Science Framework} (OSF), created by the \href{http://centerforopenscience.org/}{Center for Open Science}. The OSF serves as a broad research management tool that encourages and facilitates transparency (see \cite{nosek_scientific_2012}.) Registrations are simply unalterable snapshots of research frozen in time, with a persistent URL and timestamp. Researchers can upload their data, code, hypotheses, etc. to the OSF, register it, and then share the resulting URL as proof of registration. OSF registrations can be relatively free-form, but templates exist to conform to standards in different disciplines. Psychology registrations are presently the most numerous on the OSF (\hyperref[newPublicRegistrations]{https://osf.io/explore/activity/\#newPublicRegistrations}).
 
 \subsection{Meta-Analysis Research}
-Another method of detecting and dealing with publication bias is to conduct meta-analysis. This method of research collects all published findings on a given topic, and analyzes the results collectively, and can detect, and attempt to adjust for, publication bias in the literature. Although quite common in medical research, the tool is not widely used in some parts of the social sciences. But even in economics, where many students are completely unfamiliar with the technqiue, important papers exist that have quantitatively synthesized bodies of literature. The unemployment effects of the minimum wage were meta-analyzed in \cite{card1995time}, and the returns to education in \cite{ashenfelter1999review}. A meta-analysis of 87 meta-analyses in economics shows that publication bias is widespread, but not universal.\footnote{A helpful resource, which includes meta-analysis datasets for economics researchers interested in conducting a meta-analysis is available \href{http://www.deakin.edu.au/business/economics/research/meta-analysis}{here}. Also see \cite{stanley2005beyond}, which helpfully describes the tools of meta-analysis, and is part of a special issue of \textit{The Journal of Economic Surveys} dedicated to meta-analysis.}
+Another method of detecting and dealing with publication bias is to conduct meta-analysis. This method of research collects all published findings on a given topic, and analyzes the results collectively, and can detect, and attempt to adjust for, publication bias in the literature. A handful of organizations specialize in producing these systematic reviews, including the \href{http://www.cochrane.org}{Cochrane Collaboration} for health and the \href{http://www.campbellcollaboration.org/}{Campbell Collaboration} for crime \& justice, education, international development, and social welfare, and the \href{http://www.3ie.org}{International Initiative for Impact Evalution (3ie)} for social and economic interventions in low- and middle- income countries. The US government supports this type of analysis: the Department of Education's Institute of Education Sciences maintains the \href{http://ies.ed.gov/ncee/wwc/}{What Works Clearinghouse}, and the Department of Labor maintains the \href{http://clear.dol.gov/}{Clearinghouse for Labor and Evaluation Research (CLEAR)}, which serve to collect and grade the evidentiary value of research on education and labor. (The synthesis methods in the government clearinghouses is not quite as formally statistical in nature as the previously mentioned Collaborations.)
 
-ADD Medical, Psych, Poly Sci references
+Although quite common in medical research, the tool is not widely used in some parts of the social sciences. But even in economics, where many graduate students are unfamiliar with the technqiue, important papers exist that have quantitatively synthesized bodies of literature. The unemployment effects of the minimum wage were meta-analyzed in \cite{card1995time}, and the returns to education in \cite{ashenfelter1999review}. A meta-analysis of 87 meta-analyses in economics shows that publication bias is widespread, but not universal.\footnote{A helpful resource, which includes meta-analysis datasets for economics researchers interested in conducting a meta-analysis is available \href{http://www.deakin.edu.au/business/economics/research/meta-analysis}{here}. Also see \cite{stanley2005beyond}, which helpfully describes the tools of meta-analysis, and is part of a special issue of \textit{The Journal of Economic Surveys} dedicated to meta-analysis.}
 
-\subsection{Design-Based Review and Publication}
-Another proposed method of reducing publication bias is by altering the time at which peer review takes place. The standard method is for peers to review a completed paper, with results. Even with editorial statements in place encouraging reviewers to not be prejudiced against null results, the odds are stacked against null-result papers. The new method, refered to as `registered reports'\footnote{We consider the name `registered reports' unfortunate, since it can be easily confused with trial registrations, and we prefer the terms `design-based review' or `design-based publication.'} has reviewers evaluate a paper before the data is collected and analyzed. That is, a researcher submits a detailed protocol and analysis plan, and reviewers judge based on the importance of the question being asked and the appropriateness of the methods being used. The protocol is then rejected or given in-principle acceptance. If accepted in-principle, the author conducts the experiment and the analysis as planned, and submits the final result. If the author followed through on his promise, the paper is published, regardless of the statistical significance of the article. 
+Prominent examples in psychology include meta-analyses of work on the Big 5 Personality Test and job performance \cite{barrick1991big5} and predictive validity of the Implicit Association Test \cite{greenwald2009understanding}.
 
-This method of review and publication is championed by Chris Chambers at Cardiff University. Nearly 20 journals have adopted this method to one degree or another. More information can be found at the project's \href{https://osf.io/8mpji/wiki/home/}{Open Science Framework page}. It is too early to do a sophisticated analysis of the effects on publication, but we believe it to be a promising development. 
+%Whoops! This was a duplicate.
+%\subsection{Design-Based Review and Publication}
+%Another proposed method of reducing publication bias is by altering the time at which peer review takes place. The standard method is for peers to review a completed paper, with results. Even with editorial statements in place encouraging reviewers to not be prejudiced against null results, the odds are stacked against null-result papers. The new method, refered to as `registered reports'\footnote{We consider the name `registered reports' unfortunate, since it can be easily confused with trial registrations, and we prefer the terms `design-based review' or `design-based publication.'} has reviewers evaluate a paper before the data is collected and analyzed. That is, a researcher submits a detailed protocol and analysis plan, and reviewers judge based on the importance of the question being asked and the appropriateness of the methods being used. The protocol is then rejected or given in-principle acceptance. If accepted in-principle, the author conducts the experiment and the analysis as planned, and submits the final result. If the author followed through on his promise, the paper is published, regardless of the statistical significance of the article. 
+
+%This method of review and publication is championed by Chris Chambers at Cardiff University. Nearly 20 journals have adopted this method to one degree or another. More information can be found at the project's \href{https://osf.io/8mpji/wiki/home/}{Open Science Framework page}. It is too early to do a sophisticated analysis of the effects on publication, but we believe it to be a promising development. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Researcher Degrees of
 Freedom}\label{rdof}
@@ -847,7 +850,6 @@ researchers \citep{peng_reproducible_2011}. Whatever the terminology used, repli
 research requires making data and code available to other researchers so they can try and get the same results.
 
 
-
 \subsection{Code and Workflow}\label{code-and-workflow}
 
 Reproducing research often involves using the exact code and statistical
@@ -867,8 +869,8 @@ share their data and code with the public. GitHub
 Science Framework (\url{http://osf.io}), and Harvard University's
 Dataverse (\url{http://thedata.org}) are all free repositories for data
 and code that include easy to use version control.\footnote{BitBucket
-  (\href{styles.xml}{http://www.bitbucket.org}) XXX, and XXX are also
-  web services that one can use for free version control and archiving
+  (\href{styles.xml}{http://www.bitbucket.org}) is another
+  web service that one can use for free version control and archiving
   of public data and code.} Version control is simply archiving previous
 versions of files so that old versions are not lost and can be returned
 to if needed. Instead of simply calling one's analysis code
@@ -1229,31 +1231,49 @@ your own computer in seconds. Science moves forward.
 We feel that it is important to define the terms we use in this document. Although many of the concepts overlap, we suggest that researchers use the following terms:
 \begin{itemize}
 \item
-Analysis Plan: see \hyperref[def-pap]{Pre-analysis Plan}
+Analysis Plan: See \hyperref[def-pap]{pre-analysis plan}
 
 \item
 Data citation: The practice of specifically citing datasets, and not just the paper in which a dataset was used.  This helps other researchers to find data and rewards researchers who share data, leading to better science. Read more at \url{http://www.icpsr.umich.edu/icpsrweb/ICPSR/curation/citations.jsp}. 
 
 \item \label{def-mining}
-Data mining: Searching blindly and repeatedly through data to find supposedly statistically significant relationships. While not inherently wrong, if done without a plan or without adjusting for multiple hypothesis testing, test statistics and p-values that result no longer hold their traditional meaning, and can lead to research that cannot be replicated.
+Data mining: Searching blindly and repeatedly through data to find supposedly statistically significant relationships. While not inherently wrong, if done without a plan or without adjusting for multiple hypothesis testing, test statistics and \hyperref[def-pvalue]{p-values} that result no longer hold their traditional meaning, and can lead to research that cannot be replicated.
 
-\item
+\item \label{def-datasharing}
 Data sharing: Researchers making the data they use in an analysis available to other researchers, ideally through a trusted public archive. 
 
 \item\label{def-dbp}
-Design-based publication: To help reduce publication bias, peer review can take place before results of a study are determined. Reviewers look evaluate the design of a study to see whether the question is important and whether the study is well-designed. Good studies are given in-principle acceptance, and cannot be discriminated against for a null result, which, after all, may be the truth. See \url{https://osf.io/8mpji/wiki/home/} for journals practicing this form of publication.
+Design-based publication: See \hyperref[def-rbr]{results-blind review}.
 
 \item
-Literate Programming: the idea of writing programming code designed to be read and easily understood by a human. Use of this best practice can make a researcher’s code far more easily reproducible by others.
+Disclosure: In addition to the widely accepted norm of publicly declaring all potential conflicts of interest, researchers should detail all the ways in which they test a hypothesis (e.g. include the outcome from all regression specifications tested in the appendix.)
+
+\item
+Fishing: See \hyperref[def-mining]{data mining}.
+
+\item
+Literate Programming: The idea of writing programming code designed to be read and easily understood by a human. Use of this best practice can make a researcher’s code far more easily reproducible by others.
 
 \item
 Multiple hypothesis correction: Statistically taking into account the fact that multiple hypotheses have been tested. This tends to decrease the reported statistical significance of any individual test conducted. The oldest method, known as the Bonferroni correction simply divides the significance threshold by the number of tests. This is quite conservative, and more modern methods are helpfully described in (Anderson 2008).
 
 \item
-P-hacking: see \hyperref[def-mining]{data mining}
+Open Acces: Journals, or articles that are freely available to the public, as opposed to available only to subscribers.
+
+\item
+Open Data: See \hyperref[def-datasharing]{data sharing}.
+
+\item
+P-hacking: See \hyperref[def-mining]{data mining}.
+
+\item \label{def-pvalue}
+P-value: The statistic researchers use to make judgments regarding statistical significance, which is quite often misunderstood. It is the probability of obtaining a test statistic at least as extreme as the observed test statistic when the null hypothesis is true. 
 
 \item\label{def-pap}
 Pre-analysis plan: A document that details, ahead of time, the statistical analysis plan that will be conducted for a given research project. Outcomes, control variables, and regression specifications are all written in as much detail as possible. This serves to make research more confirmatory in nature. 
+
+\item
+Pre-specification: Detailing the method of analysis before actually beginning data work; the same as writing a \hyperref[def-pap]{pre-analysis plan}.
 
 \item
 Protocol: A general term meaning a document that provides a detailed description of a research project, ideally written before the project takes place, and in enough detail that other researchers may reproduce the project on their own. Often used in the context of human subjects IRB protocols, but increasingly used in connection with pre-analysis plans. 
@@ -1271,10 +1291,10 @@ Registration: Publicly declaring that an investigation of a hypothesis is or wil
 Registry: A database of registered studies or trials. For instance, socialscienceregistry.org or clinicaltrials.gov. Some of the largest registries only accept randomized trials, hence the frequent discussion of ‘trial registries.’
 
 \item
-Registered Reports: see \hyperref[def-dbp]{design-based publication}
+Registered Reports: See \hyperref[def-dbp]{results-blind review}.
 
 \item
-Replicable: see \hyperref[def-repro]{reproducible}
+Replicable: See \hyperref[def-repro]{reproducible}.
 
 \item
 Replication: The idea of conducting an existing research project over again, with the hope of obtaining the same result. A subtle taxonomy exists, explained in (Hamermesh 2007).
@@ -1284,13 +1304,17 @@ Pure Replication: Re-running existing code, with error-checking, on the original
 \item
 Scientific Replication: Attempting to reproduce the published results with a new sample, with the same code or with slight variations from the original analysis.
 \end{itemize}
+
 \item \label{def-repro}
 Reproducible: The test of whether research can redone by another researcher and produce the same results as the original. 
 \item
 Researcher Degrees of Freedom: the flexibility that a researcher has in data analysis, whether consciously abused or not. See \hyperref[def-mining]{data mining}. 
+\item \label{def-rbr}
+Results-blind Review: To help reduce publication bias, peer review can take place before results of a study are determined. Reviewers look evaluate the design of a study to see whether the question is important and whether the study is well-designed. Good studies are given in-principle acceptance, and cannot be discriminated against for a null result, which, after all, may be the truth. See \url{https://osf.io/8mpji/wiki/home/} for journals practicing this form of publication.
+
 \item Specification searching: Testing numerous regression specifications and reporting only the model that produces the desired results. See \hyperref[def-mining]{data mining}. 
 \item
-Trusted Digital Repository: a location for storing data that others can believe will not be manipulated, and will be available into the future. Storing data here is superior to simply posting on an individual website, since it is more easily accessible and less easily changed.  
+Trusted Digital Repository: A location for storing data that others can believe will not be manipulated, and will be available into the future. Storing data here is superior to simply posting on an individual website, since it is more easily accessible and less easily changed.  
 \item
 Version Control: A method of tracking every edit made to a computer file. This is often quite useful for empirical researchers who may edit their programming code hundreds or thousands of times.
 \end{itemize}
