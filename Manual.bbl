@@ -1,4 +1,4 @@
-\begin{thebibliography}{87}
+\begin{thebibliography}{94}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -44,6 +44,11 @@ Richard~G. Anderson and William~G. Dewald.
   (Nov):\penalty0 79--83, 1994.
 \newblock URL
   \url{http://econpapers.repec.org/article/fipfedlrv/y_3a1994_3ai_3anov_3ap_3a79-83.htm}.
+
+\bibitem[Angrist and Pischke(2008)]{angrist2008mostly}
+Joshua~D Angrist and J{\"o}rn-Steffen Pischke.
+\newblock \emph{Mostly harmless econometrics: An empiricist's companion}.
+\newblock Princeton university press, 2008.
 
 \bibitem[Ashenfelter et~al.(1999)Ashenfelter, Harmon, and
   Oosterbeek]{ashenfelter1999review}
@@ -104,6 +109,12 @@ Yudhijit Bhattacharjee.
 \newblock ISSN 0362-4331.
 \newblock URL
   \url{http://www.nytimes.com/2013/04/28/magazine/diederik-stapels-audacious-academic-fraud.html}.
+
+\bibitem[Bloom(1995)]{bloom1995minimum}
+Howard~S Bloom.
+\newblock Minimum detectable effects a simple way to report the statistical
+  power of experimental designs.
+\newblock \emph{Evaluation review}, 19\penalty0 (5):\penalty0 547--556, 1995.
 
 \bibitem[Bruhn and McKenzie(2009)]{bruhn_pursuit_2009}
 Miriam Bruhn and David McKenzie.
@@ -225,6 +236,13 @@ William~G. Dewald, Jerry~G. Thursby, and Richard~G. Anderson.
 \newblock ISSN 0002-8282.
 \newblock URL \url{http://www.jstor.org/stable/1806061}.
 
+\bibitem[Duflo et~al.(2007)Duflo, Glennerster, and
+  Kremer]{randomizationtoolkit}
+Esther Duflo, Rachel Glennerster, and Michael Kremer.
+\newblock Using randomization in development economics research: A toolkit.
+\newblock \emph{Handbook of development economics}, 4:\penalty0 3895--3962,
+  2007.
+
 \bibitem[Fanelli(2012)]{fanelli_negative_2012}
 Daniele Fanelli.
 \newblock Negative results are disappearing from most disciplines and
@@ -246,6 +264,13 @@ Amy Finkelstein, Sarah Taubman, Bill Wright, Mira Bernstein, Jonathan Gruber,
 \newblock ISSN 0033-5533, 1531-4650.
 \newblock \doi{10.1093/qje/qjs020}.
 \newblock URL \url{http://qje.oxfordjournals.org/content/127/3/1057}.
+
+\bibitem[Food{\ }and{\ }Drug{\ }Administration(1998)]{food1998guidance}
+Food{\ }and{\ }Drug{\ }Administration.
+\newblock Guidance for industry: E9 statistical principles for clinical trials.
+\newblock \emph{Food and Drug Administration: Rockville, Maryland, USA}, 1998.
+\newblock URL
+  \url{http://www.fda.gov/downloads/drugs/guidancecomplianceregulatoryinformation/guidances/ucm073137.pdf}.
 
 \bibitem[Franco et~al.(2014)Franco, Malhotra, and
   Simonovits]{franco_publication_2014}
@@ -288,6 +313,14 @@ Alan~S. Gerber, Donald~P. Green, and David Nickerson.
   2001.
 \newblock ISSN 1047-1987, 1476-4989.
 \newblock URL \url{http://pan.oxfordjournals.org/content/9/4/385}.
+
+\bibitem[Gertler et~al.(2011)Gertler, Martinez, Premand, Rawlings, and
+  Vermeersch]{gertler_impact_2011}
+Paul Gertler, Sebastian Martinez, Patrick Premand, Laura~B. Rawlings, and
+  Christel M.~J. Vermeersch.
+\newblock \emph{Impact Evaluation in Practice}.
+\newblock World Bank Publications, 2011.
+\newblock ISBN 9780821385418.
 
 \bibitem[Glandon(2010)]{glandon_report_2010}
 Philip Glandon.
@@ -334,11 +367,14 @@ Daniel~M. Hartung, Deborah~A. Zarin, Jeanne-Marie Guise, Marian McDonagh, Robin
 \newblock \doi{10.7326/M13-0480}.
 \newblock URL \url{http://dx.doi.org/10.7326/M13-0480}.
 
-\bibitem[Hawkins et~al.(In Press)Hawkins, Fitzgerald, and
+\bibitem[Hawkins et~al.(2015)Hawkins, Fitzgerald, and
   Nosek]{NosekPreRegistered}
 Carlee~Beth Hawkins, Cailey~E. Fitzgerald, and Brian~A. Nosek.
 \newblock In search of an association between conception risk and prejudice.
-\newblock \emph{Psychological Science}, In Press.
+\newblock \emph{Psychological Science}, 26\penalty0 (2):\penalty0 249--252,
+  February 2015.
+\newblock \doi{10.1177/0956797614553121}.
+\newblock URL \url{http://pss.sagepub.com/content/26/2/249}.
 
 \bibitem[Heffetz and Ligett(2014)]{heffetz_privacy_2014}
 Ori Heffetz and Katrina Ligett.
@@ -588,6 +624,12 @@ Benjamin~A. Olken.
 \newblock URL
   \url{https://www.povertyactionlab.org/sites/default/files/documents/090318a%20Targeting%20Analysis%20Protocol.pdf}.
 
+\bibitem[Olken(2015)]{OlkenPAP}
+Benjamin~A Olken.
+\newblock Pre-analysisplans in economics.
+\newblock January 2015.
+\newblock URL \url{http://economics.mit.edu/files/10399}.
+
 \bibitem[Olken et~al.(2009)Olken, Onishi, and Wong]{olken_generasi_2009}
 Benjamin~A. Olken, Junko Onishi, and Susan Wong.
 \newblock Generasi analysis plan.
@@ -644,6 +686,11 @@ Andrew~P Prayle, Matthew~N Hurley, and Alan~R Smyth.
 \newblock \emph{BMJ}, 344, 2012.
 \newblock ISSN 0959-8138.
 \newblock \doi{10.1136/bmj.d7373}.
+
+\bibitem[Rosenthal(1979)]{rosenthal1979file}
+Robert Rosenthal.
+\newblock The file drawer problem and tolerance for null results.
+\newblock \emph{Psychological bulletin}, 86\penalty0 (3):\penalty0 638, 1979.
 
 \bibitem[Saquib et~al.(2013)Saquib, Saquib, and
   Ioannidis]{saquib_practices_2013}

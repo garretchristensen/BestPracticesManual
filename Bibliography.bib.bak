@@ -228,6 +228,13 @@
   Urldate                  = {2014-09-08}
 }
 
+@Book{angrist2008mostly,
+  Title                    = {Mostly harmless econometrics: An empiricist's companion},
+  Author                   = {Angrist, Joshua D and Pischke, J{\"o}rn-Steffen},
+  Publisher                = {Princeton university press},
+  Year                     = {2008}
+}
+
 @Article{antonovics_does_2005,
   Title                    = {Does Increasing Women's Schooling Raise the Schooling of the Next Generation? Comment},
   Author                   = {Antonovics, Kate L. and Goldberger, Arthur S.},
@@ -377,6 +384,18 @@
   Url                      = {http://www.nejm.org/doi/full/10.1056/NEJMsa1212321}
 }
 
+@Article{barrick1991big5,
+  Title                    = {The big five personality dimensions and job performance: a meta-analysis},
+  Author                   = {Barrick, Murray R and Mount, Michael K},
+  Journal                  = {Personnel psychology},
+  Year                     = {1991},
+  Number                   = {1},
+  Pages                    = {1--26},
+  Volume                   = {44},
+
+  Publisher                = {Wiley Online Library}
+}
+
 @Article{begg_c_improving_1996,
   Title                    = {Improving the quality of reporting of randomized controlled trials: The consort statement},
   Author                   = {{Begg C} and {Cho M} and {Eastwood S} and {et al}},
@@ -472,6 +491,18 @@ Evidence produced repeatedly over the last 30 years indicates a wide chasm betwe
   Keywords                 = {Frauds and Swindling, Netherlands, Psychology and Psychologists, Research, Stapel, Diederik, Tilburg University},
   Url                      = {http://www.nytimes.com/2013/04/28/magazine/diederik-stapels-audacious-academic-fraud.html},
   Urldate                  = {2014-09-12}
+}
+
+@Article{bloom1995minimum,
+  Title                    = {Minimum detectable effects a simple way to report the statistical power of experimental designs},
+  Author                   = {Bloom, Howard S},
+  Journal                  = {Evaluation review},
+  Year                     = {1995},
+  Number                   = {5},
+  Pages                    = {547--556},
+  Volume                   = {19},
+
+  Publisher                = {Sage Publications}
 }
 
 @Book{broad_betrayers_1983,
@@ -1209,6 +1240,17 @@ The vast majority of health-related observational studies are not prospectively 
   Publisher                = {Wiley Online Library}
 }
 
+@Article{randomizationtoolkit,
+  Title                    = {Using randomization in development economics research: A toolkit},
+  Author                   = {Duflo, Esther and Glennerster, Rachel and Kremer, Michael},
+  Journal                  = {Handbook of development economics},
+  Year                     = {2007},
+  Pages                    = {3895--3962},
+  Volume                   = {4},
+
+  Publisher                = {Elsevier}
+}
+
 @Article{duggan_more_2001,
   Title                    = {More Guns, More Crime},
   Author                   = {Duggan, Mark},
@@ -1419,6 +1461,15 @@ The vast majority of health-related observational studies are not prospectively 
   Shorttitle               = {The Oregon Health Insurance Experiment},
   Url                      = {http://qje.oxfordjournals.org/content/127/3/1057},
   Urldate                  = {2014-08-26}
+}
+
+@Article{food1998guidance,
+  Title                    = {Guidance for industry: E9 statistical principles for clinical trials},
+  Author                   = {Food{\ }and{\ }Drug{\ }Administration},
+  Journal                  = {Food and Drug Administration: Rockville, Maryland, USA},
+  Year                     = {1998},
+
+  Url                      = {http://www.fda.gov/downloads/drugs/guidancecomplianceregulatoryinformation/guidances/ucm073137.pdf}
 }
 
 @Article{foote_impact_2008,
@@ -2941,6 +2992,18 @@ quality of reports of {RCTs}.},
   Urldate                  = {2014-08-11}
 }
 
+@Article{OlkenPAP,
+  Title                    = {Pre-AnalysisPlans in Economics},
+  Author                   = {Benjamin A Olken},
+  Year                     = {2015},
+
+  Month                    = {January},
+
+  Owner                    = {garret},
+  Timestamp                = {2015.04.01},
+  Url                      = {http://economics.mit.edu/files/10399}
+}
+
 @TechReport{olken_targeting_2009,
   Title                    = {Targeting Analysis Protocol},
   Author                   = {Olken, Benjamin A.},
@@ -3179,6 +3242,18 @@ quality of reports of {RCTs}.},
   ISSN                     = {0002-8282},
   Url                      = {http://www.jstor.org/stable/27805061},
   Urldate                  = {2014-08-20}
+}
+
+@Article{rosenthal1979file,
+  Title                    = {The file drawer problem and tolerance for null results.},
+  Author                   = {Rosenthal, Robert},
+  Journal                  = {Psychological bulletin},
+  Year                     = {1979},
+  Number                   = {3},
+  Pages                    = {638},
+  Volume                   = {86},
+
+  Publisher                = {American Psychological Association}
 }
 
 @Article{rothstein_does_2007,
