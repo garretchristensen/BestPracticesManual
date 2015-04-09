@@ -1,4 +1,4 @@
-\begin{thebibliography}{94}
+\begin{thebibliography}{97}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -101,6 +101,13 @@ Yoav Benjamini and Yosef Hochberg.
   approach to multiple testing.
 \newblock \emph{Journal of the Royal Statistical Society. Series B
   (Methodological)}, pages 289--300, 1995.
+
+\bibitem[Benjamini et~al.(2006)Benjamini, Krieger, and
+  Yekutieli]{benjamini2006adaptive}
+Yoav Benjamini, Abba~M Krieger, and Daniel Yekutieli.
+\newblock Adaptive linear step-up procedures that control the false discovery
+  rate.
+\newblock \emph{Biometrika}, 93\penalty0 (3):\penalty0 491--507, 2006.
 
 \bibitem[Bhattacharjee(2013)]{bhattacharjee_diederik_2013}
 Yudhijit Bhattacharjee.
@@ -489,6 +496,11 @@ Richard~A Klein, Kate~A Ratliff, Michelangelo Vianello, Reginald~B Adams~Jr,
 \newblock Investigating variation in replicability.
 \newblock \emph{Social Psychology}, 45\penalty0 (3):\penalty0 142--152, 2014.
 
+\bibitem[Kling et~al.(2007)Kling, Liebman, and Katz]{kling2007experimental}
+Jeffrey~R Kling, Jeffrey~B Liebman, and Lawrence~F Katz.
+\newblock Experimental analysis of neighborhood effects.
+\newblock \emph{Econometrica}, 75\penalty0 (1):\penalty0 83--119, 2007.
+
 \bibitem[Knuth(1984)]{knuth_literate_1984}
 D.~E. Knuth.
 \newblock Literate programming.
@@ -616,6 +628,11 @@ Brian~A. Nosek, Jeffrey~R. Spies, and Matt Motyl.
 \newblock ISSN 1745-6916, 1745-6924.
 \newblock \doi{10.1177/1745691612459058}.
 \newblock URL \url{http://pps.sagepub.com/content/7/6/615}.
+
+\bibitem[O{'}Brien(1984)]{obrien1984procedures}
+Peter~C O{'}Brien.
+\newblock Procedures for comparing samples with multiple endpoints.
+\newblock \emph{Biometrics}, pages 1079--1087, 1984.
 
 \bibitem[Olken(2009)]{olken_targeting_2009}
 Benjamin~A. Olken.

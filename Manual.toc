@@ -25,21 +25,21 @@
 \contentsline {subsection}{\numberline {5.3}Subgroup Analysis}{34}{subsection.5.3}
 \contentsline {subsection}{\numberline {5.4}Results-Blind Reviewing}{34}{subsection.5.4}
 \contentsline {section}{\numberline {6}Replication and Reproducibility}{35}{section.6}
-\contentsline {subsection}{\numberline {6.1}Code and Workflow}{36}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.1}Code and Workflow}{37}{subsection.6.1}
 \contentsline {subsubsection}{\numberline {6.1.1}Publicly Sharing Code}{37}{subsubsection.6.1.1}
-\contentsline {subsubsection}{\numberline {6.1.2}Managing Workflow}{37}{subsubsection.6.1.2}
+\contentsline {subsubsection}{\numberline {6.1.2}Managing Workflow}{38}{subsubsection.6.1.2}
 \contentsline {paragraph}{Software:}{38}{section*.7}
-\contentsline {paragraph}{Writing Code:}{38}{section*.8}
+\contentsline {paragraph}{Writing Code:}{39}{section*.8}
 \contentsline {subsection}{\numberline {6.2}General Workflow Suggestions:}{40}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Stata-specific Suggestions}{41}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.3}Stata-specific Suggestions}{42}{subsection.6.3}
 \contentsline {subsection}{\numberline {6.4}Sharing Data}{44}{subsection.6.4}
 \contentsline {subsubsection}{\numberline {6.4.1}The JMCB Project and Economics}{44}{subsubsection.6.4.1}
 \contentsline {subsubsection}{\numberline {6.4.2}General Repositories}{46}{subsubsection.6.4.2}
-\contentsline {subsubsection}{\numberline {6.4.3}Differential Privacy}{46}{subsubsection.6.4.3}
+\contentsline {subsubsection}{\numberline {6.4.3}Differential Privacy}{47}{subsubsection.6.4.3}
 \contentsline {subsection}{\numberline {6.5}Reporting Standards}{47}{subsection.6.5}
-\contentsline {subsubsection}{\numberline {6.5.1}Randomized Trials and CONSORT}{47}{subsubsection.6.5.1}
+\contentsline {subsubsection}{\numberline {6.5.1}Randomized Trials and CONSORT}{48}{subsubsection.6.5.1}
 \contentsline {subsection}{\numberline {6.6}Social Science Reporting Standards}{48}{subsection.6.6}
 \contentsline {subsection}{\numberline {6.7}Observational Reporting Standards}{49}{subsection.6.7}
-\contentsline {section}{\numberline {7}Conclusion}{49}{section.7}
+\contentsline {section}{\numberline {7}Conclusion}{50}{section.7}
 \contentsline {section}{\numberline {8}Glossary of Terms}{50}{section.8}
 \contentsline {section}{Bibliography}{55}{section*.9}

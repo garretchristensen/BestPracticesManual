@@ -662,10 +662,10 @@ Additionally, Alejandro Ganimian developed \href{http://scholar.harvard.edu/file
 
 \subsubsection{Project Protocols}\label{project-protocols}
 
-A project protocol can be somewhat similar to a PAP, but is distinct. A protocol is a detailed recipe or instruction manual for others to use to reproduce an experiment. Protocols are important both in helping solve researcher degrees of freedom problems by making the exact details of analysis known and help avoid selective reporting, as well as in making one's work reproducible. Protocols are standard in the medical literature, as in all areas of lab science, but may be less familiar to those used to working with administrative or observational data. Lab sciences are rife with examples of experiments failing to replicate because of supposedly minor changes such as the brand of bedding in mouse cages or the gender of the laboratory assistant or the speed at which one stirs a reagent \citep{sorge2014olfactory, hines2014sorting}, and we assume the same situation exists in the social sciences. \textit{Nature} has decided to expand its methods section in order to encourage better reporting.\footnote{\url{http://www.nature.com/news/announcement-reducing-our-irreproducibility-1.12852}}
+A project protocol can be somewhat similar to a PAP, but is distinct. A protocol is a detailed recipe or instruction manual for others to use to reproduce an experiment. Protocols are important both in helping solve researcher degrees of freedom problems by making the exact details of analysis known and help avoid selective reporting, as well as in making one's work reproducible. Protocols are standard in the medical literature, as in areas of lab science, but may be less familiar to those used to working with administrative or observational data. Lab sciences are rife with examples of experiments failing to replicate because of supposedly minor changes such as the brand of bedding in mouse cages, the gender of the laboratory assistant, or the speed at which one stirs a reagent \citep{sorge2014olfactory, hines2014sorting}, and we assume the same situation exists in the social sciences. \textit{Nature} has decided to expand its methods section in order to encourage better reporting.\footnote{\url{http://www.nature.com/news/announcement-reducing-our-irreproducibility-1.12852}}
 
-We believe the social sciences would benefit from more careful documentation of methods. When one uses administrative data this can be accomplished by sharing one's data and code so that analysis is transparent.\footnote{It should be noted that the need for documentation of survey method is not eliminated by using administrative data, the burden simply falls upon the administration.} This is discussed below in section~\ref{replication-and-reproducibility}. With original data collection, researchers should provide very detailed descriptions of what exactly they did. A 33-item checklist of suggested items is contained in the \href{http://www.spirit-statement.org/}{SPIRIT} (Standard Protocol Items: Recommendations for Interventional
-Trials) statement (see \url{http://www.spirit-statement.org}, \cite{chan_spirit_2013}), including details on the participants, interventions, outcomes, assignment, blinding, data collection, data management, and statistical methods, among other things. 
+We believe the social sciences would benefit from more careful documentation of methods. When one uses administrative data this can be accomplished by sharing one's data and code so that analysis is transparent.\footnote{It should be noted that the need for documentation of survey method is not eliminated by using administrative data, the burden simply falls upon the administration.} This is discussed below in section~\ref{replication-and-reproducibility}. With original data collection, researchers should provide very detailed descriptions of what exactly they did. A 33-item checklist of suggested items is contained in the SPIRIT(\href{http://www.spirit-statement.org}{Standard Protocol Items: Recommendations for Interventional
+Trials}) statement \citep{chan_spirit_2013}, including details on the participants, interventions, outcomes, assignment, blinding, data collection, data management, and statistical methods, among other things. 
 
 One area in which social sciences could improve involves details of randomization. \cite{bruhn_pursuit_2009} documents the lack of clear explanation pertaining to how randomization was conducted in RCTs published in economics journals. Variables used for stratification are not described, and the decision of whether to control for baseline characteristics was often done after the fact. While there seems to be internal disagreement in both
 medicine and the social sciences over the appropriateness of including baseline
@@ -673,7 +673,7 @@ control variables in regression analysis of a randomized trial, having
 researchers selectively report whatever method gives them the most
 significant-seeming results is obviously not the optimal outcome. 
 
-The medical literature also exhibits much greater concern over the blinding and concealment of randomized assignment than some of the social science literature. In some situations a social scientist interested in the potential scaling up of a government program may rightfully be unperturbed by a respondent assigned to the control group somehow gaining access to treatment, since this behavior would undoubtedly occur if the program were scaled and the researcher still has a valid intention to treat estimate, but this is clearly not always the case, especially if one wants an accurate estimate of the efficacy of a program or a treatment on the treated estimate. Tales of trials ruined through carelessness with the original randomization assignment as well as tips on how to avoid the same problem are described in \cite{schulz_allocation_2002}. In addition to \cite{bruhn_pursuit_2009}, political science has produced guidelines for randomization and related disclosure, avaialable at \url{http://e-gap.org/resources/guides/randomization/}.
+The medical literature also exhibits much greater concern over the blinding and concealment of randomized assignment than some of the social science literature. In some situations, blinding is impossible or irrelevant in a social science field experiment: for example, the recipient of a cash transfer needs to know that they received cash in order for the program to have any effect. Also, a social scientist interested in the potential scaling up of a government program may rightfully be unperturbed by some respondents assigned to the control group somehow gaining access to treatment, since this behavior would undoubtedly occur if the program were scaled up and the researcher still has a valid intention to treat estimate.  This is clearly not always the case, especially if one wants an accurate estimate of the efficacy of a program or a treatment on the treated estimate. Tales of trials ruined through carelessness with the original randomization assignment as well as tips on how to avoid the same problem are described in \cite{schulz_allocation_2002}. In addition to \cite{bruhn_pursuit_2009}, political science has produced guidelines for randomization and related disclosure, avaialable at \url{http://e-gap.org/resources/guides/randomization/}.
 
 
  Some medicine and science journals have begun to publish protocols.   While the
@@ -692,31 +692,25 @@ originally proposed to what was actually completed. (See
 \emph{BMJ Open} suggests, but does not require, that its published
 protocols include the items in the SPIRIT checklist.
 
-Even in published (or otherwise public) protocols, studies have found
-important differences between protocols and published results. 60-71\%
+Protocols are not a perfects solution, as even in published (or otherwise public) protocols, studies have found important differences between protocols and published results. 60-71\%
 of outcomes described in protocols went unreported in the paper while
 62\% had major discrepancies between primary outcomes in the protocols
 and in the published papers, though there was a relatively even mix of
-these discrepancies favoring significant or insignificant results \citep{chan_a_empirical_2004}. Another study found that appropriate level of
-statistical detail is often lacking in protocols, and there are often
-discrepancies between protocols and published results \citep{saquib_practices_2013}. 31\% of published papers had some sort of
-pre-specified plan for their regression adjustments (i.e.~specifying
-which baseline covariates would be controlled for), while 70-74\% of
-those that published a design paper or provided a protocol to the
-authors, but only 53\% of the plans matched what was published in the
-ultimate paper.
+these discrepancies favoring significant or insignificant results \citep{chan_a_empirical_2004}. Another study found that appropriate level of statistical detail is often lacking in protocols, and there are often discrepancies between protocols and published results \citep{saquib_practices_2013}. 31\% of published papers had some sort of pre-specified plan for their regression adjustments (i.e.~specifying which baseline covariates would be controlled for), %while 70-74\% of those that published a design paper or provided a protocol to the authors, 
+but only 53\% of the plans matched what was published in the ultimate paper.
 
 
 \subsection{Multiple Hypothesis Testing}
-Several of the PAP above, and several of the lists of suggestions above include corrections for multiple hypothesis testing. The idea of correcting for multiple tests is widespread in certain fields, but has yet to take hold in the social sciences. Simply put, the idea is that because we are aware of the fact that test statistics and p-values appear significant purely by chance a certain proportion of the time, we can report different, \textit{better} p-values that control for the fact that we are running multiple tests. There are several ways to do this, all of which are used and explained in a simple and straightforward manner by \cite{anderson_fwer}:
+Several of the PAP and lists of suggestions above include corrections for multiple hypothesis testing. The idea of correcting for multiple tests is widespread in certain fields, but has yet to take hold in the social sciences. Simply put, the idea is that because we are aware of the fact that test statistics and p-values appear significant purely by chance a certain proportion of the time, we can report different, \textit{better} p-values that control for the fact that we are running multiple tests. There are several ways to do this, a few of which are used and explained in a simple and straightforward manner by \cite{anderson_fwer}:
 \begin{itemize}
 \item
-Report index tests---instead of reporting the outcomes of numerous tests, standardize outcomes and combine them into a smaller number of indeces (e.g. instead of separately reporting whether a long-term health intervention reduced blood pressure, diabetes, obesity, cancer, heart disease, and Alzheimer's, report the results of a single health index.)
+Report index tests---instead of reporting the outcomes of numerous tests, standardize outcomes and combine them into a smaller number of indeces (e.g. instead of separately reporting whether a long-term health intervention reduced blood pressure, diabetes, obesity, cancer, heart disease, and Alzheimer's, report the results of a single health index.) \cite{kling2007experimental} implements an index test from the Moving to Opportunity field experiment, using methods developed in biomedicine by \cite{obrien1984procedures}.
+
 \item
-Control the Family-Wise Error Rate (FWER)---FWER is the probability that at least one true hypothesis in a group is rejected (a type I error), meaning it is advisable when the damage from falsely claiming \textit{any} hypotheses are false is important. There are several ways to do this, with the simplest (but too conservative) method being the Bonferroni correction of simply multiplying every original p-value by the number of tests done. Holm's sequential method involves ordering p-values by class and multiplying the lower p-values by higher dicsount factors \citep{holm_multipletesting}. An efficient recent method is the free step-down resampling method, developed by \cite{westfall_young_multiple}.
+Control the Family-Wise Error Rate (FWER)---FWER is the probability that at least one true hypothesis in a group is rejected (a type I error), meaning it is advisable when the damage from incorrectly claiming \textit{any} hypotheses are false is important. There are several ways to do this, with the simplest (but very conservative) method being the Bonferroni correction of simply multiplying every original p-value by the number of tests done. Holm's sequential method involves ordering p-values by class and multiplying the lower p-values by higher dicsount factors \citep{holm_multipletesting}. An efficient recent method is the free step-down resampling method, developed by \cite{westfall_young_multiple}.
   
 \item
-Control the False Discovery Rate (FDR)---In situations where a single type I error is not catastrophic, researchers may be willing to use a less conservative method and trade off some incorrect rejections in exchange for greater power. This is possible by controlling the FDR, or the percentage of rejections that are type I errors. \cite{benjamini1995controlling} details a simple algorithm to control this rate at a chosen level, and \cite{benjamini2006adapative} described a two-step procedure with greater power. 
+Control the False Discovery Rate (FDR)---In situations where a single type I error is not catastrophic, researchers may be willing to use a less conservative method and trade off some incorrect rejections in exchange for greater power. This is possible by controlling the FDR, or the percentage of rejections that are type I errors. \cite{benjamini1995controlling} details a simple algorithm to control this rate at a chosen level, and \cite{benjamini2006adaptive} describes a two-step procedure with greater power. 
 
 
 \end{itemize}
@@ -778,8 +772,7 @@ scientific.
 
 One might imagine a fourth type that uses the same data but probes the data using additional robustness and sensitivity checks. Others have described replication in terms of a spectrum from full replication (independent collection of data and re-running analysis) to
 reproducibility, where the same data and code are re-used by other
-researchers \citep{peng_reproducible_2011}. Whatever the terminology used, replication or reproducibility, transparent
-research requires making data and code available to other researchers so they can try and get the same results.
+researchers \citep{peng_reproducible_2011}. Whatever the terminology used, replication or reproducibility, transparent research requires making data and code available to other researchers so they can try and get the same results.
 
 
 \subsection{Code and Workflow}\label{code-and-workflow}
@@ -789,7 +782,7 @@ programming done by the original researcher. To make this possible, code
 needs to be both (1) easily available and (2) easily interpretable.
 Thanks to several free and easy to use websites described below, code
 can easily be made available by researchers without requiring funding or
-website hosting. Making code easily interpretable is a more complicated
+website hosting. Making code easily interpretable is a somewhat more complicated
 task, nevertheless, the extra effort spent to make a more manageable
 code pays off with large dividends.
 
@@ -812,16 +805,16 @@ and instead of repeatedly changing the file name from
 the date, version control creates different versions of files and can
 compare and highlight the differences in version of text files, and
 restore the used file to previous conditions if desired. Web services
-such as GitHub have the advantage of being ``distributed'' (DVCS) in
+such as GitHub have the advantage of being ``distributed'' (Distributed Version Control System, DVCS) in
 that several users can have access simultaneously.
 
 \subsubsection{Managing Workflow}\label{managing-workflow}
 
 Code is just one aspect of a larger structure we refer to as
-``workflow'' after \cite{long_workflow_2008} and \cite{kirchkamp_workflow_????}, by which we mean the
+``workflow'' after \cite{long_workflow_2008}, by which we mean the
 combination of data, code, organization, and documentation: everything
 from file and variable names to folder organization as well as efficient
-and readable programming, and data storage and documentation. We strongly recommend that Stata-users read \cite{long_workflow_2008} and R users read \cite{gandrud2013reproducible} for workflow recommendations both general and specific to their respective programming language. Our suggestions here borrw heavily from their excellent work. We also refer undergraduate instructors and others who may be interested to Richard Ball and Norm Medeiros' \href{http://www.haverford.edu/TIER/}{Project TIER} (Teaching Integrity in Empirical Research), which is a ``protocol for comprehensively documenting all the steps of data management and analysis that go into an empirical research paper.'' A specific file organization is taught so that teachers can exactly reproduce the work of every student (and so students can reliably get the same answer every time they conduct their analysis). 
+and readable programming, and data storage and documentation. We strongly recommend that Stata-users read \cite{long_workflow_2008} and R users read \cite{gandrud2013reproducible} for workflow recommendations both general and specific to their respective programming language\footnote{Also see and \cite{kirchkamp_workflow_????}}. Our suggestions here borrow heavily from their excellent work. We also refer undergraduate instructors and others who may be interested to Richard Ball and Norm Medeiros' \href{http://www.haverford.edu/TIER/}{Project TIER} (Teaching Integrity in Empirical Research), which is a ``protocol for comprehensively documenting all the steps of data management and analysis that go into an empirical research paper.'' A specific file organization is taught so that teachers can exactly reproduce the work of every student (and so students can reliably get the same answer every time they conduct their analysis). 
 
 \paragraph{Software:}
 
@@ -835,7 +828,7 @@ implementing their analysis, and researchers should strive to make their
 work usable by as many others as possible.
 
 \paragraph{Writing Code:}
-Perhaps the most important rule is to write code, don't work by hand. By
+Perhaps the most important rule is to write code instead of working by hand. By
 that we mean:
 
 \begin{itemize}
@@ -856,7 +849,7 @@ changes. Although it may seem easy or quick to do a one-time-only
 cleaning of data in Excel, or make ``minor'' changes to get the data
 into a format readable by a researcher's preferred statistical software,
 unless these changes are written down in excruciating detail, this is
-not reproducible by other researchers. It is better to write a code
+not reproducible by other researchers. It is better to write a programming
 script that imports the raw data, does all necessary changes, with
 comments in the code that explain changes, and saves any intermediate
 data sets used in analysis. Then, researchers can share their initial
