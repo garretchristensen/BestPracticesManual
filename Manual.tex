@@ -109,10 +109,11 @@ conduct outright fraud, fraud does indeed occur. From making up fake
 data to creating bogus e-mail addresses so one could do one's own peer
 review, the \href{http://www.retractionwatch.com}{Retraction Watch blog}
 documents a distressingly large amount of deliberate fraud in research.
-Although the blog tends to specialize in the life sciences, there is no
-good reason to believe that social science researchers are inherently
-more benevolent. Part of the US Department of Health and Human Services
-, the Office of Research Integrity (ORI), works to promote research
+Although the blog tends to specialize in the life sciences, and there is significantly less money involved in the social sciences than in medical and pharmaceutical research, there is no reason to believe that social science researchers are inherently
+more benevolent. Uri Simonsohn, Leif Nelson, and Joseph Simmons used statistical methods to detect fraud in the research of a pair of prominent social psychologists \citep{simonsohn2013just}. 
+
+Another source for information on fraud is part of the US Department of Health and Human Services
+, the Office of Research Integrity (ORI), which works to promote research
 integrity and document misconduct, especially when it involves federally
 funded research. The \href{http://ori.hhs.gov/case_summary}{misconduct case summaries of the ORI}, and the stories of Diederik Stapel \citep{carey_noted_2011, bhattacharjee_diederik_2013} Hwang Woo-Suk \citep{cyranoski_cloning_2014}
 and Marc Hauser \citep{johnson_harvard_2012} should be sobering warnings to us all.
@@ -343,10 +344,14 @@ from published literature may lead to inaccurate power calculations.
 
 To combat these problems, alternatives to the standard power analysis have been suggested. For example, \cite{perugini2014safeguard} 
 have suggested a technique called `safeguard power' which takes into account the uncertainty surrounding effect size estimates 
-when conducting power analyses. Specifically, they suggest basing power calculations off of the effect size corresponding to the lower bound of a 60\% confidence interval around the point estimate from published literature. Another approach by \cite{mcshane_2014} takes into account the between study variation in effect sizes when conducting power analyses to 
-give a more conservative estimate of the number of participants needed to reach a given level of statistical power. Yet another approach, which is also feasible when an effect size estimate from the previous literature is not available, 
-is to determine the smallest effect size you wish to be able to detect, and power your study to find this effect size \citep{bloom1995minimum}.  
+when conducting power analyses. Specifically, they suggest basing power calculations off of the effect size corresponding to the lower bound of a 60\% confidence interval around the point estimate from published literature. Another approach by \cite{mcshane_2014} takes into account the between study variation in effect sizes when conducting power analyses to give a more conservative estimate of the number of participants needed to reach a given level of statistical power. Yet another approach, which is also feasible when an effect size estimate from the previous literature is not available, is to determine the smallest effect size you wish to be able to detect, and power your study to find this effect size \citep{bloom1995minimum}.  
 
+\subsection {Practical Considerations}
+The impact of most of these calculations will in many cases mean a larger sample size than some disciplines are used to working with. There are several ways to mitigate the impact of this. 
+
+In psychology, a few of these possible solutions are presented in \cite{openmaximizing}. Researchers can join crowd-sourced projects where multiple labs share protocols and produce the same experiment, as was done with 13 psychological effects and 36 samples and settings in \cite{many_labs}. The \href{https://osf.io/wfc6u/}{Collaborative Replications and Education Project} (CREP) tracks findings that can be relatively easily replicated in a teaching setting. 
+
+Economists have also discusses how project budgets should play into study design, by maximizing power subject to a budget constraint \cite{randomizationtoolkit}. When data collection is the main cost, the proportion of treatment and control should each be one half, but if treatment is expensive, power can be maximized subject to the project budget using the rule: ``the ratio of subjects in the treatment group to those in the comparison should be proportional to the inverse of the square root of their cots.''  
  
 
 
@@ -470,7 +475,7 @@ Another method of detecting and dealing with publication bias is to conduct meta
 
 Although quite common in medical research, the tool is not widely used in some parts of the social sciences. But even in economics, where many graduate students are unfamiliar with the technqiue, important papers exist that have quantitatively synthesized bodies of literature. The unemployment effects of the minimum wage were meta-analyzed in \cite{card1995time}, and the returns to education in \cite{ashenfelter1999review}. A meta-analysis of 87 meta-analyses in economics shows that publication bias is widespread, but not universal.\footnote{A helpful resource, which includes meta-analysis datasets for economics researchers interested in conducting a meta-analysis is available \href{http://www.deakin.edu.au/business/economics/research/meta-analysis}{here}. Also see \cite{stanley2005beyond}, which helpfully describes the tools of meta-analysis, and is part of a special issue of \textit{The Journal of Economic Surveys} dedicated to meta-analysis.}
 
-Prominent examples in psychology include meta-analyses of work on the Big 5 Personality Test and job performance \citep{barrick1991big5} and predictive validity of the Implicit Association Test \citep{greenwald2009understanding}.
+Prominent examples in psychology include meta-analyses of work on the Big 5 Personality Test and job performance \citep{barrick1991big5} and predictive validity of the Implicit Association Test \citep{greenwald2009understanding}. \cite{simonsohn_p-curve_2014} also developed a meta-analysis tool that researchers can use to compare the uniform distribution of p-values under the null to the skewed distributions observed in research that has been gamed or selectively reported.
 
 %Whoops! This was a duplicate.
 %\subsection{Design-Based Review and Publication}

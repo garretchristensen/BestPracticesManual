@@ -921,6 +921,19 @@ completion.},
   Urldate                  = {2014-09-08}
 }
 
+@Book{openmaximizing,
+  Title                    = {Maximizing the Reproducibility of Your Research},
+  Author                   = {Open Science Collaboration and others},
+  Editor                   = {Lilienfield, S.O. and Waldman, I.D.},
+  Publisher                = {Wiley},
+  Year                     = {2014},
+
+  Address                  = {New York, NY},
+
+  Journal                  = {Psychological science under scrutiny: Recent challenges and proposed solutions.},
+  Url                      = {https://osf.io/nte3j/}
+}
+
 @Article{cyranoski_cloning_2014,
   Title                    = {Cloning comeback},
   Author                   = {Cyranoski, David},
@@ -1795,10 +1808,17 @@ Science, this issue p. 1502},
   Title                    = {In Search of an Association between Conception Risk and Prejudice},
   Author                   = {Hawkins, Carlee Beth and Cailey E. Fitzgerald and Brian A. Nosek},
   Journal                  = {Psychological Science},
-  Year                     = {In Press},
+  Year                     = {2015},
 
+  Month                    = {February},
+  Number                   = {2},
+  Pages                    = {249-252},
+  Volume                   = {26},
+
+  Doi                      = {10.1177/0956797614553121},
   Owner                    = {garret},
-  Timestamp                = {2014.11.19}
+  Timestamp                = {2014.11.19},
+  Url                      = {http://pss.sagepub.com/content/26/2/249}
 }
 
 @Article{heffetz_privacy_2014,
@@ -2226,6 +2246,18 @@ Science, this issue p. 1502},
   Volume                   = {45},
 
   Publisher                = {Hogrefe \& Huber}
+}
+
+@Article{kling2007experimental,
+  Title                    = {Experimental analysis of neighborhood effects},
+  Author                   = {Kling, Jeffrey R and Liebman, Jeffrey B and Katz, Lawrence F},
+  Journal                  = {Econometrica},
+  Year                     = {2007},
+  Number                   = {1},
+  Pages                    = {83--119},
+  Volume                   = {75},
+
+  Publisher                = {Wiley Online Library}
 }
 
 @Book{knuth_literate_1992,
@@ -2992,6 +3024,16 @@ quality of reports of {RCTs}.},
   Urldate                  = {2014-08-11}
 }
 
+@Article{obrien1984procedures,
+  Title                    = {Procedures for comparing samples with multiple endpoints},
+  Author                   = {O{'}Brien, Peter C},
+  Journal                  = {Biometrics},
+  Year                     = {1984},
+  Pages                    = {1079--1087},
+
+  Publisher                = {JSTOR}
+}
+
 @Article{OlkenPAP,
   Title                    = {Pre-AnalysisPlans in Economics},
   Author                   = {Benjamin A Olken},
@@ -3451,6 +3493,16 @@ Subgroup analyses can pose serious multiplicity concerns. By testing enough subg
   Pmid                     = {22006061},
   Url                      = {http://pss.sagepub.com/content/22/11/1359},
   Urldate                  = {2014-08-28}
+}
+
+@Article{simonsohn2013just,
+  Title                    = {Just post it: the lesson from two cases of fabricated data detected by statistics alone.},
+  Author                   = {Simonsohn, Uri},
+  Journal                  = {Psychological science},
+  Year                     = {2013},
+  Number                   = {10},
+  Pages                    = {1875},
+  Volume                   = {24}
 }
 
 @TechReport{simonsohn_p-curve_2014,

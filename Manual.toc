@@ -1,45 +1,46 @@
-\contentsline {section}{\numberline {1}Introduction}{4}{section.1}
-\contentsline {section}{\numberline {2}Ethical Research}{6}{section.2}
-\contentsline {subsection}{\numberline {2.1}Fraud}{6}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Unintentional Bias}{7}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Institutional Review Boards}{8}{subsection.2.3}
-\contentsline {subsubsection}{\numberline {2.3.1}History}{8}{subsubsection.2.3.1}
-\contentsline {paragraph}{Nuremberg}{8}{section*.2}
-\contentsline {paragraph}{Tuskegee and US codification}{9}{section*.3}
-\contentsline {subsubsection}{\numberline {2.3.2}Training}{12}{subsubsection.2.3.2}
-\contentsline {section}{\numberline {3}Study Design}{12}{section.3}
-\contentsline {subsection}{\numberline {3.1}Power Analysis}{12}{subsection.3.1}
-\contentsline {section}{\numberline {4}Registration}{14}{section.4}
-\contentsline {subsection}{\numberline {4.1}Publication Bias}{14}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Trial Registration}{15}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Social Science Registries}{18}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Meta-Analysis Research}{19}{subsection.4.4}
-\contentsline {section}{\numberline {5}Researcher Degrees of Freedom}{20}{section.5}
-\contentsline {subsection}{\numberline {5.1}Pre-Analysis Plans}{21}{subsection.5.1}
-\contentsline {paragraph}{What to Include}{22}{section*.4}
-\contentsline {paragraph}{Expecting the Unexpected}{24}{section*.5}
-\contentsline {paragraph}{When to Write}{25}{section*.6}
-\contentsline {subsubsection}{\numberline {5.1.1}Examples}{27}{subsubsection.5.1.1}
-\contentsline {subsubsection}{\numberline {5.1.2}Project Protocols}{29}{subsubsection.5.1.2}
-\contentsline {subsection}{\numberline {5.2}Multiple Hypothesis Testing}{32}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Subgroup Analysis}{34}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Results-Blind Reviewing}{34}{subsection.5.4}
-\contentsline {section}{\numberline {6}Replication and Reproducibility}{35}{section.6}
-\contentsline {subsection}{\numberline {6.1}Code and Workflow}{37}{subsection.6.1}
-\contentsline {subsubsection}{\numberline {6.1.1}Publicly Sharing Code}{37}{subsubsection.6.1.1}
-\contentsline {subsubsection}{\numberline {6.1.2}Managing Workflow}{38}{subsubsection.6.1.2}
-\contentsline {paragraph}{Software:}{38}{section*.7}
-\contentsline {paragraph}{Writing Code:}{39}{section*.8}
-\contentsline {subsection}{\numberline {6.2}General Workflow Suggestions:}{40}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Stata-specific Suggestions}{42}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Sharing Data}{44}{subsection.6.4}
-\contentsline {subsubsection}{\numberline {6.4.1}The JMCB Project and Economics}{44}{subsubsection.6.4.1}
-\contentsline {subsubsection}{\numberline {6.4.2}General Repositories}{46}{subsubsection.6.4.2}
-\contentsline {subsubsection}{\numberline {6.4.3}Differential Privacy}{47}{subsubsection.6.4.3}
-\contentsline {subsection}{\numberline {6.5}Reporting Standards}{47}{subsection.6.5}
-\contentsline {subsubsection}{\numberline {6.5.1}Randomized Trials and CONSORT}{48}{subsubsection.6.5.1}
-\contentsline {subsection}{\numberline {6.6}Social Science Reporting Standards}{48}{subsection.6.6}
-\contentsline {subsection}{\numberline {6.7}Observational Reporting Standards}{49}{subsection.6.7}
-\contentsline {section}{\numberline {7}Conclusion}{50}{section.7}
-\contentsline {section}{\numberline {8}Glossary of Terms}{50}{section.8}
-\contentsline {section}{Bibliography}{55}{section*.9}
+\contentsline {section}{\numberline {1}Introduction}{5}{section.1}
+\contentsline {section}{\numberline {2}Ethical Research}{7}{section.2}
+\contentsline {subsection}{\numberline {2.1}Fraud}{7}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Unintentional Bias}{8}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Institutional Review Boards}{9}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}History}{9}{subsubsection.2.3.1}
+\contentsline {paragraph}{Nuremberg}{9}{section*.2}
+\contentsline {paragraph}{Tuskegee and US codification}{10}{section*.3}
+\contentsline {subsubsection}{\numberline {2.3.2}Training}{13}{subsubsection.2.3.2}
+\contentsline {section}{\numberline {3}Study Design}{13}{section.3}
+\contentsline {subsection}{\numberline {3.1}Power Analysis}{13}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Practical Considerations}{15}{subsection.3.2}
+\contentsline {section}{\numberline {4}Registration}{16}{section.4}
+\contentsline {subsection}{\numberline {4.1}Publication Bias}{16}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Trial Registration}{17}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Social Science Registries}{19}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Meta-Analysis Research}{20}{subsection.4.4}
+\contentsline {section}{\numberline {5}Researcher Degrees of Freedom}{22}{section.5}
+\contentsline {subsection}{\numberline {5.1}Pre-Analysis Plans}{23}{subsection.5.1}
+\contentsline {paragraph}{What to Include}{24}{section*.4}
+\contentsline {paragraph}{Expecting the Unexpected}{26}{section*.5}
+\contentsline {paragraph}{When to Write}{27}{section*.6}
+\contentsline {subsubsection}{\numberline {5.1.1}Examples}{28}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}Project Protocols}{31}{subsubsection.5.1.2}
+\contentsline {subsection}{\numberline {5.2}Multiple Hypothesis Testing}{34}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Subgroup Analysis}{35}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Results-Blind Reviewing}{36}{subsection.5.4}
+\contentsline {section}{\numberline {6}Replication and Reproducibility}{37}{section.6}
+\contentsline {subsection}{\numberline {6.1}Code and Workflow}{38}{subsection.6.1}
+\contentsline {subsubsection}{\numberline {6.1.1}Publicly Sharing Code}{39}{subsubsection.6.1.1}
+\contentsline {subsubsection}{\numberline {6.1.2}Managing Workflow}{39}{subsubsection.6.1.2}
+\contentsline {paragraph}{Software:}{40}{section*.7}
+\contentsline {paragraph}{Writing Code:}{40}{section*.8}
+\contentsline {subsection}{\numberline {6.2}General Workflow Suggestions:}{42}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Stata-specific Suggestions}{43}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Sharing Data}{46}{subsection.6.4}
+\contentsline {subsubsection}{\numberline {6.4.1}The JMCB Project and Economics}{46}{subsubsection.6.4.1}
+\contentsline {subsubsection}{\numberline {6.4.2}General Repositories}{48}{subsubsection.6.4.2}
+\contentsline {subsubsection}{\numberline {6.4.3}Differential Privacy}{48}{subsubsection.6.4.3}
+\contentsline {subsection}{\numberline {6.5}Reporting Standards}{49}{subsection.6.5}
+\contentsline {subsubsection}{\numberline {6.5.1}Randomized Trials and CONSORT}{49}{subsubsection.6.5.1}
+\contentsline {subsection}{\numberline {6.6}Social Science Reporting Standards}{50}{subsection.6.6}
+\contentsline {subsection}{\numberline {6.7}Observational Reporting Standards}{51}{subsection.6.7}
+\contentsline {section}{\numberline {7}Conclusion}{51}{section.7}
+\contentsline {section}{\numberline {8}Glossary of Terms}{52}{section.8}
+\contentsline {section}{Bibliography}{57}{section*.9}

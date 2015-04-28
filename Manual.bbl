@@ -1,4 +1,4 @@
-\begin{thebibliography}{97}
+\begin{thebibliography}{100}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -195,6 +195,12 @@ A.-W. Chan, J.~M. Tetzlaff, P.~C. Gotzsche, D.~G. Altman, H.~Mann, J.~A.
 \newblock ISSN 0098-7484.
 \newblock \doi{10.1001/jama.291.20.2457}.
 \newblock URL \url{http://dx.doi.org/10.1001/jama.291.20.2457}.
+
+\bibitem[Collaboration et~al.(2014)]{openmaximizing}
+Open~Science Collaboration et~al.
+\newblock \emph{Maximizing the Reproducibility of Your Research}.
+\newblock Wiley, New York, NY, 2014.
+\newblock URL \url{https://osf.io/nte3j/}.
 
 \bibitem[Cyranoski(2014)]{cyranoski_cloning_2014}
 David Cyranoski.
@@ -763,6 +769,21 @@ Joseph~P. Simmons, Leif~D. Nelson, and Uri Simonsohn.
 \newblock ISSN 0956-7976, 1467-9280.
 \newblock \doi{10.1177/0956797611417632}.
 \newblock URL \url{http://pss.sagepub.com/content/22/11/1359}.
+
+\bibitem[Simonsohn(2013)]{simonsohn2013just}
+Uri Simonsohn.
+\newblock Just post it: the lesson from two cases of fabricated data detected
+  by statistics alone.
+\newblock \emph{Psychological science}, 24\penalty0 (10):\penalty0 1875, 2013.
+
+\bibitem[Simonsohn et~al.(2014)Simonsohn, Nelson, and
+  Simmons]{simonsohn_p-curve_2014}
+Uri Simonsohn, Leif~D. Nelson, and Joseph~P. Simmons.
+\newblock P-curve and effect size: Correcting for publication bias using only
+  significant results.
+\newblock {SSRN} Scholarly Paper {ID} 2377290, Social Science Research Network,
+  Rochester, {NY}, April 2014.
+\newblock URL \url{http://papers.ssrn.com/abstract=2377290}.
 
 \bibitem[Sorge et~al.(2014)Sorge, Martin, Isbester, Sotocinal, Rosen, Tuttle,
   Wieskopf, Acland, Dokova, Kadoura, et~al.]{sorge2014olfactory}
