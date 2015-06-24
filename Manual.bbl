@@ -1,4 +1,4 @@
-\begin{thebibliography}{100}
+\begin{thebibliography}{102}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -423,6 +423,11 @@ Sture Holm.
 \newblock ISSN 03036898.
 \newblock URL \url{http://www.jstor.org/stable/4615733}.
 
+\bibitem[Hsiang et~al.(2013)Hsiang, Burke, and Miguel]{hsiang2013climate}
+Solomon~M Hsiang, Marshall Burke, and Edward Miguel.
+\newblock Quantifying the influence of climate on human conflict.
+\newblock \emph{Science}, 341\penalty0 (6151):\penalty0 1235367, 2013.
+
 \bibitem[Humphreys et~al.(2013)Humphreys, Sierra, and
   Windt]{humphreys_fishing_2013}
 Macartan Humphreys, Raul Sanchez de~la Sierra, and Peter van~der Windt.
@@ -573,6 +578,12 @@ B.~D. McCullough and H.~D. Vinod.
   873--892, June 2003.
 \newblock ISSN 0002-8282.
 \newblock URL \url{http://www.jstor.org/stable/3132121}.
+
+\bibitem[McKenzie(2012)]{mckenzie2012caseformoreT}
+David McKenzie.
+\newblock Beyond baseline and follow-up: The case for more t in experiments.
+\newblock \emph{Journal of Development Economics}, 99\penalty0 (2):\penalty0
+  210--221, 2012.
 
 \bibitem[McShane and B{\"o}ckenholt(2014)]{mcshane_2014}
 Blakeley~B McShane and Ulf B{\"o}ckenholt.
@@ -776,14 +787,11 @@ Uri Simonsohn.
   by statistics alone.
 \newblock \emph{Psychological science}, 24\penalty0 (10):\penalty0 1875, 2013.
 
-\bibitem[Simonsohn et~al.(2014)Simonsohn, Nelson, and
-  Simmons]{simonsohn_p-curve_2014}
-Uri Simonsohn, Leif~D. Nelson, and Joseph~P. Simmons.
-\newblock P-curve and effect size: Correcting for publication bias using only
-  significant results.
-\newblock {SSRN} Scholarly Paper {ID} 2377290, Social Science Research Network,
-  Rochester, {NY}, April 2014.
-\newblock URL \url{http://papers.ssrn.com/abstract=2377290}.
+\bibitem[Simonsohn et~al.(2014)Simonsohn, Nelson, and Simmons]{simonsohn2014p}
+Uri Simonsohn, Leif~D Nelson, and Joseph~P Simmons.
+\newblock P-curve: A key to the file-drawer.
+\newblock \emph{Journal of Experimental Psychology: General}, 143\penalty0
+  (2):\penalty0 534, 2014.
 
 \bibitem[Sorge et~al.(2014)Sorge, Martin, Isbester, Sotocinal, Rosen, Tuttle,
   Wieskopf, Acland, Dokova, Kadoura, et~al.]{sorge2014olfactory}

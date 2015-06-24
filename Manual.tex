@@ -346,13 +346,17 @@ To combat these problems, alternatives to the standard power analysis have been 
 have suggested a technique called `safeguard power' which takes into account the uncertainty surrounding effect size estimates 
 when conducting power analyses. Specifically, they suggest basing power calculations off of the effect size corresponding to the lower bound of a 60\% confidence interval around the point estimate from published literature. Another approach by \cite{mcshane_2014} takes into account the between study variation in effect sizes when conducting power analyses to give a more conservative estimate of the number of participants needed to reach a given level of statistical power. Yet another approach, which is also feasible when an effect size estimate from the previous literature is not available, is to determine the smallest effect size you wish to be able to detect, and power your study to find this effect size \citep{bloom1995minimum}.  
 
+%GSC
+Additionally, researchers may be able to help one another as well as decrease false-positives by publishing or clearly making available their power calculations. If a reader of a paper saw a clearly stated ``this trial was powered to detect an effect size of X,'' this would help to put the study into the appropriate statistical context. The parametric assumptions involved (such as the intra-cluster correlation) could also be publicly posted in study protocols to help other researchers learn reasonable assumptions for their own studies. 
 \subsection {Practical Considerations}
 The impact of most of these calculations will in many cases mean a larger sample size than some disciplines are used to working with. There are several ways to mitigate the impact of this. 
 
 In psychology, a few of these possible solutions are presented in \cite{openmaximizing}. Researchers can join crowd-sourced projects where multiple labs share protocols and produce the same experiment, as was done with 13 psychological effects and 36 samples and settings in \cite{many_labs}. The \href{https://osf.io/wfc6u/}{Collaborative Replications and Education Project} (CREP) tracks findings that can be relatively easily replicated in a teaching setting. 
 
-Economists have also discusses how project budgets should play into study design, by maximizing power subject to a budget constraint \cite{randomizationtoolkit}. When data collection is the main cost, the proportion of treatment and control should each be one half, but if treatment is expensive, power can be maximized subject to the project budget using the rule: ``the ratio of subjects in the treatment group to those in the comparison should be proportional to the inverse of the square root of their cots.''  
- 
+Economists have also discusses how project budgets should play into study design, by maximizing power subject to a budget constraint \cite{randomizationtoolkit}. When data collection is the main cost, the proportion of treatment and control should each be one half, but if treatment is expensive, power can be maximized subject to the project budget using the rule: ``the ratio of subjects in the treatment group to those in the comparison should be proportional to the inverse of the square root of their cots.''  Another important contribution to this are of power maximization subject to a budget constraint is that power depends on the number of rounds of surveying, and also the autocorrelation of measurements over time. \cite{mckenzie2012caseformoreT} shows that baseline data is of most power when autocorrelation is high, and repeated measurements post-treatment of most power when autocorrelation is low.
+
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -473,9 +477,9 @@ Another location for registrations is the \href{http://osf.io}{Open Science Fram
 \subsection{Meta-Analysis Research}
 Another method of detecting and dealing with publication bias is to conduct meta-analysis. This method of research collects all published findings on a given topic, analyzes the results collectively, and can detect, and attempt to adjust for, publication bias in the literature. A handful of organizations specialize in producing these systematic reviews, including the \href{http://www.cochrane.org}{Cochrane Collaboration} for health studies and the \href{http://www.campbellcollaboration.org/}{Campbell Collaboration} for crime \& justice, education, international development, and social welfare research, and the \href{http://www.3ie.org}{International Initiative for Impact Evalution (3ie)} for social and economic interventions in low- and middle- income countries. The US government supports this type of analysis: the Department of Education's Institute of Education Sciences maintains the \href{http://ies.ed.gov/ncee/wwc/}{What Works Clearinghouse}, and the Department of Labor maintains the \href{http://clear.dol.gov/}{Clearinghouse for Labor and Evaluation Research (CLEAR)}, which serve to collect and grade the evidentiary value of research on education and labor, respectively. (The synthesis methods in the government clearinghouses is not quite as formally statistical in nature as the previously mentioned Collaborations.)
 
-Although quite common in medical research, the tool is not widely used in some parts of the social sciences. But even in economics, where many graduate students are unfamiliar with the technqiue, important papers exist that have quantitatively synthesized bodies of literature. The unemployment effects of the minimum wage were meta-analyzed in \cite{card1995time}, and the returns to education in \cite{ashenfelter1999review}. A meta-analysis of 87 meta-analyses in economics shows that publication bias is widespread, but not universal.\footnote{A helpful resource, which includes meta-analysis datasets for economics researchers interested in conducting a meta-analysis is available \href{http://www.deakin.edu.au/business/economics/research/meta-analysis}{here}. Also see \cite{stanley2005beyond}, which helpfully describes the tools of meta-analysis, and is part of a special issue of \textit{The Journal of Economic Surveys} dedicated to meta-analysis.}
+Although quite common in medical research, the tool is not widely used in some parts of the social sciences. But even in economics, where many graduate students are unfamiliar with the technqiue, important papers exist that have quantitatively synthesized bodies of literature. The unemployment effects of the minimum wage were meta-analyzed in \cite{card1995time}, and the returns to education in \cite{ashenfelter1999review}. A meta-analysis of 87 meta-analyses in economics shows that publication bias is widespread, but not universal. A helpful resource, which includes meta-analysis datasets for economics researchers interested in conducting a meta-analysis is available \href{http://www.deakin.edu.au/business/economics/research/meta-analysis}{here}. Also see \cite{stanley2005beyond}, which helpfully describes the tools of meta-analysis, and is part of a special issue of \textit{The Journal of Economic Surveys} dedicated to meta-analysis. Sol Hsiang, lead author of a prominent meta-analysis of 60 studies measuring the effect of climate on human conflict \citep{hsiang2013climate}, has also developed the \href{http://dmas.berkeley.edu}{Distributed Meta-Analysis System}, an online tool to crowdsource and simplify meta-analysis.
 
-Prominent examples in psychology include meta-analyses of work on the Big 5 Personality Test and job performance \citep{barrick1991big5} and predictive validity of the Implicit Association Test \citep{greenwald2009understanding}. \cite{simonsohn_p-curve_2014} also developed a meta-analysis tool that researchers can use to compare the uniform distribution of p-values under the null to the skewed distributions observed in research that has been gamed or selectively reported.
+Prominent examples in psychology include meta-analyses of work on the Big 5 Personality Test and job performance \citep{barrick1991big5} and predictive validity of the Implicit Association Test \citep{greenwald2009understanding}. \cite{simonsohn2014p} also developed a meta-analysis tool that researchers can use to compare the uniform distribution of p-values under the null to the left-skewed distributions observed in research that has been gamed or selectively reported.
 
 %Whoops! This was a duplicate.
 %\subsection{Design-Based Review and Publication}
@@ -498,7 +502,7 @@ certain conditions, including certain control variables, and combining
 or transforming certain measures, they ``prove'' that listening to the
 Beatles' song ``When I'm Sixty-Four'' made listeners a year and a half
 younger. The extent and ease of this ``fishing'' is also described in
-\cite{humphreys_fishing_2013}. \cite{gelman_garden_2013} agree that
+\cite{humphreys_fishing_2013} who use simulations to show that multiplicity of outcome measures, multiplicity of heterogeneous treatment effects (sub-group analyses), and multiplicity of cut-points for turning a continuous outcome variable into a binary outcome, can all be used to virtually guarantee a false positive, even with large sample sizes. They also find that selective adding of covariates can produce false positives with small samples, though they do find little room to produce false positives through arbitrary selection of model for binary outcomes (linear, logit, or probit) regardless of sample size. \cite{gelman_garden_2013} agree that
 ``{[}a{]} dataset can be analyzed in so many different ways (with the
 choices being not just what statistical test to perform but also
 decisions on what data to exclude or exclude {[}sic{]}, what measures to
@@ -663,7 +667,7 @@ Another project in Indonesia used a field experiment to evaluate different means
 \item
 An example from pyschology is a pre-registered replication of an implicit association test. Existing research showed evidence of stronger racial preferences among fertile women. \cite{NosekPreRegistered} failed to reproduce this effect in four tries, suggesting the association is weaker than originally found. The resulting manuscript, as well as the time-stamped registration of the analysis plan, can be found on the Open Science Framework at \url{https://osf.io/g3sca/}.
 \end{itemize}
-Additionally, Alejandro Ganimian developed \href{http://scholar.harvard.edu/files/alejandro_ganimian/files/pre-analysis_plan_template.pdf}{a template for pre-analysis plans} that instructors may find useful when teaching tranpsarency methods, or researcher themselves may find useful when developing their own pre-analysis plan.
+Additionally, Alejandro Ganimian developed \href{http://scholar.harvard.edu/files/alejandro_ganimian/files/pre-analysis_plan_template_0.pdf}{a template for pre-analysis plans} that instructors may find useful when teaching tranpsarency methods, or researcher themselves may find useful when developing their own pre-analysis plan.
 
 \subsubsection{Project Protocols}\label{project-protocols}
 
@@ -880,21 +884,25 @@ a separate location.) Another extremely important way to prevent
 unintentional changes to data is to always set the seed for random
 number generators whenever any random numbers are to be used (set.seed()
 in R, set seed () in Stata). Additionally, information about the exact
-software version used should be included (Stata version 12.x, or use the
+software version used should be included (include the `version' command in Stata, or use the
 session.info() command in R) as well as computer processor and operating
 system information. The casual programmer may assume that sophisticated
 software would always produce the exact same answer across multiple
-versions of software and platforms, but this is not the case.
+versions of software and platforms, but this is not the case. This is also definitely not the case with user-written packages. R users can use the packageVersion() command, and can run old versions of packages since they are archived at \href{http://cran.r-project.org}{CRAN}. Stata users can use the viewsource command for any .ado they use, but since the Statistical Software Components (SSC) unfortunately does not archive old versions, reproducibility may be lost, so ideally researchers would include the actual code for the version of the user-written .ado along with their publicly archived data and code files
 
-Organize Your Work:
 
-Don't save output. Just save code and data that generates it.
+Finally, two simple organizing principles to consider are:
+\begin{enumerate}
+\item 
+ Consider not saving statistical output, and just saving the code and data that generates it. Obviously this would be unrealistically time consuming for large projects, but the idea is that you should be able to reproduce all steps of your analysis that you could in theory take this approach.
 
-Think about the entire pipeline. Terry White ``Hit by a bus test''
+\item
+What would happen if you, or your laptop hard drive, were hit by a bus? How easily would anyone else be able to reproduce your work? Hopefully the probability is non-zero.
+\end{enumerate}
 
 \subsection{General Workflow
 Suggestions:}\label{general-workflow-suggestions}
-
+Here we offer some specific workflow organization suggestions that should be valid regardless of code or operating system.
 \begin{itemize}
 \item
   Do not use spaces in directory or file names, as it complicates referring to them in certain software.
@@ -1001,7 +1009,7 @@ described at \url{http://rmarkdown.rstudio.com/}) in which one writes
 both code and comments that is automatically spun into an easily read
 and shareable HTML, PDF, or MS Word document. These can be posted and
 shared for free at RPubs (\url{https://rpubs.com}), an easy to use
-hosting service by Rstudio.
+hosting service by Rstudio. For Stata users, dynamic documents are slightly less well developed, but \href{http://www.haghish.com}{E.F. Haghish} is actively developing packages (\href{http://www.haghish.com/statistics/stata-blog/reproducible-research/packages.php}{Markdoc, Weaver, Ketchup, and Synlight}) that allow users to write their .do files in such a way that the log files output by Stata are formatted and readable in Markdown, HMTL, or \LaTeX . 
 
 %ADD EXAMPLE
 

@@ -1960,6 +1960,18 @@ Science, this issue p. 1502},
   Urldate                  = {2014-08-20}
 }
 
+@Article{hsiang2013climate,
+  Title                    = {Quantifying the influence of climate on human conflict},
+  Author                   = {Hsiang, Solomon M and Burke, Marshall and Miguel, Edward},
+  Journal                  = {Science},
+  Year                     = {2013},
+  Number                   = {6151},
+  Pages                    = {1235367},
+  Volume                   = {341},
+
+  Publisher                = {American Association for the Advancement of Science}
+}
+
 @Article{humphreys_fishing_2013,
   Title                    = {Fishing, Commitment, and Communication: A Proposal for Comprehensive Nonbinding Research Registration},
   Author                   = {Humphreys, Macartan and Sierra, Raul Sanchez de la and Windt, Peter van der},
@@ -2737,6 +2749,18 @@ Science, this issue p. 1502},
   Urldate                  = {2014-08-20}
 }
 
+@Article{mckenzie2012caseformoreT,
+  Title                    = {Beyond baseline and follow-up: The case for more T in experiments},
+  Author                   = {McKenzie, David},
+  Journal                  = {Journal of Development Economics},
+  Year                     = {2012},
+  Number                   = {2},
+  Pages                    = {210--221},
+  Volume                   = {99},
+
+  Publisher                = {Elsevier}
+}
+
 @Article{mcshane_2014,
   Title                    = {You Cannot Step Into the Same River Twice When Power Analyses Are Optimistic},
   Author                   = {McShane, Blakeley B and B{\"o}ckenholt, Ulf},
@@ -3505,23 +3529,16 @@ Subgroup analyses can pose serious multiplicity concerns. By testing enough subg
   Volume                   = {24}
 }
 
-@TechReport{simonsohn_p-curve_2014,
-  Title                    = {P-Curve and Effect Size: Correcting for Publication Bias Using Only Significant Results},
-  Author                   = {Simonsohn, Uri and Nelson, Leif D. and Simmons, Joseph P.},
-  Institution              = {Social Science Research Network},
+@Article{simonsohn2014p,
+  Title                    = {P-curve: A key to the file-drawer.},
+  Author                   = {Simonsohn, Uri and Nelson, Leif D and Simmons, Joseph P},
+  Journal                  = {Journal of Experimental Psychology: General},
   Year                     = {2014},
+  Number                   = {2},
+  Pages                    = {534},
+  Volume                   = {143},
 
-  Address                  = {Rochester, {NY}},
-  Month                    = apr,
-  Number                   = {{ID} 2377290},
-  Type                     = {{SSRN} Scholarly Paper},
-
-  Abstract                 = {Journals tend to publish only statistically significant evidence, creating a scientific record that markedly overstates the size of effects. We provide a new tool that corrects for this bias without requiring access to nonsignificant results. It capitalizes on the fact that the distribution of significant p-values, p-curve, is a function of the true underlying effect. Researchers armed only with sample sizes and test results of the published findings can correct for publication bias. We validate the technique with simulations and by re-analyzing data from the Many-Labs Replication project. We demonstrate that p-curve can arrive at conclusions opposite that of existing tools by re-analyzing the meta-analysis of the â€œchoice overloadâ€? literature.},
-  File                     = {Snapshot:C\:\\Users\\garret\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\vbdhbrhn.default\\zotero\\storage\\BRF38XPW\\papers.html:text/html},
-  Keywords                 = {p-curve, Publication bias},
-  Shorttitle               = {P-Curve and Effect Size},
-  Url                      = {http://papers.ssrn.com/abstract=2377290},
-  Urldate                  = {2014-09-04}
+  Publisher                = {American Psychological Association}
 }
 
 @TechReport{simonsohn_p-curve:_2013,
