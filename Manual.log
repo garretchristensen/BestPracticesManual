@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.12)  23 JUN 2015 17:12
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.12)  3 JUL 2015 17:34
 entering extended mode
 **C:/Users/garret/Documents/Research/BITSS/BestPractices/BestPracticesManual/Ma
 nual.tex
@@ -394,9 +394,9 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
- [2])
+ [2] [3])
 \tf@toc=\write4
- [3] [4] [5] [6] [7] [8] [9]
+ [4] [5] [6] [7] [8] [9]
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 (Font)              Font shape `OMS/pzccm/m/n' tried instead on input line 230.
 
@@ -408,7 +408,7 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
  [13] [14] [15] [16]
-[17] <TurnerFigure1.PNG, id=387, 252.19218pt x 266.49562pt>
+[17] <TurnerFigure1.PNG, id=392, 252.19218pt x 266.49562pt>
 File: TurnerFigure1.PNG Graphic file (type png)
 
 <use TurnerFigure1.PNG>
@@ -437,31 +437,35 @@ File: omlptm.fd
 LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <12> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 511.
  [23]
-[24] [25] [26] [27] [28] [29] [30] [31] [32] [33] [34] [35] [36] [37] [38]
-[39] [40] [41] [42] [43] [44] [45] [46] [47] [48] [49] [50] [51]
-Underfull \hbox (badness 10000) in paragraph at lines 1130--1130
+[24] [25] [26] [27] [28] [29] [30] [31] [32]
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+ [33] [34] [35] [36] [37] [38]
+[39] [40] [41] [42] [43] [44] [45] [46] [47] [48] [49] [50] [51] [52] [53]
+Underfull \hbox (badness 10000) in paragraph at lines 1145--1145
 [][][]$\OT1/pcr/m/n/10 http : / / www . davidhendry . net / research -[] supple
 mental / gerberetal2014 -[] reportingstandards /$
  []
 
-[52] [53] [54]
+[54] [55] [56] [57]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
- [55] [56]
+ [58]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ˜ in font ptmr7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
-
-Overfull \hbox (0.4854pt too wide) in paragraph at lines 1241--1243
+ [59]
+Overfull \hbox (0.4854pt too wide) in paragraph at lines 1256--1258
 []\OT1/ptm/m/n/12 Pure Repli-ca-tion: Re-running ex-ist-ing code, with error-ch
 ecking, on the orig-i-nal dataset
  []
 
-[57] [58]
+[60] [61]
 (C:\Users\garret\Documents\Research\BITSS\BestPractices\BestPracticesManual\Man
 ual.bbl
 Underfull \hbox (badness 2103) in paragraph at lines 21--28
@@ -482,13 +486,12 @@ files / documents / ISKURIE _$
  []
 
 Missing character: There is no — in font ptmr7t!
-[59] [60]
-Underfull \hbox (badness 10000) in paragraph at lines 282--287
+[62] [63] [64]
+Underfull \hbox (badness 10000) in paragraph at lines 295--300
 $\OT1/pcr/m/n/12 / / www . fda . gov / downloads / drugs / guidancecompliancere
 gulatoryinformation /$
  []
 
-[61]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ˜ in font ptmr7t!
@@ -501,54 +504,55 @@ Missing character: There is no ˜ in font ptmr7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
- [62] [63]
-Underfull \hbox (badness 10000) in paragraph at lines 482--488
+[65] [66]
+Underfull \hbox (badness 10000) in paragraph at lines 495--501
 $\OT1/pcr/m/n/12 com / news / science / 2012 / 09 / 05 / harvard -[] professor 
 -[] who -[] resigned -[] fabricated -[]$
  []
 
 
-Underfull \hbox (badness 1735) in paragraph at lines 516--523
+Underfull \hbox (badness 1735) in paragraph at lines 529--536
 \OT1/ptm/m/n/12 ISSN 0010-4620, 1460-2067.  doi: $10 . 1093 / comjnl / 27 . 2 .
  97$.  URL []$\OT1/pcr/m/n/12 http : / / comjnl .$
  []
 
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no © in font ptmr7t!
-[64]
-Underfull \hbox (badness 10000) in paragraph at lines 567--573
+[67]
+Underfull \hbox (badness 10000) in paragraph at lines 580--586
 $\OT1/pcr/m/n/12 replicability -[] the -[] journal -[] of -[] money -[] credit 
 -[] and -[] banking -[] archive ? ref = section -[]$
  []
 
-[65]
-Underfull \hbox (badness 10000) in paragraph at lines 655--660
+Missing character: There is no — in font ptmr7t!
+[68]
+Underfull \hbox (badness 10000) in paragraph at lines 676--681
 []$\OT1/pcr/m/n/12 https : / / www . povertyactionlab . org / sites / default /
  files / documents / 090318a %$
  []
 
-[66] [67])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1266.
- [68]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1266.
+[69] [70])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1281.
+ [71]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1281.
 
 (C:\Users\garret\Documents\Research\BITSS\BestPractices\BestPracticesManual\Man
 ual.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1266.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1266.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1281.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1281.
 
 Package rerunfilecheck Info: File `Manual.out' has not changed.
-(rerunfilecheck)             Checksum: B9568C693D2E319D6C1B14545B4F0BAE;2707.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1266.
+(rerunfilecheck)             Checksum: 390A6198F67FD90B94CCE851630A4447;2800.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1281.
  ) 
 Here is how much of TeX's memory you used:
- 7014 strings out of 493921
- 105856 string characters out of 3148882
- 190333 words of memory out of 3000000
- 9972 multiletter control sequences out of 15000+200000
+ 7031 strings out of 493921
+ 106216 string characters out of 3148882
+ 190488 words of memory out of 3000000
+ 9982 multiletter control sequences out of 15000+200000
  47759 words of font info for 98 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 29i,8n,28p,1697b,620s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,8n,28p,1654b,622s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.11} has been referenced but does not ex
 ist, replaced by a fixed one
 
@@ -588,9 +592,9 @@ e1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MikTek/fonts/type1/urw/couri
 er/ucrr8a.pfb><C:/Program Files/MikTek/fonts/type1/urw/times/utmb8a.pfb><C:/Pro
 gram Files/MikTek/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MikTek/fon
 ts/type1/urw/times/utmri8a.pfb>
-Output written on Manual.pdf (68 pages, 385593 bytes).
+Output written on Manual.pdf (71 pages, 394342 bytes).
 PDF statistics:
- 1187 PDF objects out of 1200 (max. 8388607)
- 253 named destinations out of 1000 (max. 500000)
- 318 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1215 PDF objects out of 1440 (max. 8388607)
+ 260 named destinations out of 1000 (max. 500000)
+ 326 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -711,6 +711,21 @@ in uenza pandemic.},
   Urldate                  = {2014-08-20}
 }
 
+@Article{Card1992minwage,
+  Title                    = {Using Regional Variation in Wages to Measure the Effects of the Federal Minimum Wage},
+  Author                   = {Card, David AND Alan B Krueger},
+  Journal                  = {Industrial \& Labor Relations Review},
+  Year                     = {1992},
+
+  Month                    = {October},
+  Number                   = {1},
+  Pages                    = {22-37},
+  Volume                   = {46},
+
+  Owner                    = {garret},
+  Timestamp                = {2015.07.03}
+}
+
 @Article{carey_noted_2011,
   Title                    = {Noted Dutch Psychologist, Stapel, Accused of Research Fraud},
   Author                   = {Carey, Benedict},
@@ -2975,7 +2990,7 @@ quality of reports of {RCTs}.},
 }
 
 @Article{neumark_employment_2001,
-  Title                    = {The Employment Effects of Minimum Wages: Evidence from a Prespecified Research Design The Employment Effects of {MinimumWages}},
+  Title                    = {The Employment Effects of Minimum Wages: Evidence from a Prespecified Research Design},
   Author                   = {Neumark, David},
   Journal                  = {Industrial Relations: A Journal of Economy and Society},
   Year                     = {2001},
@@ -2994,6 +3009,19 @@ quality of reports of {RCTs}.},
   Shorttitle               = {The Employment Effects of Minimum Wages},
   Url                      = {http://onlinelibrary.wiley.com/doi/10.1111/0019-8676.00199/abstract},
   Urldate                  = {2014-08-26}
+}
+
+@Article{Neumark_2014_bathwater,
+  Title                    = {Revisiting the Minimum Wage—Employment Debate: Throwing Out the Baby with the Bathwater?},
+  Author                   = {Neumark, David AND JM Ian Salas AND William Wascher},
+  Journal                  = {Industrial \& Labor Relations Review},
+  Year                     = {2014},
+  Number                   = {3},
+  Pages                    = {608-648},
+  Volume                   = {67},
+
+  Owner                    = {garret},
+  Timestamp                = {2015.07.03}
 }
 
 @Article{neumark_minimum_2000,

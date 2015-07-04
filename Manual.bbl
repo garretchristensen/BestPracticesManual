@@ -1,4 +1,4 @@
-\begin{thebibliography}{102}
+\begin{thebibliography}{105}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -140,6 +140,13 @@ Katherine~S Button, John~PA Ioannidis, Claire Mokrysz, Brian~A Nosek, Jonathan
 \newblock \emph{Nature Reviews Neuroscience}, 14\penalty0 (5):\penalty0
   365--376, 2013.
 
+\bibitem[Card and Krueger(1992)]{Card1992minwage}
+David Card and Alan~B Krueger.
+\newblock Using regional variation in wages to measure the effects of the
+  federal minimum wage.
+\newblock \emph{Industrial \& Labor Relations Review}, 46\penalty0
+  (1):\penalty0 22--37, October 1992.
+
 \bibitem[Card and Krueger(1995)]{card1995time}
 David Card and Alan~B Krueger.
 \newblock Time-series minimum-wage studies: a meta-analysis.
@@ -230,6 +237,12 @@ Catherine De~Angelis, Jeffrey~M. Drazen, Frank~A. Frizelle, Charlotte Haug,
 \newblock \emph{New England Journal of Medicine}, 351\penalty0 (12):\penalty0
   1250--1251, 2004.
 \newblock doi:10.1056/NEJMe048225.
+
+\bibitem[Deere et~al.(1995)Deere, Murphy, and 1995]{Deere1995minwage}
+Donald Deere, Kevin~M. Murphy, and Finis~Welch. 1995.
+\newblock Employment and the 1990-1991 minimum-wage hike.
+\newblock \emph{American Economic Review Papers and Proceedings}, 85\penalty0
+  (2):\penalty0 232--237, May 1995.
 
 \bibitem[DeLong and Lang(1992)]{delong_are_1992}
 J.~Bradford DeLong and Kevin Lang.
@@ -623,13 +636,21 @@ Paul Montgomery, Sean Grant, Sally Hopewell, Geraldine Macdonald, David Moher,
 \bibitem[Neumark(2001)]{neumark_employment_2001}
 David Neumark.
 \newblock The employment effects of minimum wages: Evidence from a prespecified
-  research design the employment effects of {MinimumWages}.
+  research design.
 \newblock \emph{Industrial Relations: A Journal of Economy and Society},
   40\penalty0 (1):\penalty0 121--144, January 2001.
 \newblock ISSN 1468-232X.
 \newblock \doi{10.1111/0019-8676.00199}.
 \newblock URL
   \url{http://onlinelibrary.wiley.com/doi/10.1111/0019-8676.00199/abstract}.
+
+\bibitem[Neumark et~al.(2014)Neumark, Salas, and
+  Wascher]{Neumark_2014_bathwater}
+David Neumark, JM~Ian Salas, and William Wascher.
+\newblock Revisiting the minimum wage—employment debate: Throwing out the baby
+  with the bathwater?
+\newblock \emph{Industrial \& Labor Relations Review}, 67\penalty0
+  (3):\penalty0 608--648, 2014.
 
 \bibitem[Nosek and Lakens(2014)]{nosek2014registered}
 Brian~A Nosek and Dani{\"e}l Lakens.
