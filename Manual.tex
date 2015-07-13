@@ -115,8 +115,7 @@ more benevolent. Uri Simonsohn, Leif Nelson, and Joseph Simmons used statistical
 Another source for information on fraud is part of the US Department of Health and Human Services
 , the Office of Research Integrity (ORI), which works to promote research
 integrity and document misconduct, especially when it involves federally
-funded research. The \href{http://ori.hhs.gov/case_summary}{misconduct case summaries of the ORI}, and the stories of Diederik Stapel \citep{carey_noted_2011, bhattacharjee_diederik_2013} Hwang Woo-Suk \citep{cyranoski_cloning_2014}
-and Marc Hauser \citep{johnson_harvard_2012} should be sobering warnings to us all.
+funded research. The \href{http://ori.hhs.gov/case_summary}{misconduct case summaries of the ORI}, and the stories of Diederik Stapel \citep{carey_noted_2011, bhattacharjee_diederik_2013} Hwang Woo-Suk \citep{cyranoski_cloning_2014}, Marc Hauser \citep{johnson_harvard_2012} and Michael LaCour \citep{broockman2015irreg} should be sobering warnings to us all.
 
 \subsection{Unintentional Bias}\label{unintentional-bias}
 
@@ -450,10 +449,7 @@ that registering all types of analysis should be accepted and encouraged, though
 Registries in the social sciences are newer but are growing ever more
 popular. The Abdul Latif Jameel Poverty Action Lab began hosting a
 \href{http://www.povertyactionlab.org/hypothesis-registry}{hypothesis registry}
- in 2009, which was superseded by the American Economic Association's launch of
-its own registry for randomized trials
-(\href{http://www.socialscienceregistry.org}{www.socialscienceregistry.org})
-in May 2013, which had accumulated 260 studies in 59 countries by
+ in 2009, which was superseded by the American Economic Association's launch of its own \href{http://socialscienceregistry.org}{registry} for randomized trials in May 2013, which had accumulated 260 studies in 59 countries by
 October 2014. The International Initiative for Impact Evaluation (3ie)
 launched its own registry for evaluations of development programs, the
 \href{http://ridie.3ieimpact.org}{Registry for International Development Impact Evaluations} (RIDIE) in September 2013, which had
@@ -571,9 +567,7 @@ Suggestions have been made for the detailed contents of these documents.
   the primary specification to be used for the analysis.
 \end{enumerate}
 David McKenzie of the World Bank Research Group proposed a list of ten
-items that should be included in a PAP, reproduced below. (For more
-detail see
-\url{http://blogs.worldbank.org/impactevaluations/a-pre-analysis-plan-checklist})
+items that should be included in a PAP, reproduced below from the \href{http://blogs.worldbank.org/impactevaluations/a-pre-analysis-plan-checklist}{World Bank Development Impact Blog}.
 
 \begin{enumerate}
 \item
@@ -710,9 +704,9 @@ trials planned or ongoing, with the hopes that this will reduce
 publication bias, allow patients to see trials in which they might like
 to enroll, allow funders and researchers to learn of work underway to
 avoid duplication, and to allow readers to compare what research was
-originally proposed to what was actually completed. (See
+originally proposed to what was actually completed.\footnote{See
 \url{http://www.biomedcentral.com/authors/protocols} and
-\url{http://bmjopen.bmj.com/site/about/guidelines.xhtml\#studyprotocols}.)
+\url{http://bmjopen.bmj.com/site/about/guidelines.xhtml\#studyprotocols}.}
 \emph{BMJ Open} suggests, but does not require, that its published
 protocols include the items in the SPIRIT checklist.
 
@@ -838,7 +832,11 @@ Code is just one aspect of a larger structure we refer to as
 ``workflow'' after \cite{long_workflow_2008}, by which we mean the
 combination of data, code, organization, and documentation: everything
 from file and variable names to folder organization as well as efficient
-and readable programming, and data storage and documentation. We strongly recommend that Stata-users read \cite{long_workflow_2008} and R users read \cite{gandrud2013reproducible} for workflow recommendations both general and specific to their respective programming language\footnote{Also see and \cite{kirchkamp_workflow_????}}. Our suggestions here borrow heavily from their excellent work. We also refer undergraduate instructors and others who may be interested to Richard Ball and Norm Medeiros' \href{http://www.haverford.edu/TIER/}{Project TIER} (Teaching Integrity in Empirical Research), which is a ``protocol for comprehensively documenting all the steps of data management and analysis that go into an empirical research paper.'' A specific file organization is taught so that teachers can exactly reproduce the work of every student (and so students can reliably get the same answer every time they conduct their analysis). 
+and readable programming, and data storage and documentation. We strongly recommend that Stata-users read \cite{long_workflow_2008} and R users read \cite{gandrud2013reproducible} for workflow recommendations both general and specific to their respective programming language\footnote{Also see and \cite{kirchkamp_workflow_????}}. Our suggestions here borrow heavily from their excellent work. 
+
+Another excellent, more brief work is Matthew Gentzkow and Jesse Shapiro's excellent manual on code and data \href{http://faculty.chicagobooth.edu/jesse.shapiro/research/CodeAndData.pdf}{\citep{GentzkowShapiro}}. They come from the same background as us--they didn't take many programming classes, they're just clever and figured it out. But once their data got massive, and their programming problems got massive with it, they figured they should listen to the fulltime programmers and database managers who had spent years and billions of dollars solving these problems. Their manual adapts many of these solutions to data-based social science research.   
+
+We also refer undergraduate instructors and others who may be interested to Richard Ball and Norm Medeiros' \href{http://www.haverford.edu/TIER/}{Project TIER} (Teaching Integrity in Empirical Research), which is a ``protocol for comprehensively documenting all the steps of data management and analysis that go into an empirical research paper.'' A specific file organization using the Open Science Framework is taught so that teachers can exactly reproduce the work of every student (and so students can reliably get the same answer every time they conduct their analysis). 
 
 \paragraph{Software:}
 
@@ -932,24 +930,22 @@ Here we offer some specific workflow organization suggestions that should be val
   Keep a daily research log, i.e. a detailed written diary of what research is done on a given day. You'll be surprised how often this will be useful to answer questions about whether you ran a certain test or not, when you did it, and what you called the file.
   
 \item
-    Make sure that all .do files are self-contained, do not require data
-    in memory, or ideally, certain directory.
+    Make sure that your script files are self-contained. That is, don't write a program that only works if you run a group of other files previously in a specific order and then leave things a certain precarious way. You should be able to run intermediate steps of the workflow without disrupting things downstream.
  
 \item
   You can never comment too much.
 \item
   Indent your code
 \item
-    Once you post/distribute code or data, any changes at all require a
-    new file name.
+    Once you post/distribute code or data, any changes at all require a new file name.
 \item
   Separate your cleaning and analysis files; don't make any new variables
-  that need saving (or will be used by a different analysis
-  file) in an analysis file--- it is better to only create them once so you know they're the same.
+  that need saving (or will be used by multiple analysis
+  files) in an analysis file---it is better to only create the variables once so you know they're the identical when used in different analysis files.
 \item
   Never name a file ``final'' because it won't be.
 \item
-  Name variables ``male'' instead of ``gender.''
+  Name binary variables ``male'' instead of ``gender'' so that the name is more informative. 
 \item
   Use a prefix such as x\_ or temp\_ so you know which files can easily
   be deleted.
@@ -964,22 +960,21 @@ Suggestions}\label{stata-specific-suggestions}
 
 \begin{itemize}
 \item
-  Use the different missing values (``.a''-``.z'', not exclusively
+  Use the full set of missing values available to you (``.a''-``.z'', not exclusively
   ``.'') in order to distinguish between ``don't know'' and ``didn't ask'' or other distinct reasons for missing data.
 \item
-  Make sure code always produces same result---set seed and sort/merge
-  stable
+  Make sure code always produces same result---if you use anything randomly generated, set the seed. When sorting or merging, you need to be sure to uniquely specify observations, because if you don't, Stata does something arbitrary and not repeatable. So instead of just sorting or merging on `ID' when there are multiple observations per ID, sort by `ID' and `name.' You can use the `duplicates' command to test whether the \textit{varlist} you use uniquely indentifies observations. The `sort, stable' command can be used, though it is slower.
 \item
   Use the `version' command in your .do file to ensure that other researchers who run your code with a newer version of Stata get the same results. 
 \item
-  Don't use abbreviations for variables ( which may become unstable after
+  Don't use abbreviations for variables (which may become unstable after
   adding variables) or commands (beyond reason)
 \item
-  Avoid using global macros. (This is a common piece of programming advice.)
+  Avoid using global macros, and use locals instead. (This is a common piece of programming advice: since globals can be accessed across different functions or spaces, they can create contradictions or inconsistent dependencies. In Stata, it's possible they can be safely used to define directory paths so collaborators can work across different computers, but that should likely be the extent of their use.)
 \item
   Use locals for varlists to ensure that long lists of variables include the same variables whenever intended.
 \item
-  Use `return' command instead of typing in numbers
+  Use computer-stored versions of numerical output instead of manually typing in numbers or copying and pasting. For example, instead of copying and pasting the mean after a `summ' command, refer to `r(mean)'. Use the `return list' command to see a full list of stored values after a regular command and the `ereturn list' after estimation commands.
 \item
   If you have a master .do file that calls other .do files, which each have their own .log file, you can run
   multiple log files at the same time (so you have a master .log file)
@@ -988,11 +983,11 @@ Suggestions}\label{stata-specific-suggestions}
 \item
   Use the `notes' command for variables as well for identifying information that is too long for the variable label.
 \item
-  Use the `datasignature' command to generate a hash and help ensure that data is
+  Use the `datasignature' command to generate a hash or checksum and help ensure that data is
   the same as before.
 \item
-  Use value labels for all categorical variables, but include the
-  numerical value in the label.
+  In addition to labeling your variables, you should also use value labels for all categorical variables. Include the
+  numerical value in the label, however, since without it, it can be hard to tell what numerical value is actually meant by a given category. 
 \item
   Even though Stata is case sensitive, don't use capital letters in variable names since not all software packages
   are case sensitive.
@@ -1023,7 +1018,7 @@ Knitr uses R Markdown (a very simple plain text markup language,
 described at \url{http://rmarkdown.rstudio.com/}) in which one writes
 both code and comments that is automatically spun into an easily read
 and shareable HTML, PDF, or MS Word document. These can be posted and
-shared for free at RPubs (\url{https://rpubs.com}), an easy to use
+shared for free at \href{https://rpubs.com}{RPubs}, an easy to use
 hosting service by Rstudio. For Stata users, dynamic documents are slightly less well developed, but \href{http://www.haghish.com}{E.F. Haghish} is actively developing packages (\href{http://www.haghish.com/statistics/stata-blog/reproducible-research/packages.php}{Markdoc, Weaver, Ketchup, and Synlight}) that allow users to write their .do files in such a way that the log files output by Stata are formatted and readable in Markdown, HMTL, or \LaTeX . 
 
 %ADD EXAMPLE
@@ -1079,7 +1074,7 @@ papers presented at the St.~Louis Federal Reserve Bank conference in
 1992, and obtained similar response rates as original JMCB Project. The
 flagship economics journal, the \emph{American Economic Review} (AER),
 did not start requesting data until 2003. Finally, after a 2003 article
-showing that nonlinear maximization methods often produce wildly
+showed that nonlinear maximization methods often produce wildly
 different estimates across different software packages, that not a
 single AER article tested their solution with different software, and
 that fully half of queried authors from a chosen issue of the AER,
@@ -1088,14 +1083,13 @@ of providing data and code, editor Ben Bernanke made the data and code
 policy mandatory in 2005 \citep{mccullough_verifying_2003, mccullough_got_2007}.
 
 The current data policy from the \emph{American Economic Review} can be
-seen here: \url{https://www.aeaweb.org/aer/data.php}. In addition to all
-the journals published by the American Economic Association, several top
-journals, including \emph{Econometrica, The Journal of Applied
+seen here: \url{https://www.aeaweb.org/aer/data.php}. The AER conducted a self-review and
+found good, but incomplete, compliance \citep{glandon_report_2010}; others believe much work remains. In addition to all
+the journals published by the American Economic Association, several top journals, including \emph{Econometrica, The Journal of Applied
 Econometrics, The Journal of Money Credit and Banking, the Journal of
 Political Economy, The Review of Economics and Statistics, and the
 Review of Economic Studies}, now explicitly require data and code to be
-submitted at the time of publication. The AER conducted a review and
-found good, but incomplete, compliance \citep{glandon_report_2010}.
+submitted at the time of publication. Sadly, one of the top journals, \textit{The Quarterly Journal of Economics} has no data-sharing requirement.
 
 %EXPAND HERE ON JUST HOW MUCH DATA YOU SHOULD SHARE
 
@@ -1105,11 +1099,10 @@ found good, but incomplete, compliance \citep{glandon_report_2010}.
 The previous section on the \emph{JMCB} describes only a few journals in
 one field of the social sciences. Even if the journal to which you
 submit your research does not require you to supply them with your code
-and data, researchers should still share these things. Though some
+and data, researchers should still share these materials. Though some
 repositories, particularly Harvard's Dataverse, seem equipped to handle
 data from practically any researcher (a free 1 TB of storage is
-standard, with more possible upon request), many repositories specialize. The
-Registry of Research Data Repositories (\url{http://www.re3data.org})
+standard, with more possible upon request), many repositories specialize. \href{http://www.re3data.org}{The Registry of Research Data Repositories}
 has described over 900 data repositories to help you find the right data
 repository for your data. A key advantage to using a trusted repository
 such as one listed here, in lieu of simply throwing the data up on your
@@ -1126,7 +1119,7 @@ releases by Yahoo! Inc., the Massachusetts state government, and
 Netflix, that could easily be used to identify individuals in the data,
 despite the absence of direct identifiers such as names or social
 security numbers. The problem is that ``de-identification does not
-guarantee anonymization.'' This problem is well known in computer science, but solutions are not yet agreed upon, nor widely implemented.
+guarantee anonymization.'' This problem is well known in computer science, but solutions are still being developed and are not widely implemented.
 
 
 \subsection{Reporting Standards}\label{reporting-standards}
@@ -1136,7 +1129,7 @@ The exact details that are relevant will likely differ from field to field, but 
 produced centralized checklists that describe (in excruciating detail) what disclosure is required of published studies. These checklists are not often published with the paper, but can be submitted with the original article so that reviewers can check that it has been completed. With infinite and easy web storage, researchers can easily post these materials on their website even if journal editors insist on cutting their methods sections for space reasons. 
 
 \subsubsection{Randomized Trials and CONSORT}\label{randomized-trials}
-The most widely adopted reporting standard guideline is the Consolidated Standards of Reporting Trials (CONSORT), available at \url{http://www.consort-statement.org}. Parallel to construction of \href{http://clinicaltrials.gov}{clinicaltrials.gov} and registration,
+The most widely adopted reporting standard guideline is the Consolidated Standards of Reporting Trials (\href{http://www.consort-statement.org}{CONSORT}). Parallel to construction of \href{http://clinicaltrials.gov}{clinicaltrials.gov} and registration,
 reporting standards evolved, and are now nearly universally adopted for randomized trials published in medical journals, required or requested by reviewers during the review process. This is still in its infancy in the social sciences.
 
 The original CONSORT  was developed in the mid 1990's \citep{begg_c_improving_1996}. After five years, research showed that reporting of essential details, as required by the checklist, had significantly increased in journals requiring the standard  \citep{moher_d_use_2001}. The statement was revised in 2001, and simultaneously published in three of the top journals \citep{moher_consort_2001}). The statement was again revised in 2010 \citep{schulz_consort_2010}. The statement is a 25-item checklist pertaining to the title, abstract, introduction, methods, results, and discussion of the article in question, and seeks to delineate the minimum requirements of disclosure that may not be sufficiently addressed through other measures.
@@ -1144,12 +1137,12 @@ The original CONSORT  was developed in the mid 1990's \citep{begg_c_improving_19
 \subsection{Social Science Reporting Standards}\label{soc-sci-standards}
 Though a standard akin to CONSORT has not been formally adopted by social science or behavioral science journals, at least as far as we are aware, there have been attempts to do this: In political science, the Experimental Research Section Standards Committee produced a detailed list of items required for disclosure of experiments in political science \citep{gerber_reporting_????}. This checklist is available \href{http://www.davidhendry.net/research-supplemental/gerberetal2014-reportingstandards/gerberetal2014-reportingstandards&appendix1.pdf}{here}.\footnote{\url{http://www.davidhendry.net/research-supplemental/gerberetal2014-reportingstandards/gerberetal2014-reportingstandards&appendix1.pdf}}
 
-In economics, one article has highlighted the fact that there is not much discussion of essential features of randomization (how was randomization stratified, if at all? How were control variables determined?), but no standards have been adopted. \citep{bruhn_pursuit_2009}
+In economics, where no standards have been developed, one article has highlighted the fact that there is not much discussion of essential features of randomization (how was randomization stratified, if at all? How were control variables determined?), but no standards have been adopted. \citep{bruhn_pursuit_2009}
 
-In psychological and behavioral research, an extention to CONSORT for Social and Psychological Interventions (CONSORT-SPI) was developed in \citep{montgomery2013protocol}, but has so far not been widely adopted, or required by journals. 
+In psychological and behavioral research, an extention to CONSORT for Social and Psychological Interventions (CONSORT-SPI) has been developed in \citep{montgomery2013protocol}, but has so far not been widely adopted, or required by journals. 
 
 \subsection{Observational Reporting Standards}\label{observational-standards}
-Social science has yet to make a serious push for reporting standards in observational work, but the medical/epidemiological literature has created standards in this type of work, though they are not as widely adopted as CONSORT. Perhaps the most well-known is the STROBE Statement (Strengthening the reporting of observational studies in epidemiology), available at \url{http://www.strobe-statement.org}. STROBE provides checklists for reporting of cohort, case-control, and cross-sectional studies. These standards have been endorsed by approximately 100 journals in the field.\footnote{\url{http://www.strobe-statement.org/index.php?id=strobe-endorsement}}
+Social science has yet to make a serious push for reporting standards in RCTs, let alone observational work, but the medical/epidemiological literature has created standards in this type of work, though they are not as widely adopted as CONSORT. Perhaps the most well-known is the \href{http://www.strobe-statement.org}{STROBE Statement} (Strengthening the Reporting of Observational Studies in Epidemiology). STROBE provides checklists for reporting of cohort, case-control, and cross-sectional studies. These standards have been endorsed by approximately 100 journals in the field.\footnote{\url{http://www.strobe-statement.org/index.php?id=strobe-endorsement}}
 
 Medicine has in fact come up with too many checklists to describe them all individually. Acknowledging that every field and type of research is different, the Equator Network (Enhancing the Quality of Transparency of Health Research) serves as an umbrella organization that seeks to keep tabs on all the best reporting standards and help researchers find which reporting standard is most relevant for their research. See \url{http://www.equator-network.org/} for more information.
 
@@ -1169,7 +1162,7 @@ sort of Big Brother organization. Or at least that's one way to look at
 it. But we strongly belive these steps are (1) not that difficult once
 you get used to them and (2) well worth the reward. You'll get p-values
 you can believe in. The next time someone asks you for your data, you
-just point them to the website, where they'll download the data and
+just point them to a website, where they'll download the data and
 code, and the code will produce the exact results in the published
 paper. The next time you open up a coding file you haven't looked at in
 months to make a change suggested by a reviewer, your code will be so
@@ -1190,7 +1183,7 @@ Analysis Plan: See \hyperref[def-pap]{pre-analysis plan}
 Data citation: The practice of specifically citing datasets, and not just the paper in which a dataset was used.  This helps other researchers to find data and rewards researchers who share data, leading to better science. Read more at \url{http://www.icpsr.umich.edu/icpsrweb/ICPSR/curation/citations.jsp}. 
 
 \item \label{def-mining}
-Data mining: Searching blindly and repeatedly through data to find supposedly statistically significant relationships. While not inherently wrong, if done without a plan or without adjusting for multiple hypothesis testing, test statistics and \hyperref[def-pvalue]{p-values} that result no longer hold their traditional meaning, and can lead to research that cannot be replicated.
+Data mining: Searching blindly or repeatedly through data to find supposedly statistically significant relationships. While not inherently wrong, if done without a plan or without adjusting for multiple hypothesis testing, test statistics and \hyperref[def-pvalue]{p-values} that result no longer hold their traditional meaning, and can lead to research that cannot be replicated.
 
 \item \label{def-datasharing}
 Data sharing: Researchers making the data they use in an analysis available to other researchers, ideally through a trusted public archive. 
@@ -1208,10 +1201,10 @@ Fishing: See \hyperref[def-mining]{data mining}.
 Literate Programming: The idea of writing programming code designed to be read and easily understood by a human. Use of this best practice can make a researcher’s code far more easily reproducible by others.
 
 \item
-Multiple hypothesis correction: Statistically taking into account the fact that multiple hypotheses have been tested. This tends to decrease the reported statistical significance of any individual test conducted. The oldest method, known as the Bonferroni correction simply divides the significance threshold by the number of tests. This is quite conservative, and more modern methods are helpfully described in (Anderson 2008).
+Multiple hypothesis correction: Statistically taking into account the fact that multiple hypotheses have been tested. This tends to decrease the reported statistical significance of any individual test conducted. The oldest method, known as the Bonferroni correction, simply divides the significance threshold by the number of tests. This is quite conservative, and more modern methods are helpfully described in \cite{anderson_fwer}.
 
 \item
-Open Acces: Journals, or articles that are freely available to the public, as opposed to available only to subscribers.
+Open Access: Journals, or articles that are freely available to the public, as opposed to available only to paid subscribers. See \href{https://www.plos.org/open-access/howopenisit/}{HowOpenIsIt?} for a detailed definition of the spectrum of openness. 
 
 \item
 Open Data: See \hyperref[def-datasharing]{data sharing}.
@@ -1223,7 +1216,7 @@ P-hacking: See \hyperref[def-mining]{data mining}.
 P-value: The statistic researchers use to make judgments regarding statistical significance, which is quite often misunderstood. It is the probability of obtaining a test statistic at least as extreme as the observed test statistic when the null hypothesis is true. 
 
 \item\label{def-pap}
-Pre-analysis plan: A document that details, ahead of time, the statistical analysis plan that will be conducted for a given research project. Outcomes, control variables, and regression specifications are all written in as much detail as possible. This serves to make research more confirmatory in nature. 
+Pre-analysis plan: A document that details, ahead of time, the statistical analysis that will be conducted for a given research project. Outcomes, control variables, and regression specifications are all written in as much detail as possible. This serves to make research more confirmatory in nature. 
 
 \item
 Pre-specification: Detailing the method of analysis before actually beginning data work; the same as writing a \hyperref[def-pap]{pre-analysis plan}.
@@ -1235,13 +1228,13 @@ Protocol: A general term meaning a document that provides a detailed description
 Publication Bias: The unfortunate fact that research is often only published when it contains the rejection of a null hypothesis test, i.e. a statistically significant relationship. Reviewers or journal editors may consider a null finding to be of less interest, or a researcher may fail to write up a null result, even though the null result may be the truth.
 
 \item
-Registration: Publicly declaring that an investigation of a hypothesis is or will be undertaken.
+Registration: Publicly declaring that an investigation of a hypothesis is being or will be undertaken.
 \begin{itemize}
-\item  Study Registration: Registering a research project that is not a randomized trial.
+\item  Study Registration: Registering a research project generally.
 \item  Trial Registration: Registering a randomized trial. 
 \end{itemize}
 \item
-Registry: A database of registered studies or trials. For instance, socialscienceregistry.org or clinicaltrials.gov. Some of the largest registries only accept randomized trials, hence the frequent discussion of ‘trial registries.’
+Registry: A database of registered studies or trials. For instance, \url{socialscienceregistry.org} or \url{clinicaltrials.gov}. Some of the largest registries only accept randomized trials, hence the frequent discussion of ‘trial registries.’
 
 \item
 Registered Reports: See \hyperref[def-dbp]{results-blind review}.
@@ -1250,7 +1243,7 @@ Registered Reports: See \hyperref[def-dbp]{results-blind review}.
 Replicable: See \hyperref[def-repro]{reproducible}.
 
 \item
-Replication: The idea of conducting an existing research project over again, with the hope of obtaining the same result. A subtle taxonomy exists, explained in (Hamermesh 2007).
+Replication: The idea of conducting an existing research project over again, with the hope of obtaining the same result. A subtle taxonomy exists, and unfortunately there is disagreement, which is explained in \cite{hamermesh_viewpoint:_2007} and \cite{clemens_replication}.
 \begin{itemize}
 \item
 Pure Replication: Re-running existing code, with error-checking, on the original dataset and seeing if the published results are obtained.
@@ -1262,8 +1255,9 @@ Scientific Replication: Attempting to reproduce the published results with a new
 Reproducible: The test of whether research can redone by another researcher and produce the same results as the original. 
 \item
 Researcher Degrees of Freedom: the flexibility that a researcher has in data analysis, whether consciously abused or not. See \hyperref[def-mining]{data mining}. 
+
 \item \label{def-rbr}
-Results-blind Review: To help reduce publication bias, peer review can take place before results of a study are determined. Reviewers look evaluate the design of a study to see whether the question is important and whether the study is well-designed. Good studies are given in-principle acceptance, and cannot be discriminated against for a null result, which, after all, may be the truth. See \url{https://osf.io/8mpji/wiki/home/} for journals practicing this form of publication.
+Results-blind Review: To help reduce publication bias, peer review can take place before results of a study are determined. Reviewers evaluate the design of a study to see whether the question is important and whether the study is well-designed. Good studies are given in-principle acceptance, and cannot be discriminated against for a null result, which, after all, may be the truth. See \url{https://osf.io/8mpji/wiki/home/} for journals practicing this form of publication.
 
 \item Specification searching: Testing numerous regression specifications and reporting only the model that produces the desired results. See \hyperref[def-mining]{data mining}. 
 \item
