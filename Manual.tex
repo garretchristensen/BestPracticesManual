@@ -22,7 +22,7 @@
 \maketitle
 
 \begin{center}
-Comments and suggestions are encouraged. Please send correspondence to garret@berkeley.edu, or find the latest version of the manual on \href{https://github.com/garretchristensen/BestPracticesManual}{github}.
+Comments and suggestions are strongly encouraged. Please send correspondence to garret@berkeley.edu, or find the latest version of the manual on \href{https://github.com/garretchristensen/BestPracticesManual}{github}.
 \end{center}
 
 \newpage
@@ -814,17 +814,13 @@ Dataverse (\url{http://thedata.org}) are all free repositories for data
 and code that include easy to use version control.\footnote{BitBucket
   (\href{styles.xml}{http://www.bitbucket.org}) is another
   web service that one can use for free version control and archiving
-  of public data and code.} Version control is simply archiving previous
-versions of files so that old versions are not lost and can be returned
-to if needed. Instead of simply calling one's analysis code
-``MyAnalysis.do'' and repeatedly saving over and losing old versions,
-and instead of repeatedly changing the file name from
-``MyAnalysis.2014.8.13.do'' to ``MyAnalysis.2014.8.14.do'' according to
-the date, version control creates different versions of files and can
-compare and highlight the differences in version of text files, and
-restore the used file to previous conditions if desired. Web services
-such as GitHub have the advantage of being ``distributed'' (Distributed Version Control System, DVCS) in
-that several users can have access simultaneously.
+  of public data and code.} 
+  
+Version control is a powerful way to archive versions of files so that old versions are not lost and can be returned
+to if needed. The most naive way to organize a project would be to just name a file ``MyAnalysis.do'' and then save over it any time you or your coauthor made changes. We sincerely hope no one is working this way, since you are losing tons of information. Most people are probably doing some version of the ``date and initials'' method. Instead of simply calling one's analysis code ``MyAnalysis.do'' and repeatedly saving over and losing old versions, when you save a new version, you add the date to the file name: ``MyAnalysis.2014.08.13.do'', and if a co-author makes changes on the same day, they add their initials:``MyAnalysis.2014.08.13\_GC.do'' or they change the date: ``MyAnalysis.2014.08.14.do''. This can work on small projects, but it really isn't the best way to work. Why does the operating system tell me the file from August 13 was modified in October? What if one analysis script file is called 14 times in 9 different files---did you remember to go through and update all the calls? \cite{GentzkowShapiro} provide strong evidence of the inadequacy of dating and initialing : ``\textit{Not one piece of commercial software you have on your PC, your phone, your tablet, your car, or any other modern computing device was written with the ``date and initial'' method.}'' [emphasis original]
+
+The solution is version control (also referred to as revision control). Version control is free software (\href{https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control}{Git} and \href{https://mercurial.selenic.com/}{Mercurial} are popular and free implementations) that stores all versions of files you create, and can easily compare versions of the files to highlight changes, revert to earlier versions, accept or reject changes proposed by a collaborator, and reconcile conflicting versions when different people make changes to the same file. Version control creates a repository, and stores all versions of your files in the repository\footnote{Repositories can take up a significant amount of space, but you can avoid this problem by not storing generated files or binaries (.pdf, .docx, .etc) since every user with access to the repository should be able to recompile and generate files on their own. Version control works best with simple text files.}  Web services
+such as \href{http:www.github.com}{GitHub} offer free hosting of these repositories with easy to use web-based interfaces and GUI software, so that you and your collaborators can all access the same files, but you can easily host the repository on a server of your own. 
 
 \subsubsection{Managing Workflow}\label{managing-workflow}
 
