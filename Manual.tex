@@ -1035,7 +1035,7 @@ author can more easily understand the goal of the code.
 
 One tool to make literate (statistical) programming significantly easier
 is Knitr (see \cite{xie_dynamic_2013, xie_knitr:_2014}) which is built into R
-Studio\footnote{R Studio is a popular free integrated implementation of
+Studio\footnote{R Studio is a popular free graphical integrated implementation of
   R, available at \href{stylesWithEffects.xml}{http://www.rstudio.com}.}.
 Knitr uses R Markdown (a very simple plain text markup language,
 described at \url{http://rmarkdown.rstudio.com/}) in which one writes
@@ -1063,7 +1063,7 @@ in \emph{The American Economic Review} in 1986 \citep{dewald_replication_1986}. 
 the \emph{JMCB Data Storage and Evaluation Project} with NSF funding in
 1982, which requested data and code from authors who published in the
 journal. With a great deal of research funded by the NSF, it should be
-noted that they have long had an explicit policy of expecting
+noted that the NSF has long had an explicit policy of expecting
 researchers to share their primary data\footnote{``Investigators are
   expected to share with other researchers, at no more than incremental
   cost and within a reasonable time, the primary data, samples, physical
@@ -1079,35 +1079,35 @@ after multiple requests. (This is admittedly an improvement over the
 papers that were still under review by the \emph{Journal} at the time of
 the requests for data, one quarter did not even respond to the request,
 despite the request coming from the same journal considering their
-paper! The submitted data was often an unlabeled and undocumented mess.
+paper. The submitted data was often an unlabeled and undocumented mess.
 Despite this, the authors attempted to replicate nine papers, and often
 were completely unable to reproduce published results, despite detailed
 assistance from the original authors.
 
-Shockingly, nothing much changed with the publication of this important
+Unfortunately, nothing much changed with the publication of this important
 article. A decade later, in a follow-up piece to the JMCB Project
 published in the Federal Reserve Bank of St.~Louis \emph{Review}
 \citep{anderson_replication_1994}, the authors note that only two economics
 journals other than the \emph{Review} itself (\emph{Journal of Applied
 Econometrics, Journal of Business and Economic Statistics}) requested
-data from authors, and neither requested code. The \emph{JMCB} itself
+data from authors, and neither requested code. The JMCB itself
 discontinued the policy of requesting data in 1993, though it resumed
 requesting data in 1996. The authors repeated their experiment with
 papers presented at the St.~Louis Federal Reserve Bank conference in
 1992, and obtained similar response rates as original JMCB Project. The
 flagship economics journal, the \emph{American Economic Review} (AER),
-did not start requesting data until 2003. Finally, after a 2003 article
+did not start requesting data until 2003. Then after a 2003 article
 showed that nonlinear maximization methods often produce wildly
 different estimates across different software packages, that not a
 single AER article tested their solution with different software, and
 that fully half of queried authors from a chosen issue of the AER,
 including a then editor of the journal, failed to comply with the policy
 of providing data and code, editor Ben Bernanke made the data and code
-policy mandatory in 2005 \citep{mccullough_verifying_2003, mccullough_got_2007}.
+policy mandatory in 2004 \citep{mccullough_verifying_2003, Bernanke2004}.
 
 The current data policy from the \emph{American Economic Review} can be
 seen here: \url{https://www.aeaweb.org/aer/data.php}. The AER conducted a self-review and
-found good, but incomplete, compliance \citep{glandon_report_2010}; others believe much work remains. In addition to all
+found good, but incomplete, compliance \citep{glandon_report_2010}; others believe much work remains \citep{anderson_role_2008}. In addition to all
 the journals published by the American Economic Association, several top journals, including \emph{Econometrica, The Journal of Applied
 Econometrics, The Journal of Money Credit and Banking, the Journal of
 Political Economy, The Review of Economics and Statistics, and the
@@ -1128,14 +1128,14 @@ data from practically any researcher (a free 1 TB of storage is
 standard, with more possible upon request), many repositories specialize. \href{http://www.re3data.org}{The Registry of Research Data Repositories}
 has described over 900 data repositories to help you find the right data
 repository for your data. A key advantage to using a trusted repository
-such as one listed here, in lieu of simply throwing the data up on your
+such as one listed there, in lieu of simply posting the data on your
 own website or making your Dropbox folder public, is that many of these
 repositories will take your data in its proprietary (Stata, SAS, SPSS,
 etc.) form, and make it accessible in other formats. Storing your data in a repository with other similar datasets also makes it easier for others to find your data, instead of requiring that they already know of its existence, as would likely be the case with personal websites. Your own personal website is also more likely to be taken offline, should a researcher change schools or retire.
 
 \subsubsection{Differential Privacy}\label{differential-privacy}
 
-One important caveat to making data widely available, is that despite
+One important caveat to making data widely available is that despite
 anonymization, in the age of big data, sometimes individual subjects can
 easily be identified. \cite{heffetz_privacy_2014} recount deliberate data
 releases by Yahoo! Inc., the Massachusetts state government, and
@@ -1149,23 +1149,23 @@ guarantee anonymization.'' This problem is well known in computer science, but s
 In research, the devil truly is in the details. Whether it is for assessing the validity of a research design or for
 attempting to replicate a study, details of what exactly was done must be recorded and made available to other researchers.
 The exact details that are relevant will likely differ from field to field, but an increasing number of fields have
-produced centralized checklists that describe (in excruciating detail) what disclosure is required of published studies. These checklists are not often published with the paper, but can be submitted with the original article so that reviewers can check that it has been completed. With infinite and easy web storage, researchers can easily post these materials on their website even if journal editors insist on cutting their methods sections for space reasons. 
+produced centralized checklists that describe (in excruciating detail) what disclosure is required of published studies. These checklists are not often published with the paper, but can be submitted with the original article so that reviewers can check that it has been completed. With nearly infinite and easy web storage, researchers can easily post these materials on their website even if journal editors insist on cutting their methods sections for space reasons. 
 
 \subsubsection{Randomized Trials and CONSORT}\label{randomized-trials}
 The most widely adopted reporting standard guideline is the Consolidated Standards of Reporting Trials (\href{http://www.consort-statement.org}{CONSORT}). Parallel to construction of \href{http://clinicaltrials.gov}{clinicaltrials.gov} and registration,
 reporting standards evolved, and are now nearly universally adopted for randomized trials published in medical journals, required or requested by reviewers during the review process. This is still in its infancy in the social sciences.
 
-The original CONSORT  was developed in the mid 1990's \citep{begg_c_improving_1996}. After five years, research showed that reporting of essential details, as required by the checklist, had significantly increased in journals requiring the standard  \citep{moher_d_use_2001}. The statement was revised in 2001, and simultaneously published in three of the top journals \citep{moher_consort_2001}). The statement was again revised in 2010 \citep{schulz_consort_2010}. The statement is a 25-item checklist pertaining to the title, abstract, introduction, methods, results, and discussion of the article in question, and seeks to delineate the minimum requirements of disclosure that may not be sufficiently addressed through other measures.
+The original CONSORT  was developed in the mid 1990's \citep{begg_c_improving_1996}. After five years, research showed that reporting of essential details, as required by the checklist, had significantly increased in journals requiring the standard  \citep{moher_d_use_2001}. The statement was revised in 2001, and simultaneously published in three of the top journals \citep{moher_consort_2001}. The statement was again revised in 2010 \citep{schulz_consort_2010}. The statement is a 25-item checklist pertaining to the title, abstract, introduction, methods, results, and discussion of the article in question, and seeks to delineate the minimum requirements of disclosure that may not be sufficiently addressed through other measures.
 
 \subsection{Social Science Reporting Standards}\label{soc-sci-standards}
 Though a standard akin to CONSORT has not been formally adopted by social science or behavioral science journals, at least as far as we are aware, there have been attempts to do this: In political science, the Experimental Research Section Standards Committee produced a detailed list of items required for disclosure of experiments in political science \citep{gerber_reporting_????}. This checklist is available \href{http://www.davidhendry.net/research-supplemental/gerberetal2014-reportingstandards/gerberetal2014-reportingstandards&appendix1.pdf}{here}.\footnote{\url{http://www.davidhendry.net/research-supplemental/gerberetal2014-reportingstandards/gerberetal2014-reportingstandards&appendix1.pdf}}
 
-In economics, where no standards have been developed, one article has highlighted the fact that there is not much discussion of essential features of randomization (how was randomization stratified, if at all? How were control variables determined?), but no standards have been adopted. \citep{bruhn_pursuit_2009}
+In economics, one article has highlighted the fact that there is not much discussion of essential features of randomization (how was randomization stratified, if at all? How were control variables determined?), but no standards have been adopted. \citep{bruhn_pursuit_2009}
 
 In psychological and behavioral research, an extention to CONSORT for Social and Psychological Interventions (CONSORT-SPI) has been developed in \citep{montgomery2013protocol}, but has so far not been widely adopted, or required by journals. 
 
 \subsection{Observational Reporting Standards}\label{observational-standards}
-Social science has yet to make a serious push for reporting standards in RCTs, let alone observational work, but the medical/epidemiological literature has created standards in this type of work, though they are not as widely adopted as CONSORT. Perhaps the most well-known is the \href{http://www.strobe-statement.org}{STROBE Statement} (Strengthening the Reporting of Observational Studies in Epidemiology). STROBE provides checklists for reporting of cohort, case-control, and cross-sectional studies. These standards have been endorsed by approximately 100 journals in the field.\footnote{\url{http://www.strobe-statement.org/index.php?id=strobe-endorsement}}
+Social science has yet to make a serious push for reporting standards in RCTs, let alone observational work, but the medical/epidemiological literature has created standards in this type of work, though they are not as widely adopted as CONSORT. Perhaps the most well-known is the \href{http://www.strobe-statement.org}{STROBE Statement} (Strengthening the Reporting of Observational Studies in Epidemiology)\citep{strobestatement2007}. STROBE provides checklists for reporting of cohort, case-control, and cross-sectional studies. These standards have been endorsed by approximately 100 journals in the field.\footnote{\url{http://www.strobe-statement.org/index.php?id=strobe-endorsement}}
 
 Medicine has in fact come up with too many checklists to describe them all individually. Acknowledging that every field and type of research is different, the Equator Network (Enhancing the Quality of Transparency of Health Research) serves as an umbrella organization that seeks to keep tabs on all the best reporting standards and help researchers find which reporting standard is most relevant for their research. See \url{http://www.equator-network.org/} for more information.
 
@@ -1175,29 +1175,23 @@ Medicine has in fact come up with too many checklists to describe them all indiv
 
 \section{Conclusion}\label{conclusion}
 
-As you may have noticed, many of the activities described in this article
-require extra work. Before you run an experiment, I'm suggesting you
-write down the hypothesis, carefully explain how you are going to test
-the hypothesis, write down the very regression analysis you're going to
-run, write a detailed protocol of the exact experimental setting, and
-then you have to post all of this publicly on the Internet with some
-sort of Big Brother organization. Or at least that's one way to look at
-it. But I belive these steps are (1) not that difficult once
-you get used to them and (2) well worth the reward. You'll get p-values
-you can believe in. The next time someone asks you for your data, you
-just point them to a website, where they'll download the data and
-code, and the code will produce the exact results in the published
-paper. The next time you open up a coding file you haven't looked at in
-months to make a change suggested by a reviewer, your code will be so
-thoroughly commented, you'll know exactly where to go to make the
-changes. And the next time you want to extend the analysis of a
-published paper, you click the link in the paper and have the data on
-your own computer in seconds. Science moves forward.
+If science progresses by standing on the shoulders of giants, then good science requires research to be conducted in a transparent and reproducible fashion. This may require
+require extra up-front work by researchers compared to the current state of affairs. Before one runs an experiment, researchers could write down their hypothesis, carefully explain how they are going to test the hypothesis, perhaps going as far as writing down the very regression analysis specification they plan to run, write a detailed protocol of the exact experimental setting, and then post all of this publicly on the Internet in a public repository. In the long run, however, science will reap a reward greater than these costs. Statistical analysis will result in p-values that can be interpreted as intended, and in an appropriate publication bias context. Replicating the work of other researchers will be easy, because their data and code will be in a public repository, and code could be well documented and understandable, and written to easily recreate the original results, ideally with a single click. Science could potentially move forward at a faster rate.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\singlespacing
+%\section{References}\label{references}
+\bibliographystyle{plainnat}
+\bibliography{Bibliography}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\appendix
+
 \section{Glossary of Terms}
-I feel that it is important to define the terms we use in this paper. Although many of the concepts overlap, we suggest that researchers use the following terms:
+For researchers unfamiliar with any of the terms involved, I include a glossary of terms.
 \begin{itemize}
 \item
 Analysis Plan: See \hyperref[def-pap]{pre-analysis plan}
@@ -1288,11 +1282,5 @@ Trusted Digital Repository: A location for storing data that others can believe 
 \item
 Version Control: A method of tracking every edit made to a computer file. This is often quite useful for empirical researchers who may edit their programming code hundreds or thousands of times.
 \end{itemize}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newpage
-\singlespacing
-%\section{References}\label{references}
-\bibliographystyle{plainnat}
-\bibliography{Bibliography}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \end{document}
