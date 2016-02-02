@@ -16,14 +16,16 @@
 \begin{document}
 \title{Methods for Transparent and Reproducible Social Science Research}
 
-\author[1]{Garret Christensen}
-\affil[1]{UC Berkeley, Berkeley Initiative for Transparency in the Social Sciences}
+\author{Garret Christensen\footnote{UC Berkeley, Berkeley Initiative for Transparency in the Social Sciences. Please send correspondence to garret@berkeley.edu, or find the version controlled history of this document on \href{https://github.com/garretchristensen/BestPracticesManual}{github}. I gratefully acknowledge helpful comments from Jennifer Sturdy, Alex Wais, and Courtney Soderberg, as well as participants in BITSS seminars and workshops.}}
+%\affil[1]{UC Berkeley, Berkeley Initiative for Transparency in the Social Sciences}
 \date{\today}
 \maketitle
+%\begin{center}
+%Please send correspondence to garret@berkeley.edu, or find the version controlled history of this document on \href{https://github.com/garretchristensen/BestPracticesManual}{github}.
+%\end{center}
 
-\begin{center}
-Please send correspondence to garret@berkeley.edu, or find the version controlled history of this document on \href{https://github.com/garretchristensen/BestPracticesManual}{github}.
-\end{center}
+\abstract{The social sciences, particularly economics, political science, and psychology, have all taken their turn in the spotlight recently for failures of reproducibility of prominently published research. This article reviews the problems and discusses recent developments and proposed solutions. The problems of publication bias, specification searches (also called data mining or p-hacking), and failures to replicate published research have been known decades, but a recent surge of research has documented that the problems are still quite prevalent. This has led to a spate of a proposed solutions, including study registration, pre-registration of statistical analysis plans, results-blind reviewing, disclosure checklists, and journal requirements of data and code sharing. New methodological tools to test for publication bias, as well as more established tools such as meta-analysis and multiple hypothesis testing adjustment, have become more widely adopted. Lastly, technological improvements such as version control and dynamic documents have made a reproducible research workflow much simpler.}
+
 
 \newpage
 \tableofcontents
@@ -32,15 +34,15 @@ Please send correspondence to garret@berkeley.edu, or find the version controlle
 \section{Introduction}\label{introduction}
 
 Scientific claims should be subject to scrutiny by other researchers and
-the public at large. An important requirement for such scrutiny is that
+the public at large \citep{merton1973sociology}. An important requirement for such scrutiny is that
 researchers make their claims transparent in a way that other
 researchers are able to use easily available resources to form a
 complete understanding of the methods that were used by the original. In
 the social sciences, especially given the personal computing and
 Internet revolutions and the wide availability of data and processing
-power, it is essential that data, code, and analyses be transparent.
+power, it is essential that data, code, and analyses be transparent \citep{marwick_how}.
 
-This article is intended to be a source for empirical social
+This review article is intended to be a source for empirical social
 science researchers who desire to make their own research transparent
 to, and reproducible by, others. The entire process of research, from
 hypothesis generation to publication, is covered. Although norms differ
@@ -1230,7 +1232,7 @@ Trusted Digital Repository: A location for storing data that others can believe 
 Version Control: A method of tracking every edit made to a computer file. This is often quite useful for empirical researchers who may edit their programming code hundreds or thousands of times.
 \end{itemize}
 
-\section{Stata-specific
+\section{Stata-specific Coding
 Suggestions}\label{stata-specific-suggestions}
 
 \begin{itemize}
