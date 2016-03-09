@@ -5,3 +5,5 @@
 *.out
 *.synctex.gz
 *.blg
+*.docx
+*.doc
