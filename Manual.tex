@@ -14,7 +14,7 @@
 
 
 \begin{document}
-\title{Methods for Transparent and Reproducible Social Science Research}
+\title{Methods for Transparent and Reproducible Economics Research}
 
 \author{Garret Christensen\footnote{UC Berkeley, Berkeley Initiative for Transparency in the Social Sciences. Please send correspondence to garret@berkeley.edu, or find the version controlled history of this document on \href{https://github.com/garretchristensen/BestPracticesManual}{github}. I gratefully acknowledge helpful comments from Jennifer Sturdy, Alex Wais, and Courtney Soderberg, as well as participants in BITSS seminars and workshops.}}
 %\affil[1]{UC Berkeley, Berkeley Initiative for Transparency in the Social Sciences}
@@ -24,7 +24,7 @@
 %Please send correspondence to garret@berkeley.edu, or find the version controlled history of this document on \href{https://github.com/garretchristensen/BestPracticesManual}{github}.
 %\end{center}
 
-\abstract{The social sciences, particularly economics, political science, and psychology, have all taken their turn in the spotlight recently for failures of reproducibility of prominently published research. This article reviews the problems and discusses recent developments and proposed solutions. The problems of publication bias, specification searches (also called data mining or p-hacking), and failures to replicate published research have been known for decades, but a recent surge of research has documented that the problems are still quite prevalent. This has led to a spate of proposed solutions, including study registration, pre-registration of statistical analysis plans, results-blind reviewing, disclosure checklists, and journal requirements of data and code sharing. New methodological tools to test for publication bias, as well as more established tools such as meta-analysis and multiple hypothesis testing adjustment, have become more widely adopted. Lastly, technological improvements such as version control and dynamic documents have made a reproducible research workflow much simpler.}
+\abstract{Economics and the other social sciences have been in the spotlight recently for failures of reproducibility of prominently published research. This article reviews the problems and discusses recent developments and proposed solutions. The problems of publication bias, specification searches (also called data mining or p-hacking), and failures to replicate published research have been known for decades, but a recent surge of research has documented that the problems are still quite prevalent. This has led to a spate of proposed solutions, including study registration, pre-registration of statistical analysis plans, results-blind reviewing, disclosure checklists, and journal requirements of data and code sharing. New methodological tools to test for publication bias, as well as more established tools such as meta-analysis and multiple hypothesis testing adjustment, have become more widely adopted. Lastly, technological improvements such as version control and dynamic documents have made a reproducible research workflow much simpler.}
 
 
 %\newpage
@@ -42,14 +42,8 @@ the social sciences, especially given the personal computing and
 Internet revolutions and the wide availability of data and processing
 power, it is essential that data, code, and analyses be transparent \citep{marwick_how}.
 
-This review article is intended to be a source for empirical social
-science researchers who desire to make their own research transparent
-to, and reproducible by, others. The entire process of research, from
-hypothesis generation to publication, is covered. Although norms differ
-across disciplines, I attempt to bring a broad view of the empirical
-social sciences to these recommendations, and hope that students and
-researchers in any social science field may tailor these recommendations
-to best fit their field.
+This article is intended to be a source for empirical economics researchers who desire to make their own research transparent to, and reproducible by, others. The entire process of research, from
+hypothesis generation to publication, is covered. A longer version of this paper, available online, covers issues more thoroughly and address the social sciences more generally in the hopes that quantitative researchers in political science, sociology, and psychology may benefit as well. \footnote{See \url{http://www.github.com/garretchristensen/bestpracticesmanual}.}
 
 The article is laid out as follows: in section~\ref{ethical-research} I first discuss the motivation for this document: the
 desire to do ethical research. A major component of ethical social
@@ -59,8 +53,6 @@ mandated by federal law and overseen by Institutional Review Boards
 treating subjects fairly is ethical, transparent,
 reproducible research is also a major part of ethical research.
 
-In section~\ref{study-design} I briefly discuss study design, including how to power studies
-appropriately, including a few practical suggestions on how researchers can work collaboratively to obtain adequate sample size.
 
 In section~\ref{registration} I discuss one of the major problems in non-transparent
 research, specifically publication bias. I also discuss how this
@@ -164,197 +156,9 @@ may, as we do, recall personal examples of such motivated
 decisions---they are entirely ordinary products of human cognition.
 \end{quote}
 
-\subsection{Institutional Review
-Boards}\label{institutional-review-boards}
 
-In addition to fraud and motivated reasoning, a major ethical concern relates to our human
-subjects.
 
-\subsubsection{History}\label{history}
-
-World history is rife with examples of atrocities conducted in the name
-of research. Some of these have resulted in major changes in regulations
-related to research.
-
-\paragraph{Nuremberg}\label{nuremberg}
-
-Nazi German doctors conducted horrible experiments on subjects during
-World War II. The ``Doctor's Trial'' (USA v. Karl Brandt, et al.) tried
-23 defendants, and the verdict included ten principles regarding voluntary consent, societal benefits from the research, minimizing risk, etc.,
-which although never entered as formal regulations in either Germany or
-the USA, became widely accepted.
-
-%\begin{enumerate}
-%\def\labelenumi{\arabic{enumi}.}
-%\item
-%  The voluntary consent of the human subject is absolutely essential.
-
-%  This means that the person involved should have legal capacity to give consent; should be so situated as to be able to exercise free power of choice, without the intervention of any element of force, fraud,  deceit, duress, over-reaching, or other ulterior form of constraint or coercion; and should have sufficient knowledge and comprehension of the elements of the subject matter involved as to enable him to make an understanding and enlightened decision. This latter element requires that before the acceptance of an affirmative decision by the experimental subject there should be made known to him the nature, duration, and purpose of the experiment; the method and means by which it is to be conducted; all inconveniences and hazards reasonably to be expected; and the effects upon his health or person which may possibly come from his participation in the experiment.
-
- % The duty and responsibility for ascertaining the quality of the consent rests upon each individual who initiates, directs or engages in the experiment. It is a personal duty and responsibility which may not be delegated to another with impunity.
-%\item
- % The experiment should be such as to yield fruitful results for the good of society, unprocurable by other methods or means of study, and  not random and unnecessary in nature.
-%\item
- % The experiment should be so designed and based on the results of animal experimentation and a knowledge of the natural history of the disease or other problem under study that the anticipated results will  justify the performance of the experiment.
-%\item
- % The experiment should be so conducted as to avoid all unnecessary
-  %physical and mental suffering and injury.
-%\item
- % No experiment should be conducted where there is an a priori reason to believe that death or disabling injury will occur; except, perhaps, in  those experiments where the experimental physicians also serve as  subjects.
-%\item
- % The degree of risk to be taken should never exceed that determined by the humanitarian importance of the problem to be solved by the experiment.
-%\item
-% Proper preparations should be made and adequate facilities provided to protect the experimental subject against even remote possibilities of injury, disability, or death.
-%\item
- % The experiment should be conducted only by scientifically qualified persons. The highest degree of skill and care should be required through all stages of the experiment of those who conduct or engage in the experiment.
-%\item
- % During the course of the experiment the human subject should be at liberty to bring the experiment to an end if he has reached the  physical or mental state where continuation of the experiment seems to him to be impossible.
-%\item
- % During the course of the experiment the scientist in charge must be prepared to terminate the experiment at any stage, if he has probably cause to believe, in the exercise of the good faith, superior skill and careful judgment required of him that a continuation of the experiment is likely to result in injury, disability, or death to the experimental subject.
-%\end{enumerate}
-
-\paragraph{Tuskegee and US
-codification}\label{tuskegee-and-us-codification}
-
-In 1972 whistleblower Peter Buxton revealed to the Associated Press that
-the US Public Health Service was conducting a 40-year experiment on poor
-Alabama sharecroppers in which it did not treat those who had syphilis
-for the disease despite the discovery and verification of penicillin as
-an effective treatment, and prevented sufferers from obtaining
-treatment elsewhere. As a result, the National Commission for the
-Protection of Human Subjects of Biomedical and Behavioral Research was
-formed by law in 1974, and released the Belmont Report in 1979. \href{http://www.hhs.gov/ohrp/humansubjects/guidance/belmont.html}{The
-Belmont Report} contains three basic ethical principles, and three applications:
-
-\begin{itemize}
-\item
-  Ethical Principles
-
-  \begin{itemize}
-  \item
-    Respect for Persons: ``Respect for persons incorporates at least two
-    ethical convictions: first, that individuals should be treated as
-    autonomous agents, and second, that persons with diminished autonomy
-    are entitled to protection.''
-  \item
-    Beneficence: ``Two general rules have been formulated as
-    complementary expressions of beneficent actions in this sense:
-    \textbf{(1)} do not harm and \textbf{(2)} maximize possible benefits
-    and minimize possible harms.''
-  \item
-    Justice: ``An injustice occurs when some benefit to which a person
-    is entitled is denied without good reason or when some burden is
-    imposed unduly. Another way of conceiving the principle of justice
-    is that equals ought to be treated equally.''
-  \end{itemize}
-\item
-  Applications
-
-  \begin{itemize}
-  \item
-    Informed Consent: ``Respect for persons requires that subjects, to
-    the degree that they are capable, be given the opportunity to choose
-    what shall or shall not happen to them. This opportunity is provided
-    when adequate standards for informed consent are satisfied.''
-  \item
-    Assessment of Risks and Benefits: ``It is commonly said that
-    benefits and risks must be `balanced' and shown to be `in a
-    favorable ratio.' The metaphorical character of these terms draws
-    attention to the difficulty of making precise judgments. Only on
-    rare occasions will quantitative techniques be available for the
-    scrutiny of research protocols. However, the idea of systematic,
-    nonarbitrary analysis of risks and benefits should be emulated
-    insofar as possible."
-  \item
-    Selection of Subjects: ``Individual justice in the selection of
-    subjects would require that researchers exhibit fairness: thus, they
-    should not offer potentially beneficial research only to some
-    patients who are in their favor or select only `undesirable' persons
-    for risky research. Social justice requires that distinction be
-    drawn between classes of subjects that ought, and ought not, to
-    participate in any particular kind of research, based on the ability
-    of members of that class to bear burdens and on the appropriateness
-    of placing further burdens on already burdened persons."
-  \end{itemize}
-\end{itemize}
-
-In 1981 the Department of Health and Human Services and the Food and
-Drug Administration adopted regulations in line with the Belmont report,
-and 15 federal agencies adopted these regulations (45 CFR part 46) as
-the ``\href{http://www.hhs.gov/ohrp/index.html}{Common Rule}'' in 1991. 
-
-In practice, this means that researchers who receive funding from the US
-government, or who work at institutions that receive federal funding should have their research approved by an Institutional Review Board (IRB). IRB are a decentralized approval
-body set up by each research organization itself, consisting of at least
-five members, a mix of men and women, scientists and non-scientists, and
-at least one member not affiliated with the institution. Since IRBs and
-the approval process are decentralized, the exact process varies from
-institution to institution, but one example can be seen at
-\url{http://cphs.berkeley.edu}.
-
-When conducting research internationally, researchers should give their
-human subjects the same protections as those inside the US. Laws in
-developing countries may not be as well-defined or enforced, but
-researchers should still register with their US institution's IRB, and
-obtain approval from the host country government. A list of laws and
-regulations that cover research in 107 foreign countries is available
-from the \href{http://www.hhs.gov/ohrp/international/intlcompilation/2014intlcomp.pdf.pdf}
-{Office for Human Research Protections}.
-
-Another key resource for researchers and research conducted outside the
-US is the \href{http://www.wma.net/en/30publications/10policies/b3/index.html}{Declaration of Helsinki} by the World Medical Association
-(WMA). Originally adopted by the WMA in 1964, the document has significantly
-influenced the laws and regulations adopted to govern research
-worldwide.
-
-Lest one think that ethical concerns are limited to monsters of bygone
-eras, I refer readers to a dilemma caused by a Montana state election experiment by
-researchers from \href{http://www.washingtonpost.com/blogs/monkey-cage/wp/2014/11/03/ethics-and-research-in-comparative-politics/}{Stanford and Dartmouth} in 2014, who sent 100,000 people official-looking election flyers bearing the state seal weeks before the election.
-
-\subsubsection{Training}\label{training}
-
-A large number of universities participate in the \href{https://www.citiprogram.org/}{Collaborative Institutional Training Initiative} at the University of Miami (CITI). Completing their course on Human
-Subjects Research is often a requirement of being included on a research
-proposal. For anyone at an institution not affiliated with CITI, the NIH maintains an \href{https://phrp.nihtraining.com/users/login.php}{online training course} that is free and open to the public.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Study Design}\label{study-design}
-Many issues involving study design are related to transparent and reproducible research. For randomized trials, I refer readers to two excellent resources, \cite{randomizationtoolkit} and \cite{glennerster_running_2013}, which cover many aspects of how to design and implement a field trial. For studies that are not necessarily randomized trials, I recommend \cite{gertler_impact_2011}, or \cite{angrist2008mostly} for those with more statistics training. Here I briefly discuss one aspect of study design especially relevant for reproducible research: determining sample size through power calculations.
-  
-\subsection{Power Analysis}\label{Conducting Power Analysis}
-%By CS
-Given that researchers are working within a null hypothesis testing framework, the ‘power’ 
-of a study, the probability of rejecting the null hypothesis when it is false, is extremely 
-important. Though 80\% power is held as a lower bound for acceptable power in many disciplines 
-such as medical research, the actual power of studies can be much lower. For example, research 
-by \cite{button_power_2013} found that the median power in neuroscience was 21\%. This means that 
-if a study investigating a true effect were run 100 times, 79 studies would fail to reach significance, 
-meaning that the chance of a false negative is extremely high. 
-
-Though false negatives are perhaps the most often discussed issue with low powered studies, they are not the only issue. A second issue is that low powered studies actually decrease the likelihood of a true positive \citep{button_power_2013}. 
-This means that when a low powered study does find an effect, the lower the likelihood that this effect is true in 
-the population; it is relatively more likely that it is a false positive.  A third issue with low powered studies relates to effect 
-sizes. Small, low powered studies that reach statistical significance will over-estimate the true effect size in the population \citep{button_power_2013}. These inflated effect size estimates will make it difficult for others to properly power future 
-studies, and the inaccuracy of the estimate may also be problematic for making decisions based on scientific results. 
- 
-An obvious way to help mitigate the problems of underpowered studies is to run studies with higher power. However, this 
-process is not always that straightforward. As previously mentioned, effect sizes from published studies are often inflated, 
-and so may not provide the most accurate estimate. Meta-analyses can provide better information, but they also often suffer 
-from publication bias and thus inflated effect sizes. Additionally, effect sizes may be highly heterogeneous between studies, 
-even studies with the same materials and methodologies \citep{many_labs}. Thus, using a single point estimate of an effect size 
-from published literature may lead to inaccurate power calculations.
-
-Alternatives to the standard power analysis have been suggested to combat these problems. For example, \cite{perugini2014safeguard} 
-have suggested a technique called `safeguard power' which takes into account the uncertainty surrounding effect size estimates 
-when conducting power analyses. Specifically, they suggest basing power calculations off of the effect size corresponding to the lower bound of a 60\% confidence interval around the point estimate from published literature. Another approach by \cite{mcshane_2014} takes into account the between study variation in effect sizes when conducting power analyses to give a more conservative estimate of the number of participants needed to reach a given level of statistical power. Yet another approach, which is also feasible when an effect size estimate from the previous literature is not available, is to determine the smallest effect size you wish to be able to detect, and power your study to find this effect size \citep{bloom1995minimum}.  
-
-%GSC
-Additionally, researchers may be able to help one another as well as decrease false-positives by publishing or clearly making available their power calculations. If a reader of a paper saw a clearly stated ``this trial was powered to detect an effect size of X,'' this would help to put the study into the appropriate statistical context. The parametric assumptions involved (such as the intra-cluster correlation) could also be publicly posted in study protocols to help other researchers learn reasonable assumptions for their own studies. 
-\subsection {Practical Considerations}
-In many cases, these calculations will reveal the need for a larger sample size than some disciplines are used to handling. There are several ways to mitigate the impact of this. 
-
-In psychology, a few of these possible solutions are presented in \cite{openmaximizing}. Researchers can join crowd-sourced projects where multiple labs share protocols and produce the same experiment, as was done with 13 psychological effects and 36 samples and settings in \cite{many_labs}. 100 studies were replicated by 270 contributing authors in \cite{RPP}, with the result that 39\% of the originals were considered to have been successfully reproduced. The \href{https://osf.io/wfc6u/}{Collaborative Replications and Education Project} (CREP) tracks findings that can be relatively easily replicated in a teaching setting. 
-
-Economists have also discussed how project budgets should play into study design, by maximizing power subject to a budget constraint \cite{randomizationtoolkit}. When data collection is the main cost, the proportion of treatment and control should each be one half, but if treatment is expensive, power can be maximized subject to the project budget using the rule: ``the ratio of subjects in the treatment group to those in the comparison should be proportional to the inverse of the square root of their costs.''  Another important contribution to this are of power maximization subject to a budget constraint is that power depends on the number of rounds of surveying, and also the autocorrelation of measurements over time. \cite{mckenzie2012caseformoreT} shows that baseline data is of most power when autocorrelation is high, and repeated measurements post-treatment of most power when autocorrelation is low.
 
 
 
@@ -615,30 +419,6 @@ items that should be included in a PAP, reproduced below from the \href{http://b
   If you are going to be testing a model, include the model
 \item
   Remember to archive it
-\end{enumerate}
-
-In their article on researcher degrees of freedom, Simmons, Nelson, and
-Simonsohn (2011) suggest the following requirements for authors:
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  Authors must decide the rule for terminating data collection before
-  data collection begins and report this rule in the article
-\item
-  Authors must collect at least 20 observations per cell or else provide
-  a compelling cost-of-data-collection justification\footnote{It is now widely acknowledged, including by the authors, that this number is too low.}
-\item
-  Authors must list all variables collected in a study
-\item
-  Authors must report all experimental conditions, including failed
-  manipulations
-\item
-  If observations are eliminated, authors must also report what the
-  statistical results are if those observations are included
-\item
-  If an analysis includes a covariate, authors must report the
-  statistical results of the analysis without the covariate
 \end{enumerate}
 
 \paragraph{Expecting the Unexpected}
@@ -938,46 +718,6 @@ What would happen if you, or your laptop hard drive, were hit by a bus? How easi
 
 \subsection{General Workflow
 Suggestions:}\label{general-workflow-suggestions}
-Some specific workflow organization suggestions that should be valid regardless of code or operating system are listed below. Stata-specific suggestions are included in the appendix. 
-\begin{itemize}
-\item
-  Do not use spaces in directory or file names, as it complicates referring to them in certain software.
-\item
-  Use ``naming directories'', .i.e.~a directory beginning with ``-'' (so
-  that it will appear first alphabetically) inside each directory to
-  explain the contents of the above directory.
-\item
-  Add name, date, and describe contents, as well as updates, to all
-  scripting files.
-\item
-  Keep a daily research log, i.e. a detailed written diary of what research is done on a given day. You'll be surprised how often this will be useful to answer questions about whether you ran a certain test or not, when you did it, and what you called the file.
-  
-\item
-    Make sure that your script files are self-contained. That is, don't write a program that only works if you run a group of other files previously in a specific order and then leave things a certain precarious way. You should be able to run intermediate steps of the workflow without disrupting things downstream.
- 
-\item
-  You can never comment your code too much.
-\item
-  Indent your code.
-\item
-    Once you post or distribute code or data, any and all changes require a new file name.
-\item
-  Separate your cleaning and analysis files; don't make any new variables
-  that need saving (or will be used by multiple analysis
-  files) in an analysis file---it is better to only create the variables once so you know they're identical when used in different analysis files.
-\item
-  Never name a file ``final'' because it won't be.
-\item
-  Name binary variables ``male'' instead of ``gender'' so that the name is more informative. 
-\item
-  Use a prefix such as x\_ or temp\_ so you know which files can easily
-  be deleted.
-\item
-  Never change the contents of a variable unless you give it a new name.
-\item
-  Every variable should have a label.
-\end{itemize}
-
 
 
 In addition to making code available to the public, the code itself
@@ -1135,144 +875,6 @@ If science progresses by standing on the shoulders of giants, then good science 
 \bibliographystyle{plainnat}
 \bibliography{Bibliography}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\newpage
-\appendix
-
-\section{Glossary of Terms}
-For researchers unfamiliar with any of the terms involved, I include a glossary of terms.
-\begin{itemize}
-\item
-Analysis Plan: See \hyperref[def-pap]{pre-analysis plan}
-
-\item
-Data citation: The practice of specifically citing datasets, and not just the paper in which a dataset was used.  This helps other researchers to find data and rewards researchers who share data, leading to better science. Read more at \url{http://www.icpsr.umich.edu/icpsrweb/ICPSR/curation/citations.jsp}. 
-
-\item \label{def-mining}
-Data mining: Searching blindly or repeatedly through data to find supposedly statistically significant relationships. While not inherently wrong, if done without a plan or without adjusting for multiple hypothesis testing, test statistics and \hyperref[def-pvalue]{p-values} that result no longer hold their traditional meaning, and can lead to research that cannot be replicated.
-
-\item \label{def-datasharing}
-Data sharing: Researchers making the data they use in an analysis available to other researchers, ideally through a trusted public archive. 
-
-\item\label{def-dbp}
-Design-based publication: See \hyperref[def-rbr]{results-blind review}.
-
-\item
-Disclosure: In addition to the widely accepted norm of publicly declaring all potential conflicts of interest, researchers should detail all the ways in which they test a hypothesis (e.g. include the outcome from all regression specifications tested in the appendix.)
-
-\item
-Fishing: See \hyperref[def-mining]{data mining}.
-
-\item
-Literate Programming: The idea of writing programming code designed to be read and easily understood by a human. Use of this best practice can make a researcher’s code far more easily reproducible by others.
-
-\item
-Multiple hypothesis correction: Statistically taking into account the fact that multiple hypotheses have been tested. This tends to decrease the reported statistical significance of any individual test conducted. The oldest method, known as the Bonferroni correction, simply divides the significance threshold by the number of tests. This is quite conservative, and more modern methods are helpfully described in \cite{anderson_fwer}.
-
-\item
-Open Access: Journals, or articles that are freely available to the public, as opposed to available only to paid subscribers. See \href{https://www.plos.org/open-access/howopenisit/}{HowOpenIsIt?} for a detailed definition of the spectrum of openness. 
-
-\item
-Open Data: See \hyperref[def-datasharing]{data sharing}.
-
-\item
-P-hacking: See \hyperref[def-mining]{data mining}.
-
-\item \label{def-pvalue}
-P-value: The statistic researchers use to make judgments regarding statistical significance, which is quite often misunderstood. It is the probability of obtaining a test statistic at least as extreme as the observed test statistic when the null hypothesis is true. 
-
-\item\label{def-pap}
-Pre-analysis plan: A document that details, ahead of time, the statistical analysis that will be conducted for a given research project. Outcomes, control variables, and regression specifications are all written in as much detail as possible. This serves to make research more confirmatory in nature. 
-
-\item
-Pre-specification: Detailing the method of analysis before actually beginning data work; the same as writing a \hyperref[def-pap]{pre-analysis plan}.
-
-\item
-Protocol: A general term meaning a document that provides a detailed description of a research project, ideally written before the project takes place, and in enough detail that other researchers may reproduce the project on their own. Often used in the context of human subjects IRB protocols, but increasingly used in connection with pre-analysis plans. 
-
-\item
-Publication Bias: The unfortunate fact that research is often only published when it contains the rejection of a null hypothesis test, i.e. a statistically significant relationship. Reviewers or journal editors may consider a null finding to be of less interest, or a researcher may fail to write up a null result, even though the null result may be the truth.
-
-\item
-Registration: Publicly declaring that an investigation of a hypothesis is being or will be undertaken.
-\begin{itemize}
-\item  Study Registration: Registering a research project generally.
-\item  Trial Registration: Registering a randomized trial. 
-\end{itemize}
-\item
-Registry: A database of registered studies or trials. For instance, \url{socialscienceregistry.org} or \url{clinicaltrials.gov}. Some of the largest registries only accept randomized trials, hence the frequent discussion of ‘trial registries.’
-
-\item
-Registered Reports: See \hyperref[def-dbp]{results-blind review}.
-
-\item
-Replicable: See \hyperref[def-repro]{reproducible}.
-
-\item
-Replication: The idea of conducting an existing research project over again, with the hope of obtaining the same result. A subtle taxonomy exists, and unfortunately there is disagreement, which is explained in \cite{hamermesh_viewpoint:_2007} and \cite{clemens_replication}.
-\begin{itemize}
-\item
-Pure Replication: Re-running existing code, with error-checking, on the original dataset and seeing if the published results are obtained.
-\item
-Scientific Replication: Attempting to reproduce the published results with a new sample, with the same code or with slight variations from the original analysis.
-\end{itemize}
-
-\item \label{def-repro}
-Reproducible: The test of whether research can redone by another researcher and produce the same results as the original. 
-\item
-Researcher Degrees of Freedom: the flexibility that a researcher has in data analysis, whether consciously abused or not. See \hyperref[def-mining]{data mining}. 
-
-\item \label{def-rbr}
-Results-blind Review: To help reduce publication bias, peer review can take place before results of a study are determined. Reviewers evaluate the design of a study to see whether the question is important and whether the study is well-designed. Good studies are given in-principle acceptance, and cannot be discriminated against for a null result, which, after all, may be the truth. See \url{https://osf.io/8mpji/wiki/home/} for journals practicing this form of publication.
-
-\item Specification searching: Testing numerous regression specifications and reporting only the model that produces the desired results. See \hyperref[def-mining]{data mining}. 
-\item
-Trusted Digital Repository: A location for storing data that others can believe will not be manipulated, and will be available into the future. Storing data here is superior to simply posting on an individual website, since it is more easily accessible and less easily changed.  
-\item
-Version Control: A method of tracking every edit made to a computer file. This is often quite useful for empirical researchers who may edit their programming code hundreds or thousands of times.
-\end{itemize}
-
-\section{Stata-specific Coding
-Suggestions}\label{stata-specific-suggestions}
-
-\begin{itemize}
-\item
-  Use the full set of missing values available to you (``.a''-``.z'', not exclusively
-  ``.'') in order to distinguish between ``don't know'' and ``didn't ask'' or other distinct reasons for missing data.
-\item
-  Make sure code always produces the same result---if you use anything randomly generated, set the seed. When sorting or merging, you need to be sure to uniquely specify observations, because if you don't, Stata does something arbitrary and not repeatable. So instead of just sorting or merging on `ID' when there are multiple observations per ID, sort by `ID' and `name.' You can use the `duplicates' command to test whether the \textit{varlist} you use uniquely indentifies observations. The `sort, stable' command can be used, though it is slower.
-\item
-  Use the `version' command in your .do file to ensure that other researchers who run your code with a newer version of Stata get the same results. 
-\item
-  Don't use abbreviations for variables (which may become unstable after
-  adding variables) or commands (beyond reason).
-\item
-  Avoid using global macros, and use locals instead. (This is a common piece of programming advice: since globals can be accessed across different functions or spaces, they can create contradictions or inconsistent dependencies. In Stata, it's possible they can be safely used to define directory paths so collaborators can work across different computers, but that should likely be the extent of their use.)
-\item
-  Use locals for varlists to ensure that long lists of variables include the same variables whenever intended.
-\item
-  Use computer-stored versions of numerical output instead of manually typing in numbers or copying and pasting. For example, instead of copying and pasting the mean after a `summ' command, refer to `r(mean)'. Use the `return list' command to see a full list of stored values after a regular command and the `ereturn list' after estimation commands.
-\item
-  If you have a master .do file that calls other .do files, which each have their own .log file, you can run
-  multiple log files at the same time (so you have a master .log file).
-\item
-  Use the `label data' and `notes' commands to label datasets and help yourself and other researchers easily identify the contents.
-\item
-  Use the `notes' command for variables as well for identifying information that is too long for the variable label.
-\item
-  Use the `datasignature' command to generate a hash or checksum and help ensure that data is
-  the same as before.
-\item
-  In addition to labeling your variables, you should also use value labels for all categorical variables. Include the
-  numerical value in the label, however, since without it, it can be hard to tell what numerical value is actually meant by a given category. 
-\item
-  Even though Stata is case sensitive, don't use capital letters in variable names since not all software packages
-  are case sensitive.
-\item
-  Make your files as non-proprietary as possible (use the `saveold'
-  command to enable those with earlier versions to use your data. This
-  is why trusted repositories are so useful--they'll do this for you.)
-\end{itemize}
 
 
 \end{document}
