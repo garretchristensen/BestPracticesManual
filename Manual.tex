@@ -11,12 +11,14 @@
 \usepackage{authblk}
 \usepackage{rotating}
 \usepackage{adjustbox}
+\usepackage{endnotes}
 
+\let\footnote=\endnote
 
 \begin{document}
 \title{Methods for Transparent and Reproducible Economics Research}
 
-\author{Garret Christensen\footnote{UC Berkeley, Berkeley Initiative for Transparency in the Social Sciences. Please send correspondence to garret@berkeley.edu, or find the version controlled history of this document on \href{https://github.com/garretchristensen/BestPracticesManual}{github}. I gratefully acknowledge helpful comments from Jennifer Sturdy, Alex Wais, and Courtney Soderberg, as well as participants in BITSS seminars and workshops.}}
+\author{Garret Christensen\footnote{UC Berkeley, Berkeley Initiative for Transparency in the Social Sciences. Please send correspondence to garret@berkeley.edu, or find the version controlled history of this document on \href{https://github.com/garretchristensen/BestPracticesManual}{github}. I gratefully acknowledge helpful comments from Jennifer Sturdy, Alex Wais, and Courtney Soderberg, as well as participants in BITSS seminars and workshops. Funding for this manuscript was provided by an anonymous donor who play no role in writing or reviewing the manuscript, nor in the decision to publish.}}
 %\affil[1]{UC Berkeley, Berkeley Initiative for Transparency in the Social Sciences}
 \date{\today}
 \maketitle
@@ -733,6 +735,9 @@ Medicine has in fact come up with too many checklists to describe them all indiv
 
 If science progresses by standing on the shoulders of giants, then good science requires research to be conducted in a transparent and reproducible fashion. This may require extra up-front work by researchers compared to the current state of affairs. Before one runs an experiment, researchers could write down their hypothesis, carefully explain how they are going to test the hypothesis, perhaps going as far as writing down the very regression analysis specification they plan to run, write a detailed protocol of the exact experimental setting, and then post all of this publicly on the Internet in a public repository. In the long run, however, science will reap a reward greater than these costs. Statistical analysis will result in p-values that can be interpreted as intended, and in an appropriate publication bias context. Replicating the work of other researchers will be easy, because their data and code will be in a public repository, and code could be well documented and understandable, and written to easily recreate the original results, ideally with a single click. Science could potentially move forward at a faster rate.
 
+\newpage
+
+\theendnotes
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
