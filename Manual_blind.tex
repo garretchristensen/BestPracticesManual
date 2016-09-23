@@ -11,18 +11,23 @@
 \usepackage{authblk}
 \usepackage{rotating}
 \usepackage{adjustbox}
+\usepackage{endnotes}
+
+\let\footnote=\endnote
 
 
 \begin{document}
-\title{Methods for Transparent and Reproducible Social Science Research}
+\title{Methods for Transparent and Reproducible Economics Research}
 
-\author{REVIEW BLIND}
+\author{XXXXXXXXXXXX\footnote{Funding for this manuscript was provided by an anonymous donor who play no role in writing or reviewing the manuscript, nor in the decision to publish.}}
 %\affil[1]{UC Berkeley, Berkeley Initiative for Transparency in the Social Sciences}
 \date{\today}
 \maketitle
+%\begin{center}
+%Please send correspondence to garret@berkeley.edu, or find the version controlled history of this document on \href{https://github.com/garretchristensen/BestPracticesManual}{github}.
+%\end{center}
 
-
-\abstract{The social sciences, particularly economics, political science, and psychology, have all taken their turn in the spotlight recently for failures of reproducibility of prominently published research. This article reviews the problems and discusses recent developments and proposed solutions. The problems of publication bias, specification searches (also called data mining or p-hacking), and failures to replicate published research have been known for decades, but a recent surge of research has documented that the problems are still quite prevalent. This has led to a spate of proposed solutions, including study registration, pre-registration of statistical analysis plans, results-blind reviewing, disclosure checklists, and journal requirements of data and code sharing. New methodological tools to test for publication bias, as well as more established tools such as meta-analysis and multiple hypothesis testing adjustment, have become more widely adopted. Lastly, technological improvements such as version control and dynamic documents have made a reproducible research workflow much simpler.}
+\abstract{Economics and the other social sciences have been in the spotlight recently for failures of reproducibility of prominently published research. This article reviews the problems and discusses recent developments and proposed solutions. The problems of publication bias, specification searches (also called data mining or p-hacking), and failures to replicate published research have been known for decades, but a recent surge of research has documented that the problems are still quite prevalent. This has led to a spate of proposed solutions, including study registration, pre-registration of statistical analysis plans, results-blind reviewing, disclosure checklists, and journal requirements of data and code sharing. New methodological tools to test for publication bias, as well as more established tools such as meta-analysis and multiple hypothesis testing adjustment, have become more widely adopted. Lastly, technological improvements such as version control and dynamic documents have made a reproducible research workflow much simpler.}
 
 
 %\newpage
@@ -31,37 +36,23 @@
 \newpage
 \section{Introduction}\label{introduction}
 
-Scientific claims should be subject to scrutiny by other researchers and
-the public at large \citep{merton1973sociology}. An important requirement for such scrutiny is that
+The principle that scientific claims should be subject to scrutiny by other researchers and
+the public at large is well established.  Just examine the Royal Society's motto \textit{nullius in verba} (``take nobody's word for it'') or seminal works on the sociology of science such as  \cite{merton1973sociology}. An important requirement for such scrutiny is that
 researchers make their claims transparent in a way that other
 researchers are able to use easily available resources to form a
 complete understanding of the methods that were used by the original. In
-the social sciences, especially given the personal computing and
-Internet revolutions and the wide availability of data and processing
-power, it is essential that data, code, and analyses be transparent \citep{marwick_how}.
+economics, given the personal computing and Internet revolutions and the wide availability of data and processing power, it is essential that data, code, and analyses be transparent \citep{marwick_how}.
 
-This review article is intended to be a source for empirical social
-science researchers who desire to make their own research transparent
-to, and reproducible by, others. The entire process of research, from
-hypothesis generation to publication, is covered. Although norms differ
-across disciplines, I attempt to bring a broad view of the empirical
-social sciences to these recommendations, and hope that students and
-researchers in any social science field may tailor these recommendations
-to best fit their field.
+This article is intended to be a source for empirical economics researchers who desire to make their own research transparent to, and reproducible by, others. The entire process of research, from
+hypothesis generation to publication, is covered. A longer version of this paper, available online, covers issues more thoroughly and address the social sciences more generally in the hopes that quantitative researchers in political science, sociology, and psychology may benefit as well. \footnote{See \url{http://www.github.com/XXXANONYMIZEDFORREVIEWXXX/bestpracticesmanual}.}
 
-The article is laid out as follows: in section~\ref{ethical-research} I first discuss the motivation for this document: the
-desire to do ethical research. A major component of ethical social
-science research is treating research subjects appropriately. This is
-mandated by federal law and overseen by Institutional Review Boards
-(IRBs), and should be taken seriously by researchers. But just as
-treating subjects fairly is ethical, transparent,
-reproducible research is also a major part of ethical research.
+While most of us are likely to presume that we ourselves would not
+conduct outright fraud, fraud does indeed occur. From making up fake
+data to creating bogus e-mail addresses so one could do one's own peer
+review, the \href{http://www.retractionwatch.com}{Retraction Watch blog}
+documents a distressingly large amount of deliberate fraud in research. This paper will focus on the methodological flexibility and motivated reasoning that is likely far more comon \cite{nosek_scientific_2012}.
 
-In section~\ref{study-design} I briefly discuss study design, including how to power studies
-appropriately, including a few practical suggestions on how researchers can work collaboratively to obtain adequate sample size.
-
-In section~\ref{registration} I discuss one of the major problems in non-transparent
-research, specifically publication bias. I also discuss how this
+The article is laid out as follows: in section~\ref{registration} I discuss one of the major problems in non-transparent research, specifically publication bias. I also discuss how this
 problem can be resolved through the practice of registration.
 Publication bias stems from the fact that published results are
 overwhelmingly statistically significant. But without knowing how many
@@ -72,10 +63,10 @@ true effect. By publicly registering all studies, we can have a better
 idea of just how many tests have been run.
 
 In section~\ref{rdof} I discuss researcher degrees of freedom and pre-analysis
-plans; In addition to registering trials, researchers can also
+plans. In addition to registering trials, researchers can also
 specify their outcomes of interest and their exact methods of analysis
 to bind their hands during the analysis phase by writing a Pre-Analysis
-Plan (PAP). This is a relatively new idea in the social sciences, so
+Plan (PAP). This is a relatively new idea in economics, so
 there is not yet a consensus on when a PAP should be required, what the
 ideal level of detail is, and how much it should constrain a
 researcher's hands in the actual analysis, but by pre-specifying analyses,
@@ -98,273 +89,11 @@ report to help make their work reproducible.
 Section~\ref{conclusion} concludes and presents a vision for moving forward.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Ethical Research}\label{ethical-research}
-
-Making one's research transparent and reproducible is a key component of ethical research. Not engaging in fraud is an obvious component of this.
-
-\subsection{Fraud}\label{fraud}
-
-While most of us are likely to presume that we ourselves would not
-conduct outright fraud, fraud does indeed occur. From making up fake
-data to creating bogus e-mail addresses so one could do one's own peer
-review, the \href{http://www.retractionwatch.com}{Retraction Watch blog}
-documents a distressingly large amount of deliberate fraud in research.
-Although the blog tends to specialize in the life sciences, and significantly less money is involved in the social sciences than in medical and pharmaceutical research, there is no reason to believe that social science researchers are inherently
-more benevolent. 
-
-A source for information on fraud is part of the US Department of Health and Human Services
-, the Office of Research Integrity (ORI), which works to promote research
-integrity and document misconduct, especially when it involves federally
-funded research. The \href{http://ori.hhs.gov/case_summary}{misconduct case summaries of the ORI}, and the stories of Diederik Stapel \citep{carey_noted_2011, bhattacharjee_diederik_2013} Hwang Woo-Suk \citep{cyranoski_cloning_2014}, Marc Hauser \citep{johnson_harvard_2012} and Michael LaCour \citep{broockman2015irreg} should be sobering warnings to us all. As another example, Uri Simonsohn used statistical methods alone to detect fraud in the research of a pair of prominent social psychologists \citep{simonsohn2013just}. 
-
-\subsection{Unintentional Bias}\label{unintentional-bias}
-
-Perhaps in addition to the obvious need to avoid deliberate fraud and
-protect our human subjects is the need to avoid subconsciously biasing
-our own results.
-
-\cite{nosek_scientific_2012} summarize some of the evidence on this
-subject, concluding that there are many circumstances common to academia
-and the publishing paradigm that cause researchers to frequently use
-motivated reasoning:
-
-\begin{quote}
-Because we have directional goals for success, we are likely to bring to
-bear motivated reasoning to justify research decisions in the name of
-accuracy, when they are actually in service of career advancement
-(Fanelli, 2010a). Motivated reasoning is particularly influential when
-the situation is complex, the available information is ambiguous, and
-legitimate reasons can be generated for multiple courses of action
-(Bersoff, 1999; Boiney, Kennedy, \& Nye, 1997; Kunda, 1990).
-
-Motivated reasoning can occur without intention. We are more likely to
-be convinced that our hypothesis is true, accepting uncritically when it
-is confirmed and crutinizing heavily when it is not (Bastardi, Uhlmann,
-\& Ross, 2011; Ditto \& Lopez, 1992; Lord, Ross, \& Lepper, 1979;
-Pyszczynski \& Greenberg, 1987; Trope \& Bassok, 1982). With flexible
-analysis options, we are more likely to find the one that produces a
-more publishable pattern of results to be more reasonable and defensible
-than others (Simmons et al., 2011; Wagenmakers, Wetzels, Borsboom, \&
-van der Maas, 2011). Once we obtain an unexpected result, we are likely
-to reconstruct our histories and perceive the outcome as something that
-we could have, even did, anticipate all along---converting a discovery
-into a confirmatory result (Fischoff, 1977; Fischoff \& Beyth, 1975).
-And even if we resist those reasoning biases in the moment, after a few
-months, we might simply forget the details, whether we had hypothesized
-the moderator, had good justification for one set of exclusion criteria
-compared with another, and had really thought that the one dependent
-variable that showed a significant effect was the key outcome. Instead,
-we might remember the gist of what the study was and what we found
-(Reyna \& Brainerd, 1995). Forgetting the details provides an
-opportunity for reimagining the study purpose and results to recall and
-understand them in their best (i.e., most publishable) light. The reader
-may, as we do, recall personal examples of such motivated
-decisions---they are entirely ordinary products of human cognition.
-\end{quote}
-
-\subsection{Institutional Review
-Boards}\label{institutional-review-boards}
-
-In addition to fraud and motivated reasoning, a major ethical concern relates to our human
-subjects.
-
-\subsubsection{History}\label{history}
-
-World history is rife with examples of atrocities conducted in the name
-of research. Some of these have resulted in major changes in regulations
-related to research.
-
-\paragraph{Nuremberg}\label{nuremberg}
-
-Nazi German doctors conducted horrible experiments on subjects during
-World War II. The ``Doctor's Trial'' (USA v. Karl Brandt, et al.) tried
-23 defendants, and the verdict included ten principles regarding voluntary consent, societal benefits from the research, minimizing risk, etc.,
-which although never entered as formal regulations in either Germany or
-the USA, became widely accepted.
-
-%\begin{enumerate}
-%\def\labelenumi{\arabic{enumi}.}
-%\item
-%  The voluntary consent of the human subject is absolutely essential.
-
-%  This means that the person involved should have legal capacity to give consent; should be so situated as to be able to exercise free power of choice, without the intervention of any element of force, fraud,  deceit, duress, over-reaching, or other ulterior form of constraint or coercion; and should have sufficient knowledge and comprehension of the elements of the subject matter involved as to enable him to make an understanding and enlightened decision. This latter element requires that before the acceptance of an affirmative decision by the experimental subject there should be made known to him the nature, duration, and purpose of the experiment; the method and means by which it is to be conducted; all inconveniences and hazards reasonably to be expected; and the effects upon his health or person which may possibly come from his participation in the experiment.
-
- % The duty and responsibility for ascertaining the quality of the consent rests upon each individual who initiates, directs or engages in the experiment. It is a personal duty and responsibility which may not be delegated to another with impunity.
-%\item
- % The experiment should be such as to yield fruitful results for the good of society, unprocurable by other methods or means of study, and  not random and unnecessary in nature.
-%\item
- % The experiment should be so designed and based on the results of animal experimentation and a knowledge of the natural history of the disease or other problem under study that the anticipated results will  justify the performance of the experiment.
-%\item
- % The experiment should be so conducted as to avoid all unnecessary
-  %physical and mental suffering and injury.
-%\item
- % No experiment should be conducted where there is an a priori reason to believe that death or disabling injury will occur; except, perhaps, in  those experiments where the experimental physicians also serve as  subjects.
-%\item
- % The degree of risk to be taken should never exceed that determined by the humanitarian importance of the problem to be solved by the experiment.
-%\item
-% Proper preparations should be made and adequate facilities provided to protect the experimental subject against even remote possibilities of injury, disability, or death.
-%\item
- % The experiment should be conducted only by scientifically qualified persons. The highest degree of skill and care should be required through all stages of the experiment of those who conduct or engage in the experiment.
-%\item
- % During the course of the experiment the human subject should be at liberty to bring the experiment to an end if he has reached the  physical or mental state where continuation of the experiment seems to him to be impossible.
-%\item
- % During the course of the experiment the scientist in charge must be prepared to terminate the experiment at any stage, if he has probably cause to believe, in the exercise of the good faith, superior skill and careful judgment required of him that a continuation of the experiment is likely to result in injury, disability, or death to the experimental subject.
-%\end{enumerate}
-
-\paragraph{Tuskegee and US
-codification}\label{tuskegee-and-us-codification}
-
-In 1972 whistleblower Peter Buxton revealed to the Associated Press that
-the US Public Health Service was conducting a 40-year experiment on poor
-Alabama sharecroppers in which it did not treat those who had syphilis
-for the disease despite the discovery and verification of penicillin as
-an effective treatment, and prevented sufferers from obtaining
-treatment elsewhere. As a result, the National Commission for the
-Protection of Human Subjects of Biomedical and Behavioral Research was
-formed by law in 1974, and released the Belmont Report in 1979. \href{http://www.hhs.gov/ohrp/humansubjects/guidance/belmont.html}{The
-Belmont Report} contains three basic ethical principles, and three applications:
-
-\begin{itemize}
-\item
-  Ethical Principles
-
-  \begin{itemize}
-  \item
-    Respect for Persons: ``Respect for persons incorporates at least two
-    ethical convictions: first, that individuals should be treated as
-    autonomous agents, and second, that persons with diminished autonomy
-    are entitled to protection.''
-  \item
-    Beneficence: ``Two general rules have been formulated as
-    complementary expressions of beneficent actions in this sense:
-    \textbf{(1)} do not harm and \textbf{(2)} maximize possible benefits
-    and minimize possible harms.''
-  \item
-    Justice: ``An injustice occurs when some benefit to which a person
-    is entitled is denied without good reason or when some burden is
-    imposed unduly. Another way of conceiving the principle of justice
-    is that equals ought to be treated equally.''
-  \end{itemize}
-\item
-  Applications
-
-  \begin{itemize}
-  \item
-    Informed Consent: ``Respect for persons requires that subjects, to
-    the degree that they are capable, be given the opportunity to choose
-    what shall or shall not happen to them. This opportunity is provided
-    when adequate standards for informed consent are satisfied.''
-  \item
-    Assessment of Risks and Benefits: ``It is commonly said that
-    benefits and risks must be `balanced' and shown to be `in a
-    favorable ratio.' The metaphorical character of these terms draws
-    attention to the difficulty of making precise judgments. Only on
-    rare occasions will quantitative techniques be available for the
-    scrutiny of research protocols. However, the idea of systematic,
-    nonarbitrary analysis of risks and benefits should be emulated
-    insofar as possible."
-  \item
-    Selection of Subjects: ``Individual justice in the selection of
-    subjects would require that researchers exhibit fairness: thus, they
-    should not offer potentially beneficial research only to some
-    patients who are in their favor or select only `undesirable' persons
-    for risky research. Social justice requires that distinction be
-    drawn between classes of subjects that ought, and ought not, to
-    participate in any particular kind of research, based on the ability
-    of members of that class to bear burdens and on the appropriateness
-    of placing further burdens on already burdened persons."
-  \end{itemize}
-\end{itemize}
-
-In 1981 the Department of Health and Human Services and the Food and
-Drug Administration adopted regulations in line with the Belmont report,
-and 15 federal agencies adopted these regulations (45 CFR part 46) as
-the ``\href{http://www.hhs.gov/ohrp/index.html}{Common Rule}'' in 1991. 
-
-In practice, this means that researchers who receive funding from the US
-government, or who work at institutions that receive federal funding should have their research approved by an Institutional Review Board (IRB). IRB are a decentralized approval
-body set up by each research organization itself, consisting of at least
-five members, a mix of men and women, scientists and non-scientists, and
-at least one member not affiliated with the institution. Since IRBs and
-the approval process are decentralized, the exact process varies from
-institution to institution, but one example can be seen at
-\url{http://cphs.berkeley.edu}.
-
-When conducting research internationally, researchers should give their
-human subjects the same protections as those inside the US. Laws in
-developing countries may not be as well-defined or enforced, but
-researchers should still register with their US institution's IRB, and
-obtain approval from the host country government. A list of laws and
-regulations that cover research in 107 foreign countries is available
-from the \href{http://www.hhs.gov/ohrp/international/intlcompilation/2014intlcomp.pdf.pdf}
-{Office for Human Research Protections}.
-
-Another key resource for researchers and research conducted outside the
-US is the \href{http://www.wma.net/en/30publications/10policies/b3/index.html}{Declaration of Helsinki} by the World Medical Association
-(WMA). Originally adopted by the WMA in 1964, the document has significantly
-influenced the laws and regulations adopted to govern research
-worldwide.
-
-Lest one think that ethical concerns are limited to monsters of bygone
-eras, I refer readers to a dilemma caused by a Montana state election experiment by
-researchers from \href{http://www.washingtonpost.com/blogs/monkey-cage/wp/2014/11/03/ethics-and-research-in-comparative-politics/}{Stanford and Dartmouth} in 2014, who sent 100,000 people official-looking election flyers bearing the state seal weeks before the election.
-
-\subsubsection{Training}\label{training}
-
-A large number of universities participate in the \href{https://www.citiprogram.org/}{Collaborative Institutional Training Initiative} at the University of Miami (CITI). Completing their course on Human
-Subjects Research is often a requirement of being included on a research
-proposal. For anyone at an institution not affiliated with CITI, the NIH maintains an \href{https://phrp.nihtraining.com/users/login.php}{online training course} that is free and open to the public.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Study Design}\label{study-design}
-Many issues involving study design are related to transparent and reproducible research. For randomized trials, I refer readers to two excellent resources, \cite{randomizationtoolkit} and \cite{glennerster_running_2013}, which cover many aspects of how to design and implement a field trial. For studies that are not necessarily randomized trials, I recommend \cite{gertler_impact_2011}, or \cite{angrist2008mostly} for those with more statistics training. Here I briefly discuss one aspect of study design especially relevant for reproducible research: determining sample size through power calculations.
-  
-\subsection{Power Analysis}\label{Conducting Power Analysis}
-%By CS
-Given that researchers are working within a null hypothesis testing framework, the ‘power’ 
-of a study, the probability of rejecting the null hypothesis when it is false, is extremely 
-important. Though 80\% power is held as a lower bound for acceptable power in many disciplines 
-such as medical research, the actual power of studies can be much lower. For example, research 
-by \cite{button_power_2013} found that the median power in neuroscience was 21\%. This means that 
-if a study investigating a true effect were run 100 times, 79 studies would fail to reach significance, 
-meaning that the chance of a false negative is extremely high. 
-
-Though false negatives are perhaps the most often discussed issue with low powered studies, they are not the only issue. A second issue is that low powered studies actually decrease the likelihood of a true positive \citep{button_power_2013}. 
-This means that when a low powered study does find an effect, the lower the likelihood that this effect is true in 
-the population; it is relatively more likely that it is a false positive.  A third issue with low powered studies relates to effect 
-sizes. Small, low powered studies that reach statistical significance will over-estimate the true effect size in the population \citep{button_power_2013}. These inflated effect size estimates will make it difficult for others to properly power future 
-studies, and the inaccuracy of the estimate may also be problematic for making decisions based on scientific results. 
- 
-An obvious way to help mitigate the problems of underpowered studies is to run studies with higher power. However, this 
-process is not always that straightforward. As previously mentioned, effect sizes from published studies are often inflated, 
-and so may not provide the most accurate estimate. Meta-analyses can provide better information, but they also often suffer 
-from publication bias and thus inflated effect sizes. Additionally, effect sizes may be highly heterogeneous between studies, 
-even studies with the same materials and methodologies \citep{many_labs}. Thus, using a single point estimate of an effect size 
-from published literature may lead to inaccurate power calculations.
-
-Alternatives to the standard power analysis have been suggested to combat these problems. For example, \cite{perugini2014safeguard} 
-have suggested a technique called `safeguard power' which takes into account the uncertainty surrounding effect size estimates 
-when conducting power analyses. Specifically, they suggest basing power calculations off of the effect size corresponding to the lower bound of a 60\% confidence interval around the point estimate from published literature. Another approach by \cite{mcshane_2014} takes into account the between study variation in effect sizes when conducting power analyses to give a more conservative estimate of the number of participants needed to reach a given level of statistical power. Yet another approach, which is also feasible when an effect size estimate from the previous literature is not available, is to determine the smallest effect size you wish to be able to detect, and power your study to find this effect size \citep{bloom1995minimum}.  
-
-%GSC
-Additionally, researchers may be able to help one another as well as decrease false-positives by publishing or clearly making available their power calculations. If a reader of a paper saw a clearly stated ``this trial was powered to detect an effect size of X,'' this would help to put the study into the appropriate statistical context. The parametric assumptions involved (such as the intra-cluster correlation) could also be publicly posted in study protocols to help other researchers learn reasonable assumptions for their own studies. 
-\subsection {Practical Considerations}
-In many cases, these calculations will reveal the need for a larger sample size than some disciplines are used to handling. There are several ways to mitigate the impact of this. 
-
-In psychology, a few of these possible solutions are presented in \cite{openmaximizing}. Researchers can join crowd-sourced projects where multiple labs share protocols and produce the same experiment, as was done with 13 psychological effects and 36 samples and settings in \cite{many_labs}. 100 studies were replicated by 270 contributing authors in \cite{RPP}, with the result that 39\% of the originals were considered to have been successfully reproduced. The \href{https://osf.io/wfc6u/}{Collaborative Replications and Education Project} (CREP) tracks findings that can be relatively easily replicated in a teaching setting. 
-
-Economists have also discussed how project budgets should play into study design, by maximizing power subject to a budget constraint \cite{randomizationtoolkit}. When data collection is the main cost, the proportion of treatment and control should each be one half, but if treatment is expensive, power can be maximized subject to the project budget using the rule: ``the ratio of subjects in the treatment group to those in the comparison should be proportional to the inverse of the square root of their costs.''  Another important contribution to this are of power maximization subject to a budget constraint is that power depends on the number of rounds of surveying, and also the autocorrelation of measurements over time. \cite{mckenzie2012caseformoreT} shows that baseline data is of most power when autocorrelation is high, and repeated measurements post-treatment of most power when autocorrelation is low.
-
-
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Registration}\label{registration}
-
-One of the problems brought into focus recently is publication bias.
-Publication bias is the selective publication of only significant
-results. Thankfully, tools are available for researchers to combat
-these problems.
+\section{Publication Bias and Registration}\label{registration}
 
 \subsection{Publication Bias}\label{publication-bias}
 
@@ -400,7 +129,7 @@ registry designed to accept registrations in the given research discipline,
 and ideally the registration takes place before data collection begins.
 
 Registration of randomized trials has achieved wide adoption in medicine, but is still
-relatively new to the social sciences. After congress passed a law in
+relatively new to economics. After congress passed a law in
 1997 requiring the creation of a registry for FDA-regulated trials, and
 the NIH created clinicaltrials.gov in 2000, The International Committee
 of Medical Journal Editors (ICMJE), a collection of editors of top
@@ -412,16 +141,18 @@ An example of the benefit of trial registries is detailed in
 \cite{turner_selective_2008}, which details the publication rates of studies
 related to FDA-approved antidepressants. (See also \cite{ioannidis_effectiveness_2008}.)
 The outcome is unfortunate:
-essentially all the trials with positive outcomes were published, a
-50/50 mix of questionable-outcome studies were published, and a majority of the
+essentially all the trials with positive outcomes were published, about half of questionable-outcome studies were published, and a majority of the
 negative-outcome studies were unpublished a minimum of four years after the
-study was completed. The figure below shows the drastically different
+study was completed. Figure \ref{fig:turner} shows the drastically different
 rates of publication, and a large amount of publication bias.
+
+\begin{figure}
 \begin{center}
 \includegraphics{TurnerFigure1.PNG}
-
-Panel A of Figure 1 reproduced from \cite{turner_selective_2008}
 \end{center}
+\caption{Panel A of Figure 1 from \cite{turner_selective_2008}. Figure shows publication rates of studies based on statistical significance of findings.}
+\label{fig:turner}
+\end{figure}
 Of course for this sort of exercise to be possible, unless a reader
 merely assumes that a registered trial without an associated published
 paper produced a null result (as in \cite{rosenthal1979file}), it requires that the registration site
@@ -434,8 +165,7 @@ studies had discrepancies in primary outcomes and as many as 33\% had
 discrepancies in reporting of adverse events, so there is definitely room for improvement. 
 
 Even with dramatic growth in medical trial registration, problems
-remain. Not all journals have adopted the ICMJE policy, and complete
-enforcement is elusive. \cite{mathieu_s_comparison_2009} looked at trials related
+remain. \cite{mathieu_s_comparison_2009} looked at trials related
 to three medical conditions and found that only 46\% of studies were
 registered before the end of the trial with primary outcomes clearly
 specified. Even among those adequately registered, 31\% showed some
@@ -447,7 +177,7 @@ control trials, as opposed to observational data. Registering all types of analy
  
 \subsection{Social Science Registries}\label{social-science-registries}
 
-Registries in the social sciences are newer but are growing ever more
+Registries in economics are newer but are growing ever more
 popular. A brief overview of the major trial registries is shown in Table~\ref{RegTable}. The Abdul Latif Jameel Poverty Action Lab began hosting a
 \href{http://www.povertyactionlab.org/hypothesis-registry}{hypothesis registry}
  in 2009, which was superseded by the American Economic Association's launch of its own \href{http://socialscienceregistry.org}{registry} for randomized trials in May 2013, which had accumulated over 540 studies in 86 countries by
@@ -496,22 +226,17 @@ Another method of detecting and dealing with publication bias is to conduct meta
 
 Although quite common in medical research, the tool is not widely used in some parts of the social sciences. But even in economics, where many graduate students are unfamiliar with the technqiue, important papers exist that have quantitatively synthesized bodies of literature. The unemployment effects of the minimum wage were meta-analyzed in \cite{card1995time}, and the returns to education in \cite{ashenfelter1999review}. A meta-analysis of 87 meta-analyses in economics shows that publication bias is widespread, but not universal. A helpful resource, the Meta-Analysis of Economics Research Network (MAER-Net) which includes meta-analysis datasets and guidelines for economics researchers interested in conducting a meta-analysis is available \href{https://www.hendrix.edu/maer-network/}{here}. Also see \cite{stanley2005beyond}, which helpfully describes the tools of meta-analysis, and is part of a special issue of \textit{The Journal of Economic Surveys} dedicated to meta-analysis. Sol Hsiang, lead author of a prominent meta-analysis of 60 studies measuring the effect of climate on human conflict \citep{hsiang2013climate}, has also developed the \href{http://dmas.berkeley.edu}{Distributed Meta-Analysis System}, an online tool to crowdsource and simplify meta-analysis.
 
-Prominent examples in psychology include meta-analyses of work on the Big 5 Personality Test and job performance \citep{barrick1991big5} and predictive validity of the Implicit Association Test \citep{greenwald2009understanding}. \cite{simonsohn2014p} also developed a meta-analysis tool that researchers can use to compare the uniform distribution of p-values under the null to the left-skewed distributions observed in research that has been gamed or selectively reported.
+In psychology \cite{simonsohn2014p} also developed a meta-analysis tool called the ``p-curve'' that researchers can use to gauge the evidentiary value of a set of studies by analyzing the distribution of p-values and comparing it to what we would observe under true null effects and likely selectively reported results.
 
-%Whoops! This was a duplicate.
-%\subsection{Design-Based Review and Publication}
-%Another proposed method of reducing publication bias is by altering the time at which peer review takes place. The standard method is for peers to review a completed paper, with results. Even with editorial statements in place encouraging reviewers to not be prejudiced against null results, the odds are stacked against null-result papers. The new method, refered to as `registered reports'\footnote{We consider the name `registered reports' unfortunate, since it can be easily confused with trial registrations, and we prefer the terms `design-based review' or `design-based publication.'} has reviewers evaluate a paper before the data is collected and analyzed. That is, a researcher submits a detailed protocol and analysis plan, and reviewers judge based on the importance of the question being asked and the appropriateness of the methods being used. The protocol is then rejected or given in-principle acceptance. If accepted in-principle, the author conducts the experiment and the analysis as planned, and submits the final result. If the author followed through on his promise, the paper is published, regardless of the statistical significance of the article. 
-
-%This method of review and publication is championed by Chris Chambers at Cardiff University. Nearly 20 journals have adopted this method to one degree or another. More information can be found at the project's \href{https://osf.io/8mpji/wiki/home/}{Open Science Framework page}. It is too early to do a sophisticated analysis of the effects on publication, but we believe it to be a promising development. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Researcher Degrees of
 Freedom}\label{rdof}
 
 Though registration helps solve the problem of publication bias, it does
 not solve the problem of fishing for statistical significance within a
-given study. This problem with research is known as data mining: the manipulation or repeated searching through statistical or regression
+given study. This problem with research is known as data mining: repeated searching through statistical or regression
 models unknowingly (or deliberately) until significance is obtained.
- \cite{simmons_false-positive_2011} refer to this as
+ \cite{simmons_false-positive_2011} refer to this as exploiting 
 ``researcher degrees of freedom,'' and it has also been referred to as
 ``fishing,'' ``p-hacking,'' or ``specification searching'' \citep{humphreys_fishing_2013}. The problem has many names because it can take many shapes. 
 
@@ -527,37 +252,14 @@ choices being not just what statistical test to perform but also
 decisions on what data to exclude or exclude {[}sic{]}, what measures to
 study, what interactions to consider, etc.), that very little
 information is provided by the statement that a study came up with a
-\emph{p}\textless{}.05 result.'' However, they also conclude that:
-
-\begin{quote}
-the term ``fishing" was unfortunate, in that it invokes an image of a
-researcher trying out comparison after comparison, throwing the line
-into the lake repeatedly until a fish is snagged. We have no reason to
-think that researchers regularly do that. We think the real story is
-that researchers can perform a reasonable analysis given their
-assumptions and their data, but had the data turned out differently,
-they could have done other analyses that were just as reasonable in
-those circumstances.
-
-We regret the spread of the terms ``fishing" and ``p-hacking'' (and even
-``researcher degrees of freedom'') for two reasons: first, because when
-such terms are used to describe a study, there is the misleading
-implication that researchers were consciously trying out many different
-analyses on a single data set; and, second, because it can lead
-researchers who know they did not tryout many different analyses to
-mistakenly think they are not so strongly subject to problems of
-researcher degrees of freedom."
-\end{quote}
-
-In other words, the problem may be even worse than you think. What can be
+\emph{p}\textless{}.05 result.''  What can be
 done to solve it? Part of the answer lies in detailed
 pre-analysis plans, described below.
 
 \subsection{Pre-Analysis
 Plans}\label{pre-analysis-plans}
 
-While registration of studies can help to reduce publication bias or the file drawer problem, a pre-analysis plan (PAP), a detailed outline of the analyses that will be conducted in a study, can be used to reduce researcher degrees of freedom. Registration is now the norm in medicine for randomized trials, and these often include (or link to) prospective statistical analysis plans as part of the project protocol. Official guidance from the US Food and Drug Administration's Center for Drug Evaluation and Research (CDER) from 1998 describes what should be included in a statistical analysis plan and discusses eight items related to data analysis that should be considered: pre-specification of the analysis; analysis sets; missing values and outliers; data transformation; estimation, confidence intervals, and hypothesis testings; adjustment of significance and confidence levels; subgroups, interactions, and covariates; and integrity of data and computer software validity \citep{food1998guidance}.   %Sometimes this is because the medical researcher intends to do very little, if any, structural or formal modeling. But even if a researcher intends only to compare unadjusted means and bootstrap for standard errors, this should be explicitly stated. In the social sciences, this simple comparison is often not the end goal of a randomized trial, so there may be even more value in pre-specification of intended analyses.
-This is an excellent start, and in the section below I discuss adapting these ideas for a pre-analysis plan in the social sciences.
+While registration of studies can help to reduce publication bias or the file drawer problem, a pre-analysis plan (PAP), a detailed outline of the analyses that will be conducted in a study, can be used to reduce researcher degrees of freedom. Registration is now the norm in medicine for randomized trials, and these often include (or link to) prospective statistical analysis plans as part of the project protocol. Official guidance from the US Food and Drug Administration's Center for Drug Evaluation and Research (CDER) from 1998 describes what should be included in a statistical analysis plan and discusses eight items related to data analysis that should be considered: pre-specification of the analysis; analysis sets; missing values and outliers; data transformation; estimation, confidence intervals, and hypothesis testings; adjustment of significance and confidence levels; subgroups, interactions, and covariates; and integrity of data and computer software validity \citep{food1998guidance}.  This is an excellent start, and in the section below I discuss adapting these ideas for a pre-analysis plan in the social sciences.
 
 A PAP contains a specification of the outcomes of the study (sometimes referred to as endpoints in the medical literature), as well as a specification of the methods that will be used to analyze the outcomes. By describing the
 method(s) of analysis ahead of time, and to some degree tying the hands
@@ -568,28 +270,7 @@ widely, and the research community is still constructing norms for
 incorporating these documents into final analyses and papers.
 
 \paragraph{What to Include}
-Suggestions have been made for the detailed contents of these documents.
-\cite{glennerster_running_2013} suggest including the following:
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  the main outcome measures
-\item
-  which outcome measures are primary and which are secondary
-\item
-  the precise composition of any families that will be used for mean
-  effects analysis
-\item
-  the subgroups that will be analyzed
-\item
-  the direction of expected impact if we want to use a one-sided test
-  and
-\item
-  the primary specification to be used for the analysis
-\end{enumerate}
-David McKenzie of the World Bank Research Group proposed a list of ten
-items that should be included in a PAP, reproduced below from the \href{http://blogs.worldbank.org/impactevaluations/a-pre-analysis-plan-checklist}{World Bank Development Impact Blog}.
+Suggestions have been made for the detailed contents of these documents. David McKenzie of the World Bank Research Group proposed a list of ten items that should be included in a PAP, reproduced below from the \href{http://blogs.worldbank.org/impactevaluations/a-pre-analysis-plan-checklist}{World Bank Development Impact Blog}.\footnote{A similar list also appears in \cite{glennerster_running_2013} .}
 
 \begin{enumerate}
 \item
@@ -615,38 +296,16 @@ items that should be included in a PAP, reproduced below from the \href{http://b
   Remember to archive it
 \end{enumerate}
 
-In their article on researcher degrees of freedom, Simmons, Nelson, and
-Simonsohn (2011) suggest the following requirements for authors:
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  Authors must decide the rule for terminating data collection before
-  data collection begins and report this rule in the article
-\item
-  Authors must collect at least 20 observations per cell or else provide
-  a compelling cost-of-data-collection justification\footnote{It is now widely acknowledged, including by the authors, that this number is too low.}
-\item
-  Authors must list all variables collected in a study
-\item
-  Authors must report all experimental conditions, including failed
-  manipulations
-\item
-  If observations are eliminated, authors must also report what the
-  statistical results are if those observations are included
-\item
-  If an analysis includes a covariate, authors must report the
-  statistical results of the analysis without the covariate
-\end{enumerate}
 
 \paragraph{Expecting the Unexpected}
 \cite{glennerster_running_2013} also mention the ``tension between
 the benefits of the credibility that comes from tying ones hands versus
 the benefits of flexibility to respond to unforeseen events and
-results.'' Writing a PAP can lend extra credibility to research by making it of a confirmatory nature as opposed to an exploratory nature.
-Both types of research are absolutely valuable, but knowing the distinction is important. If some sort of restriction on the data, be it a specific functional form, exclusion of outliers, or an interaction term (subgroup analysis) that turns a null effect for the population into a significant effect for some subgroup, is specified ahead of time based on theory or previous research, this can be considered confirmatory research. 
+results.'' Writing a PAP can lend extra credibility to research by making it confirmatory in nature as opposed to exploratory.
+Both types of research are absolutely valuable, but knowing the distinction is important. If some sort of restriction on the data is specified ahead of time based on theory or previous research, be it a specific functional form, exclusion of outliers, or an interaction term (subgroup analysis) that turns a null effect for the population into a significant effect for some subgroup, this can be considered confirmatory research. 
 
-Some would say this is of more value than the exploratory research approach of simply running 20 sub-group analyses and finding that one or two are significant. This may be an estimate of a true effect, but should be labeled as exploratory, and future researchers could attempt to confirm this finding by addressing the question of the sub-group specifically. The potential downside to pre-stating hypotheses and analysis plans is that no matter how carefully researchers plan ahead, something truly unexpected can occur. (An example discussed at a recent conference was subjects showing up for an experiment stoned. One example from a field experiment involved fatalities from a lightning strike at a school that was part of a competitive girls scholarship program \citep{kremer2009incentives}.) This is why, even though I may use the phrase ``bind our hands,'' I suggest that researchers not be punished for conducting research outside the analysis plan. I instead recommend that researchers clearly delineate which analysis was included in the analysis plan, and which was not, so that readers can know what is confirmatory and what is exploratory.
+Some would say this is of more value than the exploratory research approach of simply running 20 sub-group analyses and finding that one or two are significant. This may be an estimate of a true effect, but should be labeled as exploratory, and future researchers could attempt to confirm this finding by addressing the question of the sub-group specifically. The potential downside to pre-stating hypotheses and analysis plans is that no matter how carefully researchers plan ahead, something truly unexpected can occur. (An example discussed at a recent conference was subjects showing up for an experiment intoxicated. One example from a field experiment involved fatalities from a lightning strike at a school that was part of a competitive girls scholarship program \citep{kremer2009incentives}.) This is why, even though I may use the phrase ``bind our hands,'' I suggest that researchers not be punished for conducting research outside the analysis plan. I instead recommend that researchers clearly delineate which analysis was included in the analysis plan, and which was not, so that readers can know what is confirmatory and what is exploratory.
 
 
 \paragraph{When to Write}
@@ -658,12 +317,12 @@ An alternative proposal discussed in \cite{OlkenPAP} is to remove the treatment 
 
 
 \subsubsection{Examples}\label{examples}
-Examples of pre-analysis plans in the social sciences are relatively rare, but several examples of published papers resulting from studies with PAP exist. Several of the items below come from the \href{http://www.povertyactionlab.org/Hypothesis-Registry}{J-PAL Hypothesis Registry}; I highlight those that have publicly available final papers. 
+Examples of pre-analysis plans in economics are relatively rare, but several examples of published papers resulting from studies with PAP exist. The items below come from the \href{http://www.povertyactionlab.org/Hypothesis-Registry}{J-PAL Hypothesis Registry}; I highlight those that have publicly available final papers and make reference to the PAP in the paper. 
 
 
 \begin{itemize}
 \item 
- \cite{casey_reshaping_2012} includes evidence from a large-scale field experiment on community driven development projects in Sierra Leone. The analysis finds no significant benefits. Given the somewhat vague nature of the development projects that resulted from the funding, and the wide variety of potential outcomes, finding signficant results would have been relatively easy. In fact, the paper includes an example of how, if they had the latitude to define outcomes without a pre-analysis plan, the authors could have reported either large and significantly positive or negative outcomes, depending on their preferences. The paper also includes a discussion of the history and purpose of pre-analysis plans. The \href{http://emiguel.econ.berkeley.edu/assets/miguel_research/8/_Appendix__Reshaping_Institutions_-_Evidence__on__Aid__Impacts__Using__a__Pre___Analysis__Plan.pdf}{online appendix}
+ \cite{casey_reshaping_2012} includes evidence from a large-scale field experiment on community driven development projects in Sierra Leone. The analysis finds no significant benefits. Given the somewhat vague nature of the development projects that resulted from the funding, and the wide variety of potential outcomes, finding significant results would have been relatively easy. In fact, the paper includes an example of how, if they had the latitude to define outcomes without a pre-analysis plan, the authors could have reported either large and significantly positive or negative outcomes, depending on their preferences. The paper also includes a discussion of the history and purpose of pre-analysis plans. The \href{http://emiguel.econ.berkeley.edu/assets/miguel_research/8/_Appendix__Reshaping_Institutions_-_Evidence__on__Aid__Impacts__Using__a__Pre___Analysis__Plan.pdf}{online appendix}
 contains the PAP.
 
 \item 
@@ -678,27 +337,26 @@ Researchers from UC San Diego and the World Bank evaluated job training programs
 
 
 
-\item 
-Teams led by Ben Olken have evaluated multiple randomized interventions in Indonesia. The \href{http://www.povertyactionlab.org/evaluation/project-generasi-conditional-community-block-grants-indonesia}{Generasi program} linked community block grants to performance. The PAP are \cite{olken_generasi_2009, olken_generasi_2010} and are available in the \href{http://www.povertyactionlab.org/Hypothesis-Registry}{J-PAL Hypothesis Registry}. The researchers found health improvement, but no education improvement \citep{olken_indonesias_2010, olken_should_2014}.
+%\item 
+%Teams led by Ben Olken have evaluated multiple randomized interventions in Indonesia. The \href{http://www.povertyactionlab.org/evaluation/project-generasi-conditional-community-block-grants-indonesia}{Generasi program} linked community block grants to performance. The PAP are \cite{olken_generasi_2009, olken_generasi_2010} and are available in the \href{http://www.povertyactionlab.org/Hypothesis-Registry}{J-PAL Hypothesis Registry}. The researchers found health improvement, but no education improvement \citep{olken_indonesias_2010, olken_should_2014}.
 
-\item 
-Another project in Indonesia used a field experiment to evaluate different means of poverty targeting for cash transfer programs: proxy-means testing, community-based targeting, and a hybrid of the two. Results show that the proxy-means testing outperformed the other methods by 10\%, but that community members were far more satisfied with the community method. The PAP and final paper are available as \cite{olken_targeting_2009} and \cite{alatas_targeting_2012}
+%\item 
+%Another project in Indonesia used a field experiment to evaluate different means of poverty targeting for cash transfer programs: proxy-means testing, community-based targeting, and a hybrid of the two. Results show that the proxy-means testing outperformed the other methods by 10\%, but that community members were far more satisfied with the community method. The PAP and final paper are available as \cite{olken_targeting_2009} and \cite{alatas_targeting_2012}
 
-\item
-An example from pyschology is a pre-registered replication of an implicit association test. Existing research showed evidence of stronger racial preferences among fertile women. \cite{NosekPreRegistered} failed to reproduce this effect in four tries, suggesting the association is weaker than originally found. The resulting manuscript, as well as the time-stamped registration of the analysis plan, can be found on the Open Science Framework at \url{https://osf.io/g3sca/}.
+%\item
+%An example from pyschology is a pre-registered replication of an implicit association test. Existing research showed evidence of stronger racial preferences among fertile women. \cite{NosekPreRegistered} failed to reproduce this effect in four tries, suggesting the association is weaker than originally found. The resulting manuscript, as well as the time-stamped registration of the analysis plan, can be found on the Open Science Framework at \url{https://osf.io/g3sca/}.
 \end{itemize}
+
 Additionally, Alejandro Ganimian developed \href{http://scholar.harvard.edu/files/alejandro_ganimian/files/pre-analysis_plan_template_0.pdf}{a template for pre-analysis plans} that instructors may find useful when teaching tranpsarency methods, or researcher themselves may find useful when developing their own pre-analysis plan.
 
 \subsubsection{Observational Pre-Analysis Plans}
-As with registration, part of the concern with pre-analysis plans is whether the ``pre'' aspect is verifiable. How can we be sure that a researcher didn't look at observational data, run a few hypothesis test, and then write the PAP? One way is to use reliably known availability dates of certain datasets such as government adminstrative data. Verifiable pre-specification of observational research was undertaken in \cite{neumark_employment_2001}, which prospectively detailed analysis of the unemployment effects of the minimum wage, a question that has been debated for at least a century \citep{Neumark_2014_bathwater}.\footnote{An editorial introduction to \cite{neumark_employment_2001} was accidentally left out of the issue, and published the following month, see \cite{Levine2001editorial}. Others followed Neumark's paper in spirit by using the same regression specifications on data from Canada \citep{CanadianMinWage2006}.} 
+As with registration, part of the concern with pre-analysis plans is whether the ``pre'' aspect is verifiable. How can we be sure that a researcher didn't look at observational data, run a few hypothesis test, and then write the PAP? One way is to use reliably known availability dates of certain datasets such as government administrative data. Verifiable pre-specification of observational research was undertaken in \cite{neumark_employment_2001}, which prospectively detailed analysis of the unemployment effects of the minimum wage, a question that has been debated for at least a century \citep{Neumark_2014_bathwater}.\footnote{An editorial introduction to \cite{neumark_employment_2001} was accidentally left out of the issue, and published the following month, see \cite{Levine2001editorial}. Others followed Neumark's paper in spirit by using the same regression specifications on data from Canada \citep{CanadianMinWage2006}.} 
 
 The federal minimum wage changed in October 1996 and September 1997. Neumark submitted a pre-specified research design consisting of the exact estimating equations, variable definitions, and subgroups that would be used to analyze the effect of the minimum wage on unemployment of younger workers using October, November, and December CPS data from 1995 through 1998. This detailed plan was submitted to journal editors and reviewers prior to the end of May 1997; the October 1996 data started to become available at the end of May 1997, and Neumark assures readers he had not looked at any published data at the state level prior to submitting his analysis plan. 
 
-Neumark's hope was to eliminate the potential for bias due to ``author effects.'' The obvious time stamp of the federal government’s release of data indeed makes this possible, but the situation also benefits from the depth and intensity of the debate prior to this study. Neumark had an extensive extant literature to rely on when picking specific functional forms and subgroup analyses to be conducted. He tests two definitions of the minimum wage, the ratio of the minimum wage to the average wage (common in Neumark's previous work), as well as the fraction of workers who benefit from the newly raised minimum wage (used in David Card's earlier work \citep{Card1992minwage}) and tests both models with and without controls for the employment rate of higher-skilled prime age adults (as recommended by \cite{Deere1995minwage}). 
+Neumark's hope was to eliminate the potential for bias due to ``author effects.'' The obvious time stamp of the federal government’s release of data indeed makes this possible, but the situation also benefits from the depth and intensity of the debate prior to this study. Neumark had an extensive extant literature to rely on when picking specific functional forms and subgroup analyses to be conducted. He tested two definitions of the minimum wage, the ratio of the minimum wage to the average wage (common in Neumark's previous work), as well as the fraction of workers who benefit from the newly raised minimum wage (used in David Card's earlier work \citep{Card1992minwage}) and tests both models with and without controls for the employment rate of higher-skilled prime age adults (as recommended by \cite{Deere1995minwage}). The results show mostly insignificant results, but that 18 of the 80 specifications result in statistically significant decreases in employment (at the .10 or .05 level), with elasticities ranging from -0.14 to -0.3 for significant estimates and smaller (closer to zero) for insignificant estimates. 
 
-These equations are also each estimated with only a lagged coefficient for minimum wage, and only for the outgoing rotation group (ORG) subset of the data. The equations are estimated for 16-19 year olds, 16-24 year olds, 16-24 year olds with no more than high school education, 20-24 year olds with no more than high school education, and 16-20 and 20-24 year olds (separately) with less than high school education. The results show mostly insignificant results, but that 18 of the 80 specifications result in statistically significant decreases in employment (at the .10 or .05 level), with elasticities ranging from -0.14 to -0.3 for significant estimates and smaller (closer to zero) for insignificant estimates. 
-
-How widely could Neumark's method of pre-specification prior to data-release become, and what do we gain from it? Thanks to pre-specification we know exactly how many hypothesis tests Neumark ran (at least 80 coefficients, and more with joint tests), so we know the context in which to appropriately interpret the p-values. This is a significant improvement over much other observational research. Of course, econometricians could still argue about the appropriateness of certain models (whether to include lags or look at contemporaneous effects, for instance) and the analysis suffers from noisy estimates given the relatively small number of changes to state minimum wages compared to other time periods that had been previously analyzed using similar methods.  
+How widely adoptable is Neumark's method of pre-specification, and what do we gain from it? Thanks to pre-specification we know exactly how many hypothesis tests Neumark ran (at least 80 coefficients, and more with joint tests), so we know the context in which to appropriately interpret the p-values. This is a significant improvement over much other observational research. Of course, econometricians could still argue about the appropriateness of certain models (whether to include lags or look at contemporaneous effects, for instance) and the analysis suffers from noisy estimates given the relatively small number of changes to state minimum wages compared to other time periods that had been previously analyzed using similar methods.  
 
 It is also difficult to see how a researcher could reach this level of detail with a research question with which they were not already intimately familiar; it seems more likely that one would either pre-specify with either a completely inadequate level of detail, or a wildly inappropriate specification. But perhaps this familiarity is a good thing. Much exploratory observational research could continue as is, and for important and thoroughly debated and defined question, confirmatory research could be conducted in a pre-specified fashion. Although pre-specification is difficult, given the vast troves of data released on reliable schedules by governments of developed countries through the world, verifiable pre-specification of observational research could indeed be conducted.
 
@@ -715,7 +373,7 @@ control variables in regression analysis of a randomized trial, having
 researchers selectively report whatever method gives them the most
 significant-seeming results is obviously not the optimal outcome. 
 
-The medical literature also exhibits much greater concern over the blinding and concealment of randomized assignment than some of the social science literature. In some situations, blinding is impossible or irrelevant in a social science field experiment: for example, the recipient of a cash transfer needs to know that they received cash in order for the program to have any effect. Also, a social scientist interested in the potential scaling up of a government program may rightfully be unperturbed by some respondents assigned to the control group somehow gaining access to treatment, since this behavior would undoubtedly occur if the program were scaled up and the researcher still has a valid intention to treat estimate.  This is not always the case, especially if one wants an accurate estimate of the efficacy of a program or a treatment on the treated estimate. Tales of trials ruined through carelessness with the original randomization assignment as well as tips on how to avoid the same problem are described in \cite{schulz_allocation_2002}. In addition to \cite{bruhn_pursuit_2009}, political science has produced guidelines for randomization and related disclosure, avaialable at \url{http://e-gap.org/resources/guides/randomization/}.
+The medical literature also exhibits much greater concern over the blinding and concealment of randomized assignment than some of the social science literature. In some situations, blinding is impossible or irrelevant in a social science field experiment: for example, the recipient of a cash transfer needs to know that they received cash in order for the program to have any effect. Also, a social scientist interested in the potential scaling up of a government program may rightfully be unperturbed by some respondents assigned to the control group somehow gaining access to treatment, since this behavior would undoubtedly occur if the program were scaled up and the researcher still has a valid intention to treat estimate.  This is not always the case, especially if one wants an accurate estimate of the efficacy of a program or a treatment on the treated estimate. Tales of trials ruined through carelessness with the original randomization assignment as well as tips on how to avoid the same problem are described in \cite{schulz_allocation_2002}.\footnote{In addition to \cite{bruhn_pursuit_2009}, political science has produced guidelines for randomization and related disclosure, avaialable at \url{http://e-gap.org/resources/guides/randomization/}.}
 
 
  Some medicine and science journals have begun to publish protocols.   While the
@@ -746,10 +404,10 @@ but only 53\% of the plans matched what was published in the ultimate paper.
 Several of the PAP and lists of suggestions above include corrections for multiple hypothesis testing. The idea of correcting for multiple tests is widespread in certain fields, but has yet to take hold in the social sciences. Simply put, the idea is that because we are aware of the fact that test statistics and p-values appear significant purely by chance a certain proportion of the time, we can report different, \textit{better} p-values that control for the fact that we are running multiple tests. There are several ways to do this, a few of which are used and explained in a simple and straightforward manner by \cite{anderson_fwer}:
 \begin{itemize}
 \item
-Report index tests---instead of reporting the outcomes of numerous tests, standardize outcomes and combine them into a smaller number of indeces (e.g. instead of separately reporting whether a long-term health intervention reduced blood pressure, diabetes, obesity, cancer, heart disease, and Alzheimer's, report the results of a single health index.) \cite{kling2007experimental} implements an index test from the Moving to Opportunity field experiment, using methods developed in biomedicine by \cite{obrien1984procedures}.
+Report index tests---instead of reporting the outcomes of numerous tests, standardize outcomes and combine them into a smaller number of indexes (e.g. instead of separately reporting whether a long-term health intervention reduced blood pressure, diabetes, obesity, cancer, heart disease, and Alzheimer's, report the results of a single health index.) \cite{kling2007experimental} implements an index test from the Moving to Opportunity field experiment, using methods developed in biomedicine by \cite{obrien1984procedures}.
 
 \item
-Control the Family-Wise Error Rate (FWER)---FWER is the probability that at least one true hypothesis in a group is rejected (a type I error), meaning it is advisable when the damage from incorrectly claiming \textit{any} hypotheses are false is important. There are several ways to do this, with the simplest (but very conservative) method being the Bonferroni correction of simply multiplying every original p-value by the number of tests done. Holm's sequential method involves ordering p-values by class and multiplying the lower p-values by higher dicsount factors \citep{holm_multipletesting}. An efficient recent method is the free step-down resampling method, developed by \cite{westfall_young_multiple}.
+Control the Family-Wise Error Rate (FWER)---FWER is the probability that at least one true hypothesis in a group is rejected (a type I error), meaning it is advisable when the damage from incorrectly claiming \textit{any} hypotheses are false is important. There are several ways to do this, with the simplest (but very conservative) method being the Bonferroni correction of simply multiplying every original p-value by the number of tests done. Holm's sequential method involves ordering p-values by class and multiplying the lower p-values by higher discount factors \citep{holm_multipletesting}. An efficient recent method is the free step-down resampling method, developed by \cite{westfall_young_multiple}.
   
 \item
 Control the False Discovery Rate (FDR)---In situations where a single type I error is not catastrophic, researchers may be willing to use a less conservative method and trade off some incorrect rejections in exchange for greater power. This is possible by controlling the FDR, or the percentage of rejections that are type I errors. \cite{benjamini1995controlling} details a simple algorithm to control this rate at a chosen level, and \cite{benjamini2006adaptive} describes a two-step procedure with greater power. 
@@ -771,9 +429,9 @@ ideally specifying beforehand the interactions to be tested, with a justificatio
 
 
 \subsection{Results-Blind Reviewing}
-A new development in research transparency which helps to address both publication bias and researcher degrees of freedom is results-blind reviewing. In results-blind reviewing, authors submit a detailed research plan \textit{before} conducting the research. They submit this plan to a journal, and the journal rejects or gives an in-principle acceptance of the not-yet-written article based on the scientific merit of the question being asked and the methods proposed to answer them, as opposed to whether the results pass an arbitrary threshold of statistical significance. Then the authors conduct the research, and their paper is published as long as they don't deviate too much from what they initially proposed. The editors and reviewers have tied their hands and have no ability to accept only significant results, and the authors have less incentive to game their statistical analysis in order to find something signficant. 
+A new development in research transparency which helps to address both publication bias and researcher degrees of freedom is results-blind reviewing. In results-blind reviewing, authors submit a detailed research plan \textit{before} conducting the research. They submit this plan to a journal, and the journal rejects or gives an in-principle acceptance of the not-yet-written article based on the scientific merit of the question being asked and the methods proposed to answer them, as opposed to whether the results pass an arbitrary threshold of statistical significance. Then the authors conduct the research, and their paper is published as long as they don't deviate too much from what they initially proposed. The editors and reviewers have tied their hands and have no ability to accept only significant results, and the authors have less incentive to game their statistical analysis in order to find something significant. 
 
-This new mode of publication, called ``Registered Reports," is championed by Chris Chambers, psychologist at Cardiff University, and has been adopted by over a dozen journals. See a full list of journals adopting the procedure at \url{https://osf.io/8mpji/}. \textit{Social Pyschology} ran an issue dedicated to this type of article, with an editorial explaining the concept \citep{nosek2014registered}. \textit{AIMS Neuroscience}, which uses this format, published an editorial answering 25 frequently asked questions pertaining to registered reports \citep{chambers2014instead}. A forthcoming special issue of \textit{Comparative Political Studies} will also publish articles of this type \citep{FindleyCPS}. 
+This new mode of publication, called ``Registered Reports," is championed by Chris Chambers, psychologist at Cardiff University, and has been adopted by over a dozen journals.\footnote{See a full list of journals adopting the procedure at \url{https://osf.io/8mpji/}.} \textit{Social Pyschology} ran an issue dedicated to this type of article, with an editorial explaining the concept \citep{nosek2014registered}. \textit{AIMS Neuroscience} published an editorial answering 25 frequently asked questions pertaining to registered reports \citep{chambers2014instead}. A forthcoming special issue of \textit{Comparative Political Studies} will also publish articles of this type \citep{FindleyCPS}. 
 
   
 
@@ -793,7 +451,7 @@ University of Texas at Austin Economics
 including yourself next week''---Philip Stark, University of California Berkeley Statistics
 \end{quote}
 
-Replication, in both practice and principle, is a key part of social
+Replication, in both practice and principle, is a key to social
 science research. I first define what exactly we mean by replication
 using the taxonomy developed in \cite{hamermesh_viewpoint:_2007} and \cite{hunter_desperate_2001}.
 According to Hamermesh, replication comes in a few different shapes: pure, statistical, and
@@ -852,9 +510,9 @@ Code is just one aspect of a larger structure referred to as
 ``workflow'' in \cite{long_workflow_2008}, by which is meant the
 combination of data, code, organization, and documentation: everything
 from file and variable names to folder organization as well as efficient
-and readable programming, and data storage and documentation. Stata-users should find \cite{long_workflow_2008} useful, while R users can refer to \cite{gandrud2013reproducible} for workflow recommendations both general and specific to their respective programming language\footnote{Also see \cite{kirchkamp_workflow_????}}. Suggestions here borrow heavily from their excellent work. 
+and readable programming, and data storage and documentation. Stata-users should find \cite{long_workflow_2008} useful, while R users can refer to \cite{gandrud2013reproducible} for workflow recommendations both general and specific to their respective programming language.
 
-Another valuable, more brief work is Matthew Gentzkow and Jesse Shapiro's manual on code and data \href{http://faculty.chicagobooth.edu/jesse.shapiro/research/CodeAndData.pdf}{\citep{GentzkowShapiro}}. They come from the same background as many social scientists--they did not take many programming classes, they are interested in tools only to accomplish their applied research goals. Once their data became massive, and their programming problems became massive with it, they figured they should listen to the fulltime programmers and database managers who had spent years and billions of dollars solving these problems. Their manual adapts many of these solutions to data-based social science research.   
+Another valuable, more brief work is Matthew Gentzkow and Jesse Shapiro's manual on code and data \href{http://faculty.chicagobooth.edu/jesse.shapiro/research/CodeAndData.pdf}{\citep{GentzkowShapiro}}. They come from the same background as many economists--they did not take many programming classes, they are interested in tools only to accomplish their applied research goals. Once their data became massive, and their programming problems became massive with it, they figured they should listen to the fulltime programmers and database managers who had spent years and billions of dollars solving these problems. Their manual adapts many of these solutions to data-based social science research.   
 
 I also refer undergraduate instructors and others who may be interested to Richard Ball and Norm Medeiros' \href{http://www.haverford.edu/TIER/}{Project TIER} (Teaching Integrity in Empirical Research), which is a ``protocol for comprehensively documenting all the steps of data management and analysis that go into an empirical research paper.'' A specific file organization using the Open Science Framework is taught so that teachers can exactly reproduce the work of every student (and so students can reliably get the same answer every time they conduct their analysis). 
 
@@ -934,49 +592,7 @@ Finally, two simple organizing principles to consider are:
 What would happen if you, or your laptop hard drive, were hit by a bus? How easily would anyone else be able to reproduce your work? Hopefully the probability is non-zero.
 \end{enumerate}
 
-\subsection{General Workflow
-Suggestions:}\label{general-workflow-suggestions}
-Some specific workflow organization suggestions that should be valid regardless of code or operating system are listed below. Stata-specific suggestions are included in the appendix. 
-\begin{itemize}
-\item
-  Do not use spaces in directory or file names, as it complicates referring to them in certain software.
-\item
-  Use ``naming directories'', .i.e.~a directory beginning with ``-'' (so
-  that it will appear first alphabetically) inside each directory to
-  explain the contents of the above directory.
-\item
-  Add name, date, and describe contents, as well as updates, to all
-  scripting files.
-\item
-  Keep a daily research log, i.e. a detailed written diary of what research is done on a given day. You'll be surprised how often this will be useful to answer questions about whether you ran a certain test or not, when you did it, and what you called the file.
-  
-\item
-    Make sure that your script files are self-contained. That is, don't write a program that only works if you run a group of other files previously in a specific order and then leave things a certain precarious way. You should be able to run intermediate steps of the workflow without disrupting things downstream.
- 
-\item
-  You can never comment your code too much.
-\item
-  Indent your code.
-\item
-    Once you post or distribute code or data, any and all changes require a new file name.
-\item
-  Separate your cleaning and analysis files; don't make any new variables
-  that need saving (or will be used by multiple analysis
-  files) in an analysis file---it is better to only create the variables once so you know they're identical when used in different analysis files.
-\item
-  Never name a file ``final'' because it won't be.
-\item
-  Name binary variables ``male'' instead of ``gender'' so that the name is more informative. 
-\item
-  Use a prefix such as x\_ or temp\_ so you know which files can easily
-  be deleted.
-\item
-  Never change the contents of a variable unless you give it a new name.
-\item
-  Every variable should have a label.
-\end{itemize}
-
-
+\subsubsection{Dynamic Documents}\label{general-workflow-suggestions}
 
 In addition to making code available to the public, the code itself
 should be written in a reader-friendly format, referred to as ``Literate
@@ -991,16 +607,16 @@ written in as simple and easily understood a way as possible, and should
 be very well commented, so that researchers other than the original
 author can more easily understand the goal of the code.
 
-One tool to make literate (statistical) programming significantly easier
-is Knitr (see \cite{xie_dynamic_2013, xie_knitr:_2014}) which is built into R
+One way to make literate (statistical) programming significantly easier
+is with dynamic documents, which combine code and output into one automated document. A prominent system is Knitr (see \cite{xie_dynamic_2013, xie_knitr:_2014}), which is built into R
 Studio\footnote{R Studio is a popular free graphical integrated implementation of
   R, available at \href{stylesWithEffects.xml}{http://www.rstudio.com}.}.
-Knitr uses R Markdown (a very simple plain text markup language,
-described at \url{http://rmarkdown.rstudio.com/}) in which one writes
+Knitr uses R Markdown\footnote{R Markdown is a very simple plain text markup language,
+described at \url{http://rmarkdown.rstudio.com/})} in which one writes
 both code and comments that is automatically spun into an easily read
 and shareable HTML, PDF, or MS Word document. These can be posted and
 shared for free at \href{https://rpubs.com}{RPubs}, an easy to use
-hosting service by Rstudio. For Stata users, dynamic documents are slightly less well developed, but \href{http://www.haghish.com}{E.F. Haghish} is actively developing packages (\href{http://www.haghish.com/statistics/stata-blog/reproducible-research/packages.php}{Markdoc, Weaver, Ketchup, and Synlight}) that allow users to write their .do files in such a way that the log files output by Stata are formatted and readable in Markdown, HMTL, or \LaTeX . 
+hosting service by Rstudio. For Stata users, dynamic documents are slightly less well developed, but \href{http://www.haghish.com}{E.F. Haghish} is actively developing packages (\href{http://www.haghish.com/statistics/stata-blog/reproducible-research/packages.php}{Markdoc and Weaver}) that allow users to write their .do files in such a way that the log files output by Stata are formatted and readable in Markdown, HMTL, or \LaTeX . 
 
 
 \subsection{Sharing Data}\label{sharing-data}
@@ -1063,13 +679,8 @@ policy mandatory in 2004 \citep{mccullough_verifying_2003, Bernanke2004}.
 The current data policy from the \emph{American Economic Review} can be
 seen here: \url{https://www.aeaweb.org/aer/data.php}. The AER conducted a self-review and
 found good, but incomplete, compliance \citep{glandon_report_2010}; others believe much work remains \citep{anderson_role_2008}. In addition to all
-the journals published by the American Economic Association, several top journals, including \emph{Econometrica, The Journal of Applied
-Econometrics, The Journal of Money Credit and Banking, the Journal of
-Political Economy, The Review of Economics and Statistics, and the
-Review of Economic Studies}, now explicitly require data and code to be
-submitted at the time of publication. Sadly, one of the top journals, \textit{The Quarterly Journal of Economics} has no data-sharing requirement.
-
-%EXPAND HERE ON JUST HOW MUCH DATA YOU SHOULD SHARE
+the journals published by the American Economic Association, several top journals now explicitly require data and code to be
+submitted at the time of publication. The last of the ``top 5'' general interest journals, \textit{The Quarterly Journal of Economics} adopted a data-sharing requirement in 2016.
 
 
 \subsubsection{General Repositories}\label{general-repositories}
@@ -1101,21 +712,21 @@ guarantee anonymization.'' This problem is well known in computer science, but s
 
 
 \subsection{Reporting Standards}\label{reporting-standards}
-In research, the devil truly is in the details. Whether assessing the validity of a research design or attempting to replicate a study, details of what exactly was done must be recorded and made available to other researchers. The exact details that are relevant will likely differ from field to field, but an increasing number of fields have
-produced centralized checklists that describe (in excruciating detail) what disclosure is required of published studies. These checklists are not often published with the paper, but can be submitted with the original article so that reviewers can check that it has been completed. With nearly infinite and easy web storage, researchers can easily post these materials on their website even if journal editors insist on cutting their methods sections for space reasons. 
+In research, the devil is in the details. Whether assessing the validity of a research design or attempting to replicate a study, details of what exactly was done must be recorded and made available to other researchers. The exact details that are relevant will likely differ from field to field, but an increasing number of fields have
+produced centralized checklists that describe (in excruciating detail) what disclosure is required of published studies. These checklists are not often published with the paper, but can be submitted with the original article so that reviewers can check that it has been completed. With nearly infinite and easy web storage, researchers can easily post these materials in a repository even if journal editors insist on cutting their methods sections for space reasons. 
 
 \subsubsection{Randomized Trials and CONSORT}\label{randomized-trials}
 The most widely adopted reporting standard guideline is the Consolidated Standards of Reporting Trials (\href{http://www.consort-statement.org}{CONSORT}). Reporting standards evolved parallel to construction of \href{http://clinicaltrials.gov}{clinicaltrials.gov} and registration, and are now nearly universally adopted for randomized trials published in medical journals, required or requested by reviewers during the review process. This is still in its infancy in the social sciences.
 
-The original CONSORT  was developed in the mid 1990's \citep{begg_c_improving_1996}. After five years, research showed that reporting of essential details, as required by the checklist, had significantly increased in journals requiring the standard  \citep{moher_d_use_2001}. The statement was revised in 2001, and simultaneously published in three of the top journals \citep{moher_consort_2001}. The statement was again revised in 2010 \citep{schulz_consort_2010}. The statement is a 25-item checklist pertaining to the title, abstract, introduction, methods, results, and discussion of the article in question, and seeks to delineate the minimum requirements of disclosure that may not be sufficiently addressed through other measures.
+The original CONSORT  was developed in the mid 1990's \citep{begg_c_improving_1996}. After five years, research showed that reporting of essential details had significantly increased in journals requiring the standard  \citep{moher_d_use_2001}. The statement was revised in 2001, and again in 2010  \citep{moher_consort_2001, schulz_consort_2010}. The statement is a 25-item checklist pertaining to the title, abstract, introduction, methods, results, and discussion of the article in question, and seeks to delineate the minimum requirements of disclosure that may not be sufficiently addressed through other measures.
 
-\subsection{Social Science Reporting Standards}\label{soc-sci-standards}
-Though a standard akin to CONSORT has not been formally adopted by social science or behavioral science journals, at least as far as we are aware, there have been attempts to do this: in political science, the Experimental Research Section Standards Committee produced a detailed list of items required for disclosure of experiments \citep{gerber_reporting_????}. This checklist is available \href{http://www.davidhendry.net/research-supplemental/gerberetal2014-reportingstandards/gerberetal2014-reportingstandards&appendix1.pdf}{here}.\footnote{\url{http://www.davidhendry.net/research-supplemental/gerberetal2014-reportingstandards/gerberetal2014-reportingstandards&appendix1.pdf}} In economics, one article has highlighted the fact that there is limited discussion of essential features of randomization (How was randomization stratified, if at all? How were control variables determined?), but no standards have been adopted \citep{bruhn_pursuit_2009}. In psychological and behavioral research, an extention to CONSORT for Social and Psychological Interventions (CONSORT-SPI) has been developed in \citep{montgomery2013protocol}, but so far has not been widely adopted nor required by journals. 
+\subsubsection{Social Science Reporting Standards}\label{soc-sci-standards}
+Though a standard akin to CONSORT has not been formally adopted by social science or economics journals, at least as far as we are aware, there have been attempts to do this: in political science, the Experimental Research Section Standards Committee produced a detailed list of items required for disclosure of experiments \citep{gerber_reporting_????}. This checklist is available \href{http://www.davidhendry.net/research-supplemental/gerberetal2014-reportingstandards/gerberetal2014-reportingstandards&appendix1.pdf}{here}.\footnote{\url{http://www.davidhendry.net/research-supplemental/gerberetal2014-reportingstandards/gerberetal2014-reportingstandards&appendix1.pdf}} In economics, one article has highlighted the fact that there is limited discussion of essential features of randomization (How was randomization stratified, if at all? How were control variables determined?), but no standards have been adopted \citep{bruhn_pursuit_2009}. In psychological and behavioral research, an extention to CONSORT for Social and Psychological Interventions (CONSORT-SPI) has been developed in \citep{montgomery2013protocol}, but so far has not been widely adopted nor required by journals. 
 
-\subsection{Observational Reporting Standards}\label{observational-standards}
+\subsubsection{Observational Reporting Standards}\label{observational-standards}
 Social science has yet to make a serious push for reporting standards in RCTs, let alone observational work, but the medical/epidemiological literature has created standards in this type of work, though they are not as widely adopted as CONSORT. Perhaps the most well-known is the \href{http://www.strobe-statement.org}{STROBE Statement} (Strengthening the Reporting of Observational Studies in Epidemiology)\citep{strobestatement2007}. STROBE provides checklists for reporting of cohort, case-control, and cross-sectional studies. These standards have been endorsed by approximately 100 journals in the field.\footnote{\url{http://www.strobe-statement.org/index.php?id=strobe-endorsement}}
 
-Medicine has in fact come up with too many checklists to describe them all individually. Acknowledging that every field and type of research is different, the Equator Network (Enhancing the Quality of Transparency of Health Research) serves as an umbrella organization that seeks to keep tabs on all the best reporting standards and help researchers find which reporting standard is most relevant for their research. See \url{http://www.equator-network.org/} for more information.
+Medicine has in fact come up with too many checklists to describe them all individually. Acknowledging that every field and type of research is different, the Equator Network (Enhancing the Quality of Transparency of Health Research) serves as an umbrella organization that seeks to keep tabs on all the best reporting standards and help researchers find which reporting standard is most relevant for their research.\footnote{See \url{http://www.equator-network.org/} for more information.}
 
 
 
@@ -1125,10 +736,12 @@ Medicine has in fact come up with too many checklists to describe them all indiv
 
 If science progresses by standing on the shoulders of giants, then good science requires research to be conducted in a transparent and reproducible fashion. This may require extra up-front work by researchers compared to the current state of affairs. Before one runs an experiment, researchers could write down their hypothesis, carefully explain how they are going to test the hypothesis, perhaps going as far as writing down the very regression analysis specification they plan to run, write a detailed protocol of the exact experimental setting, and then post all of this publicly on the Internet in a public repository. In the long run, however, science will reap a reward greater than these costs. Statistical analysis will result in p-values that can be interpreted as intended, and in an appropriate publication bias context. Replicating the work of other researchers will be easy, because their data and code will be in a public repository, and code could be well documented and understandable, and written to easily recreate the original results, ideally with a single click. Science could potentially move forward at a faster rate.
 
-\begin{singlespace}
-\section*{Acknowledgements}\label{ack}
-I gratefully acknowledge helpful comments from REVIEW BLIND. Funding for this research was provided by an anonymous donor, who played no role in the writing of the article nor in the decision to publish.
-\end{singlespace}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% End Notes
+\newpage
+
+\theendnotes
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
@@ -1137,144 +750,6 @@ I gratefully acknowledge helpful comments from REVIEW BLIND. Funding for this re
 \bibliographystyle{plainnat}
 \bibliography{Bibliography}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\newpage
-\appendix
-
-\section{Glossary of Terms}
-For researchers unfamiliar with any of the terms involved, I include a glossary of terms.
-\begin{itemize}
-\item
-Analysis Plan: See \hyperref[def-pap]{pre-analysis plan}
-
-\item
-Data citation: The practice of specifically citing datasets, and not just the paper in which a dataset was used.  This helps other researchers to find data and rewards researchers who share data, leading to better science. Read more at \url{http://www.icpsr.umich.edu/icpsrweb/ICPSR/curation/citations.jsp}. 
-
-\item \label{def-mining}
-Data mining: Searching blindly or repeatedly through data to find supposedly statistically significant relationships. While not inherently wrong, if done without a plan or without adjusting for multiple hypothesis testing, test statistics and \hyperref[def-pvalue]{p-values} that result no longer hold their traditional meaning, and can lead to research that cannot be replicated.
-
-\item \label{def-datasharing}
-Data sharing: Researchers making the data they use in an analysis available to other researchers, ideally through a trusted public archive. 
-
-\item\label{def-dbp}
-Design-based publication: See \hyperref[def-rbr]{results-blind review}.
-
-\item
-Disclosure: In addition to the widely accepted norm of publicly declaring all potential conflicts of interest, researchers should detail all the ways in which they test a hypothesis (e.g. include the outcome from all regression specifications tested in the appendix.)
-
-\item
-Fishing: See \hyperref[def-mining]{data mining}.
-
-\item
-Literate Programming: The idea of writing programming code designed to be read and easily understood by a human. Use of this best practice can make a researcher’s code far more easily reproducible by others.
-
-\item
-Multiple hypothesis correction: Statistically taking into account the fact that multiple hypotheses have been tested. This tends to decrease the reported statistical significance of any individual test conducted. The oldest method, known as the Bonferroni correction, simply divides the significance threshold by the number of tests. This is quite conservative, and more modern methods are helpfully described in \cite{anderson_fwer}.
-
-\item
-Open Access: Journals, or articles that are freely available to the public, as opposed to available only to paid subscribers. See \href{https://www.plos.org/open-access/howopenisit/}{HowOpenIsIt?} for a detailed definition of the spectrum of openness. 
-
-\item
-Open Data: See \hyperref[def-datasharing]{data sharing}.
-
-\item
-P-hacking: See \hyperref[def-mining]{data mining}.
-
-\item \label{def-pvalue}
-P-value: The statistic researchers use to make judgments regarding statistical significance, which is quite often misunderstood. It is the probability of obtaining a test statistic at least as extreme as the observed test statistic when the null hypothesis is true. 
-
-\item\label{def-pap}
-Pre-analysis plan: A document that details, ahead of time, the statistical analysis that will be conducted for a given research project. Outcomes, control variables, and regression specifications are all written in as much detail as possible. This serves to make research more confirmatory in nature. 
-
-\item
-Pre-specification: Detailing the method of analysis before actually beginning data work; the same as writing a \hyperref[def-pap]{pre-analysis plan}.
-
-\item
-Protocol: A general term meaning a document that provides a detailed description of a research project, ideally written before the project takes place, and in enough detail that other researchers may reproduce the project on their own. Often used in the context of human subjects IRB protocols, but increasingly used in connection with pre-analysis plans. 
-
-\item
-Publication Bias: The unfortunate fact that research is often only published when it contains the rejection of a null hypothesis test, i.e. a statistically significant relationship. Reviewers or journal editors may consider a null finding to be of less interest, or a researcher may fail to write up a null result, even though the null result may be the truth.
-
-\item
-Registration: Publicly declaring that an investigation of a hypothesis is being or will be undertaken.
-\begin{itemize}
-\item  Study Registration: Registering a research project generally.
-\item  Trial Registration: Registering a randomized trial. 
-\end{itemize}
-\item
-Registry: A database of registered studies or trials. For instance, \url{socialscienceregistry.org} or \url{clinicaltrials.gov}. Some of the largest registries only accept randomized trials, hence the frequent discussion of ‘trial registries.’
-
-\item
-Registered Reports: See \hyperref[def-dbp]{results-blind review}.
-
-\item
-Replicable: See \hyperref[def-repro]{reproducible}.
-
-\item
-Replication: The idea of conducting an existing research project over again, with the hope of obtaining the same result. A subtle taxonomy exists, and unfortunately there is disagreement, which is explained in \cite{hamermesh_viewpoint:_2007} and \cite{clemens_replication}.
-\begin{itemize}
-\item
-Pure Replication: Re-running existing code, with error-checking, on the original dataset and seeing if the published results are obtained.
-\item
-Scientific Replication: Attempting to reproduce the published results with a new sample, with the same code or with slight variations from the original analysis.
-\end{itemize}
-
-\item \label{def-repro}
-Reproducible: The test of whether research can redone by another researcher and produce the same results as the original. 
-\item
-Researcher Degrees of Freedom: the flexibility that a researcher has in data analysis, whether consciously abused or not. See \hyperref[def-mining]{data mining}. 
-
-\item \label{def-rbr}
-Results-blind Review: To help reduce publication bias, peer review can take place before results of a study are determined. Reviewers evaluate the design of a study to see whether the question is important and whether the study is well-designed. Good studies are given in-principle acceptance, and cannot be discriminated against for a null result, which, after all, may be the truth. See \url{https://osf.io/8mpji/wiki/home/} for journals practicing this form of publication.
-
-\item Specification searching: Testing numerous regression specifications and reporting only the model that produces the desired results. See \hyperref[def-mining]{data mining}. 
-\item
-Trusted Digital Repository: A location for storing data that others can believe will not be manipulated, and will be available into the future. Storing data here is superior to simply posting on an individual website, since it is more easily accessible and less easily changed.  
-\item
-Version Control: A method of tracking every edit made to a computer file. This is often quite useful for empirical researchers who may edit their programming code hundreds or thousands of times.
-\end{itemize}
-
-\section{Stata-specific Coding
-Suggestions}\label{stata-specific-suggestions}
-
-\begin{itemize}
-\item
-  Use the full set of missing values available to you (``.a''-``.z'', not exclusively
-  ``.'') in order to distinguish between ``don't know'' and ``didn't ask'' or other distinct reasons for missing data.
-\item
-  Make sure code always produces the same result---if you use anything randomly generated, set the seed. When sorting or merging, you need to be sure to uniquely specify observations, because if you don't, Stata does something arbitrary and not repeatable. So instead of just sorting or merging on `ID' when there are multiple observations per ID, sort by `ID' and `name.' You can use the `duplicates' command to test whether the \textit{varlist} you use uniquely indentifies observations. The `sort, stable' command can be used, though it is slower.
-\item
-  Use the `version' command in your .do file to ensure that other researchers who run your code with a newer version of Stata get the same results. 
-\item
-  Don't use abbreviations for variables (which may become unstable after
-  adding variables) or commands (beyond reason).
-\item
-  Avoid using global macros, and use locals instead. (This is a common piece of programming advice: since globals can be accessed across different functions or spaces, they can create contradictions or inconsistent dependencies. In Stata, it's possible they can be safely used to define directory paths so collaborators can work across different computers, but that should likely be the extent of their use.)
-\item
-  Use locals for varlists to ensure that long lists of variables include the same variables whenever intended.
-\item
-  Use computer-stored versions of numerical output instead of manually typing in numbers or copying and pasting. For example, instead of copying and pasting the mean after a `summ' command, refer to `r(mean)'. Use the `return list' command to see a full list of stored values after a regular command and the `ereturn list' after estimation commands.
-\item
-  If you have a master .do file that calls other .do files, which each have their own .log file, you can run
-  multiple log files at the same time (so you have a master .log file).
-\item
-  Use the `label data' and `notes' commands to label datasets and help yourself and other researchers easily identify the contents.
-\item
-  Use the `notes' command for variables as well for identifying information that is too long for the variable label.
-\item
-  Use the `datasignature' command to generate a hash or checksum and help ensure that data is
-  the same as before.
-\item
-  In addition to labeling your variables, you should also use value labels for all categorical variables. Include the
-  numerical value in the label, however, since without it, it can be hard to tell what numerical value is actually meant by a given category. 
-\item
-  Even though Stata is case sensitive, don't use capital letters in variable names since not all software packages
-  are case sensitive.
-\item
-  Make your files as non-proprietary as possible (use the `saveold'
-  command to enable those with earlier versions to use your data. This
-  is why trusted repositories are so useful--they'll do this for you.)
-\end{itemize}
 
 
 \end{document}

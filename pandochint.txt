@@ -1,0 +1,2 @@
+pandoc -o wordversion.odt Manual.tex --bibliography=BibliographyASCII.bib
+iconv -t utf-8 -o BibliographyASCII.bib Bibliography.bib
