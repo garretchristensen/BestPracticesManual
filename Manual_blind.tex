@@ -15,11 +15,10 @@
 
 \let\footnote=\endnote
 
-
 \begin{document}
 \title{Methods for Transparent and Reproducible Economics Research}
 
-\author{XXXXXXXXXXXX\footnote{Funding for this manuscript was provided by an anonymous donor who play no role in writing or reviewing the manuscript, nor in the decision to publish.}}
+\author{BLINDED\footnote{BLINDED. Funding for this manuscript was provided by an anonymous donor who play no role in writing or reviewing the manuscript, nor in the decision to publish.}}
 %\affil[1]{UC Berkeley, Berkeley Initiative for Transparency in the Social Sciences}
 \date{\today}
 \maketitle
@@ -39,12 +38,11 @@
 The principle that scientific claims should be subject to scrutiny by other researchers and
 the public at large is well established.  Just examine the Royal Society's motto \textit{nullius in verba} (``take nobody's word for it'') or seminal works on the sociology of science such as  \cite{merton1973sociology}. An important requirement for such scrutiny is that
 researchers make their claims transparent in a way that other
-researchers are able to use easily available resources to form a
-complete understanding of the methods that were used by the original. In
+researchers are easily able to form a complete understanding of the methods that were used by the original. In
 economics, given the personal computing and Internet revolutions and the wide availability of data and processing power, it is essential that data, code, and analyses be transparent \citep{marwick_how}.
 
-This article is intended to be a source for empirical economics researchers who desire to make their own research transparent to, and reproducible by, others. The entire process of research, from
-hypothesis generation to publication, is covered. A longer version of this paper, available online, covers issues more thoroughly and address the social sciences more generally in the hopes that quantitative researchers in political science, sociology, and psychology may benefit as well. \footnote{See \url{http://www.github.com/XXXANONYMIZEDFORREVIEWXXX/bestpracticesmanual}.}
+This article is intended to be a source for empirical economics researchers who desire to make their own research transparent to, and reproducible by, others. The entire process of research is covered, from
+hypothesis generation to publication. A longer version of this paper, available online, covers issues more thoroughly and address the social sciences more generally in the hopes that quantitative researchers in political science, sociology, and psychology may benefit as well. \footnote{See \url{http://www.github.com/BLINDED/bestpracticesmanual}.}
 
 While most of us are likely to presume that we ourselves would not
 conduct outright fraud, fraud does indeed occur. From making up fake
@@ -259,7 +257,7 @@ pre-analysis plans, described below.
 \subsection{Pre-Analysis
 Plans}\label{pre-analysis-plans}
 
-While registration of studies can help to reduce publication bias or the file drawer problem, a pre-analysis plan (PAP), a detailed outline of the analyses that will be conducted in a study, can be used to reduce researcher degrees of freedom. Registration is now the norm in medicine for randomized trials, and these often include (or link to) prospective statistical analysis plans as part of the project protocol. Official guidance from the US Food and Drug Administration's Center for Drug Evaluation and Research (CDER) from 1998 describes what should be included in a statistical analysis plan and discusses eight items related to data analysis that should be considered: pre-specification of the analysis; analysis sets; missing values and outliers; data transformation; estimation, confidence intervals, and hypothesis testings; adjustment of significance and confidence levels; subgroups, interactions, and covariates; and integrity of data and computer software validity \citep{food1998guidance}.  This is an excellent start, and in the section below I discuss adapting these ideas for a pre-analysis plan in the social sciences.
+While registration of studies can help to reduce publication bias or the file drawer problem, a pre-analysis plan (PAP), a detailed outline of the analyses that will be conducted in a study, can be used to reduce researcher degrees of freedom. Registration is now the norm in medical trials, and these often include (or link to) prospective statistical analysis plans as part of the project protocol. Official guidance from the US Food and Drug Administration's Center for Drug Evaluation and Research (CDER) from 1998 describes what should be included in a statistical analysis plan and discusses eight items related to data analysis that should be considered: pre-specification of the analysis; analysis sets; missing values and outliers; data transformation; estimation, confidence intervals, and hypothesis testings; adjustment of significance and confidence levels; subgroups, interactions, and covariates; and integrity of data and computer software validity \citep{food1998guidance}.  This is an excellent start, and in the section below I discuss adapting these ideas for a pre-analysis plan in the social sciences.
 
 A PAP contains a specification of the outcomes of the study (sometimes referred to as endpoints in the medical literature), as well as a specification of the methods that will be used to analyze the outcomes. By describing the
 method(s) of analysis ahead of time, and to some degree tying the hands
@@ -356,9 +354,8 @@ The federal minimum wage changed in October 1996 and September 1997. Neumark sub
 
 Neumark's hope was to eliminate the potential for bias due to ``author effects.'' The obvious time stamp of the federal government’s release of data indeed makes this possible, but the situation also benefits from the depth and intensity of the debate prior to this study. Neumark had an extensive extant literature to rely on when picking specific functional forms and subgroup analyses to be conducted. He tested two definitions of the minimum wage, the ratio of the minimum wage to the average wage (common in Neumark's previous work), as well as the fraction of workers who benefit from the newly raised minimum wage (used in David Card's earlier work \citep{Card1992minwage}) and tests both models with and without controls for the employment rate of higher-skilled prime age adults (as recommended by \cite{Deere1995minwage}). The results show mostly insignificant results, but that 18 of the 80 specifications result in statistically significant decreases in employment (at the .10 or .05 level), with elasticities ranging from -0.14 to -0.3 for significant estimates and smaller (closer to zero) for insignificant estimates. 
 
-How widely adoptable is Neumark's method of pre-specification, and what do we gain from it? Thanks to pre-specification we know exactly how many hypothesis tests Neumark ran (at least 80 coefficients, and more with joint tests), so we know the context in which to appropriately interpret the p-values. This is a significant improvement over much other observational research. Of course, econometricians could still argue about the appropriateness of certain models (whether to include lags or look at contemporaneous effects, for instance) and the analysis suffers from noisy estimates given the relatively small number of changes to state minimum wages compared to other time periods that had been previously analyzed using similar methods.  
+How widely adoptable is Neumark's method of pre-specification, and what do we gain from it? Thanks to pre-specification we know exactly how many hypothesis tests Neumark ran (at least 80 coefficients, and more with joint tests), so we know the context in which to appropriately interpret the p-values. This is a significant improvement over much other observational research. Of course, econometricians could still argue about the appropriateness of certain models (whether to include lags or look at contemporaneous effects, for instance).
 
-It is also difficult to see how a researcher could reach this level of detail with a research question with which they were not already intimately familiar; it seems more likely that one would either pre-specify with either a completely inadequate level of detail, or a wildly inappropriate specification. But perhaps this familiarity is a good thing. Much exploratory observational research could continue as is, and for important and thoroughly debated and defined question, confirmatory research could be conducted in a pre-specified fashion. Although pre-specification is difficult, given the vast troves of data released on reliable schedules by governments of developed countries through the world, verifiable pre-specification of observational research could indeed be conducted.
 
 \subsubsection{Project Protocols}\label{project-protocols}
 
@@ -366,38 +363,6 @@ A project protocol can be somewhat similar to a PAP, but is distinct. A protocol
 
 The social sciences may benefit from more careful documentation of methods. When one uses administrative data this can be accomplished by sharing one's data and code so that analysis is transparent.\footnote{It should be noted that the need for documentation of survey method is not eliminated by using administrative data, the burden simply falls upon the administration.} This is discussed below in Section~\ref{replication-and-reproducibility}. With original data collection, researchers should provide very detailed descriptions of what exactly they did. A 33-item checklist of suggested items is contained in the SPIRIT (\href{http://www.spirit-statement.org}{Standard Protocol Items: Recommendations for Interventional
 Trials}) statement \citep{chan_spirit_2013}, including details on the participants, interventions, outcomes, assignment, blinding, data collection, data management, and statistical methods, among other things. 
-
-A specific area in which social sciences could improve involves details of randomization. \cite{bruhn_pursuit_2009} documents the lack of clear explanation pertaining to how randomization was conducted in randomized controlled trials (RCTs) published in economics journals. Variables used for stratification are not described, and the decision of whether to control for baseline characteristics was often done after the fact. While there seems to be internal disagreement in both
-medicine and the social sciences over the appropriateness of including baseline
-control variables in regression analysis of a randomized trial, having
-researchers selectively report whatever method gives them the most
-significant-seeming results is obviously not the optimal outcome. 
-
-The medical literature also exhibits much greater concern over the blinding and concealment of randomized assignment than some of the social science literature. In some situations, blinding is impossible or irrelevant in a social science field experiment: for example, the recipient of a cash transfer needs to know that they received cash in order for the program to have any effect. Also, a social scientist interested in the potential scaling up of a government program may rightfully be unperturbed by some respondents assigned to the control group somehow gaining access to treatment, since this behavior would undoubtedly occur if the program were scaled up and the researcher still has a valid intention to treat estimate.  This is not always the case, especially if one wants an accurate estimate of the efficacy of a program or a treatment on the treated estimate. Tales of trials ruined through carelessness with the original randomization assignment as well as tips on how to avoid the same problem are described in \cite{schulz_allocation_2002}.\footnote{In addition to \cite{bruhn_pursuit_2009}, political science has produced guidelines for randomization and related disclosure, avaialable at \url{http://e-gap.org/resources/guides/randomization/}.}
-
-
- Some medicine and science journals have begun to publish protocols.   While the
-advantages of publishing a protocol related to the development of a new
-procedure (e.g. ``we have developed a new method of isolating mRNA'')
-is clear, the advantages of publishing protocols for randomized
-trials under way are perhaps less obvious, but still exist. \emph{BioMed
-Central} and \emph{BMJ Open}, among others, now publish protocols of
-trials planned or ongoing, with the hopes that this will reduce
-publication bias, allow patients to see trials in which they might like
-to enroll, allow funders and researchers to learn of work underway to
-avoid duplication, and to allow readers to compare what research was
-originally proposed to what was actually completed.\footnote{See
-\url{http://www.biomedcentral.com/authors/protocols} and
-\url{http://bmjopen.bmj.com/site/about/guidelines.xhtml\#studyprotocols}.}
-\emph{BMJ Open} suggests, but does not require, that its published
-protocols include the items in the SPIRIT checklist.
-
-Protocols are not a perfect solution, as even in published (or otherwise public) protocols, studies have found important differences between protocols and published results. 60-71\%
-of outcomes described in protocols went unreported in the paper while
-62\% had major discrepancies between primary outcomes in the protocols
-and in the published papers, though there was a relatively even mix of
-these discrepancies favoring significant or insignificant results \citep{chan_a_empirical_2004}. Another study found that appropriate level of statistical detail is often lacking in protocols, and there are often discrepancies between protocols and published results \citep{saquib_practices_2013}. 31\% of published papers had some sort of pre-specified plan for their regression adjustments (i.e.~specifying which baseline covariates would be controlled for), %while 70-74\% of those that published a design paper or provided a protocol to the authors, 
-but only 53\% of the plans matched what was published in the ultimate paper.
 
 
 \subsection{Multiple Hypothesis Testing}
@@ -444,11 +409,6 @@ Reproducibility}\label{replication-and-reproducibility}
 ``Economists treat replication the way teenagers treat chastity - as an
 ideal to be professed but not to be practised.''---Daniel Hamermesh,
 University of Texas at Austin Economics
-\end{quote}
-
-\begin{quote}
-``Reproducibility is just collaboration with people you don't know,
-including yourself next week''---Philip Stark, University of California Berkeley Statistics
 \end{quote}
 
 Replication, in both practice and principle, is a key to social
@@ -514,12 +474,12 @@ and readable programming, and data storage and documentation. Stata-users should
 
 Another valuable, more brief work is Matthew Gentzkow and Jesse Shapiro's manual on code and data \href{http://faculty.chicagobooth.edu/jesse.shapiro/research/CodeAndData.pdf}{\citep{GentzkowShapiro}}. They come from the same background as many economists--they did not take many programming classes, they are interested in tools only to accomplish their applied research goals. Once their data became massive, and their programming problems became massive with it, they figured they should listen to the fulltime programmers and database managers who had spent years and billions of dollars solving these problems. Their manual adapts many of these solutions to data-based social science research.   
 
-I also refer undergraduate instructors and others who may be interested to Richard Ball and Norm Medeiros' \href{http://www.haverford.edu/TIER/}{Project TIER} (Teaching Integrity in Empirical Research), which is a ``protocol for comprehensively documenting all the steps of data management and analysis that go into an empirical research paper.'' A specific file organization using the Open Science Framework is taught so that teachers can exactly reproduce the work of every student (and so students can reliably get the same answer every time they conduct their analysis). 
+I also refer undergraduate instructors to Richard Ball and Norm Medeiros' \href{http://www.haverford.edu/TIER/}{Project TIER} (Teaching Integrity in Empirical Research), which is a ``protocol for comprehensively documenting all the steps of data management and analysis that go into an empirical research paper.'' A specific file organization using the Open Science Framework is taught so that teachers can exactly reproduce the work of every student (and so students can reliably get the same answer every time they conduct their analysis). 
 
 \paragraph{Software:}
 The movement by many towards open source software such
 as \href{http://www.r-project.org/}{R} and \href{https://www.python.org/}{Python} may lead to reproducibility and access gains over time. However, many disciplines have long
-traditions of using proprietary software such as SAS and STATA, and
+traditions of using proprietary software such as SAS and Stata, and
 learning a new programming language may be an undesirable additional
 task in researchers' busy lives. That said, there are several general
 coding rules that all researchers should use when organizing and
@@ -560,22 +520,19 @@ pull down menus in SPSS or Stata, it generally makes research less reproducible.
 if one insists on going this route is to use the built-in
 command-logging features of the software. In Stata this involves the
 `cmdlog' command; in SPSS this involves the paste button to add to a
-syntax.
-
-The ideal is to make everything, including changes like rounding and
-formatting, done with scripts. Even downloading of data from websites
-can be done through a script. For example, in R, the download.file()
-function can be used to save data from a website. (Though of course this
+syntax. The ideal is to make everything, including changes like rounding and
+formatting, done with scripts. Even downloading of data can be done through a script.\footnote{For example, in R, the download.file()
+function can be used to save data from a website. Though of course this
 opens the possibility to the data file changing. When reproducing
 results from a given dataset is more important than the data from a
 specific source, researchers should download their raw dataset once, and
 never save over it, instead saving all modified intermediate datasets in
-a separate location.) 
+a separate location.}
 
 Another important way to prevent
 unintentional changes to data is to always set the seed for random
-number generators whenever any random numbers are to be used (set.seed()
-in R, set seed () in Stata). Additionally, information about the exact
+number generators whenever any random numbers are to be used.\footnote{set.seed()
+in R, set seed () in Stata.} Additionally, information about the exact
 software version used should be included (include the `version' command in Stata, or use the
 session.info() command in R) as well as computer processor and operating
 system information. The casual programmer may assume that sophisticated
@@ -663,8 +620,7 @@ journals other than the \emph{Review} itself (\emph{Journal of Applied
 Econometrics, Journal of Business and Economic Statistics}) requested
 data from authors, and neither requested code. The JMCB itself
 discontinued the policy of requesting data in 1993, though it resumed
-requesting data in 1996. The authors repeated their experiment with
-papers presented at the St.~Louis Federal Reserve Bank conference in
+requesting data in 1996. The authors repeated their experiment in
 1992, and obtained similar response rates as those from the original JMCB Project. The
 flagship economics journal, the \emph{American Economic Review} (AER),
 did not start requesting data until 2003. Then after a 2003 article
@@ -680,7 +636,7 @@ The current data policy from the \emph{American Economic Review} can be
 seen here: \url{https://www.aeaweb.org/aer/data.php}. The AER conducted a self-review and
 found good, but incomplete, compliance \citep{glandon_report_2010}; others believe much work remains \citep{anderson_role_2008}. In addition to all
 the journals published by the American Economic Association, several top journals now explicitly require data and code to be
-submitted at the time of publication. The last of the ``top 5'' general interest journals, \textit{The Quarterly Journal of Economics} adopted a data-sharing requirement in 2016.
+submitted at the time of publication. The last of the ``top 5'' general interest journals, the \textit{Quarterly Journal of Economics}, adopted a data-sharing requirement in 2016.
 
 
 \subsubsection{General Repositories}\label{general-repositories}
@@ -736,12 +692,9 @@ Medicine has in fact come up with too many checklists to describe them all indiv
 
 If science progresses by standing on the shoulders of giants, then good science requires research to be conducted in a transparent and reproducible fashion. This may require extra up-front work by researchers compared to the current state of affairs. Before one runs an experiment, researchers could write down their hypothesis, carefully explain how they are going to test the hypothesis, perhaps going as far as writing down the very regression analysis specification they plan to run, write a detailed protocol of the exact experimental setting, and then post all of this publicly on the Internet in a public repository. In the long run, however, science will reap a reward greater than these costs. Statistical analysis will result in p-values that can be interpreted as intended, and in an appropriate publication bias context. Replicating the work of other researchers will be easy, because their data and code will be in a public repository, and code could be well documented and understandable, and written to easily recreate the original results, ideally with a single click. Science could potentially move forward at a faster rate.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% End Notes
 \newpage
 
 \theendnotes
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
