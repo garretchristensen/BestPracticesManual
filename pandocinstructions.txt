@@ -1,0 +1,4 @@
+# to run the conversion from .tex to word, just type
+ pandoc -o TEST.docx Manual.tex --bibliography=Bibliography.bib --csl=chicago-author-date.csl
+
+ # but make sure your .bib file has no non-ASCII characters!
