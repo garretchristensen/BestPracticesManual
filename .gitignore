@@ -7,3 +7,20 @@
 *.blg
 *.docx
 *.doc
+
+
+#LaTeX garbage
+*.aux
+*.bib
+*.bib.bak
+*.bbl
+*.blg
+*.out
+*.synctex.gz
+*.nav
+*.snm
+*.toc
+*.log
+*.ent
+
+.gitignore
