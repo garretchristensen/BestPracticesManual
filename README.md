@@ -21,3 +21,5 @@ Original Word doc formatted in Markdown using pandoc.
 4. 2015.4.16 and 2015.4.28 Presented to CEGA Staff and Professor Edward Miguel's graduate course on social science research transparency (Econ 270D).
 
 5. 2015.6 and 2015.7 Presented to BITSS Summer Institute, added suggestions from 270D course and Summer Institute.
+
+6. 2016.11 Shorter version submitted to *Journal of Economic Methodology*. (See "pub" branch.) 
