@@ -3,7 +3,7 @@ Best Practices Manual README
 
 This is a manual of best practices in research transparency, written by Garret Christensen at the Berkeley Initiative for Transparency in the Social Sciences. Our intention is to write and maintain a guide or reference volume of best practices for transparent quantitative social science reseach, updating it as new tools and resources become available.
 
-**To access the manual, click the above link for the Manual.pdf file shown in the GitHub repository, and click the 'Raw' button to download**. When citing the manual, please include the date from the front page, which serves to differentiate between updates.
+**To access the manual, click the above link for the Manual.pdf file shown in the GitHub repository, and click the 'Download' button**. When citing the manual, please include the date from the front page, which serves to differentiate between updates.
 
 We encourage feedback from the research community (hence its placement on GitHub). Please send suggestions to garret@berkeley.edu. Those with an interest in substantive contributions are encouraged to submit pull requests (see help [here](https://help.github.com/articles/using-pull-requests/) or learn the basics of version control from [Software Carpentry](http://software-carpentry.org/v5/novice/git/index.html)). The manual is written in LaTeX, so changes to the main body of the document should be made to Manual.tex, and additions to the references file should be made to Bibliography.bib. (These files can be edited in any text editor, but we suggest [MikTex](http://miktex.org/) and [JabRef](http://jabref.sourceforge.net/) for Windows and [MacTeX](https://tug.org/mactex/) and [BibDesk](http://bibdesk.sourceforge.net/) for Mac users.) 
 
