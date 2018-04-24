@@ -21,9 +21,9 @@
 \date{\today}
 \maketitle
 
-\begin{center}
-Comments and suggestions are strongly encouraged. Please send correspondence to garret@berkeley.edu, or find the latest version of the manual on \href{https://github.com/garretchristensen/BestPracticesManual}{github}.
-\end{center}
+%\begin{center}
+%Comments and suggestions are strongly encouraged. Please send correspondence to garret@berkeley.edu, or find the latest version of the manual on \href{https://github.com/garretchristensen/BestPracticesManual}{github}.
+%\end{center}
 
 \newpage
 \tableofcontents
@@ -31,8 +31,7 @@ Comments and suggestions are strongly encouraged. Please send correspondence to 
 \newpage
 \section{Introduction}\label{introduction}
 
-Scientific claims should be subject to scrutiny by other researchers and
-the public at large. An important requirement for such scrutiny is that
+The principle that scientific claims should be subject to scrutiny by other researchers and the public at large is well established.  Just examine the Royal Society's motto \textit{nullius in verba} (``take nobody's word for it'') or seminal works on the sociology of science such as  \cite{merton1973sociology}. An important requirement for such scrutiny is that
 researchers make their claims transparent in a way that other
 researchers are able to use easily available resources to form a
 complete understanding of the methods that were used by the original. In
@@ -44,34 +43,34 @@ This manual is intended to be a source mainly for empirical social
 science researchers who desire to make their own research transparent
 to, and reproducible by, others. The entire process of research, from
 hypothesis generation to publication, is covered. Although norms differ
-across disciplines, we attempt to bring a broad view of the empirical
+across disciplines, I attempt to bring a broad view of the empirical
 social sciences to these recommendations, and hope that students and
 researchers in any social science field may tailor these recommendations
 to best fit their field.
 
-The manual is laid out as follows: in section~\ref{ethical-research} we first discuss the motivation for this document: the
+The manual is laid out as follows: in section~\ref{ethical-research} I first discuss the motivation for this document: the
 desire to do ethical research. A major component of ethical social
 science research is treating research subjects appropriately. This is
 mandated by federal law and overseen by Institutional Review Boards
 (IRBs), and should be taken seriously by researchers. But just as
-treating subjects fairly is ethical, we believe that transparent,
+treating subjects fairly is ethical, I believe that transparent,
 reproducible research is also a major part of ethical research.
 
-In section~\ref{study-design} we discuss study design, including how to power studies
+In section~\ref{study-design} I discuss study design, including how to power studies
 appropriately.
 
-In section~\ref{registration} we discuss one of the major problems in non-transparent
-research, specifically publication bias. We also discuss how this
+In section~\ref{registration} I discuss one of the major problems in non-transparent
+research, specifically publication bias. I also discuss how this
 problem can be resolved through the practice of registration.
 Publication bias stems from the fact that published results are
 overwhelmingly statistically significant. But without knowing how many
 tests were run (the number of unpublished results), it is impossible to know whether these significant
 results are meaningful, or whether they are the 5\% of tests that we
 would expect to appear significant due to random sampling, even with no
-true effect. By publicly registering all studies, we can have a better
+true effect. By publicly registering all studies, weI  can have a better
 idea of just how many tests have been run.
 
-In section~\ref{rdof} we discuss researcher degrees of freedom and pre-analysis
+In section~\ref{rdof} I discuss researcher degrees of freedom and pre-analysis
 plans; In addition to registering trials, researchers can also
 specify their outcomes of interest and their exact methods of analysis
 to bind their hands during the analysis phase by writing a Pre-Analysis
@@ -80,18 +79,18 @@ there is not yet a consensus on when a PAP should be required, what the
 ideal level of detail is, and how much it should constrain a
 researcher's hands in the actual analysis, but by pre-specifying analyses,
 researchers can distinguish between confirmatory and exploratory
-analysis. We do not necessarily place higher intrinsic value on one or
+analysis. I do not necessarily place higher intrinsic value on one or
 the other, but making the distinction clear is key for appropriate
 interpretation.
 
-In section~\ref{replication-and-reproducibility} we discuss workflow and materials sharing, with an eye on
+In section~\ref{replication-and-reproducibility} I discuss workflow and materials sharing, with an eye on
 making research replicable by others. Researchers should make their code
 and data publicly available so that others may repeat and verify their
 analysis. Making data available incentivizes researchers to make their
 work accurate in the first place, and makes replication easier for
 others, improving the scientific process, but also raises the concern of
 differential privacy, since steps should be taken to prevent
-identification of individuals in the data. We also discuss the issue of
+identification of individuals in the data. I also discuss the issue of
 reporting standards: a standardized list of things that authors should
 report to help make their work reproducible.
 
@@ -306,7 +305,7 @@ influenced the laws and regulations adopted to govern research
 worldwide.
 
 Lest one think that ethical concerns are limited to monsters of bygone
-eras, we refer readers to a dilemma caused by a Montana state election experiment by
+eras, I refer readers to a dilemma caused by a Montana state election experiment by
 researchers from \href{http://www.washingtonpost.com/blogs/monkey-cage/wp/2014/11/03/ethics-and-research-in-comparative-politics/}{Stanford and Dartmouth} in 2014, who sent 100,000 people official-looking election flyers bearing the state seal weeks before the election.
 
 \subsubsection{Training}\label{training}
@@ -316,7 +315,7 @@ Subjects Research is often a requirement of being included on a research
 proposal. For anyone at an institution not affiliated with CITI, the NIH maintains an \href{https://phrp.nihtraining.com/users/login.php}{online training course} that is free and open to the public.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Study Design}\label{study-design}
-There are many issues involving study design that are somewhat related to transparent research. For randomized trials, we refer readers to two excellent resources, \cite{randomizationtoolkit} and \cite{glennerster_running_2013}, which cover many aspects of how to design and implement an excellent field trial. For studies that are not necessarily randomized trials, we recommend \cite{gertler_impact_2011} or \cite{angrist2008mostly} for those with more statistics training. Here we briefly discuss one aspect of study design especially relevant for reproducible research: determining sample size through power calculations.
+There are many issues involving study design that are somewhat related to transparent research. For randomized trials, I refer readers to two excellent resources, \cite{randomizationtoolkit} and \cite{glennerster_running_2013}, which cover many aspects of how to design and implement an excellent field trial. For studies that are not necessarily randomized trials, I recommend \cite{gertler_impact_2011} or \cite{angrist2008mostly} for those with more statistics training. Here I briefly discuss one aspect of study design especially relevant for reproducible research: determining sample size through power calculations.
   
 \subsection{Power Analysis}\label{Conducting Power Analysis}
 %By CS
@@ -441,7 +440,7 @@ discrepancies between registered and published outcomes, with bias in
 favor of statistically significant definitions.
 
 Almost all registration efforts have thus far been limited to randomized
-control trials, as opposed to observational data. We believe
+control trials, as opposed to observational data. I believe
 that registering all types of analysis should be accepted and encouraged, though there are definitely concerns to registering observational work---not least of which is the inability to verify that registration preceded analysis. See \cite{dal-re_making_2014} for a recent discussion of the pros and cons.
  
 \subsection{Social Science Registries}\label{social-science-registries}
@@ -555,7 +554,7 @@ Plans}\label{pre-analysis-plans}
 
 While registration of studies can help to reduce publication bias or the file drawer problem, 
 A pre-analysis plan (PAP), a detailed outline of the analyses that will be conducted in a study, can be used to reduce researcher degrees of freedom. Registration is now the norm in medicine for randomized trials, and these often include (or link to) prospective statistical analysis plans as part of the project protocol. Official guidance from the US Food and Drug Administration's Center for Drug Evaluation and Research (CDER) from 1998 describes what should be included in a statistical analysis plan and discusses eight items related to data analysis that should be considered: pre-specification of the analysis; analysis sets; missing values and outliers; data transformation; estimation, confidence intervals, and hypothesis testings; adjustment of significance and confidence levels; subgroups, interactions, and covariates; and integrity of data and computer software validity \citep{food1998guidance}.   %Sometimes this is because the medical researcher intends to do very little, if any, structural or formal modeling. But even if a researcher intends only to compare unadjusted means and bootstrap for standard errors, this should be explicitly stated. In the social sciences, this simple comparison is often not the end goal of a randomized trial, so there may be even more value in pre-specification of intended analyses.
-This is an excellent start, and in the section below we discuss adapting these ideas for a pre-analysis plan in the social sciences.
+This is an excellent start, and in the section below I discuss adapting these ideas for a pre-analysis plan in the social sciences.
 
 A pre-analysis plan (PAP) contains a specification of the outcomes of the study (sometimes referred to as endpoints in the medical literature), as well as a specification of the methods that will be used to analyze the outcomes. By describing the
 method(s) of analysis ahead of time, and to some degree tying the hands
@@ -644,17 +643,17 @@ the benefits of flexibility to respond to unforeseen events and
 results.'' Writing a PAP can lend extra credibility to research by making it of a confirmatory nature as opposed to an exploratory nature.
 Both types of research are absolutely valuable, but knowing the distinction is important. If some sort of restriction on the data, be it a specific functional form, exclusion of outliers, or an interaction term (subgroup analysis) that turns a null effect for the population into a significant effect for some subgroup, is specified ahead of time based on theory or previous research, this can be considered confirmatory research. 
 
-Some would say this is of more value than the exploratory research approach of simply running 20 sub-group analyses and finding that one or two are significant. This may be an estimate of a true effect, but should be labeled as exploratory, and future researchers could attempt to confirm this finding by addressing the question of the sub-group specifically. The potential downside to pre-stating hypotheses and analysis plans is that no matter how carefully researchers plan ahead, something truly unexpected can occur. (An example discussed at a recent conference was subjects showing up for an experiment stoned. One example from a field experiment involved fatalities from a lightning strike at a school that was part of a competitive girls scholarship program \citep{kremer2009incentives}. ) This is why, even though we may use the phrase ``bind our hands,'' we advocate that researchers not be punished for conducting research outside the analysis plan. We simply recommend that researchers clearly delineate which analysis was included in the analysis plan, and which was not, so that readers can know what is confirmatory and what is exploratory.
+Some would say this is of more value than the exploratory research approach of simply running 20 sub-group analyses and finding that one or two are significant. This may be an estimate of a true effect, but should be labeled as exploratory, and future researchers could attempt to confirm this finding by addressing the question of the sub-group specifically. The potential downside to pre-stating hypotheses and analysis plans is that no matter how carefully researchers plan ahead, something truly unexpected can occur. (An example discussed at a recent conference was subjects showing up for an experiment stoned. One example from a field experiment involved fatalities from a lightning strike at a school that was part of a competitive girls scholarship program \citep{kremer2009incentives}. ) This is why, even though I may use the phrase ``bind our hands,'' I advocate that researchers not be punished for conducting research outside the analysis plan. I simply recommend that researchers clearly delineate which analysis was included in the analysis plan, and which was not, so that readers can know what is confirmatory and what is exploratory.
 
 
 \paragraph{When to Write}
 There is some question as to when one should write one's pre-analysis plan. ``Before you begin to analyze your data'' seems like the obvious answer, but this should be precisely defined. One could write the PAP before any baseline survey takes place, after any intervention but before endline, or after endline but before analysis has begun. \cite{glennerster_running_2013} and \cite{OlkenPAP} have an informative discussion of the relative values of PAP timing. If one writes the PAP before the baseline, this is in some sense the purest, most free from accusations of p-hacking, but one could also miss valuable information. For example, suppose in baseline one learns that the intended outcome question is phrased poorly and elicits high rates of non-response, or that there is very little variation in the answers to a survey question. If the PAP was written after baseline, one could have accounted for this, but at the same time, researchers would also be free to change the scope of their analysis--for example, in the baseline survey of a field experiment designed to increase wages revealed that few of the subjects worked outside the home, the researcher could change the focus of the analysis. This is not necessarily wrong, but it does change the nature of the analysis somewhat.
 
-PAPs could also be written after endline data has been collected but before the investigators have begun to analyze the data. Some have suggested that one could even look at baseline data from the control group only before writing the PAP. We find this problematic, however, since a researcher could learn that the control group had a particularly low or high value of a certain outcome variable, and then choose to include or not include this variable in the analysis as a result. The original research design could have been intended to analyze the increase in secondary school attendance, but looking at the control group, the researcher sees that the control group had a very high rate of attendance, making a significant difference between control and treatment (the treatment effect) unlikely. Learning this after the experiment has concluded and searching for things that might be easily different between treatment and control is more exploratory than confirmatory. An alternative proposal discussed in \cite{OlkenPAP} is to remove the treatment status variable from the dataset before looking at the data, which seems to alleviate some of the concerns. However, one could still search for sub-group analyses at this stage. If you parse the outcome data by gender, and males and females have a similar distribution, to find a differential treatment effect by gender would seem unlikely. If male and female had wildly different outcomes, it would seem like a significant interaction is more likely. This is more exploratory than confirmatory. 
+PAPs could also be written after endline data has been collected but before the investigators have begun to analyze the data. Some have suggested that one could even look at baseline data from the control group only before writing the PAP. I find this problematic, however, since a researcher could learn that the control group had a particularly low or high value of a certain outcome variable, and then choose to include or not include this variable in the analysis as a result. The original research design could have been intended to analyze the increase in secondary school attendance, but looking at the control group, the researcher sees that the control group had a very high rate of attendance, making a significant difference between control and treatment (the treatment effect) unlikely. Learning this after the experiment has concluded and searching for things that might be easily different between treatment and control is more exploratory than confirmatory. An alternative proposal discussed in \cite{OlkenPAP} is to remove the treatment status variable from the dataset before looking at the data, which seems to alleviate some of the concerns. However, one could still search for sub-group analyses at this stage. If you parse the outcome data by gender, and males and females have a similar distribution, to find a differential treatment effect by gender would seem unlikely. If male and female had wildly different outcomes, it would seem like a significant interaction is more likely. This is more exploratory than confirmatory. 
 
 
 \subsubsection{Examples}\label{examples}
-Examples of pre-analysis plans in the social sciences are relatively rare, but several examples of good published papers resulting from studies with PAP exist. Several of the items below come from the \href{http://www.povertyactionlab.org/Hypothesis-Registry}{J-PAL Hypothesis Registry}; we highlight those that have publicly available final papers. 
+Examples of pre-analysis plans in the social sciences are relatively rare, but several examples of good published papers resulting from studies with PAP exist. Several of the items below come from the \href{http://www.povertyactionlab.org/Hypothesis-Registry}{J-PAL Hypothesis Registry}; I highlight those that have publicly available final papers. 
 
 
 \begin{itemize}
@@ -702,7 +701,7 @@ It is also difficult to see how a researcher could reach this level of detail wi
 
 A project protocol can be somewhat similar to a PAP, but is distinct. A protocol is a detailed recipe or instruction manual for others to use to reproduce an experiment. Protocols are important both in helping solve researcher degrees of freedom problems by making the exact details of analysis known and help avoid selective reporting, as well as in making one's work reproducible. Protocols are standard in the medical literature, as in areas of lab science, but may be less familiar to those used to working with administrative or observational data. Lab sciences are rife with examples of experiments failing to replicate because of supposedly minor changes such as the brand of bedding in mouse cages, the gender of the laboratory assistant, or the speed at which one stirs a reagent \citep{sorge2014olfactory, hines2014sorting}, and we assume the same situation exists in the social sciences. \textit{Nature} has decided to expand its methods section in order to encourage better reporting.\footnote{\url{http://www.nature.com/news/announcement-reducing-our-irreproducibility-1.12852}}
 
-We believe the social sciences would benefit from more careful documentation of methods. When one uses administrative data this can be accomplished by sharing one's data and code so that analysis is transparent.\footnote{It should be noted that the need for documentation of survey method is not eliminated by using administrative data, the burden simply falls upon the administration.} This is discussed below in section~\ref{replication-and-reproducibility}. With original data collection, researchers should provide very detailed descriptions of what exactly they did. A 33-item checklist of suggested items is contained in the SPIRIT(\href{http://www.spirit-statement.org}{Standard Protocol Items: Recommendations for Interventional
+I believe the social sciences would benefit from more careful documentation of methods. When one uses administrative data this can be accomplished by sharing one's data and code so that analysis is transparent.\footnote{It should be noted that the need for documentation of survey method is not eliminated by using administrative data, the burden simply falls upon the administration.} This is discussed below in section~\ref{replication-and-reproducibility}. With original data collection, researchers should provide very detailed descriptions of what exactly they did. A 33-item checklist of suggested items is contained in the SPIRIT(\href{http://www.spirit-statement.org}{Standard Protocol Items: Recommendations for Interventional
 Trials}) statement \citep{chan_spirit_2013}, including details on the participants, interventions, outcomes, assignment, blinding, data collection, data management, and statistical methods, among other things. 
 
 One area in which social sciences could improve involves details of randomization. \cite{bruhn_pursuit_2009} documents the lack of clear explanation pertaining to how randomization was conducted in RCTs published in economics journals. Variables used for stratification are not described, and the decision of whether to control for baseline characteristics was often done after the fact. While there seems to be internal disagreement in both
@@ -761,7 +760,7 @@ they include some of their own. Gemini and Libras had worse outcomes
 when taking aspirin after heart attacks, despite the large beneficial
 effects for everyone else. (Described in \cite{schulz_multiplicity_2005},
 with the original finding in \cite{isis-2_second_international_study_of_infarct_survival_collaborative_group_randomised_1988}) Whether in a randomized trial or
-not, we feel that social scientists could benefit from reporting the number of
+not, I feel that social scientists could benefit from reporting the number of
 interactions tested, possibly adjusting for multiple hypotheses, and
 ideally specifying beforehand the interactions to be tested, with a justification from theory or previous evidence as to why the test is of interest. 
 
@@ -790,7 +789,7 @@ including yourself next week''---Philip Stark, University of California Berkeley
 \end{quote}
 
 Replication, in both practice and principle, is a key part of social
-science research. We first define what exactly we mean by replication
+science research. I first define what exactly I mean by replication
 using the taxonomy developed in \cite{hamermesh_viewpoint:_2007} and \cite{hunter_desperate_2001}.
 According to Hamermesh, replication comes in a few different shapes: pure, statistical, and
 scientific.
@@ -837,27 +836,27 @@ and code that include easy to use version control.\footnote{BitBucket
   of public data and code.} 
   
 Version control is a powerful way to archive versions of files so that old versions are not lost and can be returned
-to if needed. The most naive way to organize a project would be to just name a file ``MyAnalysis.do'' and then save over it any time you or your coauthor made changes. We sincerely hope no one is working this way, since you are losing tons of information. Most people are probably doing some version of the ``date and initials'' method. Instead of simply calling one's analysis code ``MyAnalysis.do'' and repeatedly saving over and losing old versions, when you save a new version, you add the date to the file name: ``MyAnalysis.2014.08.13.do'', and if a co-author makes changes on the same day, they add their initials:``MyAnalysis.2014.08.13\_GC.do'' or they change the date: ``MyAnalysis.2014.08.14.do''. This can work on small projects, but it really isn't the best way to work. Why does the operating system tell me the file from August 13 was modified in October? What if one analysis script file is called 14 times in 9 different files---did you remember to go through and update all the calls? \cite{GentzkowShapiro} provide strong evidence of the inadequacy of dating and initialing : ``\textit{Not one piece of commercial software you have on your PC, your phone, your tablet, your car, or any other modern computing device was written with the ``date and initial'' method.}'' [emphasis original]
+to if needed. The most naive way to organize a project would be to just name a file ``MyAnalysis.do'' and then save over it any time you or your coauthor made changes. I sincerely hope no one is working this way, since you are losing tons of information. Most people are probably doing some version of the ``date and initials'' method. Instead of simply calling one's analysis code ``MyAnalysis.do'' and repeatedly saving over and losing old versions, when you save a new version, you add the date to the file name: ``MyAnalysis.2014.08.13.do'', and if a co-author makes changes on the same day, they add their initials:``MyAnalysis.2014.08.13\_GC.do'' or they change the date: ``MyAnalysis.2014.08.14.do''. This can work on small projects, but it really isn't the best way to work. Why does the operating system tell me the file from August 13 was modified in October? What if one analysis script file is called 14 times in 9 different files---did you remember to go through and update all the calls? \cite{GentzkowShapiro} provide strong evidence of the inadequacy of dating and initialing : ``\textit{Not one piece of commercial software you have on your PC, your phone, your tablet, your car, or any other modern computing device was written with the ``date and initial'' method.}'' [emphasis original]
 
 The solution is version control (also referred to as revision control). Version control is free software (\href{https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control}{Git} and \href{https://mercurial.selenic.com/}{Mercurial} are popular and free implementations) that stores all versions of files you create, and can easily compare versions of the files to highlight changes, revert to earlier versions, accept or reject changes proposed by a collaborator, and reconcile conflicting versions when different people make changes to the same file. Version control creates a repository, and stores all versions of your files in the repository\footnote{Repositories can take up a significant amount of space, but you can avoid this problem by not storing generated files or binaries (.pdf, .docx, .etc) since every user with access to the repository should be able to recompile and generate files on their own. Version control works best with simple text files.}  Web services
 such as \href{http:www.github.com}{GitHub} offer free hosting of these repositories with easy to use web-based interfaces and GUI software, so that you and your collaborators can all access the same files, but you can easily host the repository on a server of your own. 
 
 \subsubsection{Managing Workflow}\label{managing-workflow}
 
-Code is just one aspect of a larger structure we refer to as
-``workflow'' after \cite{long_workflow_2008}, by which we mean the
+Code is just one aspect of a larger structure I refer to as
+``workflow'' after \cite{long_workflow_2008}, by which I mean the
 combination of data, code, organization, and documentation: everything
 from file and variable names to folder organization as well as efficient
-and readable programming, and data storage and documentation. We strongly recommend that Stata-users read \cite{long_workflow_2008} and R users read \cite{gandrud2013reproducible} for workflow recommendations both general and specific to their respective programming language\footnote{Also see and \cite{kirchkamp_workflow_????}}. Our suggestions here borrow heavily from their excellent work. 
+and readable programming, and data storage and documentation. I strongly recommend that Stata-users read \cite{long_workflow_2008} and R users read \cite{gandrud2013reproducible} for workflow recommendations both general and specific to their respective programming language\footnote{Also see and \cite{kirchkamp_workflow_????}}. Our suggestions here borrow heavily from their excellent work. 
 
 Another excellent, more brief work is Matthew Gentzkow and Jesse Shapiro's excellent manual on code and data \href{https://www.brown.edu/Research/Shapiro/pdfs/CodeAndData.pdf}{\citep{GentzkowShapiro}}. They come from the same background as us--they didn't take many programming classes, they're just clever and figured it out. But once their data got massive, and their programming problems got massive with it, they figured they should listen to the fulltime programmers and database managers who had spent years and billions of dollars solving these problems. Their manual adapts many of these solutions to data-based social science research.   
 
-We also refer undergraduate instructors and others who may be interested to Richard Ball and Norm Medeiros' \href{http://www.haverford.edu/TIER/}{Project TIER} (Teaching Integrity in Empirical Research), which is a ``protocol for comprehensively documenting all the steps of data management and analysis that go into an empirical research paper.'' A specific file organization using the Open Science Framework is taught so that teachers can exactly reproduce the work of every student (and so students can reliably get the same answer every time they conduct their analysis). 
+I also refer undergraduate instructors and others who may be interested to Richard Ball and Norm Medeiros' \href{http://www.haverford.edu/TIER/}{Project TIER} (Teaching Integrity in Empirical Research), which is a ``protocol for comprehensively documenting all the steps of data management and analysis that go into an empirical research paper.'' A specific file organization using the Open Science Framework is taught so that teachers can exactly reproduce the work of every student (and so students can reliably get the same answer every time they conduct their analysis). 
 
 \paragraph{Software:}
 
-Although we agree with the movement by many towards open source software such
-as \href{http://www.r-project.org/}{R} and \href{https://www.python.org/}{Python}, we appreciate that many disciplines have long
+Although I agree with the movement by many towards open source software such
+as \href{http://www.r-project.org/}{R} and \href{https://www.python.org/}{Python}, I appreciate that many disciplines have long
 traditions of using proprietary software such as SAS and STATA, and
 learning a new programming language may be an undesirable additional
 task in researchers' busy lives. That said, there are several general
@@ -867,7 +866,7 @@ work usable by as many others as possible.
 
 \paragraph{Writing Code:}
 Perhaps the most important rule is to write code instead of working by hand. By
-that we mean:
+that I mean:
 
 \begin{itemize}
 \item
@@ -894,8 +893,8 @@ data sets used in analysis. Then, researchers can share their initial
 raw data and their code, and other researchers can reproduce their work
 exactly.
 
-Though we understand that a fair amount of research has been done using
-pull down menus in SPSS or Stata, we advise against this. A bare minimum
+Though I understand that a fair amount of research has been done using
+pull down menus in SPSS or Stata, I advise against this. A bare minimum
 if one insists on going this route is to use the built-in
 command-logging features of the software. In Stata, this involves the
 `cmdlog' command, in SPSS, this involves the paste button to add to a
@@ -931,7 +930,7 @@ What would happen if you, or your laptop hard drive, were hit by a bus? How easi
 
 \subsection{General Workflow
 Suggestions:}\label{general-workflow-suggestions}
-Here we offer some specific workflow organization suggestions that should be valid regardless of code or operating system.
+Here I offer some specific workflow organization suggestions that should be valid regardless of code or operating system.
 \begin{itemize}
 \item
   Do not use spaces in directory or file names, as it complicates referring to them in certain software.
@@ -1151,7 +1150,7 @@ reporting standards evolved, and are now nearly universally adopted for randomiz
 The original CONSORT  was developed in the mid 1990's \citep{begg_c_improving_1996}. After five years, research showed that reporting of essential details, as required by the checklist, had significantly increased in journals requiring the standard  \citep{moher_d_use_2001}. The statement was revised in 2001, and simultaneously published in three of the top journals \citep{moher_consort_2001}). The statement was again revised in 2010 \citep{schulz_consort_2010}. The statement is a 25-item checklist pertaining to the title, abstract, introduction, methods, results, and discussion of the article in question, and seeks to delineate the minimum requirements of disclosure that may not be sufficiently addressed through other measures.
 
 \subsection{Social Science Reporting Standards}\label{soc-sci-standards}
-Though a standard akin to CONSORT has not been formally adopted by social science or behavioral science journals, at least as far as we are aware, there have been attempts to do this: In political science, the Experimental Research Section Standards Committee produced a detailed list of items required for disclosure of experiments in political science \citep{gerber_reporting_????}. This checklist is available \href{http://www.davidhendry.net/research-supplemental/gerberetal2014-reportingstandards/gerberetal2014-reportingstandards&appendix1.pdf}{here}.\footnote{\url{http://www.davidhendry.net/research-supplemental/gerberetal2014-reportingstandards/gerberetal2014-reportingstandards&appendix1.pdf}}
+Though a standard akin to CONSORT has not been formally adopted by social science or behavioral science journals, at least as far as I am aware, there have been attempts to do this: In political science, the Experimental Research Section Standards Committee produced a detailed list of items required for disclosure of experiments in political science \citep{gerber_reporting_????}. This checklist is available \href{http://www.davidhendry.net/research-supplemental/gerberetal2014-reportingstandards/gerberetal2014-reportingstandards&appendix1.pdf}{here}.\footnote{\url{http://www.davidhendry.net/research-supplemental/gerberetal2014-reportingstandards/gerberetal2014-reportingstandards&appendix1.pdf}}
 
 In economics, where no standards have been developed, one article has highlighted the fact that there is not much discussion of essential features of randomization (how was randomization stratified, if at all? How were control variables determined?), but no standards have been adopted. \citep{bruhn_pursuit_2009}
 
@@ -1175,7 +1174,7 @@ the hypothesis, write down the very regression analysis you're going to
 run, write a detailed protocol of the exact experimental setting, and
 then you have to post all of this publicly on the Internet with some
 sort of Big Brother organization. Or at least that's one way to look at
-it. But we strongly belive these steps are (1) not that difficult once
+it. But I strongly belive these steps are (1) not that difficult once
 you get used to them and (2) well worth the reward. You'll get p-values
 you can believe in. The next time someone asks you for your data, you
 just point them to a website, where they'll download the data and
@@ -1190,7 +1189,7 @@ your own computer in seconds. Science moves forward.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Glossary of Terms}
-We feel that it is important to define the terms we use in this document. Although many of the concepts overlap, we suggest that researchers use the following terms:
+I feel that it is important to define the terms I use in this document. Although many of the concepts overlap, I suggest that researchers use the following terms:
 \begin{itemize}
 \item
 Analysis Plan: See \hyperref[def-pap]{pre-analysis plan}
