@@ -11,6 +11,7 @@
 \usepackage{authblk}
 \usepackage{rotating}
 \usepackage{adjustbox}
+\usepackage{appendix}
 
 
 \begin{document}
@@ -39,11 +40,11 @@ the social sciences, especially given the personal computing and
 Internet revolutions and the wide availability of data and processing
 power, it is essential that data, code, and analyses be transparent.
 
-This manual is intended to be a source mainly for empirical social
+This manual is intended to be a source mainly for economists and other empirical social
 science researchers who desire to make their own research transparent
 to, and reproducible by, others. The entire process of research, from
 hypothesis generation to publication, is covered. Although norms differ
-across disciplines, I attempt to bring a broad view of the empirical
+across disciplines, and this is focused on economics, I attempt to bring a broad view of the empirical
 social sciences to these recommendations, and hope that students and
 researchers in any social science field may tailor these recommendations
 to best fit their field.
@@ -53,7 +54,7 @@ desire to do ethical research. A major component of ethical social
 science research is treating research subjects appropriately. This is
 mandated by federal law and overseen by Institutional Review Boards
 (IRBs), and should be taken seriously by researchers. But just as
-treating subjects fairly is ethical, I believe that transparent,
+treating subjects fairly is ethical, transparent,
 reproducible research is also a major part of ethical research.
 
 In section~\ref{study-design} I discuss study design, including how to power studies
@@ -67,7 +68,7 @@ overwhelmingly statistically significant. But without knowing how many
 tests were run (the number of unpublished results), it is impossible to know whether these significant
 results are meaningful, or whether they are the 5\% of tests that we
 would expect to appear significant due to random sampling, even with no
-true effect. By publicly registering all studies, weI  can have a better
+true effect. By publicly registering all studies, we can have a better
 idea of just how many tests have been run.
 
 In section~\ref{rdof} I discuss researcher degrees of freedom and pre-analysis
@@ -319,15 +320,14 @@ There are many issues involving study design that are somewhat related to transp
   
 \subsection{Power Analysis}\label{Conducting Power Analysis}
 %By CS
-Given that researchers are working within a null hypothesis testing framework, the â€˜powerâ€™ 
+Given that researchers are working within a null hypothesis testing framework, the power€™ 
 of a study, the probability of rejecting the null hypothesis when it is false, is extremely 
 important. Though 80\% power is held as a lower bound for acceptable power in many disciplines 
-such as medical research, the actual power of studies can be much lower. For example, research 
-by \cite{button_power_2013} found that the median power in neuroscience was 21\%. This means that 
+such as medical research, the actual power of studies can be much lower. For example, research by \cite{ioannidis2017power} found that the median power in economics is 18\%, and that half of research areas in economics have nearly 90\% of their results under-powered. \cite{button_power_2013} found that the median power in neuroscience was 21\%. This means that 
 if a study investigating a true effect were run 100 times, 79 studies would fail to reach significance, 
 meaning that the chance of a false negative is extremely high. 
 
-Though false negatives are perhaps the most often discussed issue with low powered studies, they are not the only issue. A second issue is that low powered studies actually decrease the likelihood of a true positive \citep{button_power_2013}. 
+Though false negatives are perhaps the most often discussed issue with low powered studies, they are not the only issue. A second issue is that low powered studies actually decrease the likelihood of a true positive \citep{ioannidis_why_2005, button_power_2013}. 
 This means that when a low powered studies does find an effect, the lower the likelihood that this effect is true in 
 the population; it is relatively more likely that it is a false positive.  A third issue with low powered studies relates to effect 
 sizes. Small, low powered studies that reach statistical significance will over-estimate the true effect size in the population \citep{button_power_2013}. These inflated effect size estimates will make it difficult for others to properly power future 
@@ -349,9 +349,9 @@ Additionally, researchers may be able to help one another as well as decrease fa
 \subsection {Practical Considerations}
 The impact of most of these calculations will in many cases mean a larger sample size than some disciplines are used to working with. There are several ways to mitigate the impact of this. 
 
-In psychology, a few of these possible solutions are presented in \cite{openmaximizing}. Researchers can join crowd-sourced projects where multiple labs share protocols and produce the same experiment, as was done with 13 psychological effects and 36 samples and settings in \cite{many_labs}. The \href{https://osf.io/wfc6u/}{Collaborative Replications and Education Project} (CREP) tracks findings that can be relatively easily replicated in a teaching setting. 
+In psychology, a few of these possible solutions are presented in \cite{openmaximizing}. Researchers can join crowd-sourced projects where multiple labs share protocols and produce the same experiment, as was done with 13 psychological effects and 36 samples and settings in \cite{many_labs}, or with the organized \href{https://osf.io/view/StudySwap/}{Study Swap}. The \href{https://osf.io/wfc6u/}{Collaborative Replications and Education Project} (CREP) tracks findings that can be relatively easily replicated in a teaching setting. 
 
-Economists have also discusses how project budgets should play into study design, by maximizing power subject to a budget constraint \cite{randomizationtoolkit}. When data collection is the main cost, the proportion of treatment and control should each be one half, but if treatment is expensive, power can be maximized subject to the project budget using the rule: ``the ratio of subjects in the treatment group to those in the comparison should be proportional to the inverse of the square root of their cots.''  Another important contribution to this are of power maximization subject to a budget constraint is that power depends on the number of rounds of surveying, and also the autocorrelation of measurements over time. \cite{mckenzie2012caseformoreT} shows that baseline data is of most power when autocorrelation is high, and repeated measurements post-treatment of most power when autocorrelation is low.
+Economists have also discusses how project budgets should play into study design, by maximizing power subject to a budget constraint \cite{randomizationtoolkit}. When data collection is the main cost, the proportion of treatment and control should each be one half, but if treatment is expensive, power can be maximized subject to the project budget using the rule: ``the ratio of subjects in the treatment group to those in the comparison should be proportional to the inverse of the square root of their cost.''  Another important contribution to this are of power maximization subject to a budget constraint is that power depends on the number of rounds of surveying, and also the autocorrelation of measurements over time. \cite{mckenzie2012caseformoreT} shows that baseline data is of most power when autocorrelation is high, and repeated measurements post-treatment of most power when autocorrelation is low.
 
 
 
@@ -412,13 +412,13 @@ The outcome is perhaps what the most hardened cynic would expect:
 essentially all the trials with positive outcomes were published, a
 50/50 mix of questionable-outcome studies were published, and a majority of the
 negative-outcome studies were unpublished a minimum of four years after the
-study was completed. The figure below shows the drastically different
-rates of publication, and a large amount of publication bias.
-\begin{center}
-\includegraphics{TurnerFigure1.PNG}
-
-Panel A of Figure 1 from \cite{turner_selective_2008}
-\end{center}
+study was completed. %The figure below shows the drastically different
+%rates of publication, and a large amount of publication bias.
+%\begin{center}
+%\includegraphics{TurnerFigure1.PNG}
+%
+%Panel A of Figure 1 from \cite{turner_selective_2008}
+%\end{center}
 Of course for this sort of exercise to be possible, unless a reader
 merely assumes that a registered trial without an associated published
 paper produced a null result (as in \cite{rosenthal1979file}), it requires that the registration site
@@ -440,8 +440,7 @@ discrepancies between registered and published outcomes, with bias in
 favor of statistically significant definitions.
 
 Almost all registration efforts have thus far been limited to randomized
-control trials, as opposed to observational data. I believe
-that registering all types of analysis should be accepted and encouraged, though there are definitely concerns to registering observational work---not least of which is the inability to verify that registration preceded analysis. See \cite{dal-re_making_2014} for a recent discussion of the pros and cons.
+control trials, as opposed to observational data. Registering all types of analysis should be accepted and encouraged, though there are definitely concerns to registering observational work---not least of which is the inability to verify that registration preceded analysis. See \cite{dal-re_making_2014} for a recent discussion of the pros and cons.
  
 \subsection{Social Science Registries}\label{social-science-registries}
 
@@ -492,7 +491,7 @@ Another location for registrations is the \href{http://osf.io}{Open Science Fram
 \subsection{Meta-Analysis Research}
 Another method of detecting and dealing with publication bias is to conduct meta-analysis. This method of research collects all published findings on a given topic, analyzes the results collectively, and can detect, and attempt to adjust for, publication bias in the literature. A handful of organizations specialize in producing these systematic reviews, including the \href{http://www.cochrane.org}{Cochrane Collaboration} for health studies and the \href{http://www.campbellcollaboration.org/}{Campbell Collaboration} for crime \& justice, education, international development, and social welfare research, and the \href{http://www.3ie.org}{International Initiative for Impact Evalution (3ie)} for social and economic interventions in low- and middle- income countries. The US government supports this type of analysis: the Department of Education's Institute of Education Sciences maintains the \href{http://ies.ed.gov/ncee/wwc/}{What Works Clearinghouse}, and the Department of Labor maintains the \href{http://clear.dol.gov/}{Clearinghouse for Labor and Evaluation Research (CLEAR)}, which serve to collect and grade the evidentiary value of research on education and labor, respectively. (The synthesis methods in the government clearinghouses is not quite as formally statistical in nature as the previously mentioned Collaborations.)
 
-Although quite common in medical research, the tool is not widely used in some parts of the social sciences. But even in economics, where many graduate students are unfamiliar with the technqiue, important papers exist that have quantitatively synthesized bodies of literature. The unemployment effects of the minimum wage were meta-analyzed in \cite{card1995time}, and the returns to education in \cite{ashenfelter1999review}. A meta-analysis of 87 meta-analyses in economics shows that publication bias is widespread, but not universal. A helpful resource, which includes meta-analysis datasets for economics researchers interested in conducting a meta-analysis is available \href{http://www.deakin.edu.au/business/economics/research/meta-analysis}{here}. Also see \cite{stanley2005beyond}, which helpfully describes the tools of meta-analysis, and is part of a special issue of \textit{The Journal of Economic Surveys} dedicated to meta-analysis. Sol Hsiang, lead author of a prominent meta-analysis of 60 studies measuring the effect of climate on human conflict \citep{hsiang2013climate}, has also developed the \href{http://dmas.berkeley.edu}{Distributed Meta-Analysis System}, an online tool to crowdsource and simplify meta-analysis.
+Although quite common in medical research, the tool is not widely used in some parts of the social sciences. But even in economics, where many graduate students are unfamiliar with the technqiue, important papers exist that have quantitatively synthesized bodies of literature, and the \href{https://www.hendrix.edu/maer-network/}{Meta-Analysis in Economics Research Network (MAER-Net)} exists to promote and improve the practice. The unemployment effects of the minimum wage were meta-analyzed in \cite{card1995time}, and the returns to education in \cite{ashenfelter1999review}. A meta-analysis of 87 meta-analyses in economics shows that publication bias is widespread, but not universal. Also see \cite{stanley2005beyond}, which helpfully describes the tools of meta-analysis, and is part of a special issue of \textit{The Journal of Economic Surveys} dedicated to meta-analysis. Sol Hsiang, lead author of a prominent meta-analysis of 60 studies measuring the effect of climate on human conflict \citep{hsiang2013climate}, has also developed the \href{http://dmas.berkeley.edu}{Distributed Meta-Analysis System}, an online tool to crowdsource and simplify meta-analysis.
 
 Prominent examples in psychology include meta-analyses of work on the Big 5 Personality Test and job performance \citep{barrick1991big5} and predictive validity of the Implicit Association Test \citep{greenwald2009understanding}. \cite{simonsohn2014p} also developed a meta-analysis tool that researchers can use to compare the uniform distribution of p-values under the null to the left-skewed distributions observed in research that has been gamed or selectively reported.
 
@@ -546,7 +545,7 @@ researcher degrees of freedom."
 \end{quote}
 
 In other words, the problem may be even worse than you think. What can be
-done to solve it? We believe part of the answer lies in detailed
+done to solve it? Part of the answer lies in detailed
 pre-analysis plans, described below.
 
 \subsection{Pre-Analysis
@@ -701,7 +700,7 @@ It is also difficult to see how a researcher could reach this level of detail wi
 
 A project protocol can be somewhat similar to a PAP, but is distinct. A protocol is a detailed recipe or instruction manual for others to use to reproduce an experiment. Protocols are important both in helping solve researcher degrees of freedom problems by making the exact details of analysis known and help avoid selective reporting, as well as in making one's work reproducible. Protocols are standard in the medical literature, as in areas of lab science, but may be less familiar to those used to working with administrative or observational data. Lab sciences are rife with examples of experiments failing to replicate because of supposedly minor changes such as the brand of bedding in mouse cages, the gender of the laboratory assistant, or the speed at which one stirs a reagent \citep{sorge2014olfactory, hines2014sorting}, and we assume the same situation exists in the social sciences. \textit{Nature} has decided to expand its methods section in order to encourage better reporting.\footnote{\url{http://www.nature.com/news/announcement-reducing-our-irreproducibility-1.12852}}
 
-I believe the social sciences would benefit from more careful documentation of methods. When one uses administrative data this can be accomplished by sharing one's data and code so that analysis is transparent.\footnote{It should be noted that the need for documentation of survey method is not eliminated by using administrative data, the burden simply falls upon the administration.} This is discussed below in section~\ref{replication-and-reproducibility}. With original data collection, researchers should provide very detailed descriptions of what exactly they did. A 33-item checklist of suggested items is contained in the SPIRIT(\href{http://www.spirit-statement.org}{Standard Protocol Items: Recommendations for Interventional
+The social sciences would benefit from more careful documentation of methods. When one uses administrative data this can be accomplished by sharing one's data and code so that analysis is transparent.\footnote{It should be noted that the need for documentation of survey method is not eliminated by using administrative data, the burden simply falls upon the administration.} This is discussed below in section~\ref{replication-and-reproducibility}. With original data collection, researchers should provide very detailed descriptions of what exactly they did. A 33-item checklist of suggested items is contained in the SPIRIT(\href{http://www.spirit-statement.org}{Standard Protocol Items: Recommendations for Interventional
 Trials}) statement \citep{chan_spirit_2013}, including details on the participants, interventions, outcomes, assignment, blinding, data collection, data management, and statistical methods, among other things. 
 
 One area in which social sciences could improve involves details of randomization. \cite{bruhn_pursuit_2009} documents the lack of clear explanation pertaining to how randomization was conducted in RCTs published in economics journals. Variables used for stratification are not described, and the decision of whether to control for baseline characteristics was often done after the fact. While there seems to be internal disagreement in both
@@ -768,9 +767,7 @@ ideally specifying beforehand the interactions to be tested, with a justificatio
 \subsection{Results-Blind Reviewing}
 A new development in research transparency which helps to address both publication bias and researcher degrees of freedom is results-blind reviewing. In results-blind reviewing, authors submit a detailed research plan \textit{before} conducting the research. They submit this plan to a journal, and the journal rejects or gives an in-principle acceptance of the not-yet-written article based on the scientific merit of the question being asked and the methods proposed to answer them, as opposed to whether the results pass an arbitrary threshold of statistical significance. Then the authors conduct the research, and their paper is published as long as they don't deviate too much from what they initially proposed. The editors and reviewers have tied their hands and have no ability to accept only significant results, and the authors have less incentive to game their statistical analysis in order to find something signficant. 
 
-This new mode of publication, called ``Registered Reports," is championed by Chris Chambers, psychologist at Cardiff University, and has been adopted by over a dozen journals. See a full list of journals adopting the procedure at \url{https://osf.io/8mpji/}. \textit{Social Pyschology} ran an issue dedicated to this type of article, with an editorial explaining the concept \citep{nosek2014registered}. \textit{AIMS Neuroscience}, which uses this format, published an editorial answering 25 frequently asked questions pertaining to registered reports \citep{chambers2014instead}. 
-
-  
+This new mode of publication, called ``Registered Reports," is championed by Chris Chambers, psychologist at Cardiff University, and has been adopted by over one hundred journals. See a full list of journals adopting the procedure at \url{https://cos.io/rr/}. \textit{Social Pyschology} ran an issue dedicated to this type of article, with an editorial explaining the concept \citep{nosek2014registered}. \textit{AIMS Neuroscience}, which uses this format, published an editorial answering 25 frequently asked questions pertaining to registered reports \citep{chambers2014instead}. In economics, the first journal to pilot this practice is the \textit{Journal of Development Economics}, announced in March 2018 on the \href{https://blogs.worldbank.org/impactevaluations/registered-reports-piloting-pre-results-review-process-journal-development-economics}{World Bank Development Impact blog}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -935,10 +932,6 @@ Here I offer some specific workflow organization suggestions that should be vali
 \item
   Do not use spaces in directory or file names, as it complicates referring to them in certain software.
 \item
-  Use ``naming directories'', .i.e.~a directory beginning with ``-'' (so
-  that it will appear first alphabetically) inside each directory to
-  explain the contents of the above directory.
-\item
   Add name, date, and describe contents, as well as updates, to all
   scripting files.
 \item
@@ -1034,11 +1027,9 @@ described at \url{http://rmarkdown.rstudio.com/}) in which one writes
 both code and comments that is automatically spun into an easily read
 and shareable HTML, PDF, or MS Word document. These can be posted and
 shared for free at \href{https://rpubs.com}{RPubs}, an easy to use
-hosting service by Rstudio. For Stata users, dynamic documents are slightly less well developed, but \href{http://www.haghish.com}{E.F. Haghish} is actively developing packages (\href{http://www.haghish.com/statistics/stata-blog/reproducible-research/packages.php}{Markdoc, Weaver, Ketchup, and Synlight}) that allow users to write their .do files in such a way that the log files output by Stata are formatted and readable in Markdown, HMTL, or \LaTeX . 
+hosting service by Rstudio. For Stata users, dynamic documents are slightly less well developed. They were introduced into the official product with the \href{https://www.stata.com/new-in-stata/markdown/}{dyndoc command} in version 15.  \href{http://www.haghish.com}{E.F. Haghish} is actively developing packages (\href{http://www.haghish.com/statistics/stata-blog/reproducible-research/packages.php}{Markdoc, Weaver, Ketchup, and Synlight}) that allow users to write their .do files in such a way that the log files output by Stata are formatted and readable in Markdown, HMTL, or \LaTeX, and other user-written commands as of 2016 were described at a Stata conference (see \href{https://www.stata.com/meeting/oceania16/slides/rising-oceania16.pdf}{slides}).
 
-%ADD EXAMPLE
 
-%R MarkdownMarkdownHTML (edit only the first)
 
 \subsection{Sharing Data}\label{sharing-data}
 
@@ -1188,6 +1179,9 @@ your own computer in seconds. Science moves forward.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\appendix
+\appendixpage
 \section{Glossary of Terms}
 I feel that it is important to define the terms I use in this document. Although many of the concepts overlap, I suggest that researchers use the following terms:
 \begin{itemize}
