@@ -5,7 +5,7 @@ This is a manual of best practices in research transparency, written by Garret C
 
 **To access the manual, click the above link for the Manual.pdf file shown in the GitHub repository, and click the 'Download' button**. When citing the manual, please include the date from the front page, which serves to differentiate between updates.
 
-We encourage feedback from the research community (hence its placement on GitHub). Please send suggestions to garret@berkeley.edu. Those with an interest in substantive contributions are encouraged to submit pull requests (see help [here](https://help.github.com/articles/using-pull-requests/) or learn the basics of version control from [Software Carpentry](http://software-carpentry.org/v5/novice/git/index.html)). The manual is written in LaTeX, so changes to the main body of the document should be made to Manual.tex, and additions to the references file should be made to Bibliography.bib. (These files can be edited in any text editor, but we suggest [MikTex](http://miktex.org/) and [JabRef](http://jabref.sourceforge.net/) for Windows and [MacTeX](https://tug.org/mactex/) and [BibDesk](http://bibdesk.sourceforge.net/) for Mac users.) 
+We encourage feedback from the research community (hence its placement on GitHub). Please send suggestions to garret@berkeley.edu. Those with an interest in substantive contributions are encouraged to submit pull requests (see help [here](https://help.github.com/articles/using-pull-requests/) or learn the basics of version control from [Software Carpentry](http://software-carpentry.org/v5/novice/git/index.html)). The manual is written in LaTeX, so changes to the main body of the document should be made to Manual.tex, and additions to the references file should be made to Bibliography.bib. (These files can be edited in any text editor, but we suggest [MikTex](http://miktex.org/) and [JabRef](http://jabref.sourceforge.net/) for Windows and [MacTeX](https://tug.org/mactex/) and [BibDesk](http://bibdesk.sourceforge.net/) for Mac users.)
 
 A slide deck summarizing some of the major points addressed in the Manual is available in [this GitHub repository](https://github.com/garretchristensen/BITSS2014Meeting).
 
@@ -22,4 +22,6 @@ Original Word doc formatted in Markdown using pandoc.
 
 5. 2015.6 and 2015.7 Presented to BITSS Summer Institute, added suggestions from 270D course and Summer Institute.
 
-6. 2016.11 Shorter version submitted to *Journal of Economic Methodology*. (See "pub" branch.) 
+6. 2016.11 Shorter version submitted to *Journal of Economic Methodology*. (See "pub" branch.)
+
+7. 2018.04 Table 1 updated with current registrations totals, a few links fixed, submitted to the Economics E-Journal.
